@@ -1,0 +1,421 @@
+#recipe-hero {
+  & h1 {
+    font-size: 3rem;
+    max-width: 550px;
+    margin: 3rem  0 1rem;
+  }
+
+  & .recipe-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-column-gap: 5rem;
+
+    & p {
+      margin: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      & .recipe-img .recipe-hr {
+        display: none;
+      }
+    }
+    @media screen and (max-width: $desktop) {
+      display: block;
+          }
+  }
+  @media screen and (max-width: $phone) {
+    & h1 {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+/*データ*/
+.recipe-bio-wrapper {
+  padding: 0.5rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.recipe-bio {
+  & h6 {
+    margin-bottom: 2rem;
+  }
+}
+
+.recipe-data {
+  display: inline-flex;
+  font-size: 1.3rem;
+  font-feature-settings: "palt";
+  letter-spacing: 0.06rem;
+
+  & .cook {
+    margin-left: 0;
+  }
+
+  & .servings {
+    margin-right: 0;
+  }
+}
+/*アクション*/
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+
+  .action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      & path {
+        stroke: var(--accent);
+        fill: var(--accent);
+      }
+    }
+
+    & svg {
+      height: auto;
+      width: 20px;
+
+      & path {
+        stroke: var(--grey);
+        fill:var(--grey);
+      }
+    }
+
+    &.action-star {
+      margin: 0 1rem;
+    }
+  }
+}
+/*データ・材料*/
+.recipe-bio {
+  & .flex {
+    justify-content: space-between;
+    & svg {
+      width: 10px;
+        margin: 0  0 2rem 1.5rem;
+      }
+    & .servings {
+      & h6 {
+        white-space: nowrap;
+      }
+    & .servings-number {
+    color: var(--accent);
+    }
+  }
+}
+}
+.ingredients-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+  color: var(--articleText);
+}
+/*データ・キャンプ道具*/
+.camp {
+  & a {
+    background: var(--grey20);
+    border-radius: 15px;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.1rem;
+    white-space: nowrap;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+
+    &:hover {
+      background: var(--grey40);
+    }
+  }
+}
+/*クッキングリストに追加*/
+.action-make-button {
+  & svg {
+    & path {}
+
+    & line {}
+  }
+
+  &:hover {
+    & svg {
+      & path {
+        fill: var(--white);
+      }
+    }
+  }
+}
+/*線*/
+.recipe-hr {
+  border-top: 1px solid var(--horizontalRule);
+  margin: 2.5rem 0;
+}
+
+.recipe-hr-l {
+  border-left: 1px solid var(--horizontalRule);
+  margin: 0 2.5rem;
+  height: 25px;
+}
+/*セクションタイトル*/
+.recipe-section-title-wrapper {
+  text-align: center;
+  position: relative;
+  padding: 0 0 5rem;
+  @media screen and (max-width: $phablet) {
+    padding: 0 0 4rem;
+  }
+
+  & .recipe-section-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 2rem;
+    font-family: var(--headings);
+    line-height: 1.756;
+
+    & .recipe-section-title-name {
+      text-decoration: underline;
+      color: var(--black);
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+    @media screen and (max-width: $phone) {
+      font-size: 1.8rem;
+
+      & .recipe-section-title-name {
+        font-size: 1.8rem;
+      }
+    }
+
+    &:before {
+      content: "";
+      height: 1px;
+      flex-grow: 1;
+      background-color: var(--horizontalRule);
+      margin-right: 2rem;
+    }
+
+    &:after {
+      content: "";
+      height: 1px;
+      flex-grow: 1;
+      background-color: var(--horizontalRule);
+      margin-left: 2rem;
+    }
+  }
+}
+/*作り方*/
+.make-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  counter-reset: number 0;
+  @media screen and (max-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  & .make-inner p:before {
+    counter-increment: number 1;
+    content: " STEP "counter(number);
+    font-weight: 500;
+    font-family: var(--headings);
+    color: var(--black);
+    display: flex;
+  }
+
+  & .make-inner {
+    background: var(--background-grey);
+
+    & p {
+      margin: 0;
+    }
+  }
+}
+/*レビュー*/
+.review {
+  & .rating {
+    top: 0.02rem;
+  }
+}
+
+.review-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+
+  & .review {
+    display: inline-block;
+    height: auto;
+    width: 300px;
+    margin-right: 3rem;
+
+    & p {
+      margin: 0;
+    }
+
+    & .comment {
+      padding-bottom: 2rem;
+    }
+  }
+
+  & .user-container {
+    justify-content: flex-start;
+
+    & div.user-avatar {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  & .recipes-bio-wrapper {
+    padding-bottom: 0;
+    border-top: 1px solid var(--horizontalRule);
+    margin-top: 1rem;
+  }
+
+  & .date {
+    font-size: 1.2rem;
+  }
+}
+/*レビュー・リンク*/
+.reviews-link {
+  text-decoration: underline;
+  padding-top: 6rem;
+}
+/*レビュー＆料理済リストに追加ボタン*/
+.fixed-button {
+  padding: 1.7rem;
+  border-radius: 50%;
+  background: var(--black);
+  box-shadow: transparent 0 0 0 1px, transparent 0 0 0 4px, rgba(0, 0, 0, 0.18) 0 2px 4px;
+
+  & svg {
+    width: 25px;
+
+    & path,
+    line {
+      stroke: var(--white);
+    }
+  }
+}
+/*レシピ・フッターメニュー*/
+.recipe-menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  border-top: 1px solid var(--horizontalRule);
+  z-index: 100;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+white-space: nowrap;
+  & .recipe-menu-inner {
+    display: inline-block;
+
+    &.recipe-menu-bio {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+
+      & svg {
+        width: 30px;
+      }
+&   .recipe-hr-l {
+  margin:  0 5rem;
+}
+      & .recipe-menu-user {
+        display: flex;
+        align-items: center;
+
+        & .user-avatar {
+          height: 35px;
+          width: 35px;
+        }
+
+        & h6 {
+          margin: 0;
+          font-size: 1.4rem;
+        }
+
+        & .rating {
+          display: flex;
+          align-items: center;
+
+          & .star {
+            top: auto;
+          }
+        }
+
+        & p {
+          margin: 0 0 0 0.4rem;
+          font-size: 1.3rem;
+          color: var(--grey);
+        }
+      }
+
+      & .recipe-menu-bio-inner {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $phablet) {
+            padding-left: 0;
+        }
+      }
+    }
+
+    & .recipe-menu-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    & svg path {
+      stroke: var(--white);
+    }
+
+    & a:hover {
+      & path {
+        stroke: var(--black);
+      }
+    }
+  }
+  @media screen and (max-width: $phablet) {
+    & .ico-button {
+      font-size: 1.3rem;
+    }
+
+    & .recipe-menu-inner.recipe-menu-bio svg {
+      width: 25px;
+    }
+  }
+}
+@media screen and (max-width: $desktop) {
+  .recipe-hr-l,
+  .recipe-menu .recipe-menu-inner.recipe-menu-bio .recipe-menu-user {
+    display: none;
+  }
+}
+/*アプリ*/
+.recipe-menu{
+@media screen and (max-width: $phablet) {
+  top: 0;
+  bottom: auto;
+  border-top: none;
+      border-bottom: 1px solid var(--horizontalRule);
+}
+#recipe-menu-back {
+  & svg {
+  width: 15px;
+}
+@media screen and (min-width: $phablet) {
+  display: none;
+}
+}
+}

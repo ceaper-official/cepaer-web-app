@@ -1,0 +1,61 @@
+.tag-bar-wrapper {
+	position: relative;
+	& .tag-bar-ico {
+		position: absolute;
+	width: 40px;
+	top: 0;
+	bottom:0;
+	margin: auto;
+	background: var(--white);
+	z-index: 10;
+	display: flex;
+	justify-content: flex-start;
+	}
+	& .tag-bar-back {
+		left: 0;
+	}
+	& .tag-bar-next {
+	right: 0;
+	justify-content: flex-end;
+	}
+}
+.tag-bar {
+	overflow-x: auto;
+	white-space: nowrap;
+  margin: 0 0 2rem;
+position: relative;
+padding: 0 2.5rem;
+}
+
+.tag {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin: 1rem;
+  color: var(--grey);
+	&:hover{
+		color: var(--black);
+	}
+}
+
+/*Filter*/
+.filter {
+  display: inline-block;
+  padding-left: 5rem;
+  margin-right: 1rem;
+	white-space: nowrap;
+  & svg {
+    margin-right: 1rem;
+    position: relative;
+    top: -.1rem;
+  }
+  & .button {
+    & svg {
+      width: 15px;
+    }
+		&:hover {
+			color: var(--black);
+			background: none;
+		}
+  }
+}

@@ -1,0 +1,210 @@
+.button  {
+padding: 1rem  2rem;
+color: var(--accent);
+border: 1px solid var(--accent);
+border-radius: 4px;
+font-weight: 500;
+font-size: 1.4rem;
+&:hover {
+  color: var(--white);
+  background: var(--accent);
+}
+}
+
+/*アイコン＋ボタン*/
+.icon-button {
+  display: flex;
+  align-items: center;
+  & svg {
+    width: 15px;
+    margin-right: .5rem;
+}
+}
+
+/*アクセント*/
+.button-accent{
+color: var(--white);
+border: 1px solid var(--accent);
+background: var(--accent);
+&:hover {
+  color: var(--accent);
+  background: none;
+}
+}
+
+/*ブラック*/
+.button-black {
+color: var(--white);
+border: 1px solid var(--black);
+background: var(--black);
+& svg {
+  path {
+    stroke: var(--white);
+}
+}
+&:hover {
+  color: var(--black);
+  background: none;
+  & svg {
+    path{
+    stroke: var(--black);
+
+  }  }
+}
+}
+
+.button-black-ol {
+color: var(--black);
+border: 1px solid var(--black);
+&:hover {
+  color: var(--white);
+  background:  var(--black);
+}
+}
+
+/*グレーアウト*/
+.button-grey {
+color: var(--grey);
+border: 1px solid var(--grey);
+pointer-events: none;
+}
+
+/*アクション*/
+.action-button {
+  font-size: 1.3rem;
+  padding: .5rem .7rem;
+}
+
+/*テキスト*/
+.button-text  {
+padding: .5rem  2rem;
+color: var(--accent);
+border-radius: 4px;
+font-weight: 500;
+&:hover {
+text-decoration: underline;
+}
+}
+
+
+/*アイコン*/
+.ico-button {
+  display: flex;
+  align-items: center;
+  & svg {
+    width: 15px;
+    margin-right: 0.5rem;
+  }
+}
+
+//ソーシャル
+.google-button {
+color: var(--white);
+background: #4285F4;
+border-color: #4285F4;
+&:hover {
+  color: #4285F4;
+  background: var(--white);
+}
+}
+
+.facebook-button {
+  color: var(--white);
+  background: #4267b2;
+  border-color: #4267b2;
+  &:hover {
+    color: #4267b2;
+    background: var(--white);
+  }
+  }
+
+  .social-button {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    & .button-prefix {
+      left: 0px;
+position: absolute;
+top: 0px;
+height: 100%;
+display: flex;
+align-items: center;
+background: var(--white);
+      & svg{
+        width: auto;
+        height: 20px;
+        display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+      }
+    }
+    & .social-button-inner {
+      padding-left: 50px;
+      width: 100%;
+    }
+  }
+
+
+/*入力*/
+.input-wrapper {
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    & .input-prefix {
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    display: flex;
+align-items: center;
+    & svg{
+      width: auto;
+      height: 15px;
+      display: flex;
+align-items: center;
+padding: 0 1.5rem;
+& path {
+  fill: var(--grey);
+}
+    }
+  }
+    & .input-suffix {
+      right: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    line-height: inherit;
+    &:before {
+    content: "";
+    position: absolute;
+    top: 27%;
+    left: 0px;
+    width: 1px;
+    height: 50%;
+    background: rgb(223, 225, 234);
+    }
+    & a {
+      display: flex;
+      height: 100%;
+align-items: center;
+padding: 0 2rem;
+    }
+    }
+    & .input-inner {
+      padding-left: 45px;
+    }
+}
+.input-inner  {
+padding: 1.5rem  2rem;
+border: 1px solid var(--horizontalRule);
+border-radius: 4px;
+font-weight: 500;
+&:hover {
+}
+&::placeholder {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+}

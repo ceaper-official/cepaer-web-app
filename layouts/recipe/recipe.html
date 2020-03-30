@@ -1,0 +1,211 @@
+{{ define "main" }}
+<div class="contents" id="recipe-hero">
+  <div class="section">
+    <div class="recipe-wrapper">
+      <div class="recipe-img">
+        <div class="card">
+                  <img src="/images/mock/food.jpg" alt="レシピ" />
+                </div>
+                <h1 class="top-recipe">ゴルゴンゾーラとトマトのカプレーゼ {{ partial "icons/ui/medal-top-recipe" . }}</h1>
+                <div class="rating">
+                  <div class="star star4">
+                    ★★★★
+                  </div>
+                  <div class="star-bg">
+                    ★★★★★
+                  </div>
+                </div>
+                <div class="recipe-bio-wrapper">
+                  <div class="recipe-inner recipe-data">
+                    <div class="cook">
+                      <span class="ico-button">
+                        {{ partial "icons/ui/cook" . }}1135</span>
+                    </div>
+                    <span class="m-dot">・</span>
+                  </div>
+                  <div class="recipe-inner">
+                    <a class="user-link">
+                      <div class="user-container">
+                        <div class="user-avatar user-inner">
+                          <img src="/images/mock/user.jpg">
+                        </div>
+                        <div class="user-inner">
+                          <p class="user-text name">ケリー小田</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+        <p>ミニトマト、ゴルゴンゾーラをシンプルに、オリーブオイルと塩で和えました。最後に散らしたバジルが味のアクセントとなっております。見た目もかわいらしく、おもてなし料理としてもぴったりです。冷蔵庫で冷たく冷やしてお召し上がり下さい。</p>
+        <div class="recipe-hr"></div>
+      </div>
+      <div class="recipe-inner recipe-bio">
+        <div>
+          <div class="flex">
+            <h6 class="sections-title">材料</h6>
+            <div class="servings ico-button">
+              <h6 class="small-text">人数：<span class="servings-number">2</span></h6><a>{{ partial "icons/ui/down" . }}</a>
+                    </div>
+          </div>
+          <div class="ingredients-wrapper small-text">
+            <!--入力の際、文字数制限：数量（〜5-->
+            <span>1個</span> <span class="ingredient"> トマト</span>
+            <span>100g</span> <span class="ingredient"> ゴルゴンゾーラ</span>
+            <span>6枚</span> <span class="ingredient"> バジル</span>
+            <span>大さじ1</span> <span class="ingredient"> オリーブオイル</span>
+            <span>少々</span> <span class="ingredient">塩</span>
+            <span>少々</span> <span class="ingredient">黒こしょう</span>
+          </div>
+        </div>
+        <div class="recipe-hr"></div>
+        <div class="camp">
+          <h6 class="sections-title">キャンプ道具</h6>
+          <div class="camp-wrapper">
+            <a>BBQグリル</a>
+            <a>ガスバーナー</a>
+            <a>ダッチオーブン</a>
+            <a>フライパン</a>
+            <a>クッカー</a>
+          </div>
+        </div>
+        <div class="recipe-hr"></div>
+        <div class=" actions">
+          <!--作る予定--><a class="button action-make-button icon-button button-black-ol">{{ partial "icons/ui/chef" . }}クッキングリストに追加</a>
+        </div>
+        <div class="actions" style="padding-bottom:0;">
+          <!--お気に入り--><a class="action-button action-star">{{ partial "icons/ui/star" . }}</a>
+          <!--追加済の場合、アイコンは塗り潰しされる-->
+          <!--シェア--><a class="action-button action-share">{{ partial "icons/ui/share" . }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--作り方-->
+<div class="contents">
+  <div class="recipe-section-title-wrapper review">
+    <div class="recipe-section-title">
+      作り方
+    </div>
+  </div>
+  <div class="section">
+    <div class="make-wrapper">
+      {{ partial "make" . }}
+      {{ partial "make" . }}
+      {{ partial "make" . }}
+      {{ partial "make" . }}
+      {{ partial "make" . }}
+    </div>
+  </div>
+</div>
+
+<!--レビュー-->
+<div class="contents">
+  <!--〜タイトル-->
+<div class="recipe-section-title-wrapper review">
+  <div class="recipe-section-title">
+    レビュー（514）
+    <div class="rating">
+      <div class="star star4">
+        ★★★★
+      </div>
+      <div class="star-bg">
+        ★★★★★
+      </div>
+    </div>
+  </div>
+</div>
+<!--〜レビュ一覧ー-->
+{{ partial "reviews" . }}
+</div>
+
+<!--関連するレシピ-->
+<div class="contents">
+  <div class="recipe-section-title-wrapper review">
+  <div class="recipe-section-title">
+    関連するレシピ
+  </div>
+</div>
+{{ partial "relate-recipes" . }}
+</div>
+<!--投稿ユーザーのその他のレシピ-->
+<div class="contents">
+<div class="recipe-section-title-wrapper review">
+  <div class="recipe-section-title">
+    <a class="recipe-section-title-name">ケリー小田</a>の他のレシピ
+  </div>
+</div>
+{{ partial "relate-recipes" . }}
+</div>
+
+<div class="recipe-menu">
+  <div class="recipe-menu-inner recipe-menu-bio">
+    <a  href="/">
+    <div class="section" id="recipe-menu-back">
+        {{ partial "icons/ui/back" . }}
+    </div>
+    </a>
+    <div class="section recipe-menu-bio-inner">
+      <div class="time">
+        <span class="ico-button">
+          {{ partial "icons/ui/time-accent" . }}15分</span>
+      </div>
+      <div class="recipe-hr-l">
+        </div>
+      <div class="recipe-menu-user">
+        <a class="user-link">
+          <div class="user-container">
+            <div class="user-avatar user-inner">
+              <img src="/images/mock/user.jpg">
+            </div>
+          </div>
+        </a>
+        <div class="">
+                  <h6>ゴルゴンゾーラとトマトのカプレーゼ</h6>
+        <div class="rating">
+          <div class="star star4">
+            ★★★★
+          </div>
+          <div class="star-bg">
+            ★★★★★
+          </div>
+          <p>(514)</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="recipe-menu-inner">
+    <!--レビュー+料理済リストに追加
+    クリック後、ポップアップで、レビューのtextareaが表示。投稿ボタン押したら、自動的に料理済リストに追加される。
+    （ログインしていない場合、/signinのポップアップ表示）-->
+    <div class="section recipe-menu-actions">
+      <a class="action-review button-black button ico-button">{{ partial "icons/ui/pen" . }}レビューを書く</a>
+    </div>
+  </div>
+</div>
+<!--レシピページの時のみ、フッターは固定メニュー分 、margin-bottomを空ける--->
+<style media="screen">
+  @media screen and (max-width: 540px) {
+    .row {
+      margin-top: 65px;
+    }
+  }
+  #footer {
+    margin-bottom: 77px;
+  }
+  @media screen and (max-width: 1070px) {
+    #footer {
+      margin-bottom: 71px;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    #footer {
+      margin-bottom: 0;
+    }
+  }
+</style>
+{{ end }}

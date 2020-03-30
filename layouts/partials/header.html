@@ -1,0 +1,29 @@
+    <div id="header">
+      <div id="desktop-nav">
+                  <div class="nav-container">
+      <a class="logo-link" href="/">
+        {{ partial "icons/ui/logo" . }}
+      </a>
+      <div class="nav-inner nav-inner-desktop">
+              <div class="nav-controls">
+          <div class="search-wrapper">
+            <span class="search-icon"><span class="search-icon-inner">{{ partial "icons/ui/search" . }}</span></span>
+        <input class="search" type="search" name="q" placeholder="料理、材料、キャンプ道具....">
+      </div>
+        <a href="/blog" class="hover-accent articles">記事一覧</a>
+      </div>
+      <div class="nav-controls">
+        <a href="/signin" class="hover-accent">ログイン</a>
+        <a class="button icon-button button-black" href="/signup" style="margin:0;">{{ partial "icons/ui/human" . }}アカウントを作成</a>
+      </div>
+    </div>
+    </div>
+  </div>
+<div id="mobile-nav">
+  {{ partial "nav-mobile" . }}
+</div>
+</div>
+<!--上スクロールの際は、非表示-->
+<div id="app-nav">
+  {{ partial "nav-app" . }}
+</div>

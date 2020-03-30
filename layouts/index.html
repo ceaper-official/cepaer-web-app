@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div id="hero">
+  <div class="section">
+    <div class="hero-wrapper">
+      <div class="hero-text-inner">
+        <div class="hero-text">
+                      <h1>Ceaperは、キャンプを愛する全ての人に向けた料理マネジメントサービスです。</h1>
+                      <p>Ceaperは、キャンプを愛する人に向けた料理マネジメントサービスです。Ceaperは、キャンプを愛する人に向けた料理マネジメントサービスです。</p>
+                <a class="button button-accent" href="/signup">アカウントを作成</a>
+                <a class="button-text" href="/signup">使い方を学ぶ</a>
+              </div>
+      </div>
+      <div class="hero-img-inner">
+        <img src="/images/home/hero.svg"  alt="hero"/>
+      </div>
+</div>
+</div>
+</div>
+<!--今週のトップ10-->
+{{ partial "popular-recipes" . }}
+
+<!--話題のレシピ-->
+{{ partial "topic-recipes" . }}
+
+<!--注目のキーパー-->
+{{ partial "ceapers" . }}
+
+<!--キャンプ道具から探す-->
+{{ partial "scenes" . }}
+
+<!--カテゴリーから探す-->
+{{ partial "category-recipes" . }}
+
+<!--最近の投稿（読み込みに時間かかりそうなら、スケルトンスクリーン）-->
+<div class="contents">
+  <div class="section">
+      <!--12件まで表示。画面に最下部が表示されたら、次の12件を表示。
+      これを2回繰り返して、次は、「もっと見る」ボタンを表示。-->
+        {{ partial "shots.html" . }}
+        </div>
+</div>
+
+<!--ローディング アニメーション（コンテンツを読み込んだら消える）-->
+<div class="shots-loading">
+  <span class="small-text">読み込んでいます...</span>
+</div>
+{{ end }}

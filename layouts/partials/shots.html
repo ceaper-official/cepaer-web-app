@@ -1,0 +1,25 @@
+<div class="cat-title sections-title flex" style="padding-bottom:.4rem;"><h3>最新の投稿</h3>
+  <div class="filter small-text">
+      <span class="filter-dropdown">
+          <a class="button button-black-ol small-text">        <span class="filter-inner">
+{{ partial "icons/ui/sort" . }}絞り込む</span></a>
+      </span>
+    </div>
+    </div>
+    {{ partial "tagbar" . }}
+    <div class="shots-wrapper">
+      <!--12件まで表示。画面に最下部が表示されたら、次の9件を表示。この繰り返し。
+２回繰り返したら、「もっと見る」ボタンを表示。→フッターに誘導したい為-->
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+      {{ partial "shot.html" . }}
+        </div>

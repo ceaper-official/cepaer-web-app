@@ -1,0 +1,140 @@
+/*Fade Up*/
+.pr-half, .medium, .iconset, img.shadow, .fade-up {
+    position: relative;
+    top: 70px;
+    opacity: 0;
+    will-change: opacity,transform;
+}
+
+/*Fade Up Left*/
+.fade-l {
+    position: relative;
+    left: -70px;
+    opacity: 0;
+    will-change: opacity,transform;
+}
+.fade-l:first-child {
+    transition: all .6s;
+}
+.fade-l:nth-child(2n) {
+    transition: all .8s;
+}
+.fade-l:nth-child(3n)  {
+    transition: all 1s;
+}
+.fade-l.moving {
+    opacity: 1;
+    left: 0;
+}
+
+
+/*Fade Up Right*/
+.fade-r {
+    position: relative;
+    left: 70px;
+    opacity: 0;
+    will-change: opacity,transform;
+}
+.fade-r:first-child {
+    transition: all .6s;
+}
+.fade-r:nth-child(2n) {
+    transition: all .8s;
+}
+.fade-r:nth-child(3n)  {
+    transition: all 1s;
+}
+.fade-r.moving {
+    opacity: 1;
+    left: 0;
+}
+
+.pr-half:first-child {
+    transition: all .6s;
+}
+.pr-half:nth-child(2n) {
+    transition: all .8s;
+}
+.pr-half:nth-child(3n) {
+    transition: all 1s;
+}
+.pr-half.moving {
+    opacity: 1;
+    top: 0;
+}
+
+
+.medium:first-child {
+    transition: all .6s;
+}
+.medium:nth-child(2n) {
+    transition: all .8s;
+}
+.medium:nth-child(3n) {
+    transition: all 1s;
+}
+.medium.moving {
+    opacity: 1;
+    top: 0;
+}
+
+.iconset:first-child {
+    transition: all .6s;
+}
+.iconset:nth-child(2n) {
+    transition: all .8s;
+}
+.iconset:nth-child(3n) {
+    transition: all 1s;
+}
+.iconset.moving {
+    opacity: 1;
+    top: 0;
+}
+
+
+img.shadow:first-child {
+    transition: all .6s;
+}
+img.shadow:nth-child(2n) {
+    transition: all .8s;
+}
+img.shadow:nth-child(3n) {
+    transition: all 1s;
+}
+img.shadow.moving {
+    opacity: 1;
+    top: 0;
+}
+
+.fade-up:first-child {
+    transition: all .6s;
+}
+.fade-up:nth-child(2n) {
+    transition: all .8s;
+}
+.fade-up:nth-child(3n) {
+    transition: all 1s;
+}
+.fade-up:nth-child(4n) {
+    transition: all 1.2s;
+}
+.fade-up:nth-child(5n) {
+    transition: all 1.4s;
+}
+.fade-up:nth-child(6n) {
+    transition: all 1.6s;
+}
+.fade-up:nth-child(7n) {
+    transition: all 1.8s;
+}
+.fade-up:nth-child(8n) {
+    transition: all 2s;
+}
+.fade-up:nth-child(9n) {
+    transition: all 2.2s;
+}
+.fade-up.moving {
+    opacity: 1;
+    top: 0;
+}

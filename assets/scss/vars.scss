@@ -1,0 +1,53 @@
+/*BREAKPOINTS*/
+$phone: 376px;
+$phablet: 540px;
+$tablet: 735px;
+$desktop: 1070px;
+$desktop_medium: 1280px;
+$desktop_large: 1440px;
+
+body{
+    /*FONTS*/
+    --headings: "Apercu", "Heisei Kaku Gothic", sans-serif;
+    --paragraph: "Ceaper Round" , sans-serif;
+    -webkit-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+text-size-adjust: 100%;
+-moz-font-feature-settings: "pkna";
+-webkit-font-feature-settings: "pkna";
+font-feature-settings: "pkna";
+
+    /*PRIMARY*/
+    --accent: #ff5445;
+    --white: #fff;
+    --black: #231e2d;
+    --grey: #b0b0b0;
+    --articleText: #4f4b57;
+    /*SECONDAY*/
+    --cream: #e5ddd5;
+    --botticelli: #cadee5;
+    --basil: #cfe5ca;
+    /*OTHER*/
+    --background-color: #fff;
+    --background-grey: rgba(176,176,176, 0.1);
+    --horizontalRule: rgba(8, 8, 11, 0.15);
+    /*GRADATIONS*/
+    --articleText80:  rgba(79,75,87, .8);
+    --accent60: rgba(255, 84, 69, .6);
+    --grey60:  rgba(176,176,176,.6);
+    --grey40:  rgba(176,176,176, .4);
+    --grey20:  rgba(176,176,176,.2);
+    /*DARK*/
+    --d-articleText: #d1d1d1;
+}
+
+::selection {
+    background: var(--accent);
+    color: #fcfcfc;
+}
+
+::-moz-selection {
+    background: var(--accent);
+    color: #fcfcfc;
+}

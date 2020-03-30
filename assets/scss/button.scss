@@ -1,0 +1,97 @@
+.button  {
+padding: .5rem  2rem;
+color: var(--accent);
+border: 1px solid var(--accent);
+border-radius: 4px;
+font-weight: 500;
+&:hover {
+  color: var(--white);
+  background: var(--accent);
+}
+}
+
+/*アイコン＋ボタン*/
+.icon-button {
+  display: flex;
+  align-items: center;
+  & svg {
+    width: 15px;
+    margin-right: .5rem;
+}
+}
+
+/*アクセント*/
+.button-accent{
+color: var(--white);
+border: 1px solid var(--accent);
+background: var(--accent);
+&:hover {
+  color: var(--accent);
+  background: none;
+}
+}
+
+/*ブラック*/
+.button-black {
+color: var(--white);
+border: 1px solid var(--black);
+background: var(--black);
+& svg {
+  path {
+    stroke: var(--white);
+}
+}
+&:hover {
+  color: var(--black);
+  background: none;
+  & svg {
+    path{
+    stroke: var(--black);
+
+  }  }
+}
+}
+
+.button-black-ol {
+color: var(--black);
+border: 1px solid var(--black);
+&:hover {
+  color: var(--white);
+  background:  var(--black);
+}
+}
+
+/*グレーアウト*/
+.button-grey {
+color: var(--grey);
+border: 1px solid var(--grey);
+pointer-events: none;
+}
+
+/*アクション*/
+.action-button {
+  font-size: 1.3rem;
+  padding: .5rem .7rem;
+}
+
+/*テキスト*/
+.button-text  {
+padding: .5rem  2rem;
+color: var(--accent);
+border-radius: 4px;
+font-weight: 500;
+&:hover {
+text-decoration: underline;
+}
+}
+
+
+/*アイコン*/
+.ico-button {
+  display: flex;
+  align-items: center;
+  & svg {
+    width: 15px;
+    margin-right: 0.5rem;
+  }
+}
