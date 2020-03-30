@@ -18,7 +18,7 @@ export default () => (
     <input class="input-inner" placeholder="Eメール"></input>
 </div>
     <div class="action-button-wrapper">
-    <button class="button-accent button">パスワードを再設定</button></div>
+    <button class="button-black button">パスワードを再設定</button></div>
 
     <div class="hr-text"></div>
     <div class="make-account-link">

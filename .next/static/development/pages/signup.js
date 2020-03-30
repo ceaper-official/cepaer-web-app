@@ -4653,14 +4653,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, __jsx("button", {
-    "class": "button-accent button",
+    "class": "button-black button",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
   }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u4F5C\u6210")), __jsx("p", {
-    "class": "xs-text",
+    "class": "xs-text grey",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -4674,7 +4674,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, __jsx("a", {
-    "class": "border-text",
+    "class": "border-text grey",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
@@ -4688,7 +4688,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, __jsx("a", {
-    "class": "border-text",
+    "class": "border-text grey",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
@@ -4809,7 +4809,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js ***!
   \********************************************************************************************************************/
@@ -4832,5 +4832,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=signup.js.map

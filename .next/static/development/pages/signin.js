@@ -4674,7 +4674,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, __jsx("button", {
-    "class": "button-accent button",
+    "class": "button-black button",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
@@ -4795,7 +4795,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsignin&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignin.js ***!
   \********************************************************************************************************************/
@@ -4818,5 +4818,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=signin.js.map

@@ -29,7 +29,7 @@ export default () => (
 </Link>
 </span></div>
     <div class="action-button-wrapper">
-    <button class="button-accent button">ログイン</button></div>
+    <button class="button-black button">ログイン</button></div>
     <span class="actions-subtitle xs-text">または</span>
         <div class="action-button-wrapper">
     <button class="button google-button social-button"><span class="button-prefix"><Google /></span><span class="social-button-inner">Googleでログイン</span></button>

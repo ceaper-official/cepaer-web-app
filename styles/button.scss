@@ -27,8 +27,8 @@ color: var(--white);
 border: 1px solid var(--accent);
 background: var(--accent);
 &:hover {
-  color: var(--accent);
-  background: none;
+  border: 1px solid var(--black);
+  background: var(--black);
 }
 }
 
@@ -43,8 +43,8 @@ background: var(--black);
 }
 }
 &:hover {
-  color: var(--black);
-  background: none;
+  border: 1px solid var(--accent);
+  background: var(--accent);
   & svg {
     path{
     stroke: var(--black);
@@ -102,26 +102,22 @@ text-decoration: underline;
 color: var(--white);
 background: #4285F4;
 border-color: #4285F4;
-&:hover {
-  color: #4285F4;
-  background: var(--white);
-}
 }
 
 .facebook-button {
   color: var(--white);
   background: #4267b2;
   border-color: #4267b2;
-  &:hover {
-    color: #4267b2;
-    background: var(--white);
-  }
   }
 
   .social-button {
     position: relative;
     overflow: hidden;
     display: flex;
+    &:hover {
+      background: var(--black);
+      border-color: var(--black);
+    }
     & .button-prefix {
       left: 0px;
 position: absolute;
@@ -178,7 +174,7 @@ padding: 0 1.5rem;
     &:before {
     content: "";
     position: absolute;
-    top: 27%;
+    top: 25%;
     left: 0px;
     width: 1px;
     height: 50%;
