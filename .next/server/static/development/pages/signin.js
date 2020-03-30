@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2005,9 +2005,9 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/signup.js":
+/***/ "./pages/signin.js":
 /*!*************************!*\
-  !*** ./pages/signup.js ***!
+  !*** ./pages/signin.js ***!
   \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2023,7 +2023,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/kerry/ceaper/pages/signup.js";
+var _jsxFileName = "/Users/kerry/ceaper/pages/signin.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2079,7 +2079,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     lineNumber: 14
   },
   __self: undefined
-}, "\u30A2\u30AB\u30A6\u30F3\u30C8\u4F5C\u6210"), __jsx("div", {
+}, "\u30ED\u30B0\u30A4\u30F3"), __jsx("div", {
   class: "action-button-wrapper input-wrapper",
   __source: {
     fileName: _jsxFileName,
@@ -2136,177 +2136,163 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     lineNumber: 25
   },
   __self: undefined
-})), __jsx("div", {
-  class: "action-button-wrapper",
+}), __jsx("span", {
+  class: "input-suffix",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 26
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  href: "/forgot-password",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, __jsx("a", {
+  class: "xs-text accent  hover-black",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}, "\u304A\u5FD8\u308C\u3067\u3059\u304B\uFF1F")))), __jsx("div", {
+  class: "action-button-wrapper",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 31
   },
   __self: undefined
 }, __jsx("button", {
   class: "button-accent button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
-}, "\u30A2\u30AB\u30A6\u30F3\u30C8\u4F5C\u6210")), __jsx("p", {
-  class: "xs-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29
-  },
-  __self: undefined
-}, "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F5C\u6210\u3059\u308B\u4E8B\u3067\u3001Ceaper\u306E", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-  href: "/terms",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29
-  },
-  __self: undefined
-}, __jsx("a", {
-  class: "border-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 30
-  },
-  __self: undefined
-}, "\u5229\u7528\u898F\u7D04")), "\u3001", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-  href: "/privacy",
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 32
   },
   __self: undefined
-}, __jsx("a", {
-  class: "border-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33
-  },
-  __self: undefined
-}, "\u30C7\u30FC\u30BF\u306B\u95A2\u3059\u308B\u30DD\u30EA\u30B7\u30FC\u3001Cookie\u30DD\u30EA\u30B7\u30FC")), "\u306B\u540C\u610F\u3059\u308B\u3082\u306E\u3068\u3057\u307E\u3059\u3002"), __jsx("span", {
+}, "\u30ED\u30B0\u30A4\u30F3")), __jsx("span", {
   class: "actions-subtitle xs-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
+    lineNumber: 33
   },
   __self: undefined
 }, "\u307E\u305F\u306F"), __jsx("div", {
   class: "action-button-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 36
+    lineNumber: 34
   },
   __self: undefined
 }, __jsx("button", {
   class: "button google-button social-button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 35
   },
   __self: undefined
 }, __jsx("span", {
   class: "button-prefix",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 35
   },
   __self: undefined
 }, __jsx(_assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 35
   },
   __self: undefined
 })), __jsx("span", {
   class: "social-button-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 35
   },
   __self: undefined
-}, "Google\u3067\u4F5C\u6210"))), __jsx("div", {
+}, "Google\u3067\u30ED\u30B0\u30A4\u30F3"))), __jsx("div", {
   class: "action-button-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 37
   },
   __self: undefined
 }, __jsx("button", {
   class: "button facebook-button social-button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 38
   },
   __self: undefined
 }, __jsx("span", {
   class: "button-prefix",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 38
   },
   __self: undefined
 }, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 38
   },
   __self: undefined
 })), __jsx("span", {
   class: "social-button-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 38
   },
   __self: undefined
-}, "Facebook\u3067\u4F5C\u6210"))), __jsx("div", {
+}, "Facebook\u3067\u30ED\u30B0\u30A4\u30F3"))), __jsx("div", {
   class: "hr-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42
+    lineNumber: 40
   },
   __self: undefined
 }), __jsx("div", {
   class: "make-account-link",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 41
   },
   __self: undefined
 }, __jsx("p", {
   class: "xs-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44
+    lineNumber: 42
   },
   __self: undefined
-}, "\u3059\u3067\u306B\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u304A\u6301\u3061\u3067\u3059\u304B\uFF1F"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-  href: "/signin",
+}, "\u30A2\u30AB\u30A6\u30F3\u30C8\u304C\u307E\u3060\u3042\u308A\u307E\u305B\u3093\u304B\uFF1F"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  href: "/signup",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 43
   },
   __self: undefined
 }, __jsx("a", {
   class: "xs-text hover-black accent",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 46
+    lineNumber: 44
   },
   __self: undefined
-}, "\u30ED\u30B0\u30A4\u30F3")))))));
+}, "\u4F5C\u6210\u3059\u308B")))))));
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*******************************!*\
-  !*** multi ./pages/signup.js ***!
+  !*** multi ./pages/signin.js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kerry/ceaper/pages/signup.js */"./pages/signup.js");
+module.exports = __webpack_require__(/*! /Users/kerry/ceaper/pages/signin.js */"./pages/signin.js");
 
 
 /***/ }),
@@ -2367,4 +2353,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signup.js.map
+//# sourceMappingURL=signin.js.map

@@ -11,7 +11,7 @@ export default () => (
     <div class="actions-wrapper">
     <div class="actions-inner card">
     <div class="actions-row-close"><Close /></div>
-    <h6>ログイン</h6>
+    <h1>ログイン</h1>
     <div class="action-button-wrapper input-wrapper">
     <span class="input-prefix">
     <Mail />

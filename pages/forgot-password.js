@@ -9,7 +9,7 @@ export default () => (
     <div class="actions-wrapper">
     <div class="actions-inner card">
     <div class="actions-row-close"><Close /></div>
-    <h6>パスワードの再設定</h6>
+    <h1>パスワードの再設定</h1>
     <p class="xs-text">対象アカウントで登録された Eメールをご入力ください。パスワードのリセット手順を送信いたします。</p>
     <div class="action-button-wrapper input-wrapper">
     <span class="input-prefix">

@@ -49,9 +49,10 @@ justify-content: center;
     }
 }
 //タイトル
-& h6 {
+& h1 {
 font-size: 1.8rem;
 margin: 0 0 2rem;
+font-weight: 500;
   }
   //入力
   & .action-button-wrapper {

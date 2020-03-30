@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/signup.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/signin.js"],{
 
 /***/ "./assets/icons/social/facebook.js":
 /*!*****************************************!*\
@@ -779,21 +779,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignin&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignin.js!./":
 /*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignin&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignin.js ***!
   \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/signup", function() {
-      var mod = __webpack_require__(/*! ./pages/signup.js */ "./pages/signup.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/signin", function() {
+      var mod = __webpack_require__(/*! ./pages/signin.js */ "./pages/signin.js")
       if(true) {
-        module.hot.accept(/*! ./pages/signup.js */ "./pages/signup.js", function() {
-          if(!next.router.components["/signup"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/signup.js */ "./pages/signup.js")
-          next.router.update("/signup", updatedPage)
+        module.hot.accept(/*! ./pages/signin.js */ "./pages/signin.js", function() {
+          if(!next.router.components["/signin"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/signin.js */ "./pages/signin.js")
+          next.router.update("/signin", updatedPage)
         })
       }
       return mod
@@ -4513,9 +4513,9 @@ try {
 
 /***/ }),
 
-/***/ "./pages/signup.js":
+/***/ "./pages/signin.js":
 /*!*************************!*\
-  !*** ./pages/signup.js ***!
+  !*** ./pages/signin.js ***!
   \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -4531,7 +4531,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/kerry/ceaper/pages/signup.js";
+var _jsxFileName = "/Users/kerry/ceaper/pages/signin.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -4588,7 +4588,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 14
     },
     __self: this
-  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u4F5C\u6210"), __jsx("div", {
+  }, "\u30ED\u30B0\u30A4\u30F3"), __jsx("div", {
     "class": "action-button-wrapper input-wrapper",
     __source: {
       fileName: _jsxFileName,
@@ -4645,178 +4645,164 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 25
     },
     __self: this
-  })), __jsx("div", {
-    "class": "action-button-wrapper",
+  }), __jsx("span", {
+    "class": "input-suffix",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/forgot-password",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, __jsx("a", {
+    "class": "xs-text accent  hover-black",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "\u304A\u5FD8\u308C\u3067\u3059\u304B\uFF1F")))), __jsx("div", {
+    "class": "action-button-wrapper",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
     },
     __self: this
   }, __jsx("button", {
     "class": "button-accent button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u4F5C\u6210")), __jsx("p", {
-    "class": "xs-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F5C\u6210\u3059\u308B\u4E8B\u3067\u3001Ceaper\u306E", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    href: "/terms",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx("a", {
-    "class": "border-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, "\u5229\u7528\u898F\u7D04")), "\u3001", __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    href: "/privacy",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, __jsx("a", {
-    "class": "border-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, "\u30C7\u30FC\u30BF\u306B\u95A2\u3059\u308B\u30DD\u30EA\u30B7\u30FC\u3001Cookie\u30DD\u30EA\u30B7\u30FC")), "\u306B\u540C\u610F\u3059\u308B\u3082\u306E\u3068\u3057\u307E\u3059\u3002"), __jsx("span", {
+  }, "\u30ED\u30B0\u30A4\u30F3")), __jsx("span", {
     "class": "actions-subtitle xs-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 33
     },
     __self: this
   }, "\u307E\u305F\u306F"), __jsx("div", {
     "class": "action-button-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 34
     },
     __self: this
   }, __jsx("button", {
     "class": "button google-button social-button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 35
     },
     __self: this
   }, __jsx("span", {
     "class": "button-prefix",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 35
     },
     __self: this
   }, __jsx(_assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 35
     },
     __self: this
   })), __jsx("span", {
     "class": "social-button-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 35
     },
     __self: this
-  }, "Google\u3067\u4F5C\u6210"))), __jsx("div", {
+  }, "Google\u3067\u30ED\u30B0\u30A4\u30F3"))), __jsx("div", {
     "class": "action-button-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 37
     },
     __self: this
   }, __jsx("button", {
     "class": "button facebook-button social-button",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
   }, __jsx("span", {
     "class": "button-prefix",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
   }, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
   })), __jsx("span", {
     "class": "social-button-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
-  }, "Facebook\u3067\u4F5C\u6210"))), __jsx("div", {
+  }, "Facebook\u3067\u30ED\u30B0\u30A4\u30F3"))), __jsx("div", {
     "class": "hr-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 40
     },
     __self: this
   }), __jsx("div", {
     "class": "make-account-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 41
     },
     __self: this
   }, __jsx("p", {
     "class": "xs-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 42
     },
     __self: this
-  }, "\u3059\u3067\u306B\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u304A\u6301\u3061\u3067\u3059\u304B\uFF1F"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    href: "/signin",
+  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u304C\u307E\u3060\u3042\u308A\u307E\u305B\u3093\u304B\uFF1F"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 43
     },
     __self: this
   }, __jsx("a", {
     "class": "xs-text hover-black accent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 44
     },
     __self: this
-  }, "\u30ED\u30B0\u30A4\u30F3"))))));
+  }, "\u4F5C\u6210\u3059\u308B"))))));
 });
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!********************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js ***!
+  !*** multi next-client-pages-loader?page=%2Fsignin&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignin.js ***!
   \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsignin&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignin.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignin&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignin.js!./");
 
 
 /***/ }),
@@ -4832,5 +4818,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=signup.js.map
+},[[1,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=signin.js.map
