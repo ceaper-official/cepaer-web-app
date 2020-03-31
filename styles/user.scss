@@ -52,6 +52,9 @@ line-height: 1;
           fill: var(--white);
         }
       }
+      .setting-button svg path {
+        fill: var(--black);
+      }
       //データ
       & .user-data {
         display: flex;

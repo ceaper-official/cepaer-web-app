@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Add from "../assets/icons/ui/add.js";
+import  Setting from "../assets/icons/ui/setting.js";
 import Instagram from "../assets/icons/social/instagram.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
@@ -52,6 +53,8 @@ export default () => (
         </a>
 </div>
         <a class="button add-button"><Add />フォロー</a>
+        {/*自分のアカウントの場合、下部の設定ボタンのみ表示*/}
+        <a class="button setting-button button-black-ol"><Setting />プロフィールを編集</a>
     </div>
   </div>
   </div>
