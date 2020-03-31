@@ -43,6 +43,7 @@
   font-size: 1.3rem;
   font-feature-settings: "palt";
   letter-spacing: .06rem;
+  width: 100%;
   & div {
     margin: 0 1rem;
   }
@@ -59,6 +60,7 @@
     justify-content: center;
     & .user-inner {
       display: block;
+      line-height: 1;
     }
     & .user-avatar {
     height: 30px;

@@ -3,16 +3,15 @@ import Add from "../assets/icons/ui/add.js";
 import Instagram from "../assets/icons/social/instagram.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
-
+import UserShot from "../layouts/shot_user.js";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />
 }
 
 export default () => (
+  <div>
   <div id="user-page" class="page">
-
-
   <div class='contents'>
   <div class='section'>
   <div class="user-container">
@@ -36,12 +35,12 @@ export default () => (
 </div>
         <div class="user-data">
         <a class="user-data-inner xs-text user-data-inner-start">
-        <h6>134</h6>
-      <span>作った料理</span>
+        <h6>3</h6>
+      <span>レシピ</span>
         </a>
         <a class="user-data-inner xs-text">
-        <h6>13</h6>
-      <span>レシピ</span>
+        <h6>134</h6>
+      <span>作ったレシピ</span>
         </a>
         <a class="user-data-inner xs-text">
         <h6>204</h6>
@@ -57,19 +56,26 @@ export default () => (
   </div>
   </div>
 </div>
-
-  {/*アクティブページの色変更*/}
+</div>
   <div class='contents'>
   <div class='section'>
-  <div class="user-nav">
-  <a class="user-nav-inner xs-text">投稿したレシピ</a>
-    <a class="user-nav-inner xs-text">お気に入り</a>
-    <a class="user-nav-inner xs-text">作ったレシピ</a>
+  {/*アクティブページの色変更*/}
+
+ <div class="tab-wrapper">
+    <input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked"/><label class="tab-label s-text" for="tab01">投稿したレシピ</label>
+    <div class="tab-content">
+    <UserShot />
+    </div>
+    <input id="tab02" type="radio" name="tab" class="tab-switch"/><label class="tab-label s-text" for="tab02">作ったレシピ</label>
+    <div class="tab-content">
+    <UserShot />
+    </div>
+    <input id="tab03" type="radio" name="tab" class="tab-switch"/><label class="tab-label s-text" for="tab03">お気に入り</label>
+    <div class="tab-content">
+    <UserShot />
+    </div>
+</div>
  </div>
  </div>
- </div>
-
-
-
 </div>
 )
