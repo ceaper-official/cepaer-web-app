@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2165,7 +2165,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   },
   __self: undefined
 }, __jsx("a", {
-  class: "border-text grey",
+  class: "border-text grey xs-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 30
@@ -2179,7 +2179,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   },
   __self: undefined
 }, __jsx("a", {
-  class: "border-text grey",
+  class: "border-text grey xs-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 33
@@ -2299,7 +2299,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/signup.js ***!
   \*******************************/

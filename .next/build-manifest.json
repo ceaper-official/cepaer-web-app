@@ -20,15 +20,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/forgot-password": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/signin": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/signup": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/user": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

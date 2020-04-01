@@ -27,10 +27,10 @@ export default () => (
     <button class="button-black button">アカウント作成</button>
             </div>
             <p class="xs-text grey">アカウントを作成する事で、Ceaperの<Link href="/terms">
-                    <a class="border-text grey">利用規約</a>
+                    <a class="border-text grey xs-text">利用規約</a>
                 </Link>、
                 <Link href="/privacy">
-                        <a class="border-text grey">データに関するポリシー、Cookieポリシー</a>
+                        <a class="border-text grey xs-text">データに関するポリシー、Cookieポリシー</a>
                     </Link>に同意するものとします。</p>
     <span class="actions-subtitle xs-text">または</span>
     <div class="action-button-wrapper">

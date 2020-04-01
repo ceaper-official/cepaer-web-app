@@ -1,8 +1,8 @@
 .actions-row {
   position: relative;
   width: 100%;
-  height: 100vh;
-//BG
+  height: 100vh; //BG
+
   & .actions-row-bg {
     width: 100%;
     height: 100vh;
@@ -13,74 +13,82 @@
   //ラッパー・インナー
   & .actions-wrapper {
     display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-& .actions-inner {
-  background: var(--background-color);
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  padding: 3rem 2rem;
-  overflow: visible;
-  @media screen and (max-width: $tablet){
-    margin: 1.5rem;
-}
-}
-//閉じる
-.actions-row-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  /* margin: 0.8rem; */
-  z-index: 1052;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  height: 60px;
-  width: 60px;
-  display: flex;
-align-items: center;
-justify-content: center;
-  padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  & .actions-inner {
+    background: var(--background-color);
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: visible;
+    @media screen and (max-width: $tablet) {
+      margin: 1.5rem;
+    }
+  }
+  //閉じる
+
+  .actions-row-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* margin: 0.8rem; */
+    z-index: 1052;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
     & svg {
       width: 15px;
       height: 15px;
     }
-}
-//タイトル
-& h1 {
-font-size: 1.8rem;
-margin: 0 0 3rem;
-font-weight: 500;
+  }
+  //タイトル
+
+  & h1 {
+    font-size: 1.8rem;
+    margin: 0 0 3rem;
+    font-weight: 500;
   }
   //入力
   & .action-button-wrapper {
     display: grid;
     margin: 1.5rem 2.5rem;
-        grid-template-columns: minmax(max-content, 400px);
-        @media screen and (max-width: $tablet){
-          margin: 1.5rem 0;
-      }
+    grid-template-columns: minmax(max-content, 400px);
+    @media screen and (max-width: $tablet) {
+      margin: 1.5rem 0;
+    }
   }
-  & .input-inner  {
-  padding: 1.2rem  2rem;
-}
+
+  & .input-inner {
+    padding: 1.2rem 2rem;
+  }
   //ボタン
   .button {
-    padding: 1.2rem  2rem;
+    padding: 1.2rem 2rem;
   }
-  & .actions-subtitle{
+
+  & .actions-subtitle {
     padding: 2rem 0;
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
+
     &:before {
       content: "";
-          height: 1px;
-          flex-grow: 1;
-          background-color: var(--horizontalRule);
-          margin-right: 2rem;
+      height: 1px;
+      flex-grow: 1;
+      background-color: var(--horizontalRule);
+      margin-right: 2rem;
     }
+
     &:after {
       content: "";
       height: 1px;
@@ -92,23 +100,24 @@ font-weight: 500;
   //規約
   & p {
     max-width: 400px;
-    margin: 2rem auto  1rem;
+    margin: 2rem auto 1rem;
     text-align: left;
-    & a {
 
-    }
+    & a {}
   }
   //線
   & .hr-text {
     margin-top: 3.9rem;
   }
   //アカウントを作成・すでに持っている
-& .make-account-link {
+  & .make-account-link {
     display: inline-flex;
     margin: 1.5rem 0 0;
+
     & p {
       margin: 0;
     }
+
     & a {
       color: var(--accent);
       white-space: nowrap;
