@@ -110,10 +110,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function Facebook() {
   return __jsx("svg", {
-    class: "social-icon-image",
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 1024 1024",
-    fill: "none",
+    fill: "#1b77f2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
@@ -148,7 +147,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function Instagram() {
   return __jsx("svg", {
-    class: "social-icon-image",
     width: "13",
     height: "13",
     viewBox: "0 0 13 13",
@@ -208,7 +206,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function Twitter() {
   return __jsx("svg", {
-    class: "social-icon-image",
     width: "16",
     height: "13",
     viewBox: "0 0 16 13",

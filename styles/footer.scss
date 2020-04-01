@@ -114,6 +114,9 @@ display: block;
 }
 }
 /*ソーシャルメディア*/
-svg.social-icon-image {
+.footer-social svg {
   fill: var(--black);
+  height: 20px;
+  width: auto;
+  margin: auto 1rem;
 }

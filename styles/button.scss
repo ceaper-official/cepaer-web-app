@@ -1,197 +1,200 @@
-.button  {
-padding: 1rem  2rem;
-color: var(--accent);
-border: 1px solid var(--accent);
-border-radius: 4px;
-font-weight: 500;
-font-size: 1.4rem;
-line-height: 1;
-&:hover {
-  color: var(--white);
-  background: var(--accent);
-}
-}
+.button {
+  padding: 1rem 2rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1;
 
+  &:hover {
+    color: var(--white);
+    background: var(--accent);
+  }
+}
 /*アクセント*/
-.button-accent{
-color: var(--white);
-border: 1px solid var(--accent);
-background: var(--accent);
-& svg {
-  & path {
-    fill: var(--white);
-}
-}
-&:hover {
-  border: 1px solid var(--black);
-  background: var(--black);
-}
-}
-
-/*ブラック*/
-.button-black {
-color: var(--white);
-border: 1px solid var(--black);
-background: var(--black);
-& svg {
-  path {
-    fill: var(--white);
-}
-}
-&:hover {
+.button-accent {
+  color: var(--white);
   border: 1px solid var(--accent);
   background: var(--accent);
+
+  & svg {
+    & path {
+      fill: var(--white);
+    }
+  }
+
+  &:hover {
+    border: 1px solid var(--black);
+    background: var(--black);
+  }
 }
+/*ブラック*/
+.button-black {
+  color: var(--white);
+  border: 1px solid var(--black);
+  background: var(--black);
+
+  & svg {
+    path {
+      fill: var(--white);
+    }
+  }
+
+  &:hover {
+    border: 1px solid var(--accent);
+    background: var(--accent);
+  }
 }
 
 .button-black-ol {
-color: var(--black);
-border: 1px solid var(--black);
-&:hover {
-  color: var(--white);
-  background:  var(--black);
-}
-}
+  color: var(--black);
+  border: 1px solid var(--black);
 
+  &:hover {
+    color: var(--white);
+    background: var(--black);
+  }
+}
 /*グレーアウト*/
 .button-grey {
-color: var(--grey);
-border: 1px solid var(--grey);
-pointer-events: none;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  pointer-events: none;
 }
-
 /*アクション*/
 .action-button {
   font-size: 1.3rem;
-  padding: .5rem .7rem;
+  padding: 0.5rem 0.7rem;
 }
-
 /*テキスト*/
-.button-text  {
-padding: .5rem  2rem;
-color: var(--accent);
-border-radius: 4px;
-font-weight: 500;
-&:hover {
-text-decoration: underline;
-}
-}
+.button-text {
+  padding: 0.5rem 2rem;
+  color: var(--accent);
+  border-radius: 4px;
+  font-weight: 500;
 
-
+  &:hover {
+    text-decoration: underline;
+  }
+}
 /*アイコン*/
 .ico {
   display: inline-flex;
   align-items: center;
+
   & svg {
     width: 15px;
     margin-right: 0.5em;
   }
 }
-
 //ソーシャル
-.google-button {
-color: var(--white);
-background: #4285F4;
-border-color: #4285F4;
-}
+.social-button {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  color: var(--black);
+  background: var(--white);
+  border-color: var(--black);
 
-.facebook-button {
-  color: var(--white);
-  background: #4267b2;
-  border-color: #4267b2;
+  &:hover {
+    background: var(--black);
   }
 
-  .social-button {
-    position: relative;
-    overflow: hidden;
+  & .button-prefix {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
     display: flex;
-    &:hover {
-      background: var(--black);
-      border-color: var(--black);
-    }
-    & .button-prefix {
-      left: 0px;
-position: absolute;
-top: 0px;
-height: 100%;
-display: flex;
-align-items: center;
-background: var(--white);
-      & svg{
-        width: auto;
-        height: 20px;
-        display: flex;
     align-items: center;
-    padding: 0 1.5rem;
-      }
-    }
-    & .social-button-inner {
-      padding-left: 50px;
-      width: 100%;
+    background: var(--white);
+    border-right: 1px solid var(--black);
+
+    & svg {
+      width: auto;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      margin: 0;
     }
   }
 
-
+  & .social-button-inner {
+    padding-left: 50px;
+    width: 100%;
+  }
+}
 /*入力*/
 .input-wrapper {
   display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    & .input-prefix {
-    left: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  & .input-prefix {
+    left: 0;
     position: absolute;
-    top: 0px;
+    top: 0;
     height: 100%;
     display: flex;
-align-items: center;
-    & svg{
+    align-items: center;
+
+    & svg {
       width: auto;
       height: 15px;
       display: flex;
-align-items: center;
-padding: 0 1.5rem;
-& path {
-  fill: var(--grey);
-}
+      align-items: center;
+      padding: 0 1.5rem;
+
+      & path {
+        fill: var(--grey);
+      }
     }
   }
-    & .input-suffix {
-      right: 0px;
+
+  & .input-suffix {
+    right: 0;
     position: absolute;
-    top: 0px;
+    top: 0;
     height: 100%;
     line-height: inherit;
+
     &:before {
-    content: "";
-    position: absolute;
-    top: 25%;
-    left: 0px;
-    width: 1px;
-    height: 50%;
-    background: rgb(223, 225, 234);
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 1px;
+      height: 50%;
+      background: rgb(223, 225, 234);
     }
+
     & a {
       display: flex;
       height: 100%;
-align-items: center;
-padding: 0 2rem;
+      align-items: center;
+      padding: 0 2rem;
     }
-    }
-    & .input-inner {
-      padding-left: 45px;
-    }
+  }
+
+  & .input-inner {
+    padding-left: 45px;
+  }
 }
-.input-inner  {
-padding: 1.5rem  2rem;
-border: 1px solid var(--horizontalRule);
-border-radius: 4px;
-font-weight: 500;
-&:hover {
-}
-&::placeholder {
-  color: var(--grey);
-  font-weight: 400;
-  font-size: 1.3rem;
-}
+
+.input-inner {
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--horizontalRule);
+  border-radius: 4px;
+  font-weight: 500;
+
+  &:hover {}
+
+  &::placeholder {
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
 }
