@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Logo from "../assets/logo.js";
 import Search from "../assets/icons/ui/search.js";
+import HumanSolid from "../assets/icons/ui/human_solid.js";
 
 const HeaderMobile = () => (
   <div class="nav-container">
@@ -16,7 +17,11 @@ const HeaderMobile = () => (
       <span class="search-icon"><Search /></span>
     </div>
   <div class="nav-controls">
-  <a class="button button-black-ol header-start-button" href="/signup"style={{ margin: 0 }}>はじめる</a>
+  <Link  href="/signup">
+  <a  class="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>
+<HumanSolid />アカウントを作成
+</a>
+      </Link>
   </div>
   </div>
   </div>

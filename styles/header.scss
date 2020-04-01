@@ -91,7 +91,7 @@ padding: 2rem 0;
   & svg {
         width: 15px;
         & path {
-      
+
         fill: var(--grey);
                 }
        }
@@ -133,8 +133,8 @@ justify-content: space-between;
      margin-right: 2rem;
      & svg {
        width: 20px;
-       & circle, line {
-         stroke: var(--black);
+       & path{
+         fill: var(--black);
        }
      }
      & .search-icon {
@@ -223,13 +223,17 @@ text-align: center;
 padding: .6rem 0;
 & a, h6 {
   font-size: .9rem;
-  padding: .6rem 0 0;
   font-weight:500;
 line-height: 1;
 font-family: var(--paragraph);
+padding-top: .6em;
 }
         & svg {
-          height: 20px;
+          width: auto;
+          height: 15px;
+        }
+        & .app-nav-icon {
+              display: inherit;
         }
       }
     }

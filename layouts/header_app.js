@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Logo from "../assets/logo.js";
 import HomeApp from "../assets/icons/ui/home_solid.js";
 import HumanApp from "../assets/icons/ui/human_solid.js";
-import SearchApp from "../assets/icons/ui/search_solid.js";
 import Back from "../assets/icons/ui/back.js";
 
 function User() {

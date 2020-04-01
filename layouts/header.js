@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Logo from "../assets/logo.js";
 import Search from "../assets/icons/ui/search.js";
-import Human from "../assets/icons/ui/human.js";
+import HumanSolid from "../assets/icons/ui/human_solid.js";
 import HeaderMobile from '../layouts/header_mobile.js';
 import HeaderApp from '../layouts/header_app.js';
 import NavApp from '../layouts/nav_app.js';
@@ -32,7 +32,7 @@ const Header = () => (
         </Link>
         <Link  href="/signup">
         <a  class="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>
-<Human />アカウントを作成
+<HumanSolid />アカウントを作成
     </a>
             </Link>
     </div>
