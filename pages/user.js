@@ -11,6 +11,7 @@ import  CookSolid from "../assets/icons/ui/cook_solid.js";
 import  StarSolid from "../assets/icons/ui/star_solid.js";
 
 
+
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />
 }
@@ -59,7 +60,6 @@ export default () => (
         </a>
 </div>
         <a class="button add-button button-accent ico"><Add />フォロー</a>
-        {/*自分のアカウントの時だけ表示*/}
         <a class="button setting-button button-black ico"><Setting />プロフィールを編集</a>
     </div>
   </div>

@@ -3873,7 +3873,7 @@ function User() {
     alt: "user image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   });
@@ -3882,129 +3882,129 @@ function User() {
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx(_layouts_base_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 20
   },
   __self: undefined
 }, __jsx("div", {
   id: "page",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx("div", {
   class: "user-row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 22
   },
   __self: undefined
 }, __jsx("div", {
   class: "contents",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 23
   },
   __self: undefined
 }, __jsx("div", {
   class: "section",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 24
   },
   __self: undefined
 }, __jsx("div", {
   class: "user-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 25
   },
   __self: undefined
 }, __jsx("div", {
   class: "user-avatar",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25
+    lineNumber: 26
   },
   __self: undefined
 }, __jsx(User, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
+    lineNumber: 27
   },
   __self: undefined
 })), __jsx("div", {
   class: "user-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 28
+    lineNumber: 29
   },
   __self: undefined
 }, __jsx("p", {
   class: "user-text name",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29
+    lineNumber: 30
   },
   __self: undefined
 }, "\u30B1\u30EA\u30FC\u5C0F\u7530"), __jsx("p", {
   class: "user-bio",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 31
   },
   __self: undefined
 }, "\u79C1\u306F\u3001\u6599\u7406\u304C\u5927\u597D\u304D\u306A\u751F\u7C8B\u306E\u30AD\u30E3\u30F3\u30D1\u30FC\u3067\u3059\u3002\u90317\u3067\u3001\u30AD\u30E3\u30F3\u30D7\u306B\u884C\u3063\u3066\u3044\u307E\u3059\uFF01\u3088\u304F\u51FA\u6CA1\u3059\u308B\u5834\u6240\u306F\u9AD8\u5C3E\u5C71\u3067\u3059\u3002"), __jsx("div", {
   class: "user-social",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 31
+    lineNumber: 32
   },
   __self: undefined
 }, __jsx("a", {
   class: "user-social-link",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33
+    lineNumber: 34
   },
   __self: undefined
 }, __jsx(_assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 35
   },
   __self: undefined
 })), __jsx("a", {
   class: "user-social-link",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 36
-  },
-  __self: undefined
-}, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 37
   },
   __self: undefined
+}, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 38
+  },
+  __self: undefined
 })), __jsx("a", {
   class: "user-social-link",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 40
   },
   __self: undefined
 }, __jsx(_assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 41
   },
   __self: undefined
 }))), __jsx("div", {
   class: "user-data",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 44
   },
   __self: undefined
 }, __jsx("a", {
@@ -4014,57 +4014,57 @@ function User() {
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44
+    lineNumber: 45
   },
   __self: undefined
 }, __jsx("h6", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 46
   },
   __self: undefined
 }, "3"), __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 46
+    lineNumber: 47
   },
   __self: undefined
 }, "\u30EC\u30B7\u30D4")), __jsx("a", {
   class: "user-data-inner xs-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 48
+    lineNumber: 49
   },
   __self: undefined
 }, __jsx("h6", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 49
+    lineNumber: 50
   },
   __self: undefined
 }, "134"), __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50
+    lineNumber: 51
   },
   __self: undefined
 }, "\u4F5C\u3063\u305F\u30EC\u30B7\u30D4")), __jsx("a", {
   class: "user-data-inner xs-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 52
+    lineNumber: 53
   },
   __self: undefined
 }, __jsx("h6", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 53
+    lineNumber: 54
   },
   __self: undefined
 }, "204"), __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 54
+    lineNumber: 55
   },
   __self: undefined
 }, "\u30D5\u30A9\u30ED\u30EF\u30FC")), __jsx("a", {
@@ -4074,32 +4074,32 @@ function User() {
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 56
+    lineNumber: 57
   },
   __self: undefined
 }, __jsx("h6", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 57
+    lineNumber: 58
   },
   __self: undefined
 }, "13"), __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 58
+    lineNumber: 59
   },
   __self: undefined
 }, "\u30D5\u30A9\u30ED\u30FC"))), __jsx("a", {
   class: "button add-button button-accent ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 61
+    lineNumber: 62
   },
   __self: undefined
 }, __jsx(_assets_icons_ui_add_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 61
+    lineNumber: 62
   },
   __self: undefined
 }), "\u30D5\u30A9\u30ED\u30FC"), __jsx("a", {
