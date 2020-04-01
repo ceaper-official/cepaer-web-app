@@ -5,19 +5,10 @@ border: 1px solid var(--accent);
 border-radius: 4px;
 font-weight: 500;
 font-size: 1.4rem;
+line-height: 1;
 &:hover {
   color: var(--white);
   background: var(--accent);
-}
-}
-
-/*アイコン＋ボタン*/
-.icon-button {
-  display: flex;
-  align-items: center;
-  & svg {
-    width: 15px;
-    margin-right: .5rem;
 }
 }
 
@@ -26,6 +17,11 @@ font-size: 1.4rem;
 color: var(--white);
 border: 1px solid var(--accent);
 background: var(--accent);
+& svg {
+  & path {
+    fill: var(--white);
+}
+}
 &:hover {
   border: 1px solid var(--black);
   background: var(--black);
@@ -39,17 +35,12 @@ border: 1px solid var(--black);
 background: var(--black);
 & svg {
   path {
-    stroke: var(--white);
+    fill: var(--white);
 }
 }
 &:hover {
   border: 1px solid var(--accent);
   background: var(--accent);
-  & svg {
-    path{
-    stroke: var(--black);
-
-  }  }
 }
 }
 
@@ -88,12 +79,12 @@ text-decoration: underline;
 
 
 /*アイコン*/
-.ico-button {
-  display: flex;
+.ico {
+  display: inline-flex;
   align-items: center;
   & svg {
     width: 15px;
-    margin-right: 0.5rem;
+    margin-right: 0.5em;
   }
 }
 

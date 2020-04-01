@@ -32,74 +32,39 @@ class Home extends React.Component {
 // ここまでを追加
   render() {
     return (
-      <div>
-        <Head title='Home' />
-        <div class='hero'>
-          <h1 class='title'>
-            Ceaperのホーム画面です
-          </h1>
-          <p class='description'>
-            Click on the Dashboard link to visit the dashboard page.
-          </p>
-          <div class='row'>
-            <Link href='/dashboard'>
-              <a class='button'>
-                <h3>Go to Dashboard&rarr;</h3>
-                <p>Visit Dashboard</p>
-              </a>
-            </Link>
-　　　{/* ここから下2行を追加 */}
-            <button onClick={this.handleSignIn}>Sign In using google</button>
-            <button onClick={this.handleSignout}>Signout</button>
-          </div>
+        <div>
+
+        <div id="hero">
+          <div class="section">
+            <div class="hero-wrapper">
+              <div class="hero-text-inner">
+                <div class="hero-text">
+                              <h1>Ceaperは、キャンプを愛する全ての人に向けた料理マネジメントサービスです。</h1>
+                              <p>Ceaperは、キャンプを愛する人に向けた料理マネジメントサービスです。Ceaperは、キャンプを愛する人に向けた料理マネジメントサービスです。</p>
+                        <a class="button button-accent" href="/signup">アカウントを作成</a>
+                        <a class="button-text" href="/signup">使い方を学ぶ</a>
+                      </div>
+              </div>
+              <div class="hero-img-inner">
+                <img src="/images/home/hero.svg"  alt="hero"/>
+              </div>
         </div>
-        <style jsx>{`
-          .hero {
-            width: 100%;
-            color: #333;
-          }
-          .title {
-            margin: 0;
-            width: 100%;
-            padding-top: 80px;
-            line-height: 1.15;
-            font-size: 4.8rem;
-          }
-          .title,
-          .description {
-            text-align: center;
-          }
-          .row {
-            max-width: 880px;
-            margin: 80px auto 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-          }
-          .card {
-            padding: 18px 18px 24px;
-            width: 220px;
-            text-align: left;
-            text-decoration: none;
-            color: #434343;
-            border: 1px solid #9b9b9b;
-          }
-          .card:hover {
-            border-color: #067df7;
-          }
-          .card h3 {
-            margin: 0;
-            color: #067df7;
-            font-size: 18px;
-          }
-          .card p {
-            margin: 0;
-            padding: 12px 0 0;
-            font-size: 13px;
-            color: #333;
-          }
-        `}</style>
-      </div>
+        </div>
+        </div>
+
+        <div class='contents'>
+        <div class='section'>
+
+
+
+        </div>
+        </div>
+
+
+
+
+        </div>
+
     );
   }
 }

@@ -149,7 +149,55 @@ justify-content: center;
 }
 }
 
-/*コンテンツ・アプリ*/
+/*アプリ*/
+#app-header {
+  position: fixed;
+  left: 0;
+top: 0;
+width: 100%;
+z-index: 100;
+  padding: 1rem 0;
+  background: var(--white);
+  .app-header-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items: center;
+//バック
+.app-header-inner1 {
+  & svg {
+    width: auto;
+    height: 17px;
+  }
+  & a {
+    line-height: 1;
+  }
+}
+//ロゴ
+.app-header-inner2 {
+text-align: center;
+  & .logo-link svg {
+    width: auto;
+    height: 25px;
+  }
+}
+//ユーザー
+.app-header-inner3 {
+& .user-container {
+  justify-content: flex-end;
+}
+ & .user-avatar {
+   width: 25px;
+   height: 25px;
+ }
+}
+
+  }
+  @media screen and (min-width: $phablet) {
+    display: none;
+  }
+}
+
+/*ナビ・アプリ*/
 .header-move {
   transform: translateY(150%);
 }

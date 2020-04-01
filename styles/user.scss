@@ -1,4 +1,4 @@
-#user-page {
+.user-row {
   text-align: center;
   & .user-container {
     display: block;
@@ -36,25 +36,6 @@ width: 100px;
           }
         }
       }
-      & .button {
-        display: inline-flex;
-align-items: center;
-line-height: 1;
-        & svg {
-          width: auto;
-          height: 15px;
-          margin-right: .6rem;
-          & path {
-            fill: var(--accent);
-          }
-        }
-        &:hover svg path {
-          fill: var(--white);
-        }
-      }
-      .setting-button svg path {
-        fill: var(--black);
-      }
       //データ
       & .user-data {
         display: flex;
@@ -65,7 +46,7 @@ line-height: 1;
           padding:  0 2rem;
           border-left: 1px solid var(--horizontalRule);
           @media screen and (max-width: $phone){
-            padding:  0 1rem;
+            padding:  0 1.6rem;
     }
           &.user-data-inner-start{
             border: none;
@@ -137,9 +118,30 @@ text-decoration: underline;
   cursor: pointer;
   border-radius: 5px 5px 0 0;
   flex: 1;
-  @media screen and (max-width: $phone){
-    font-size: 1.3rem;
+  line-height: 1;
+  justify-content: center;
+  &:hover {
+    color: var(--black);
+    & svg path {
+      fill: var(--black);
+    }
+  }
+  & svg path {
+    fill: var(--grey);
+  }
+  @media screen and (max-width: $phablet){
+    & svg {
+      display: none;
+    }
 }
+  @media screen and (max-width: $phone){
+    font-size: 1.2rem;
+}
+}
+.tab-label-data {
+  color: var(--grey);
+  margin-left: .4em;
+  font-size: 1.2rem;
 }
 .tab-content {
   width: 100%;
@@ -150,6 +152,9 @@ text-decoration: underline;
 .tab-switch:checked+.tab-label {
   color: var(--black);
   border-bottom: 2px solid var(--accent);
+  & svg path {
+    fill: var(--black);
+  }
 }
 .tab-switch:checked+.tab-label+.tab-content {
   height: auto;
