@@ -90,9 +90,10 @@ padding: 2rem 0;
   }
   & svg {
         width: 15px;
-        & line, circle {
-          stroke: var(--grey);
-        }
+        & path {
+      
+        fill: var(--grey);
+                }
        }
        & ::placeholder {
          color: var(--grey);
