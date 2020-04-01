@@ -10,7 +10,7 @@ export default () => (
     <div class="actions-inner card">
     <div class="actions-row-close"><Close /></div>
     <h1>パスワードの再設定</h1>
-    <p class="xs-text">対象アカウントで登録された Eメールをご入力ください。パスワードのリセット手順を送信いたします。</p>
+    <p class="xs-text">パスワードのリセット手順を送信いたしますので、対象アカウントで登録された Eメールをご入力ください。届いたメールの内容に沿って、パスワードの変更手続きを進めてください。</p>
     <div class="action-button-wrapper input-wrapper">
     <span class="input-prefix">
     <Mail />
