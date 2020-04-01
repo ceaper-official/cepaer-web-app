@@ -7,6 +7,9 @@
             font-size: 1.3rem;
       }
 }
+@media screen and (max-width: $phablet) {
+  margin-bottom: 56px;
+}
 }
 .footer-container {
   position: relative;

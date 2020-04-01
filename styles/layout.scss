@@ -4,6 +4,12 @@
   min-height: 100vh;
 }
 
+#page {
+  @media screen and (max-width: $phablet) {
+    margin-top: 49px;
+  }
+}
+
 .post-border {
   border-bottom: 1px solid;
   border-color: var(--grey);

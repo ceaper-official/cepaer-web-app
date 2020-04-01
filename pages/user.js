@@ -1,3 +1,4 @@
+import BaseLayout from '../layouts/base.js'
 import Link from 'next/link';
 import Add from "../assets/icons/ui/add.js";
 import  Setting from "../assets/icons/ui/setting.js";
@@ -6,13 +7,15 @@ import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
 import UserShot from "../layouts/shot_user.js";
 
+
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />
 }
 
 export default () => (
-  <div>
-  <div id="user-page" class="page">
+  <BaseLayout>
+  <div id="page">
+  <div class="user-row">
   <div class='contents'>
   <div class='section'>
   <div class="user-container">
@@ -35,7 +38,7 @@ export default () => (
         </a>
 </div>
         <div class="user-data">
-        <a class="user-data-inner xs-text user-data-inner-start">
+        <a class="user-data-inner xs-text user-data-inner-start"style={{ paddingLeft: 0 }}>
         <h6>3</h6>
       <span>レシピ</span>
         </a>
@@ -47,13 +50,13 @@ export default () => (
         <h6>204</h6>
       <span>フォロワー</span>
         </a>
-        <a class="user-data-inner xs-text user-data-inner-last">
+        <a class="user-data-inner xs-text user-data-inner-last"style={{ paddingRight: 0 }}>
         <h6>13</h6>
       <span>フォロー</span>
         </a>
 </div>
         <a class="button add-button"><Add />フォロー</a>
-        {/*自分のアカウントの場合、下部の設定ボタンのみ表示*/}
+        {/*自分のアカウントの時だけ表示*/}
         <a class="button setting-button button-black-ol"><Setting />プロフィールを編集</a>
     </div>
   </div>
@@ -62,8 +65,6 @@ export default () => (
 </div>
   <div class='contents'>
   <div class='section'>
-  {/*アクティブページの色変更*/}
-
  <div class="tab-wrapper">
     <input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked"/><label class="tab-label s-text" for="tab01">投稿したレシピ</label>
     <div class="tab-content">
@@ -81,4 +82,5 @@ export default () => (
  </div>
  </div>
 </div>
+</BaseLayout>
 )

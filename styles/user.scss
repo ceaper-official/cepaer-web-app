@@ -1,4 +1,4 @@
-#user-page {
+.user-row {
   text-align: center;
   & .user-container {
     display: block;
@@ -65,7 +65,7 @@ line-height: 1;
           padding:  0 2rem;
           border-left: 1px solid var(--horizontalRule);
           @media screen and (max-width: $phone){
-            padding:  0 1rem;
+            padding:  0 1.6rem;
     }
           &.user-data-inner-start{
             border: none;

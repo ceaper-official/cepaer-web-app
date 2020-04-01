@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Header from '../layouts/header.js';\nimport Footer from '../layouts/footer.js';\n\nconst BaseLayout = props => __jsx(\"div\", null, __jsx(Header, null), props.children, __jsx(Footer, null));\n\nexport default BaseLayout;","map":null,"metadata":{},"sourceType":"module"}

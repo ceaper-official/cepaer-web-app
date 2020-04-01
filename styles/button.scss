@@ -5,6 +5,7 @@ border: 1px solid var(--accent);
 border-radius: 4px;
 font-weight: 500;
 font-size: 1.4rem;
+line-height: 1;
 &:hover {
   color: var(--white);
   background: var(--accent);
@@ -39,17 +40,12 @@ border: 1px solid var(--black);
 background: var(--black);
 & svg {
   path {
-    stroke: var(--white);
+    fill: var(--white);
 }
 }
 &:hover {
   border: 1px solid var(--accent);
   background: var(--accent);
-  & svg {
-    path{
-    stroke: var(--black);
-
-  }  }
 }
 }
 

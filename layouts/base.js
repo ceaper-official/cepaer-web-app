@@ -1,10 +1,12 @@
-import Header from './header/header.js'
-import Footer from './footer.js'
+import Header from '../layouts/header.js'
+import Footer from '../layouts/footer.js'
 
-export default function Layout(props){
-  return(
-      <Header />
-      {props.children}
-      <Footer />
-  );
-}
+const BaseLayout = (props) => (
+  <div>
+    <Header />
+    {props.children}
+    <Footer />
+  </div>
+)
+
+export default BaseLayout
