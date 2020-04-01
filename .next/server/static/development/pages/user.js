@@ -581,22 +581,22 @@ function Search() {
 
 /***/ }),
 
-/***/ "./assets/icons/ui/setting.js":
-/*!************************************!*\
-  !*** ./assets/icons/ui/setting.js ***!
-  \************************************/
+/***/ "./assets/icons/ui/setting_solid.js":
+/*!******************************************!*\
+  !*** ./assets/icons/ui/setting_solid.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Setting; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SettingSolid; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/setting.js";
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/setting_solid.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Setting() {
+function SettingSolid() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
@@ -606,15 +606,7 @@ function Setting() {
     },
     __self: this
   }, __jsx("path", {
-    d: "M19.18359,7.9165H17.499a7.69624,7.69624,0,0,0-.72363-1.7456l1.19043-1.19043a.81634.81634,0,0,0,.001-1.15576l-1.792-1.79248a.81869.81869,0,0,0-1.15429.001L13.8291,3.22412A7.667,7.667,0,0,0,12.083,2.501V.81689A.81771.81771,0,0,0,11.2666,0H8.7334A.81771.81771,0,0,0,7.917.81689V2.501a7.66853,7.66853,0,0,0-1.74609.72363L4.97852,2.03223a.8196.8196,0,0,0-1.1543.001l-1.79,1.79053a.81634.81634,0,0,0-.001,1.15576L3.22461,6.17041A7.71842,7.71842,0,0,0,2.501,7.9165H.81641A.81772.81772,0,0,0,0,8.7334v2.5332a.81772.81772,0,0,0,.81641.8169H2.501a7.69624,7.69624,0,0,0,.72363,1.7456L2.0332,15.02051a.81634.81634,0,0,0,0,1.15478l1.792,1.79248a.81869.81869,0,0,0,1.15429-.001L6.1709,16.77588a7.713,7.713,0,0,0,1.74609.72363v1.6836A.81771.81771,0,0,0,8.7334,20h2.5332a.81771.81771,0,0,0,.81641-.81689v-1.6836a7.713,7.713,0,0,0,1.74609-.72363l1.19043,1.19043a.83752.83752,0,0,0,1.15527.00049l1.793-1.792a.82049.82049,0,0,0-.001-1.15429l-1.19141-1.19092A7.71842,7.71842,0,0,0,17.499,12.0835h1.68457A.81772.81772,0,0,0,20,11.2666V8.7334A.81772.81772,0,0,0,19.18359,7.9165ZM19,11.0835H17.1084a.50038.50038,0,0,0-.48828.39209,6.69662,6.69662,0,0,1-.89649,2.16259.49949.49949,0,0,0,.06836.62207l1.33789,1.33789-1.53222,1.53174-1.33789-1.3374a.49867.49867,0,0,0-.62207-.06787,6.73022,6.73022,0,0,1-2.16309.896.50045.50045,0,0,0-.3916.48828V19H8.917V17.10889a.50045.50045,0,0,0-.3916-.48828,6.73022,6.73022,0,0,1-2.16309-.896.49853.49853,0,0,0-.62207.06787L4.40234,17.13037,2.87012,15.59814,4.208,14.25977a.50026.50026,0,0,0,.06836-.62256,6.67625,6.67625,0,0,1-.89649-2.16211.50045.50045,0,0,0-.48828-.3916H1V8.9165H2.8916a.50038.50038,0,0,0,.48828-.39209,6.69662,6.69662,0,0,1,.89649-2.16259A.49949.49949,0,0,0,4.208,5.73975L2.87012,4.40186,4.40234,2.86963,5.74023,4.208a.49919.49919,0,0,0,.62207.06787,6.71552,6.71552,0,0,1,2.16309-.896A.50045.50045,0,0,0,8.917,2.8916V1h2.166V2.8916a.50045.50045,0,0,0,.3916.48828,6.7073,6.7073,0,0,1,2.16309.89551.49932.49932,0,0,0,.62207-.06787l1.33789-1.33789,1.53222,1.53223L15.792,5.74023a.50026.50026,0,0,0-.06836.62256,6.67625,6.67625,0,0,1,.89649,2.16211.50045.50045,0,0,0,.48828.3916H19Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), __jsx("path", {
-    d: "M10,5.84033A4.15967,4.15967,0,1,0,14.16016,10,4.16473,4.16473,0,0,0,10,5.84033Zm0,7.31934A3.15967,3.15967,0,1,1,13.16016,10,3.16374,3.16374,0,0,1,10,13.15967Z",
+    d: "M19.18105,7.91437h-1.68a7.375,7.375,0,0,0-.73-1.74l1.2-1.2a.82729.82729,0,0,0,0-1.15l-1.8-1.79a.80873.80873,0,0,0-1.15,0l-1.19,1.19a7.86891,7.86891,0,0,0-1.75-.72v-1.69a.80665.80665,0,0,0-.81-.81H8.731a.80669.80669,0,0,0-.81.81v1.69a7.87008,7.87008,0,0,0-1.75.72l-1.19-1.19a.82078.82078,0,0,0-1.16,0l-1.79,1.79a.80867.80867,0,0,0,0,1.15l1.19,1.2a7.78759,7.78759,0,0,0-.72,1.74h-1.68a.8237.8237,0,0,0-.82.82v2.53a.82371.82371,0,0,0,.82.82h1.68a7.78915,7.78915,0,0,0,.72,1.74l-1.19,1.2a.80882.80882,0,0,0,0,1.15l1.79,1.79a.82078.82078,0,0,0,1.16,0l1.19-1.19a7.70382,7.70382,0,0,0,1.75.73v1.68a.8152.8152,0,0,0,.81.82h2.54a.81516.81516,0,0,0,.81-.82v-1.68a7.89623,7.89623,0,0,0,1.75-.73l1.19,1.19a.7787.7787,0,0,0,.57.24H15.601a.7787.7787,0,0,0,.57-.24l1.79-1.79a.80882.80882,0,0,0,0-1.15l-1.19-1.19a7.62864,7.62864,0,0,0,.73-1.75h1.68a.8237.8237,0,0,0,.82-.82v-2.53A.82369.82369,0,0,0,19.18105,7.91437Zm-6.02,2.09a3.16,3.16,0,1,1-3.16-3.16A3.16679,3.16679,0,0,1,13.16109,10.00433Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -3782,7 +3774,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _assets_icons_ui_add_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/add.js */ "./assets/icons/ui/add.js");
-/* harmony import */ var _assets_icons_ui_setting_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/setting.js */ "./assets/icons/ui/setting.js");
+/* harmony import */ var _assets_icons_ui_setting_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/setting_solid.js */ "./assets/icons/ui/setting_solid.js");
 /* harmony import */ var _assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/social/instagram.js */ "./assets/icons/social/instagram.js");
 /* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
 /* harmony import */ var _assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/social/twitter.js */ "./assets/icons/social/twitter.js");
@@ -4047,7 +4039,7 @@ function User() {
     lineNumber: 63
   },
   __self: undefined
-}, __jsx(_assets_icons_ui_setting_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+}, __jsx(_assets_icons_ui_setting_solid_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 63

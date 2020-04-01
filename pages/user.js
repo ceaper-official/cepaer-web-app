@@ -1,7 +1,7 @@
 import BaseLayout from '../layouts/base.js'
 import Link from 'next/link';
 import Add from "../assets/icons/ui/add.js";
-import  Setting from "../assets/icons/ui/setting.js";
+import  SettingSolid from "../assets/icons/ui/setting_solid.js";
 import Instagram from "../assets/icons/social/instagram.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
@@ -60,7 +60,7 @@ export default () => (
         </a>
 </div>
         <a class="button add-button button-accent ico"><Add />フォロー</a>
-        <a class="button setting-button button-black ico"><Setting />プロフィールを編集</a>
+        <a class="button setting-button button-black ico"><SettingSolid />プロフィールを編集</a>
     </div>
   </div>
   </div>
