@@ -6486,7 +6486,7 @@ function User() {
     },
     __self: this
   }, "\u30D5\u30A9\u30ED\u30FC"))), __jsx("a", {
-    "class": "button add-button",
+    "class": "button add-button button-accent",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
@@ -6499,7 +6499,7 @@ function User() {
     },
     __self: this
   }), "\u30D5\u30A9\u30ED\u30FC"), __jsx("a", {
-    "class": "button setting-button button-black-ol",
+    "class": "button setting-button button-black",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60

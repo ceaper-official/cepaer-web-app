@@ -55,9 +55,9 @@ export default () => (
       <span>フォロー</span>
         </a>
 </div>
-        <a class="button add-button"><Add />フォロー</a>
+        <a class="button add-button button-accent"><Add />フォロー</a>
         {/*自分のアカウントの時だけ表示*/}
-        <a class="button setting-button button-black-ol"><Setting />プロフィールを編集</a>
+        <a class="button setting-button button-black"><Setting />プロフィールを編集</a>
     </div>
   </div>
   </div>

@@ -44,16 +44,7 @@ line-height: 1;
           width: auto;
           height: 15px;
           margin-right: .6rem;
-          & path {
-            fill: var(--accent);
-          }
         }
-        &:hover svg path {
-          fill: var(--white);
-        }
-      }
-      .setting-button svg path {
-        fill: var(--black);
       }
       //データ
       & .user-data {

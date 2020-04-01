@@ -27,6 +27,11 @@ line-height: 1;
 color: var(--white);
 border: 1px solid var(--accent);
 background: var(--accent);
+& svg {
+  & path {
+    fill: var(--white);
+}
+}
 &:hover {
   border: 1px solid var(--black);
   background: var(--black);
