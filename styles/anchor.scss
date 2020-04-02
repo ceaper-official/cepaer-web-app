@@ -12,6 +12,10 @@ a:hover{
 
 a.hover-accent:hover {
   color: var(--accent);
+   & svg path {
+    fill: var(--accent);
+
+   }
 }
 
 a.hover-black:hover {

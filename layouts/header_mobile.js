@@ -12,10 +12,10 @@ const HeaderMobile = () => (
       </Link>
   <div class="nav-inner">
   {/*ログイン後、下部にスティッキーで、「検索」「マイページ」「お気に入り」のコンテンツ表示*/}
-    <div class="search-wrapper">
+    <a class="search-wrapper hover-accent">
     {/*クリックで、上部に検索ボタン表示*/}
       <span class="search-icon"><Search /></span>
-    </div>
+    </a>
   <div class="nav-controls">
   <Link  href="/signup">
   <a  class="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>

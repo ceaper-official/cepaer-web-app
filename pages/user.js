@@ -7,8 +7,8 @@ import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
 import UserShot from "../layouts/shot_user.js";
 import  PenSolid from "../assets/icons/ui/pen_solid.js";
-import  CookSolid from "../assets/icons/ui/cook_solid.js";
-import  StarSolid from "../assets/icons/ui/star_solid.js";
+import  CookSolid from "../assets/icons/ui/cook-solid.js";
+import  StarSolid from "../assets/icons/ui/star-solid.js";
 
 
 

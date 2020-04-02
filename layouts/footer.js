@@ -40,12 +40,18 @@ const Footer = () => (
           <a class="hover-line" href="/about">Ceaperについて</a>
           <div class="badge-wrapper"><a class="hover-line">ライター募集</a><BadgeNew/>
 </div>
-          <a class="hover-line">プレス</a>
+<Link href="/press">
+< a class = "hover-line" >
+プレス< /a>
+</Link>
           <a class="hover-line">投資に関する情報</a>
         </div>
         <div class="footer-terms-contents-inner">
           <h6>サポート</h6>
-          <a class="hover-line">ご意見・ご要望</a>
+          <Link href="/feedback">
+          < a class = "hover-line" >
+          ご意見・ご要望< /a>
+          </Link>
           <a class="hover-line">ヘルプ（準備中）</a>
           <a class="hover-line"  target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">お問い合わせ</a>
         </div>

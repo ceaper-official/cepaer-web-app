@@ -1,0 +1,50 @@
+//フォードバック
+.feedback-wrapper {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+//フォーム・セレクト
+.form-select {
+  padding: 2rem 0;
+}
+//評価・セレクト
+.select-rating-wrapper {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  & svg {
+    width: auto;
+    height: 40px;
+    margin: 0;
+  }
+  @media screen and (max-width: $tablet){
+    & .select-button {
+      padding: 1rem 0;
+    }
+}
+}
+
+//テキストエリア
+.feedback-area {
+border-radius: 4px;
+height: 200px;
+border: 1px solid var(--horizontalRule);
+line-height: 1.756;
+font-size: 1.6rem;
+width: 100%;
+padding: 2rem;
+color: var(--articleText);
+&:focus {
+  border: 1px solid var(--horizontalRule);
+
+}
+}
+
+
+//送信
+.form-submit {
+  text-align: right;
+  display: block;
+  text-align: center;
+}

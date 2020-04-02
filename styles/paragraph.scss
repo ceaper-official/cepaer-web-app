@@ -3,7 +3,7 @@ p {
   font-size: 1.6rem;
   color: var(--articleText);
   font-family: var(--paragraph);
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 2.5rem;
   width: 100%;
   white-space: normal;
   & .p-icon svg {
@@ -19,4 +19,9 @@ p {
 }
 .xs-text {
   font-size: 1.3rem;
+}
+
+.text-row {
+  max-width: 650px;
+  margin-left: 0;
 }

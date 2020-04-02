@@ -28,28 +28,52 @@ white-space:nowrap;
     }
   }
   //画像
-  .shot-recipe-img {
+  & .shot-recipe-img {
     margin: 1rem 0;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+    //材料
+    & .shot-ingredients-wrapper {
+          width: 100%;
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+      transition: .2s;
+      background-color:	rgba(0,0,0,.7);
+      pointer-events: none;
+
+    & .shot-ingredients {
+      font-size: .9rem;
+      font-family: var(--paragraph);
+      color: var(--white);
+      white-space: normal;
+      line-height: 1.6;
+padding: 1rem;
+display: inline-flex;
   }
-  //情報
-  & .recipes-bio-wrapper {
-    font-size: 1.2rem;
-    & .recipes-data {
-      font-size: 1.2rem;
+    }
+    &:hover {
+            &  .shot-ingredients-wrapper {
+        opacity: 1;
+      }
     }
   }
-  //材料
-  & .shot-ingredients-wrapper {
-    overflow: hidden;
-    margin: 0;
-  & .shot-ingredients {
-    font-weight: 300;
-    font-size: .9rem;
-    font-family: var(--paragraph);
-    color: var(--articleText80);
-}
+  //情報
+  & .shot-recipes-bio-wrapper {
+    font-size: 1.2rem;
+    & .shot-recipes-data {
+      font-size: 1.2rem;
+      display: flex;
+      //中点
+      & span {
+        padding: 0 .3rem;
+        color: var(--articleText80);
+        & svg path {
+          fill: var(--articleText80);
+        }
+      }
+    }
   }
 }
 

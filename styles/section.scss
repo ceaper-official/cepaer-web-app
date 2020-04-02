@@ -6,29 +6,16 @@
     max-width: 1500px;
     margin: 0 auto;
     padding: 0 5rem;
-
-    /*PHABLET*/
     @media screen and (max-width: 540px){
         max-width: 100%;
         padding: 0 2rem;;
     }
-
     p{
-        /*TABLET*/
         @media screen and (max-width: 735px){
             max-width: 567px;
         }
     }
-
-
 }
-
-.narrow{
-    p{
-        /*TABLET*/
-        @media screen and (max-width: 735px){
-            max-width: 527px;
-        }
-    }
-
+.center-section {
+max-width: 750px;
 }

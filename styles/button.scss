@@ -82,10 +82,20 @@
 .ico {
   display: inline-flex;
   align-items: center;
-
   & svg {
+    height: auto;
     width: 15px;
     margin-right: 0.5em;
+  }
+}
+//アイコン・バック
+.ico-back {
+  display: inline-flex;
+  align-items: center;
+  & svg {
+    height: auto;
+    width: 15px;
+    margin-left: 0.5em;
   }
 }
 //ソーシャル
@@ -198,4 +208,29 @@
     font-weight: 400;
     font-size: 1.3rem;
   }
+}
+
+//フォーム・セレクトボタン
+.select-button {
+    height: 100%;
+    width: 100%;
+    color: var(--articleText);
+    padding: 3.5rem 3rem;
+    border: 1px solid var(--horizontalRule);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    & svg {
+      width: 30px;
+      margin-right: 3rem;
+    }
+    &:hover {
+      border-color: var(--black);
+      background: var(--background-grey);
+    }
+}
+
+.select-button-bottom {
+  margin-bottom: 1.5rem;
 }

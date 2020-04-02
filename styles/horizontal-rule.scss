@@ -62,3 +62,24 @@ hr{
 .m-dot {
   margin: 0 1rem;
 }
+
+//セクション・タイトル
+.hr-section-title {
+     display: flex;
+     align-items: center;
+     margin: 0;
+     &:before {
+       content: "";
+height: 1px;
+flex-grow: 1;
+background-color: var(--horizontalRule);
+margin-right: 2rem;
+     }
+     &:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: var(--horizontalRule);
+    margin-left: 2rem;
+     }
+}

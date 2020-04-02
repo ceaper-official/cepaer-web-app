@@ -10,6 +10,7 @@
 @import "color.scss";
 @import "contents.scss";
 @import "footer.scss";
+@import "form.scss";
 @import "header.scss";
 @import "headings.scss";
 @import "hero.scss";
@@ -18,6 +19,7 @@
 @import "image.scss";
 @import "layout.scss";
 @import "lists.scss";
+@import "page.scss";
 @import "paragraph.scss";
 @import "progress.scss";
 @import "recipe.scss";
@@ -155,6 +157,12 @@ textarea {
   font-weight: inherit;
   border: none;
   -webkit-appearance: none;
+    -moz-appearance: none;
+  appearance: none;
+  resize: none;
+}
+:focus {
+  outline: none;
 }
 
 code,
