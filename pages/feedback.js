@@ -15,8 +15,8 @@ export default () => (
   <div class='contents'>
   <div class='section center-section'>
 <h1 class='title'>多種多彩なフィードバックをお待ちしております。</h1>
-<p class="text-row"  style={{ marginBottom: 10 }}>私達Ceaperは常にユーザーの方が心地良くサービスを使えるように新しい機能の開発・修正に挑んでいます。Ceaperのサービスを使用する中で、機能について不満に思った事や、ご要望などがございましたら、お気軽にご連絡ください。</p>
-<p class="text-row xs-text grey"  style={{ margin: 0 }}>当ページはお問い合わせのフォームではない為、ご返信は出来かねます。Ceaperについて返答が必要な質問またはサポートが必要な場合は、  <a class="grey border-text xs-text"  target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">サポート窓口</a>までお問い合わせください。</p>
+<p  style={{ marginBottom: 10 }}>私達Ceaperは常にユーザーの方が心地良くサービスを使えるように新しい機能の開発・修正に挑んでいます。Ceaperのサービスを使用する中で、機能について不満に思った事や、ご要望などがございましたら、お気軽にご連絡ください。</p>
+<p class="xs-text grey"  style={{ margin: 0 }}>当ページはお問い合わせのフォームではない為、原則ご返信は出来かねます。致命的な機能のバグ・不具合のご報告につきましては、ご返信と共に、早急なご対応をいたします。また返答が必要な質問やサポートが必要な場合は、  <a class="grey border-text xs-text"  target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">サポート窓口</a>までお問い合わせください。</p>
 </div>
  </div>
  <div class='contents'>
@@ -58,10 +58,10 @@ export default () => (
     </div>
 
      <div class="feedback-wrapper">
-     <h5 class="hr-section-title">内容を詳しくお聞かせください。</h5>
+     <h5 class="hr-section-title">内容を詳しくお話ください</h5>
      <div class = "form-select">
      {/*「どのような内容ですか？」の選択に応じて、placeholderの文を変更する*/}
-     <textarea class="feedback-area" placeholder="フィードバックについての場合：Ceaperのサービスを利用して感じた事、良かった点または、改善点などもお聞かせください。　バグ・不具合についての場合：どのような状況・操作で問題が発生しましたか？ 問題が発生した時の状況を詳しくお聞かせください。内容に応じて早急に対応させていただきます。"></textarea>
+     <textarea class="feedback-area" placeholder="フィードバックについての場合：Ceaperのサービスを利用して感じた事、良かった点または、改善点などもお話しください。　バグ・不具合についての場合：どのような状況・操作で問題が発生しましたか？ 問題が発生した時の状況を詳しくお話しください。内容に応じて早急に対応させていただきます。"></textarea>
       </div>
       <a  class="button form-submit button-accent">フィードバックを送る
     </a>

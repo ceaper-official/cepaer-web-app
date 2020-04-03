@@ -20,6 +20,12 @@ p {
 .xs-text {
   font-size: 1.3rem;
 }
+.xs-icon svg {
+  width: 10px;
+  & path {
+  fill: var(--articleText);
+  }
+}
 
 .text-row {
   max-width: 650px;

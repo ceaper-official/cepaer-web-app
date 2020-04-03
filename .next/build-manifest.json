@@ -20,7 +20,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/feedback": [
+    "/help": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/press": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

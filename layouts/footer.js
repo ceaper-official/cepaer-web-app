@@ -52,8 +52,12 @@ const Footer = () => (
           < a class = "hover-line" >
           ご意見・ご要望< /a>
           </Link>
-          <a class="hover-line">ヘルプ（準備中）</a>
-          <a class="hover-line"  target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">お問い合わせ</a>
+
+          <Link href="/help">
+          <a class="hover-line">
+          ヘルプ        </a>
+              </Link>
+                        <a class="hover-line"  target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">お問い合わせ</a>
         </div>
       </div>
     </div>

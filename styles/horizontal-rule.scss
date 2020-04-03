@@ -82,4 +82,12 @@ margin-right: 2rem;
     background-color: var(--horizontalRule);
     margin-left: 2rem;
      }
+     @media screen and (max-width: $phone){
+       &:before {
+         display: none;
+       }
+       &:after {
+         display: none;
+       }
+}
 }
