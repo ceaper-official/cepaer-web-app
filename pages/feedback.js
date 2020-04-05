@@ -58,12 +58,12 @@ export default () => (
     </div>
 
      <div class="feedback-wrapper">
-     <h5 class="hr-section-title">内容を詳しくお話ください</h5>
+     <h5 class="hr-section-title">内容を詳しくお話しください</h5>
      <div class = "form-select">
      {/*「どのような内容ですか？」の選択に応じて、placeholderの文を変更する*/}
      <textarea class="feedback-area" placeholder="フィードバックについての場合：Ceaperのサービスを利用して感じた事、良かった点または、改善点などもお話しください。　バグ・不具合についての場合：どのような状況・操作で問題が発生しましたか？ 問題が発生した時の状況を詳しくお話しください。内容に応じて早急に対応させていただきます。"></textarea>
       </div>
-      <a  class="button form-submit button-accent">フィードバックを送る
+      <a  class="button form-submit button-black">フィードバックを送る
     </a>
       </div>
 

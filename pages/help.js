@@ -6,20 +6,22 @@ import  HumanAccent from "../assets/icons/ui/human-accent.js";
 import  FlagAccent from "../assets/icons/ui/flag-accent.js";
 import   PasswordAccent from "../assets/icons/ui/password-accent.js";
 import  ArrowR from "../assets/icons/ui/arrow-r.js";
+import  Feedback from "../layouts/feedback.js";
 
 
 export default () => (
   <BaseLayout>
   <div id="page">
 
-  <div class='contents'>
-  <div class='section center-section'>
-<div class="search-wrapper help-search">
-<span class="search-icon"><span class="search-icon-inner"><Search /></span></span>
-<input class="search" type="search" name="q" placeholder="お困りのキーワードで検索..."/>
+<div class = 'contents' > <div class='section center-section'>
+  <div class="search-wrapper help-search">
+    <span class="search-icon">
+      <span class="search-icon-inner"><Search/></span>
+    </span>
+    <input class="search" type="search" name="q" placeholder="お困りのキーワードで検索..."/>
+  </div>
 </div>
 </div>
- </div>
 
  <div class='contents'>
  <div class='section'>
@@ -68,20 +70,7 @@ export default () => (
 </div>
 </div>
 
-
- <div class='contents'>
- <div class='section'>
-<div class="feedback-wrapper">
-<h5 class="hr-section-title">サービスの機能改善・向上にご協力ください</h5>
-<div class = "form-select">
-<Link href="/feedback"><a  class="button button-accent ico-back">フィードバックを送る<ArrowR/></a></Link>
- </div>
- </div>
-  </div>
- </div>
-
-
-
+   <Feedback/>
 
  </div>
 </BaseLayout>

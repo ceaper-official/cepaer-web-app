@@ -1,0 +1,47 @@
+.policies-wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-column-gap: 5rem;
+  align-items: flex-start;
+  @media screen and (max-width: $tablet) {
+  grid-template-columns: 1fr;
+}
+  //ナビ
+  & .policies-nav {
+    position: sticky;
+    padding-top: 15rem;
+    top: 0;
+    line-height: 1;
+    @media screen and (max-width: $tablet) {
+      order: 2;
+      padding-top: 3rem;
+  }
+    & .policies-nav-inner a{
+      display: block;
+      padding-top: 2rem;
+    }
+  }
+  //更新
+  .updated {
+    margin-bottom: 1.3rem;
+    display: block;
+  }
+  //タイトル
+  & .policies-title {
+    margin-bottom: 5rem;
+  }
+  //文章
+  .policies-text {
+    counter-reset: number 0;
+    & h3 {
+      padding-top: 3.5rem;
+          border-top: 1px solid var(--horizontalRule);
+          margin-top: 3.5rem;
+                &:before {
+      counter-increment: number 1;
+      content:  counter(number)". ";
+    }
+    }
+
+  }
+}

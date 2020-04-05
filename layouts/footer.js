@@ -53,7 +53,7 @@ const Footer = () => (
           ご意見・ご要望< /a>
           </Link>
 
-          <Link href="/help">
+          <Link href="/help/home">
           <a class="hover-line">
           ヘルプ        </a>
               </Link>
