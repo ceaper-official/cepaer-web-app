@@ -10375,7 +10375,116 @@ var SimpleEventPlugin = {
       case TOP_TOUCH_CANCEL:
       case TOP_TOUCH_END:
       case TOP_TOUCH_MOVE:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   mmit phase with measurement overhead.
+      case TOP_TOUCH_START:
+        EventConstructor = SyntheticTouchEvent;
+        break;
+
+      case TOP_ANIMATION_END:
+      case TOP_ANIMATION_ITERATION:
+      case TOP_ANIMATION_START:
+        EventConstructor = SyntheticAnimationEvent;
+        break;
+
+      case TOP_TRANSITION_END:
+        EventConstructor = SyntheticTransitionEvent;
+        break;
+
+      case TOP_SCROLL:
+        EventConstructor = SyntheticUIEvent;
+        break;
+
+      case TOP_WHEEL:
+        EventConstructor = SyntheticWheelEvent;
+        break;
+
+      case TOP_COPY:
+      case TOP_CUT:
+      case TOP_PASTE:
+        EventConstructor = SyntheticClipboardEvent;
+        break;
+
+      case TOP_GOT_POINTER_CAPTURE:
+      case TOP_LOST_POINTER_CAPTURE:
+      case TOP_POINTER_CANCEL:
+      case TOP_POINTER_DOWN:
+      case TOP_POINTER_MOVE:
+      case TOP_POINTER_OUT:
+      case TOP_POINTER_OVER:
+      case TOP_POINTER_UP:
+        EventConstructor = SyntheticPointerEvent;
+        break;
+
+      default:
+        {
+          if (knownHTMLTopLevelTypes.indexOf(topLevelType) === -1) {
+            error('SimpleEventPlugin: Unhandled event type, `%s`. This warning ' + 'is likely caused by a bug in React. Please file an issue.', topLevelType);
+          }
+        } // HTML Events
+        // @see http://www.w3.org/TR/html5/index.html#events-0
+
+
+        EventConstructor = SyntheticEvent;
+        break;
+    }
+
+    var event = EventConstructor.getPooled(dispatchConfig, targetInst, nativeEvent, nativeEventTarget);
+    accumulateTwoPhaseDispatches(event);
+    return event;
+  }
+};
+
+/**
+ * Specifies a deterministic ordering of `EventPlugin`s. A convenient way to
+ * reason about plugins, without having to package every one of them. This
+ * is better than having plugins be ordered in the same order that they
+ * are injected because that ordering would be influenced by the packaging order.
+ * `ResponderEventPlugin` must occur before `SimpleEventPlugin` so that
+ * preventing default on events is convenient in `SimpleEventPlugin` handlers.
+ */
+
+var DOMEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'EnterLeaveEventPlugin', 'ChangeEventPlugin', 'SelectEventPlugin', 'BeforeInputEventPlugin'];
+/**
+ * Inject modules for resolving DOM hierarchy and plugin ordering.
+ */
+
+injectEventPluginOrder(DOMEventPluginOrder);
+setComponentTree(getFiberCurrentPropsFromNode$1, getInstanceFromNode$1, getNodeFromInstance$1);
+/**
+ * Some important event plugins included by default (without having to require
+ * them).
+ */
+
+injectEventPluginsByName({
+  SimpleEventPlugin: SimpleEventPlugin,
+  EnterLeaveEventPlugin: EnterLeaveEventPlugin,
+  ChangeEventPlugin: ChangeEventPlugin,
+  SelectEventPlugin: SelectEventPlugin,
+  BeforeInputEventPlugin: BeforeInputEventPlugin
+});
+
+// Prefix measurements so that it's possible to filter them.
+// Longer prefixes are hard to read in DevTools.
+var reactEmoji = "\u269B";
+var warningEmoji = "\u26D4";
+var supportsUserTiming = typeof performance !== 'undefined' && typeof performance.mark === 'function' && typeof performance.clearMarks === 'function' && typeof performance.measure === 'function' && typeof performance.clearMeasures === 'function'; // Keep track of current fiber so that we know the path to unwind on pause.
+// TODO: this looks the same as nextUnitOfWork in scheduler. Can we unify them?
+
+var currentFiber = null; // If we're in the middle of user code, which fiber and method is it?
+// Reusing `currentFiber` would be confusing for this because user code fiber
+// can change during commit phase too, but we don't need to unwind it (since
+// lifecycles in the commit phase don't resemble a tree).
+
+var currentPhase = null;
+var currentPhaseFiber = null; // Did lifecycle hook schedule an update? This is often a performance problem,
+// so we will keep track of it, and include it in the report.
+// Track commits caused by cascading updates.
+
+var isCommitting = false;
+var hasScheduledUpdateInCurrentCommit = false;
+var hasScheduledUpdateInCurrentPhase = false;
+var commitCountInCurrentWorkLoop = 0;
+var effectCountInCurrentCommit = 0;
+// to avoid stretch the commit phase with measurement overhead.
 
 var labelsInCurrentCommit = new Set();
 

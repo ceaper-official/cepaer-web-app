@@ -91,8 +91,8 @@ h6{
 }
 
 /*タイトル・装飾*/
-.sections-title:before {
+.section-title:before {
   content: " ";
-border-left: 3px solid var(--black);
+border-left: 3px solid var(--accent);
 padding-right: 1rem;
 }

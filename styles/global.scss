@@ -9,6 +9,7 @@
 @import "button.scss";
 @import "color.scss";
 @import "contents.scss";
+@import "edit.scss";
 @import "footer.scss";
 @import "form.scss";
 @import "header.scss";
@@ -120,7 +121,7 @@
 }
 
 body {
-  font-family:  "Ceaper Round" , sans-serif;
+  font-family:  var(--paragraph);
   font-size: 1.6rem;
   margin: 0;
   font-weight: 400;
@@ -152,7 +153,7 @@ button,
 input,
 select,
 textarea {
-  font-family:  "Ceaper Round" , sans-serif;
+  font-family:  var(--paragraph);
   color: inherit;
   font-family: inherit;
   font-style: inherit;
