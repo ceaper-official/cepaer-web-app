@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export default function NavPolicies() {
   return (
-     <div class='policies-nav'>
-       <h6>規約</h6>
-       <div class="policies-nav-inner">
+     <div class='side-nav-desktop'>
+       <div class="side-nav-desktop-inner">
+         <h6 class="xs-text">規約</h6>
        <Link href="/privacy">
                <a class="xs-text hover-accent grey">プライバシーポリシー</a>
            </Link>

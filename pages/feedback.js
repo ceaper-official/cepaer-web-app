@@ -12,7 +12,7 @@ import  Rate1 from "../assets/icons/ui/rate1.js";
 export default () => (
   <BaseLayout>
   <div id="page">
-  <div class='contents'>
+  <div class='contents bg-grey'>
   <div class='section center-section'>
 <h1 class='title'>多種多彩なフィードバックをお待ちしております。</h1>
 <p  style={{ marginBottom: 10 }}>私達Ceaperは常にユーザーの方が心地良くサービスを使えるように新しい機能の開発・修正に挑んでいます。Ceaperのサービスを使用する中で、機能について不満に思った事や、ご要望などがございましたら、お気軽にご連絡ください。</p>

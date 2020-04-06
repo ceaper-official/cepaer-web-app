@@ -14,9 +14,6 @@ div.edit-row {
     position: sticky;
     top: 0;
     line-height: 1;
-    @media screen and (max-width: $tablet) {
-      display: none;
-  }
     & .edit-nav-inner a{
       display: block;
       padding-top: 2rem;
@@ -38,6 +35,7 @@ div.edit-row {
   //項目
   & .edit-title {
     font-family: var(--headings);
+    margin-bottom: .5rem;
     }
   & .edit-item {
   padding: 2rem 0;
@@ -47,7 +45,6 @@ div.edit-row {
   & .edit-input-inner{
     display: block;
     padding: 1.5rem;
-margin: .5rem 0;
 width: 100%;
     font-size: 1.6rem;
     color: var(--articleText);

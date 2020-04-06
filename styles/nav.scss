@@ -1,0 +1,65 @@
+//デスクトップ・サイドナビ
+.side-nav-desktop {
+    position: sticky;
+    top: 0;
+    line-height: 1;
+    & .side-nav-desktop-inner a, .side-nav-desktop-inner h6{
+      display: block;
+      padding-top: 2rem;
+      text-align: left;
+      font-family: var(--headings);
+
+    }
+@media screen and (max-width: $tablet) {
+  display: none;
+}}
+//モバイル・サイドナビ
+.side-nav-mobile {
+  @media screen and (min-width: $tablet) {
+    display: none;
+}
+  @media screen and (max-width: $phablet) {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 2rem;
+    background: var(--white);
+    border-bottom: 1px solid var(--horizontalRule);
+}
+}
+.side-nav-label-check{
+	display: none;
+}
+.side-nav-label{
+padding: 1.2rem 0;
+display: inline-flex;
+justify-content: space-between;
+width: 100%;
+font-family: var(--headings);
+}
+.side-nav-mobile-inner{
+	height: 0;
+	opacity: 0;
+	transition: .4s;
+  visibility: hidden;
+  & a {
+    display: block;
+    padding: 1.2rem 0;
+    font-family: var(--headings);
+  }
+}
+.side-nav-label-check:checked + .side-nav-label + .side-nav-mobile-inner{
+	height: auto;
+	opacity: 1;
+  padding-bottom: 2rem;
+  visibility: visible;
+}
+
+//サイドナビ・ページ
+.side-nav-page{
+  @media screen and (max-width: $phablet) {
+  padding-top: 43px;
+}
+}

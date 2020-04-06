@@ -3,14 +3,16 @@ import React from "react";
 import Link from 'next/link';
 import  ArrowR from "../assets/icons/ui/arrow-r.js";
 import  NavPolicies from "../layouts/nav-policies.js";
+import  NavPoliciesMobile from "../layouts/nav-policies-mobile.js";
 
 export default () => (
     <BaseLayout>
-      <div id="page">
+      <div id="page" class="side-nav-page">
      <div class='contents'>
 
      <div class='section policies-wrapper'>
 <NavPolicies/>
+  <NavPoliciesMobile/>
 
        <div class="policies-inner">
          <span class="grey xs-text updated">Updated: 2020/4/20 </span>

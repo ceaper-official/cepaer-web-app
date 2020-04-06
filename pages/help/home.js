@@ -12,7 +12,7 @@ export default () => (
   <BaseLayout>
   <div id="page">
 
-<div class = 'contents' > <div class='section center-section'>
+<div class = 'contents bg-grey'> <div class='section center-section'>
   <div class="search-wrapper help-search">
     <span class="search-icon">
       <span class="search-icon-inner"><Search/></span>

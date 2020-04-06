@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -365,7 +365,7 @@ function Back() {
     },
     __self: this
   }, __jsx("path", {
-    d: "M15.10352.14648a.49983.49983,0,0,0-.707,0l-9.5,9.5a.49983.49983,0,0,0,0,.707l9.5,9.5a.5.5,0,0,0,.707-.707L5.957,10,15.10352.85352A.49983.49983,0,0,0,15.10352.14648Z",
+    d: "M15.207.293a.99962.99962,0,0,0-1.41406,0l-9,9a.99962.99962,0,0,0,0,1.41406l9,9A.99989.99989,0,0,0,15.207,18.293L6.91406,10l8.293-8.293A.99962.99962,0,0,0,15.207.293Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -475,7 +475,44 @@ function Cross() {
     },
     __self: this
   }, __jsx("path", {
-    d: "M10.70662,10,19.8531.85352a.49995.49995,0,1,0-.707-.707L9.99959,9.293.8531.14648a.49995.49995,0,1,0-.707.707L9.29256,10,.14607,19.14648a.49995.49995,0,1,0,.707.707L9.99959,10.707l9.14648,9.14649a.49995.49995,0,1,0,.707-.707Z",
+    d: "M11.41406,10l8.293-8.293A.99989.99989,0,1,0,18.293.293L10,8.58594,1.707.293A.99989.99989,0,0,0,.293,1.707L8.58594,10,.293,18.293A.99989.99989,0,1,0,1.707,19.707L10,11.41406l8.293,8.293A.99989.99989,0,0,0,19.707,18.293Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/down.js":
+/*!*********************************!*\
+  !*** ./assets/icons/ui/down.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Down; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/down.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Down() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M18.293,4.793,10,13.08594,1.707,4.793A.99989.99989,0,0,0,.293,6.207l9,9a.99963.99963,0,0,0,1.41406,0l9-9A.99989.99989,0,0,0,18.293,4.793Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -715,6 +752,123 @@ function Upload() {
   }), __jsx("path", {
     d: "M10,17.65625a.49971.49971,0,0,1-.5-.5v-5.791L7.80859,13.05664a.49995.49995,0,0,1-.707-.707L9.645,9.80615l.01269-.0122H9.6582l.00049-.00049a.48567.48567,0,0,1,.145-.09473.51567.51567,0,0,1,.39258,0,.48567.48567,0,0,1,.145.09473l.00049.00049h.00049l.01269.0122,2.54346,2.54346a.49995.49995,0,0,1-.707.707L10.5,11.36523v5.791A.49971.49971,0,0,1,10,17.65625Z",
     fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/logo-dark.js":
+/*!*****************************!*\
+  !*** ./assets/logo-dark.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LogoDark; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/logo-dark.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function LogoDark() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 342.40542 96.28959",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M337.76219,18.12145,333.565,19.38568a3.60336,3.60336,0,1,0,2.07848,6.90049l4.1972-1.26423a3.60336,3.60336,0,1,0-2.07847-6.90049Z",
+    fill: "#ff5445",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M324.57765,6.34937l-2.07393,3.86181a3.60336,3.60336,0,1,0,6.34909,3.40969l2.07393-3.86182a3.60336,3.60336,0,1,0-6.34909-3.40968Z",
+    fill: "#ff5445",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M338.761,35.76845l-3.86182-2.07393a3.60336,3.60336,0,1,0-3.40969,6.34909l3.86182,2.07393a3.60336,3.60336,0,1,0,3.40969-6.34909Z",
+    fill: "#ff5445",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M299.84885,39.77392V21.20625h-16.5042a1.97653,1.97653,0,0,0-1.09637,3.6211l3.09125,2.06078V63.11076l-3.09125,2.06078a1.97653,1.97653,0,0,0,1.09637,3.62111h19.14628a1.97653,1.97653,0,0,0,.95122-3.70911l-3.5933-1.97278V39.77392Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M157.38035,39.57112V55.19673c0,4.66727,2.13088,6.18926,4.46439,6.18926a6.765,6.765,0,0,0,3.95706-1.21754v4.97172a17.30235,17.30235,0,0,1-11.26229,3.95706c-4.8704,0-8.21882-1.72486-10.75521-5.78349-4.76884,4.36307-8.7259,5.98637-12.88609,5.98637a11.9636,11.9636,0,0,1-12.37852-11.97275c0-7.30548,5.27617-11.567,15.32092-13.19029l9.13191-1.522v-3.044c0-6.79815-2.43507-10.3492-8.21857-10.3492-4.05863,0-8.32013,1.72486-12.58164,5.78324l-1.42042-4.97172c5.479-6.595,12.683-9.53742,19.17666-9.53742C150.48088,20.496,157.38035,25.97506,157.38035,39.57112Zm-18.06069,9.33479c-5.47905.91309-7.20391,3.24685-7.20391,6.39214a5.22032,5.22032,0,0,0,5.58061,5.58061,8.353,8.353,0,0,0,5.27616-2.43508V48.297Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M55.73233,5.13967l1.36246-1.36975a1.97653,1.97653,0,0,1,3.37786,1.39389V18.21505a1.97652,1.97652,0,0,1-1.97652,1.97652H56.2399a1.97708,1.97708,0,0,1-1.86915-1.36227c-2.81255-8.388-8.514-12.234-16.32162-12.234-13.39329,0-22.01775,12.48008-22.01775,28.51146,0,17.55336,9.53767,27.59812,23.74262,27.59812,8.01569,0,14.71228-2.638,21.61174-8.523V60.98A39.89788,39.89788,0,0,1,35.208,70.21321C13.79918,70.21321,0,55.80538,0,35.41117,0,14.50939,14.408,0,35.208,0c6.861,0,13.12889,1.77925,17.95214,5.33756A1.97432,1.97432,0,0,0,55.73233,5.13967Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M98.62261,62.80641A19.62086,19.62086,0,0,0,111.61,58.5449v5.68193c-5.37748,3.95706-11.05941,5.58061-18.26357,5.58061-15.62537,0-26.279-9.53767-26.279-24.75727,0-14.30652,10.24789-24.5544,24.14839-24.5544,12.48008,0,20.90153,11.47047,20.90153,26.893H82.18546C82.38835,58.75283,88.67917,62.80641,98.62261,62.80641ZM82.48991,41.70679H97.50663c-.10156-8.92878-2.6382-16.5435-6.59527-16.5435C86.64985,25.16329,83.403,33.18378,82.48991,41.70679Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M223.26312,44.54284c0,15.92981-8.929,25.56905-21.91644,25.56905a24.09865,24.09865,0,0,1-13.69762-4.26151V90.60766l3.884,1.93656a1.97652,1.97652,0,0,1-.88194,3.74537H171.17a1.97652,1.97652,0,0,1-1.10259-3.61693l3.07226-2.065V26.88816l-3.07226-2.065A1.97652,1.97652,0,0,1,171.17,21.20623h16.47906v5.479A23.23437,23.23437,0,0,1,203.376,20.29289C215.24743,20.29289,223.26312,29.12035,223.26312,44.54284ZM187.64906,32.87453V59.35668a14.40539,14.40539,0,0,0,9.13191,3.24685c6.595,0,11.36386-5.88506,11.36386-16.84315,0-12.17564-5.07328-17.35024-11.161-17.35024C193.737,28.41014,190.49015,29.93213,187.64906,32.87453Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M261.94207,62.80641a19.62091,19.62091,0,0,0,12.98741-4.26151v5.68193c-5.37748,3.95706-11.05941,5.58061-18.26357,5.58061-15.62537,0-26.279-9.53767-26.279-24.75727,0-14.30652,10.24788-24.5544,24.14838-24.5544,12.48008,0,20.90154,11.47047,20.90154,26.893H245.50493C245.70781,58.75283,251.99863,62.80641,261.94207,62.80641ZM245.80938,41.70679H260.8261c-.10157-8.92878-2.63821-16.5435-6.59527-16.5435C249.96932,25.16329,246.72247,33.18378,245.80938,41.70679Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M306.835,35.01162l-2.10506-6.98877a.94852.94852,0,0,0-1.48551-.47538,3.68238,3.68238,0,0,0-1.29877,3.99466l.6245,2.07335a3.68257,3.68257,0,0,0,3.289,2.61289A.94852.94852,0,0,0,306.835,35.01162Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M319.63089,36.90711a9.15485,9.15485,0,1,0-11.5486-10.881l-1.84631.55612a.94627.94627,0,0,0-.63315,1.179l2.10432,6.98632a.94628.94628,0,0,0,1.179.63315l1.84631-.55612A9.1507,9.1507,0,0,0,319.63089,36.90711Z",
+    fill: "#fff",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
@@ -1546,7 +1700,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo.js */ "./assets/logo.js");
+/* harmony import */ var _assets_logo_dark_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo-dark.js */ "./assets/logo-dark.js");
 /* harmony import */ var _assets_icons_ui_home_solid_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/home_solid.js */ "./assets/icons/ui/home_solid.js");
 /* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
 /* harmony import */ var _assets_icons_ui_back_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/back.js */ "./assets/icons/ui/back.js");
@@ -1638,7 +1792,7 @@ const HeaderApp = () => __jsx("div", {
     lineNumber: 27
   },
   __self: undefined
-}, __jsx(_assets_logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}, __jsx(_assets_logo_dark_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 28
@@ -1807,6 +1961,181 @@ const HeaderMobile = () => __jsx("div", {
 
 /***/ }),
 
+/***/ "./layouts/nav-edit-mobile.js":
+/*!************************************!*\
+  !*** ./layouts/nav-edit-mobile.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavEditMobile; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_icons_ui_down_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/ui/down.js */ "./assets/icons/ui/down.js");
+var _jsxFileName = "/Users/kerry/ceaper/layouts/nav-edit-mobile.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function NavEditMobile() {
+  return __jsx("div", {
+    class: "side-nav-mobile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("input", {
+    id: "side-nav-check",
+    class: "side-nav-label-check",
+    type: "checkbox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), __jsx("label", {
+    class: "side-nav-label ico xs-text",
+    for: "side-nav-check",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u7DE8\u96C6", __jsx(_assets_icons_ui_down_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  })), __jsx("div", {
+    class: "side-nav-mobile-inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#settings",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u8A2D\u5B9A")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#password",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "\u30D1\u30B9\u30EF\u30FC\u30C9")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#social-settings",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "\u30BD\u30FC\u30B7\u30E3\u30EB\u30E1\u30C7\u30A3\u30A2")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#connections",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "\u5916\u90E8\u30B5\u30FC\u30D3\u30B9\u306E\u9023\u643A")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#notifications",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "\u304A\u77E5\u3089\u305B")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/delete",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#save",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, "\u4FDD\u5B58\u3059\u308B"))));
+}
+
+/***/ }),
+
 /***/ "./layouts/nav-edit.js":
 /*!*****************************!*\
   !*** ./layouts/nav-edit.js ***!
@@ -1827,129 +2156,136 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function NavEdit() {
   return __jsx("div", {
-    class: "edit-nav",
+    class: "side-nav-desktop",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, " ", __jsx("div", {
-    class: "edit-nav-inner",
+    class: "side-nav-desktop-inner",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "#profile",
+  }, __jsx("h6", {
+    class: "xs-text",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u7DE8\u96C6"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#settings",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u8A2D\u5B9A")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#password",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "\u30D1\u30B9\u30EF\u30FC\u30C9")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#social-settings",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, "\u30BD\u30FC\u30B7\u30E3\u30EB\u30E1\u30C7\u30A3\u30A2")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#connections",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, "\u5916\u90E8\u30B5\u30FC\u30D3\u30B9\u306E\u9023\u643A")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#notifications",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, "\u304A\u77E5\u3089\u305B")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/delete",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "#save",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }, __jsx("a", {
     class: "xs-text hover-accent grey",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, "\u4FDD\u5B58\u3059\u308B"))), " ");
@@ -3993,9 +4329,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
 /* harmony import */ var _layouts_shot_user_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../layouts/shot_user.js */ "./layouts/shot_user.js");
 /* harmony import */ var _layouts_nav_edit_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../layouts/nav-edit.js */ "./layouts/nav-edit.js");
+/* harmony import */ var _layouts_nav_edit_mobile_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../layouts/nav-edit-mobile.js */ "./layouts/nav-edit-mobile.js");
 var _jsxFileName = "/Users/kerry/ceaper/pages/edit.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -4020,10 +4358,9 @@ function User() {
     __self: this
   });
 }
+/*入力された文・値は保存*/
 
-{
-  /*入力された文・値は保存*/
-}
+
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx(_layouts_base_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
@@ -4032,6 +4369,7 @@ function User() {
   __self: undefined
 }, __jsx("div", {
   id: "page",
+  class: "side-nav-page",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 22
@@ -4064,11 +4402,17 @@ function User() {
     lineNumber: 27
   },
   __self: undefined
+}), __jsx(_layouts_nav_edit_mobile_js__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
 }), __jsx("div", {
   class: "edit-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29
+    lineNumber: 30
   },
   __self: undefined
 }, __jsx("div", {
@@ -4076,82 +4420,82 @@ function User() {
   id: "profile",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 32
+    lineNumber: 33
   },
   __self: undefined
 }, __jsx("div", {
   class: "user-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33
+    lineNumber: 34
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 35
   },
   __self: undefined
 }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB"), __jsx("div", {
   class: "edit-item edit-user-icon-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
+    lineNumber: 36
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-user-icon",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 36
+    lineNumber: 37
   },
   __self: undefined
 }, __jsx(User, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 38
   },
   __self: undefined
 })), __jsx("div", {
   class: "edit-user-button-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 40
   },
   __self: undefined
 }, __jsx("button", {
   class: "button button-black ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 41
   },
   __self: undefined
 }, __jsx(_assets_icons_ui_upload_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 41
   },
   __self: undefined
 }), "\u30A2\u30A4\u30B3\u30F3\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9"), __jsx("button", {
   class: "button button-grey ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41
+    lineNumber: 42
   },
   __self: undefined
 }, "\u524A\u9664"))), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 46
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text edit-required",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 46
+    lineNumber: 47
   },
   __self: undefined
 }, "\u30E6\u30FC\u30B6\u30FC\u540D"), __jsx("input", {
@@ -4162,28 +4506,28 @@ function User() {
   required: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47
+    lineNumber: 48
   },
   __self: undefined
 })), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50
+    lineNumber: 51
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 51
+    lineNumber: 52
   },
   __self: undefined
 }, "\u81EA\u5DF1\u7D39\u4ECB"), __jsx("textarea", {
   class: "edit-area",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 52
+    lineNumber: 53
   },
   __self: undefined
 }, "\u79C1\u306F\u3001\u6599\u7406\u304C\u5927\u597D\u304D\u306A\u751F\u7C8B\u306E\u30AD\u30E3\u30F3\u30D1\u30FC\u3067\u3059\u3002\u90317\u3067\u3001\u30AD\u30E3\u30F3\u30D7\u306B\u884C\u3063\u3066\u3044\u307E\u3059\uFF01\u3088\u304F\u51FA\u6CA1\u3059\u308B\u5834\u6240\u306F\u9AD8\u5C3E\u5C71\u3067\u3059\u3002")))), __jsx("div", {
@@ -4191,28 +4535,28 @@ function User() {
   id: "settings",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 58
+    lineNumber: 59
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 59
+    lineNumber: 60
   },
   __self: undefined
 }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u8A2D\u5B9A"), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 60
+    lineNumber: 61
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 61
+    lineNumber: 62
   },
   __self: undefined
 }, "E\u30E1\u30FC\u30EB"), __jsx("input", {
@@ -4224,21 +4568,21 @@ function User() {
   value: "user@gmail.com",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 62
+    lineNumber: 63
   },
   __self: undefined
 })), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 64
+    lineNumber: 65
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 65
+    lineNumber: 66
   },
   __self: undefined
 }, "\u65B0\u3057\u3044E\u30E1\u30FC\u30EB"), __jsx("input", {
@@ -4249,7 +4593,7 @@ function User() {
   type: "text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 66
+    lineNumber: 67
   },
   __self: undefined
 }))), __jsx("div", {
@@ -4257,28 +4601,28 @@ function User() {
   id: "password",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 71
+    lineNumber: 72
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 72
+    lineNumber: 73
   },
   __self: undefined
 }, "\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 73
+    lineNumber: 74
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 74
+    lineNumber: 75
   },
   __self: undefined
 }, "\u73FE\u5728\u306E\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("input", {
@@ -4288,21 +4632,21 @@ function User() {
   value: "user@gmail.com",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 75
+    lineNumber: 76
   },
   __self: undefined
 })), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 77
+    lineNumber: 78
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 78
+    lineNumber: 79
   },
   __self: undefined
 }, "\u65B0\u3057\u3044\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("input", {
@@ -4311,7 +4655,7 @@ function User() {
   value: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 79
+    lineNumber: 80
   },
   __self: undefined
 }))), __jsx("div", {
@@ -4319,48 +4663,48 @@ function User() {
   id: "social-settings",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 85
+    lineNumber: 86
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 86
+    lineNumber: 87
   },
   __self: undefined
 }, "\u30BD\u30FC\u30B7\u30E3\u30EB\u30E1\u30C7\u30A3\u30A2"), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 87
+    lineNumber: 88
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 88
+    lineNumber: 89
   },
   __self: undefined
 }, "Instagram"), __jsx("div", {
   class: "action-button-wrapper input-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 89
+    lineNumber: 90
   },
   __self: undefined
 }, __jsx("span", {
   class: "input-prefix",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 90
+    lineNumber: 91
   },
   __self: undefined
 }, __jsx(_assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 91
+    lineNumber: 92
   },
   __self: undefined
 })), __jsx("input", {
@@ -4368,41 +4712,41 @@ function User() {
   placeholder: "\u30E6\u30FC\u30B6\u30FC\u30CD\u30FC\u30E0\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 93
+    lineNumber: 94
   },
   __self: undefined
 }))), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 96
+    lineNumber: 97
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 97
+    lineNumber: 98
   },
   __self: undefined
 }, "Facebook"), __jsx("div", {
   class: "action-button-wrapper input-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 98
+    lineNumber: 99
   },
   __self: undefined
 }, __jsx("span", {
   class: "input-prefix",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 99
+    lineNumber: 100
   },
   __self: undefined
 }, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 100
+    lineNumber: 101
   },
   __self: undefined
 })), __jsx("input", {
@@ -4410,41 +4754,41 @@ function User() {
   placeholder: "\u30E6\u30FC\u30B6\u30FCID\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 102
+    lineNumber: 103
   },
   __self: undefined
 }))), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 105
+    lineNumber: 106
   },
   __self: undefined
 }, __jsx("label", {
   class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 106
+    lineNumber: 107
   },
   __self: undefined
 }, "Twitter"), __jsx("div", {
   class: "action-button-wrapper input-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 107
+    lineNumber: 108
   },
   __self: undefined
 }, __jsx("span", {
   class: "input-prefix",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 108
+    lineNumber: 109
   },
   __self: undefined
 }, __jsx(_assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 109
+    lineNumber: 110
   },
   __self: undefined
 })), __jsx("input", {
@@ -4452,7 +4796,7 @@ function User() {
   placeholder: "\u30E6\u30FC\u30B6\u30FCID\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 111
+    lineNumber: 112
   },
   __self: undefined
 })))), __jsx("div", {
@@ -4460,68 +4804,68 @@ function User() {
   id: "connections",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 117
+    lineNumber: 118
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 118
+    lineNumber: 119
   },
   __self: undefined
 }, "\u5916\u90E8\u30B5\u30FC\u30D3\u30B9\u306E\u9023\u643A"), __jsx("div", {
   class: "edit-item edit-connections",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 119
+    lineNumber: 120
   },
   __self: undefined
 }, __jsx("div", {
   class: "ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 120
+    lineNumber: 121
   },
   __self: undefined
 }, __jsx(_assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 120
+    lineNumber: 121
   },
   __self: undefined
 }), "Google"), __jsx("a", {
   class: "button edit-connected-button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 121
+    lineNumber: 122
   },
   __self: undefined
 }, "\u9023\u643A\u6E08\u307F")), __jsx("div", {
   class: "edit-item edit-connections",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 124
+    lineNumber: 125
   },
   __self: undefined
 }, __jsx("div", {
   class: "ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 125
+    lineNumber: 126
   },
   __self: undefined
 }, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 125
+    lineNumber: 126
   },
   __self: undefined
 }), "Facebook"), __jsx("a", {
   class: "button button-black",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 126
+    lineNumber: 127
   },
   __self: undefined
 }, "\u9023\u643A\u3059\u308B"))), __jsx("div", {
@@ -4529,42 +4873,42 @@ function User() {
   id: "notifications",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 131
+    lineNumber: 132
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 132
+    lineNumber: 133
   },
   __self: undefined
 }, "\u304A\u77E5\u3089\u305B"), __jsx("label", {
   class: "edit-title s-text edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 133
+    lineNumber: 134
   },
   __self: undefined
 }, "\u30A2\u30AF\u30C6\u30A3\u30D3\u30C6\u30A3\u306E\u901A\u77E5"), __jsx("div", {
   class: "hr edit-hr",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 134
+    lineNumber: 135
   },
   __self: undefined
 }), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 135
+    lineNumber: 136
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 136
+    lineNumber: 137
   },
   __self: undefined
 }, __jsx("input", {
@@ -4573,7 +4917,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 137
+    lineNumber: 138
   },
   __self: undefined
 }), __jsx("label", {
@@ -4581,28 +4925,28 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 138
+    lineNumber: 139
   },
   __self: undefined
 })), __jsx("label", {
   class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 140
+    lineNumber: 141
   },
   __self: undefined
 }, "\u65B0\u3057\u3044\u30D5\u30A9\u30ED\u30EF\u30FC")), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 142
+    lineNumber: 143
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 143
+    lineNumber: 144
   },
   __self: undefined
 }, __jsx("input", {
@@ -4611,7 +4955,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 144
+    lineNumber: 145
   },
   __self: undefined
 }), __jsx("label", {
@@ -4619,28 +4963,28 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 145
+    lineNumber: 146
   },
   __self: undefined
 })), __jsx("label", {
   class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 147
+    lineNumber: 148
   },
   __self: undefined
 }, "\u6295\u7A3F\u3057\u305F\u30EC\u30B7\u30D4\u3078\u306E\u30EC\u30D3\u30E5\u30FC")), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 149
+    lineNumber: 150
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 150
+    lineNumber: 151
   },
   __self: undefined
 }, __jsx("input", {
@@ -4649,7 +4993,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 151
+    lineNumber: 152
   },
   __self: undefined
 }), __jsx("label", {
@@ -4657,42 +5001,42 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 152
+    lineNumber: 153
   },
   __self: undefined
 })), __jsx("label", {
   class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 154
+    lineNumber: 155
   },
   __self: undefined
 }, "\u30D5\u30A9\u30ED\u30FC\u3057\u3066\u3044\u308B\u30E6\u30FC\u30B6\u30FC\u306E\u6295\u7A3F")), __jsx("label", {
   class: "edit-title s-text edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 157
+    lineNumber: 158
   },
   __self: undefined
 }, "Ceaper\u306E\u901A\u77E5"), __jsx("div", {
   class: "hr edit-hr",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 158
+    lineNumber: 159
   },
   __self: undefined
 }), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 159
+    lineNumber: 160
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 160
+    lineNumber: 161
   },
   __self: undefined
 }, __jsx("input", {
@@ -4701,7 +5045,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 161
+    lineNumber: 162
   },
   __self: undefined
 }), __jsx("label", {
@@ -4709,28 +5053,28 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 162
+    lineNumber: 163
   },
   __self: undefined
 })), __jsx("label", {
   class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 164
+    lineNumber: 165
   },
   __self: undefined
 }, "\u30C8\u30EC\u30F3\u30C9\u30CB\u30E5\u30FC\u30B9\uFF08\u9694\u9031\uFF09")), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 167
+    lineNumber: 168
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 168
+    lineNumber: 169
   },
   __self: undefined
 }, __jsx("input", {
@@ -4739,7 +5083,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 169
+    lineNumber: 170
   },
   __self: undefined
 }), __jsx("label", {
@@ -4747,14 +5091,14 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 170
+    lineNumber: 171
   },
   __self: undefined
 })), __jsx("label", {
   class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 172
+    lineNumber: 173
   },
   __self: undefined
 }, "\u91CD\u8981\u306A\u304A\u77E5\u3089\u305B\uFF08\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u7B49\uFF09"))), __jsx("div", {
@@ -4762,27 +5106,27 @@ function User() {
   id: "save",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 179
+    lineNumber: 180
   },
   __self: undefined
 }, __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 180
+    lineNumber: 181
   },
   __self: undefined
 }, __jsx("a", {
   class: "button button-accent",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 181
+    lineNumber: 182
   },
   __self: undefined
 }, "\u4FDD\u5B58\u3059\u308B"))))))))));
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/edit.js ***!
   \*****************************/

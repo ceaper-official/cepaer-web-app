@@ -16,10 +16,18 @@
     border-bottom:  1px solid var(--black);
     padding-left: 50px;
     font-size: 2rem;
+  font-family: var(--headings);
     &::placeholder {
       font-size: 2rem;
+      font-family: var(--headings);
       font-weight: 500;
     }
+    @media screen and (min-width: $tablet){
+      font-size: 3rem;
+      &::placeholder {
+        font-size: 3rem;
+      }
+  }
   }
 }
 

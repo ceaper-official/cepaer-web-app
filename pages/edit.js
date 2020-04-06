@@ -10,21 +10,22 @@ import Google from "../assets/icons/social/google.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import UserShot from "../layouts/shot_user.js";
 import  NavEdit from "../layouts/nav-edit.js";
-
+import  NavEditMobile from "../layouts/nav-edit-mobile.js";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />
 }
 
-{/*入力された文・値は保存*/}
+/*入力された文・値は保存*/
 export default () => (
   <BaseLayout>
-  <div id="page">
+  <div id="page"class="side-nav-page">
   <div class="user-row edit-row">
   <div class='contents'>
   <div class='section edit-wrapper center-section'>
 
     <NavEdit/>
+      <NavEditMobile/>
 
 <div class="edit-inner">
 

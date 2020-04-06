@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Logo from "../assets/logo.js";
+import LogoDark from "../assets/logo-dark.js";
 import HomeApp from "../assets/icons/ui/home_solid.js";
 import HumanApp from "../assets/icons/ui/human_solid.js";
 import Back from "../assets/icons/ui/back.js";
@@ -25,7 +25,7 @@ const HeaderApp = () => (
 <div class="app-header-inner app-header-inner2">
 <Link href="/">
 <a class="logo-link">
-<Logo/>
+<LogoDark/>
 </a>
     </Link>
     </div>

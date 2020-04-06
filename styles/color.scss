@@ -6,16 +6,28 @@
   color: var(--grey);
 }
 
+.white {
+  color: var(--white);
+}
+
+.d-paragraph {
+  color: var(--d-articleText);
+}
+
 /*Background*/
 .bg-accent {
-  background-color: var(--accent);
+  background: var(--accent);
 }
 .bg-accent60 {
-  background-color: var(--accent60);
+  background: var(--accent60);
 }
-.bg-black {
-  background-color: var(--black);
+div.bg-black {
+  background: var(--black);
 }
-.bg-grey {
-  background-color: var(--background-grey);
+div.bg-grey {
+  background: var(--background-grey);
+}
+//ネガティブ
+div.bg-red {
+  background: var(--red);
 }

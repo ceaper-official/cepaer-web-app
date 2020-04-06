@@ -21,6 +21,7 @@
 @import "image.scss";
 @import "layout.scss";
 @import "lists.scss";
+@import "nav.scss";
 @import "page.scss";
 @import "paragraph.scss";
 @import "policies.scss";
@@ -163,6 +164,7 @@ textarea {
     -moz-appearance: none;
   appearance: none;
   resize: none;
+  background: none;
 }
 :focus {
   outline: none;

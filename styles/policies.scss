@@ -6,21 +6,6 @@
   @media screen and (max-width: $tablet) {
   grid-template-columns: 1fr;
 }
-  //ナビ
-  & .policies-nav {
-    position: sticky;
-    padding-top: 15rem;
-    top: 0;
-    line-height: 1;
-    @media screen and (max-width: $tablet) {
-      order: 2;
-      padding-top: 3rem;
-  }
-    & .policies-nav-inner a{
-      display: block;
-      padding-top: 2rem;
-    }
-  }
   //更新
   .updated {
     margin-bottom: 1.3rem;

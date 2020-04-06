@@ -158,16 +158,21 @@ top: 0;
 width: 100%;
 z-index: 100;
   padding: 1rem 0;
-  background: var(--white);
+  background: var(--black);
+  border-bottom: 1px solid var(--horizontalRule);
   .app-header-wrapper {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 align-items: center;
 //バック
 .app-header-inner1 {
+  display: inline-flex;
   & svg {
     width: auto;
     height: 17px;
+    & path {
+      fill: var(--white);
+    }
   }
   & a {
     line-height: 1;

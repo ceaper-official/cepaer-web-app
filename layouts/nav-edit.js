@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 export default function NavEdit() {
   return (
-<div class = 'edit-nav' > <div class="edit-nav-inner">
+<div class = 'side-nav-desktop' > <div class="side-nav-desktop-inner">
+  <h6 class="xs-text">プロフィール編集</h6>
   <Link href="#profile">
     <a class="xs-text hover-accent grey">プロフィール</a>
   </Link>
