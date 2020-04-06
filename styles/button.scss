@@ -57,8 +57,33 @@
     background: var(--black);
   }
 }
-/*グレーアウト*/
+//レッド（ネガティブ）
+.button-red {
+    color: var(--white);
+    border: 1px solid var(--red);
+    background: var(--red);
+      & svg {
+        path {
+          fill: var(--white);
+        }
+      }
+      &:hover {
+        background: var(--red-hover);
+      }
+}
+
+//グレー
 .button-grey {
+  color: var(--articleText);
+  border: 1px solid var(--horizontalRule);
+  background: var(--horizontalRule);
+    &:hover {
+      color: var(--articleText);
+      background: var(--grey-hover);
+    }
+}
+/*グレーアウト*/
+.button-grey-out {
   color: var(--grey);
   border: 1px solid var(--grey);
   pointer-events: none;
@@ -211,6 +236,32 @@
   }
 }
 
+//選択（２つ）
+.button-choice-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  & .button-choice-l {
+    margin-right: 1rem;
+    justify-content: center;
+  }
+  & .button-choice-r {
+    margin-left: 1rem;
+    justify-content: center;
+  }
+  @media screen and (max-width: $phablet) {
+    grid-template-columns: 1fr;
+    & .button-choice-l, .button-choice-r {
+      margin: 0;
+    }
+    & .button-choice-l {
+      margin-bottom: 2rem;
+    }
+}
+}
+
+@media screen and (max-width: $phablet) {
+  grid-template-columns: 1fr;
+}
 //フォーム・セレクトボタン
 .select-button {
     height: 100%;

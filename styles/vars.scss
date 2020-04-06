@@ -23,11 +23,9 @@ font-feature-settings: "pkna";
     --white: #fff;
     --black: #231e2d;
     --grey: #b0b0b0;
-    --articleText: #4f4b57;
     /*SECONDAY*/
-    --cream: #e5ddd5;
-    --botticelli: #cadee5;
-    --basil: #cfe5ca;
+    --articleText: #4f4b57;
+    --red: #ff4545;
     /*OTHER*/
     --background-color: #fff;
     --background-grey: rgba(176,176,176, 0.1);
@@ -38,6 +36,9 @@ font-feature-settings: "pkna";
     --grey60:  rgba(176,176,176,.6);
     --grey40:  rgba(176,176,176, .4);
     --grey20:  rgba(176,176,176,.2);
+    //ホバー
+    --grey-hover:#B4B4B5;
+  --red-hover:#D93B3B;
     /*DARK*/
     --d-articleText: #d1d1d1;
 }

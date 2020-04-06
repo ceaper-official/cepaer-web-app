@@ -22,10 +22,12 @@ export default function NavEdit() {
   <Link href="#notifications">
     <a class="xs-text hover-accent grey">お知らせ</a>
   </Link>
+  <Link href="/delete">
+    <a class="xs-text hover-accent grey">アカウントの無効化</a>
+  </Link>
   <Link href="#save">
     <a class="xs-text hover-accent grey">保存する</a>
   </Link>
-</div>
-</div>
+</div> </div>
   );
 }

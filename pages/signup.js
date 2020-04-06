@@ -1,4 +1,4 @@
-import Close from "../assets/icons/ui/close.js";
+import Cross from "../assets/icons/ui/cross.js";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
 import Google from "../assets/icons/social/google.js";
@@ -10,7 +10,7 @@ export default () => (
     <div class="actions-row-bg"></div>
     <div class="actions-wrapper">
     <div class="actions-inner card">
-    <div class="actions-row-close"><Close /></div>
+    <div class="actions-row-close"><Cross /></div>
     <h1>アカウント作成</h1>
     <div class="action-button-wrapper input-wrapper">
     <span class="input-prefix">

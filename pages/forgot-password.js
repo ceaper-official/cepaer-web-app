@@ -1,4 +1,4 @@
-import Close from "../assets/icons/ui/close.js";
+import Cross from "../assets/icons/ui/cross.js";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
 import Link from 'next/link';
@@ -8,7 +8,7 @@ export default () => (
     <div class="actions-row-bg"></div>
     <div class="actions-wrapper">
     <div class="actions-inner card">
-    <div class="actions-row-close"><Close /></div>
+    <div class="actions-row-close"><Cross /></div>
     <h1>パスワードの再設定</h1>
     <p class="xs-text">パスワードのリセット手順を送信いたしますので、対象アカウントで登録された Eメールをご入力ください。届いたメールの内容に沿って、パスワードの変更手続きを進めてください。</p>
     <div class="action-button-wrapper input-wrapper">

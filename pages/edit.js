@@ -2,6 +2,8 @@ import BaseLayout from '../layouts/base.js'
 import Link from 'next/link';
 import Add from "../assets/icons/ui/add.js";
 import  SettingSolid from "../assets/icons/ui/setting_solid.js";
+import Upload from "../assets/icons/ui/upload.js";
+import Cross from "../assets/icons/ui/cross.js";
 import Instagram from "../assets/icons/social/instagram.js";
 import Twitter from "../assets/icons/social/twitter.js";
 import Google from "../assets/icons/social/google.js";
@@ -34,16 +36,19 @@ export default () => (
     <div class="edit-user-icon">
     <User />
     </div>
-      <button  class="button button-black xs-text" >プロフィール画像をアップロード</button>
+    <div class="edit-user-button-wrapper">
+      <button  class="button button-black ico" ><Upload/>アイコンをアップロード</button>
+        <button  class="button button-grey ico" >削除</button>
+        </div>
                     </div>
 
           <div class = "edit-item">
-      <label class="edit-title edit-required">名前</label>
+      <label class="edit-title s-text edit-required">ユーザー名</label>
 <input class="input-inner edit-input-inner" autocomplete="username" type="text" value="ケリー小田"  required/>
  </div>
 
         <div class = "edit-item">
-<label class="edit-title">自己紹介</label>
+<label class="edit-title s-text">自己紹介</label>
           <textarea class="edit-area">私は、料理が大好きな生粋のキャンパーです。週7で、キャンプに行っています！よく出没する場所は高尾山です。</textarea>
            </div>
   </div>
@@ -53,20 +58,24 @@ export default () => (
   <div class="edit-section" id="settings">
     <h3 class="edit-section-title section-title edit-item">アカウント設定</h3>
           <div class = "edit-item">
-      <label class="edit-title">Eメール</label>
+      <label class="edit-title s-text">Eメール</label>
 <input class="input-inner edit-input-inner" autocorrect="off" autocapitalize="off" autocomplete="useremail" type="text" value="user@gmail.com"/>
  </div>
+ <div class = "edit-item">
+<label class="edit-title s-text">新しいEメール</label>
+<input class="input-inner edit-input-inner" autocorrect="off" autocapitalize="off" autocomplete="useremail" type="text" />
+</div>
 </div>
 
   {/*項目・パスワード*/}
   <div class="edit-section" id="password">
     <h3 class="edit-section-title section-title edit-item">パスワード</h3>
           <div class = "edit-item">
-      <label class="edit-title">現在のパスワード</label>
+      <label class="edit-title s-text">現在のパスワード</label>
 <input class="input-inner edit-input-inner" autocomplete="userpassword" type="password" value="user@gmail.com"/>
  </div>
  <div class = "edit-item">
-<label class="edit-title">新しいパスワード</label>
+<label class="edit-title s-text">新しいパスワード</label>
 <input class="input-inner edit-input-inner"type="password" value=""/>
 </div>
 </div>
@@ -76,7 +85,7 @@ export default () => (
   <div class="edit-section" id="social-settings">
     <h3 class="edit-section-title section-title edit-item">ソーシャルメディア</h3>
           <div class = "edit-item">
-            <label class="edit-title">Instagram</label>
+            <label class="edit-title s-text">Instagram</label>
             <div class="action-button-wrapper input-wrapper">
             <span class="input-prefix">
             <Instagram />
@@ -85,7 +94,7 @@ export default () => (
             </div>
  </div>
      <div class = "edit-item">
-       <label class="edit-title">Facebook</label>
+       <label class="edit-title s-text">Facebook</label>
        <div class="action-button-wrapper input-wrapper">
        <span class="input-prefix">
        <Facebook />
@@ -94,7 +103,7 @@ export default () => (
        </div>
 </div>
     <div class = "edit-item">
-      <label class="edit-title">Twitter</label>
+      <label class="edit-title s-text">Twitter</label>
       <div class="action-button-wrapper input-wrapper">
       <span class="input-prefix">
       <Twitter />
@@ -121,39 +130,38 @@ export default () => (
   {/*項目・お知らせ*/}
   <div class="edit-section" id="notifications">
     <h3 class="edit-section-title section-title edit-item">お知らせ</h3>
-
-        <h6 class="edit-section-title  edit-item">アクティビティ通知</h6>
+      <label class="edit-title s-text edit-item">アクティビティの通知</label>
         <div class="hr edit-hr"></div>
    <div class = "edit-item edit-toggle-wrapper">
       <div  class="edit-toggle">
     <input id="toggle" class="toggle-input" type='checkbox' />
     <label for="toggle" class="toggle-label"/>
   </div>
-  <label class=" edit-title s-text edit-toggle-text">新しいフォロワー</label>
+  <label class=" edit-title s-text s-text edit-toggle-text">新しいフォロワー</label>
   </div>
    <div class = "edit-item edit-toggle-wrapper">
       <div  class="edit-toggle">
     <input id="toggle" class="toggle-input" type='checkbox' />
     <label for="toggle" class="toggle-label"/>
   </div>
-  <label class=" edit-title s-text edit-toggle-text">投稿したレシピへのレビュー</label>
+  <label class=" edit-title s-text s-text edit-toggle-text">投稿したレシピへのレビュー</label>
   </div>
   <div class = "edit-item edit-toggle-wrapper">
      <div  class="edit-toggle">
    <input id="toggle" class="toggle-input" type='checkbox' />
    <label for="toggle" class="toggle-label"/>
  </div>
- <label class=" edit-title s-text edit-toggle-text">フォローしているユーザーの投稿</label>
+ <label class=" edit-title s-text s-text edit-toggle-text">フォローしているユーザーの投稿</label>
  </div>
 
-      <h6 class="edit-section-title  edit-item">Ceaperからのお知らせ</h6>
+ <label class="edit-title s-text edit-item">Ceaperの通知</label>
       <div class="hr edit-hr"></div>
  <div class = "edit-item edit-toggle-wrapper">
     <div  class="edit-toggle">
   <input id="toggle" class="toggle-input" type='checkbox' />
   <label for="toggle" class="toggle-label"/>
 </div>
-<label class=" edit-title s-text edit-toggle-text">トレンドニュース（隔週）</label>
+<label class=" edit-title s-text s-text edit-toggle-text">トレンドニュース（隔週）</label>
 </div>
 
  <div class = "edit-item edit-toggle-wrapper">
@@ -161,7 +169,7 @@ export default () => (
   <input id="toggle" class="toggle-input" type='checkbox' />
   <label for="toggle" class="toggle-label"/>
 </div>
-<label class=" edit-title s-text edit-toggle-text">Ceaperからのお知らせ（アップデートを含む）</label>
+<label class=" edit-title s-text s-text edit-toggle-text">重要なお知らせ（アップデート等）</label>
 </div>
 
 

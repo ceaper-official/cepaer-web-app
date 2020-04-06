@@ -20,11 +20,19 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
+    "/delete": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/edit": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/user": [
+    "/signin": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/signup": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

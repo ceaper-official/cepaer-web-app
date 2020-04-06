@@ -450,6 +450,43 @@ function CookSolid() {
 
 /***/ }),
 
+/***/ "./assets/icons/ui/cross.js":
+/*!**********************************!*\
+  !*** ./assets/icons/ui/cross.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Cross; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/cross.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Cross() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M10.70662,10,19.8531.85352a.49995.49995,0,1,0-.707-.707L9.99959,9.293.8531.14648a.49995.49995,0,1,0-.707.707L9.29256,10,.14607,19.14648a.49995.49995,0,1,0,.707.707L9.99959,10.707l9.14648,9.14649a.49995.49995,0,1,0,.707-.707Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
 /***/ "./assets/icons/ui/home_solid.js":
 /*!***************************************!*\
   !*** ./assets/icons/ui/home_solid.js ***!
@@ -632,6 +669,51 @@ function TimeSolid() {
     __self: this
   }, __jsx("path", {
     d: "M9.99993,0a10,10,0,1,0,10,10A10.01146,10.01146,0,0,0,9.99993,0Zm6.59814,10.5H9.99993a.49971.49971,0,0,1-.5-.5V3.40234a.5.5,0,0,1,1,0V9.5h6.09814a.5.5,0,0,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/upload.js":
+/*!***********************************!*\
+  !*** ./assets/icons/ui/upload.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Upload; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/upload.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Upload() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M15.36475,14.80078H13.13818a.5.5,0,0,1,0-1h2.22657a3.6355,3.6355,0,0,0,0-7.271h-.15918a.50048.50048,0,0,1-.45606-.29444A4.90744,4.90744,0,0,0,5.42529,7.50586a.49992.49992,0,0,1-.62744.40576,2.99895,2.99895,0,1,0-1.5957,5.78174,3.07217,3.07217,0,0,0,.72461.10742H6.77588a.5.5,0,1,1,0,1H3.91309A4.0757,4.0757,0,0,1,2.937,14.6582a3.99965,3.99965,0,0,1-.91015-7.33447,3.9639,3.9639,0,0,1,2.51269-.48437A5.9077,5.9077,0,0,1,15.52,5.53223a4.63558,4.63558,0,0,1-.15527,9.26855Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M10,17.65625a.49971.49971,0,0,1-.5-.5v-5.791L7.80859,13.05664a.49995.49995,0,0,1-.707-.707L9.645,9.80615l.01269-.0122H9.6582l.00049-.00049a.48567.48567,0,0,1,.145-.09473.51567.51567,0,0,1,.39258,0,.48567.48567,0,0,1,.145.09473l.00049.00049h.00049l.01269.0122,2.54346,2.54346a.49995.49995,0,0,1-.707.707L10.5,11.36523v5.791A.49971.49971,0,0,1,10,17.65625Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -1843,7 +1925,7 @@ function NavEdit() {
     },
     __self: this
   }, "\u304A\u77E5\u3089\u305B")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "#save",
+    href: "/delete",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -1856,7 +1938,21 @@ function NavEdit() {
       lineNumber: 26
     },
     __self: this
-  }, "\u4FDD\u5B58\u3059\u308B"))));
+  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "#save",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx("a", {
+    class: "xs-text hover-accent grey",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "\u4FDD\u5B58\u3059\u308B"))), " ");
 }
 
 /***/ }),
@@ -3889,15 +3985,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _assets_icons_ui_add_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/add.js */ "./assets/icons/ui/add.js");
 /* harmony import */ var _assets_icons_ui_setting_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/setting_solid.js */ "./assets/icons/ui/setting_solid.js");
-/* harmony import */ var _assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/social/instagram.js */ "./assets/icons/social/instagram.js");
-/* harmony import */ var _assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/social/twitter.js */ "./assets/icons/social/twitter.js");
-/* harmony import */ var _assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/social/google.js */ "./assets/icons/social/google.js");
-/* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
-/* harmony import */ var _layouts_shot_user_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../layouts/shot_user.js */ "./layouts/shot_user.js");
-/* harmony import */ var _layouts_nav_edit_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../layouts/nav-edit.js */ "./layouts/nav-edit.js");
+/* harmony import */ var _assets_icons_ui_upload_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/upload.js */ "./assets/icons/ui/upload.js");
+/* harmony import */ var _assets_icons_ui_cross_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/cross.js */ "./assets/icons/ui/cross.js");
+/* harmony import */ var _assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/social/instagram.js */ "./assets/icons/social/instagram.js");
+/* harmony import */ var _assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/social/twitter.js */ "./assets/icons/social/twitter.js");
+/* harmony import */ var _assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/icons/social/google.js */ "./assets/icons/social/google.js");
+/* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
+/* harmony import */ var _layouts_shot_user_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../layouts/shot_user.js */ "./layouts/shot_user.js");
+/* harmony import */ var _layouts_nav_edit_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../layouts/nav-edit.js */ "./layouts/nav-edit.js");
 var _jsxFileName = "/Users/kerry/ceaper/pages/edit.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -3915,7 +4015,7 @@ function User() {
     alt: "user image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   });
@@ -3927,48 +4027,48 @@ function User() {
 /* harmony default export */ __webpack_exports__["default"] = (() => __jsx(_layouts_base_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx("div", {
   id: "page",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 22
   },
   __self: undefined
 }, __jsx("div", {
   class: "user-row edit-row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 23
   },
   __self: undefined
 }, __jsx("div", {
   class: "contents",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 24
   },
   __self: undefined
 }, __jsx("div", {
   class: "section edit-wrapper center-section",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 25
   },
   __self: undefined
-}, __jsx(_layouts_nav_edit_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+}, __jsx(_layouts_nav_edit_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25
+    lineNumber: 27
   },
   __self: undefined
 }), __jsx("div", {
   class: "edit-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 29
   },
   __self: undefined
 }, __jsx("div", {
@@ -3976,76 +4076,71 @@ function User() {
   id: "profile",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 32
   },
   __self: undefined
 }, __jsx("div", {
   class: "user-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 31
+    lineNumber: 33
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 32
+    lineNumber: 34
   },
   __self: undefined
 }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB"), __jsx("div", {
   class: "edit-item edit-user-icon-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33
+    lineNumber: 35
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-user-icon",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 36
   },
   __self: undefined
 }, __jsx(User, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
-  },
-  __self: undefined
-})), __jsx("button", {
-  class: "button button-black xs-text",
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 37
   },
   __self: undefined
-}, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u753B\u50CF\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9")), __jsx("div", {
-  class: "edit-item",
+})), __jsx("div", {
+  class: "edit-user-button-wrapper",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 39
+  },
+  __self: undefined
+}, __jsx("button", {
+  class: "button button-black ico",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 40
   },
   __self: undefined
-}, __jsx("label", {
-  class: "edit-title edit-required",
+}, __jsx(_assets_icons_ui_upload_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40
+  },
+  __self: undefined
+}), "\u30A2\u30A4\u30B3\u30F3\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9"), __jsx("button", {
+  class: "button button-grey ico",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 41
   },
   __self: undefined
-}, "\u540D\u524D"), __jsx("input", {
-  class: "input-inner edit-input-inner",
-  autocomplete: "username",
-  type: "text",
-  value: "\u30B1\u30EA\u30FC\u5C0F\u7530",
-  required: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 42
-  },
-  __self: undefined
-})), __jsx("div", {
+}, "\u524A\u9664"))), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
@@ -4053,17 +4148,42 @@ function User() {
   },
   __self: undefined
 }, __jsx("label", {
-  class: "edit-title",
+  class: "edit-title s-text edit-required",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 46
+  },
+  __self: undefined
+}, "\u30E6\u30FC\u30B6\u30FC\u540D"), __jsx("input", {
+  class: "input-inner edit-input-inner",
+  autocomplete: "username",
+  type: "text",
+  value: "\u30B1\u30EA\u30FC\u5C0F\u7530",
+  required: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 47
+  },
+  __self: undefined
+})), __jsx("div", {
+  class: "edit-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 50
+  },
+  __self: undefined
+}, __jsx("label", {
+  class: "edit-title s-text",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 51
   },
   __self: undefined
 }, "\u81EA\u5DF1\u7D39\u4ECB"), __jsx("textarea", {
   class: "edit-area",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47
+    lineNumber: 52
   },
   __self: undefined
 }, "\u79C1\u306F\u3001\u6599\u7406\u304C\u5927\u597D\u304D\u306A\u751F\u7C8B\u306E\u30AD\u30E3\u30F3\u30D1\u30FC\u3067\u3059\u3002\u90317\u3067\u3001\u30AD\u30E3\u30F3\u30D7\u306B\u884C\u3063\u3066\u3044\u307E\u3059\uFF01\u3088\u304F\u51FA\u6CA1\u3059\u308B\u5834\u6240\u306F\u9AD8\u5C3E\u5C71\u3067\u3059\u3002")))), __jsx("div", {
@@ -4071,28 +4191,28 @@ function User() {
   id: "settings",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 53
+    lineNumber: 58
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 54
+    lineNumber: 59
   },
   __self: undefined
 }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u8A2D\u5B9A"), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 55
+    lineNumber: 60
   },
   __self: undefined
 }, __jsx("label", {
-  class: "edit-title",
+  class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 56
+    lineNumber: 61
   },
   __self: undefined
 }, "E\u30E1\u30FC\u30EB"), __jsx("input", {
@@ -4104,25 +4224,10 @@ function User() {
   value: "user@gmail.com",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 57
-  },
-  __self: undefined
-}))), __jsx("div", {
-  class: "edit-section",
-  id: "password",
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 62
   },
   __self: undefined
-}, __jsx("h3", {
-  class: "edit-section-title section-title edit-item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 63
-  },
-  __self: undefined
-}, "\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("div", {
+})), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
@@ -4130,10 +4235,50 @@ function User() {
   },
   __self: undefined
 }, __jsx("label", {
-  class: "edit-title",
+  class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 65
+  },
+  __self: undefined
+}, "\u65B0\u3057\u3044E\u30E1\u30FC\u30EB"), __jsx("input", {
+  class: "input-inner edit-input-inner",
+  autocorrect: "off",
+  autocapitalize: "off",
+  autocomplete: "useremail",
+  type: "text",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 66
+  },
+  __self: undefined
+}))), __jsx("div", {
+  class: "edit-section",
+  id: "password",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 71
+  },
+  __self: undefined
+}, __jsx("h3", {
+  class: "edit-section-title section-title edit-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 72
+  },
+  __self: undefined
+}, "\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("div", {
+  class: "edit-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 73
+  },
+  __self: undefined
+}, __jsx("label", {
+  class: "edit-title s-text",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 74
   },
   __self: undefined
 }, "\u73FE\u5728\u306E\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("input", {
@@ -4143,21 +4288,21 @@ function User() {
   value: "user@gmail.com",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 66
+    lineNumber: 75
   },
   __self: undefined
 })), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 68
+    lineNumber: 77
   },
   __self: undefined
 }, __jsx("label", {
-  class: "edit-title",
+  class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 69
+    lineNumber: 78
   },
   __self: undefined
 }, "\u65B0\u3057\u3044\u30D1\u30B9\u30EF\u30FC\u30C9"), __jsx("input", {
@@ -4166,7 +4311,7 @@ function User() {
   value: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 70
+    lineNumber: 79
   },
   __self: undefined
 }))), __jsx("div", {
@@ -4174,59 +4319,17 @@ function User() {
   id: "social-settings",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 76
+    lineNumber: 85
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 77
+    lineNumber: 86
   },
   __self: undefined
 }, "\u30BD\u30FC\u30B7\u30E3\u30EB\u30E1\u30C7\u30A3\u30A2"), __jsx("div", {
-  class: "edit-item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 78
-  },
-  __self: undefined
-}, __jsx("label", {
-  class: "edit-title",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 79
-  },
-  __self: undefined
-}, "Instagram"), __jsx("div", {
-  class: "action-button-wrapper input-wrapper",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 80
-  },
-  __self: undefined
-}, __jsx("span", {
-  class: "input-prefix",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 81
-  },
-  __self: undefined
-}, __jsx(_assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 82
-  },
-  __self: undefined
-})), __jsx("input", {
-  class: "input-inner w100",
-  placeholder: "\u30E6\u30FC\u30B6\u30FC\u30CD\u30FC\u30E0\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 84
-  },
-  __self: undefined
-}))), __jsx("div", {
   class: "edit-item",
   __source: {
     fileName: _jsxFileName,
@@ -4234,13 +4337,13 @@ function User() {
   },
   __self: undefined
 }, __jsx("label", {
-  class: "edit-title",
+  class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 88
   },
   __self: undefined
-}, "Facebook"), __jsx("div", {
+}, "Instagram"), __jsx("div", {
   class: "action-button-wrapper input-wrapper",
   __source: {
     fileName: _jsxFileName,
@@ -4254,7 +4357,7 @@ function User() {
     lineNumber: 90
   },
   __self: undefined
-}, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+}, __jsx(_assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 91
@@ -4262,7 +4365,7 @@ function User() {
   __self: undefined
 })), __jsx("input", {
   class: "input-inner w100",
-  placeholder: "\u30E6\u30FC\u30B6\u30FCID\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
+  placeholder: "\u30E6\u30FC\u30B6\u30FC\u30CD\u30FC\u30E0\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 93
@@ -4276,13 +4379,13 @@ function User() {
   },
   __self: undefined
 }, __jsx("label", {
-  class: "edit-title",
+  class: "edit-title s-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 97
   },
   __self: undefined
-}, "Twitter"), __jsx("div", {
+}, "Facebook"), __jsx("div", {
   class: "action-button-wrapper input-wrapper",
   __source: {
     fileName: _jsxFileName,
@@ -4296,7 +4399,7 @@ function User() {
     lineNumber: 99
   },
   __self: undefined
-}, __jsx(_assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+}, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 100
@@ -4310,73 +4413,115 @@ function User() {
     lineNumber: 102
   },
   __self: undefined
+}))), __jsx("div", {
+  class: "edit-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 105
+  },
+  __self: undefined
+}, __jsx("label", {
+  class: "edit-title s-text",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 106
+  },
+  __self: undefined
+}, "Twitter"), __jsx("div", {
+  class: "action-button-wrapper input-wrapper",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 107
+  },
+  __self: undefined
+}, __jsx("span", {
+  class: "input-prefix",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 108
+  },
+  __self: undefined
+}, __jsx(_assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 109
+  },
+  __self: undefined
+})), __jsx("input", {
+  class: "input-inner w100",
+  placeholder: "\u30E6\u30FC\u30B6\u30FCID\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 111
+  },
+  __self: undefined
 })))), __jsx("div", {
   class: "edit-section",
   id: "connections",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 108
+    lineNumber: 117
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 109
+    lineNumber: 118
   },
   __self: undefined
 }, "\u5916\u90E8\u30B5\u30FC\u30D3\u30B9\u306E\u9023\u643A"), __jsx("div", {
   class: "edit-item edit-connections",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 110
+    lineNumber: 119
   },
   __self: undefined
 }, __jsx("div", {
   class: "ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 111
+    lineNumber: 120
   },
   __self: undefined
-}, __jsx(_assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+}, __jsx(_assets_icons_social_google_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 111
+    lineNumber: 120
   },
   __self: undefined
 }), "Google"), __jsx("a", {
   class: "button edit-connected-button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 112
+    lineNumber: 121
   },
   __self: undefined
 }, "\u9023\u643A\u6E08\u307F")), __jsx("div", {
   class: "edit-item edit-connections",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 115
+    lineNumber: 124
   },
   __self: undefined
 }, __jsx("div", {
   class: "ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 116
+    lineNumber: 125
   },
   __self: undefined
-}, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+}, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 116
+    lineNumber: 125
   },
   __self: undefined
 }), "Facebook"), __jsx("a", {
   class: "button button-black",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 117
+    lineNumber: 126
   },
   __self: undefined
 }, "\u9023\u643A\u3059\u308B"))), __jsx("div", {
@@ -4384,42 +4529,42 @@ function User() {
   id: "notifications",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 122
+    lineNumber: 131
   },
   __self: undefined
 }, __jsx("h3", {
   class: "edit-section-title section-title edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 123
+    lineNumber: 132
   },
   __self: undefined
-}, "\u304A\u77E5\u3089\u305B"), __jsx("h6", {
-  class: "edit-section-title  edit-item",
+}, "\u304A\u77E5\u3089\u305B"), __jsx("label", {
+  class: "edit-title s-text edit-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 125
+    lineNumber: 133
   },
   __self: undefined
-}, "\u30A2\u30AF\u30C6\u30A3\u30D3\u30C6\u30A3\u901A\u77E5"), __jsx("div", {
+}, "\u30A2\u30AF\u30C6\u30A3\u30D3\u30C6\u30A3\u306E\u901A\u77E5"), __jsx("div", {
   class: "hr edit-hr",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 126
+    lineNumber: 134
   },
   __self: undefined
 }), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 127
+    lineNumber: 135
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 128
+    lineNumber: 136
   },
   __self: undefined
 }, __jsx("input", {
@@ -4428,7 +4573,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 129
+    lineNumber: 137
   },
   __self: undefined
 }), __jsx("label", {
@@ -4436,28 +4581,28 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 130
+    lineNumber: 138
   },
   __self: undefined
 })), __jsx("label", {
-  class: " edit-title s-text edit-toggle-text",
+  class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 132
+    lineNumber: 140
   },
   __self: undefined
 }, "\u65B0\u3057\u3044\u30D5\u30A9\u30ED\u30EF\u30FC")), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 134
+    lineNumber: 142
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 135
+    lineNumber: 143
   },
   __self: undefined
 }, __jsx("input", {
@@ -4466,7 +4611,7 @@ function User() {
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 136
+    lineNumber: 144
   },
   __self: undefined
 }), __jsx("label", {
@@ -4474,89 +4619,37 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 137
+    lineNumber: 145
   },
   __self: undefined
 })), __jsx("label", {
-  class: " edit-title s-text edit-toggle-text",
+  class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 139
+    lineNumber: 147
   },
   __self: undefined
 }, "\u6295\u7A3F\u3057\u305F\u30EC\u30B7\u30D4\u3078\u306E\u30EC\u30D3\u30E5\u30FC")), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 141
+    lineNumber: 149
   },
   __self: undefined
 }, __jsx("div", {
   class: "edit-toggle",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 142
-  },
-  __self: undefined
-}, __jsx("input", {
-  id: "toggle",
-  class: "toggle-input",
-  type: "checkbox",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 143
-  },
-  __self: undefined
-}), __jsx("label", {
-  for: "toggle",
-  class: "toggle-label",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 144
-  },
-  __self: undefined
-})), __jsx("label", {
-  class: " edit-title s-text edit-toggle-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 146
-  },
-  __self: undefined
-}, "\u30D5\u30A9\u30ED\u30FC\u3057\u3066\u3044\u308B\u30E6\u30FC\u30B6\u30FC\u306E\u6295\u7A3F")), __jsx("h6", {
-  class: "edit-section-title  edit-item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 149
-  },
-  __self: undefined
-}, "Ceaper\u304B\u3089\u306E\u304A\u77E5\u3089\u305B"), __jsx("div", {
-  class: "hr edit-hr",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 150
   },
   __self: undefined
-}), __jsx("div", {
-  class: "edit-item edit-toggle-wrapper",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 151
-  },
-  __self: undefined
-}, __jsx("div", {
-  class: "edit-toggle",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 152
-  },
-  __self: undefined
 }, __jsx("input", {
   id: "toggle",
   class: "toggle-input",
   type: "checkbox",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 153
+    lineNumber: 151
   },
   __self: undefined
 }), __jsx("label", {
@@ -4564,17 +4657,31 @@ function User() {
   class: "toggle-label",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 154
+    lineNumber: 152
   },
   __self: undefined
 })), __jsx("label", {
-  class: " edit-title s-text edit-toggle-text",
+  class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 156
+    lineNumber: 154
   },
   __self: undefined
-}, "\u30C8\u30EC\u30F3\u30C9\u30CB\u30E5\u30FC\u30B9\uFF08\u9694\u9031\uFF09")), __jsx("div", {
+}, "\u30D5\u30A9\u30ED\u30FC\u3057\u3066\u3044\u308B\u30E6\u30FC\u30B6\u30FC\u306E\u6295\u7A3F")), __jsx("label", {
+  class: "edit-title s-text edit-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 157
+  },
+  __self: undefined
+}, "Ceaper\u306E\u901A\u77E5"), __jsx("div", {
+  class: "hr edit-hr",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 158
+  },
+  __self: undefined
+}), __jsx("div", {
   class: "edit-item edit-toggle-wrapper",
   __source: {
     fileName: _jsxFileName,
@@ -4606,31 +4713,69 @@ function User() {
   },
   __self: undefined
 })), __jsx("label", {
-  class: " edit-title s-text edit-toggle-text",
+  class: " edit-title s-text s-text edit-toggle-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 164
   },
   __self: undefined
-}, "Ceaper\u304B\u3089\u306E\u304A\u77E5\u3089\u305B\uFF08\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u542B\u3080\uFF09"))), __jsx("div", {
+}, "\u30C8\u30EC\u30F3\u30C9\u30CB\u30E5\u30FC\u30B9\uFF08\u9694\u9031\uFF09")), __jsx("div", {
+  class: "edit-item edit-toggle-wrapper",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 167
+  },
+  __self: undefined
+}, __jsx("div", {
+  class: "edit-toggle",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 168
+  },
+  __self: undefined
+}, __jsx("input", {
+  id: "toggle",
+  class: "toggle-input",
+  type: "checkbox",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 169
+  },
+  __self: undefined
+}), __jsx("label", {
+  for: "toggle",
+  class: "toggle-label",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 170
+  },
+  __self: undefined
+})), __jsx("label", {
+  class: " edit-title s-text s-text edit-toggle-text",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 172
+  },
+  __self: undefined
+}, "\u91CD\u8981\u306A\u304A\u77E5\u3089\u305B\uFF08\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u7B49\uFF09"))), __jsx("div", {
   class: "edit-section edit-item edit-save-button",
   id: "save",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 171
+    lineNumber: 179
   },
   __self: undefined
 }, __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 172
+    lineNumber: 180
   },
   __self: undefined
 }, __jsx("a", {
   class: "button button-accent",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 173
+    lineNumber: 181
   },
   __self: undefined
 }, "\u4FDD\u5B58\u3059\u308B"))))))))));

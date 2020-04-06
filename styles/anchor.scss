@@ -32,6 +32,11 @@ a.hover-line:hover {
   text-decoration-color: var(--black);
 }
 
+a.hover-opacity:hover {
+  opacity: .6;
+}
+
+
 /*もっと見る*/
 .learn-more {
   white-space: nowrap;
