@@ -6,6 +6,9 @@
   color: var(--grey);
 }
 
+.black {
+  color: var(--black);
+}
 .white {
   color: var(--white);
 }
@@ -20,6 +23,9 @@
 }
 .bg-accent60 {
   background: var(--accent60);
+}
+div.bg-white {
+  background: var(--white);
 }
 div.bg-black {
   background: var(--black);

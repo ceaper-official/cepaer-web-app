@@ -18,7 +18,7 @@ export default function NavEdit() {
     <a class="xs-text hover-accent grey">ソーシャルメディア</a>
   </Link>
   <Link href="#connections">
-    <a class="xs-text hover-accent grey">外部サービスの連携</a>
+    <a class="xs-text hover-accent grey">外部サービスのログイン連携</a>
   </Link>
   <Link href="#notifications">
     <a class="xs-text hover-accent grey">お知らせ</a>

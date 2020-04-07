@@ -21,7 +21,7 @@ export default function NavEditMobile() {
           <a class="xs-text">ソーシャルメディア</a>
         </Link>
         <Link href="#connections">
-          <a class="xs-text">外部サービスの連携</a>
+          <a class="xs-text">外部サービスのログイン連携</a>
         </Link>
         <Link href="#notifications">
           <a class="xs-text">お知らせ</a>

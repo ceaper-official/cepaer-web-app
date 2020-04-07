@@ -105,6 +105,9 @@ padding: 2rem 0;
   padding: .5rem .5rem .5rem 34px;
   border-radius: 4px;
   width: 300px;
+  &:focus {
+    border-color: var(--black);
+  }
 }
 
 /*コンテンツ・デスクトップ*/
@@ -158,11 +161,10 @@ top: 0;
 width: 100%;
 z-index: 100;
   padding: 1rem 0;
-  background: var(--black);
-  border-bottom: 1px solid var(--horizontalRule);
+    border-bottom: 1px solid var(--horizontalRule);
   .app-header-wrapper {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 align-items: center;
 //バック
 .app-header-inner1 {
@@ -171,7 +173,7 @@ align-items: center;
     width: auto;
     height: 17px;
     & path {
-      fill: var(--white);
+      fill: var(--black);
     }
   }
   & a {
@@ -180,21 +182,14 @@ align-items: center;
 }
 //ロゴ
 .app-header-inner2 {
-text-align: center;
-  & .logo-link svg {
-    width: auto;
-    height: 25px;
+  .search::placeholder {
+    font-size: 1.3rem;
+    line-height: 1;
   }
-}
-//ユーザー
-.app-header-inner3 {
-& .user-container {
-  justify-content: flex-end;
-}
- & .user-avatar {
-   width: 25px;
-   height: 25px;
- }
+  svg {
+    height: auto;
+    width: 12px;
+  }
 }
 
   }
@@ -253,6 +248,16 @@ padding-top: .6em;
   color: var(--accent);
   & svg path{
   fill: var(--accent);
+  }
+}
+
+//アプリ・ホーム
+#home-header-app {
+  .app-header-wrapper {
+    grid-template-columns:  1fr;
+    .search {
+      width: 100%;
+    }
   }
 }
 
@@ -320,108 +325,3 @@ padding-top: .6em;
     right: -5px;
   }
 }
-
-.icon-wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  padding-left: 1rem;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-  margin-left: 30px;
-}
-
-.icon-wrapper:hover {
-  opacity: 1;
-}
-
-.icon-wrapper[class*="data-ally"]:focus::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -30%;
-  width: 100%;
-  height: 160%;
-  border: 2px solid var(--accent);
-  background: rgba(255, 255, 255, 0.01);
-  border-radius: 5px;
-}
-
-
-
-
-.page-button {
-  font-weight: 600;
-  font-size: 18px;
-  text-decoration: none;
-  color: var(--primary);
-}
-
-.page-button:focus,
-.page-button:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-.page-number-button {
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-  color: var(--primary);
-}
-
-.page-number-button:focus,
-.page-number-button:hover {
-  text-decoration: underline;
-}
-
-.spacer {
-  opacity: 0.3;
-}
-
-.spacer::before {
-  content: "...";
-}
-
-.mobiler-reference {
-  font-weight: 400;
-  color: var(--primary);
-}
-
-.mobile-reference em {
-  font-style: normal;
-  color: var(--primary);
-}
-
-.frame {
-  position: relative;
-  z-index: 1;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-/*TABLET*/
-@media screen and (max-width: 735px) {
-  .frame {
-    left: -15px;
-  }
-}
-/*Bio*/
-@media screen and (max-width: 1070px) {
-.subheading-container .grid-controls-container {
-  margin-bottom: 50px;
-}}

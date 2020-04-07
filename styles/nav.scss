@@ -42,7 +42,6 @@ font-family: var(--headings);
 .side-nav-mobile-inner{
 	height: 0;
 	opacity: 0;
-	transition: .4s;
   visibility: hidden;
   & a {
     display: block;
@@ -53,7 +52,6 @@ font-family: var(--headings);
 .side-nav-label-check:checked + .side-nav-label + .side-nav-mobile-inner{
 	height: auto;
 	opacity: 1;
-  padding-bottom: 2rem;
   visibility: visible;
 }
 

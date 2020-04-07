@@ -4,6 +4,7 @@ import Link from 'next/link';
 import  ArrowR from "../assets/icons/ui/arrow-r.js";
 import  NavPoliciesMobile from "../layouts/nav-policies-mobile.js";
 import  NavPolicies from "../layouts/nav-policies.js";
+
 export default () => (
     <BaseLayout>
       <div id="page"class="side-nav-page">

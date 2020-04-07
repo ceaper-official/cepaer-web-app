@@ -1,5 +1,52 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/feedback.js"],{
 
+/***/ "./assets/app-logo.js":
+/*!****************************!*\
+  !*** ./assets/app-logo.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AppLogo; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/app-logo.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function AppLogo() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 212.73975 212.73975",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("circle", {
+    cx: "106.36987",
+    cy: "106.36987",
+    r: "106.36987",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M146.29545,52.26116l2.46008-2.47322a3.56883,3.56883,0,0,1,6.0991,2.51681v23.5655a3.56884,3.56884,0,0,1-3.56883,3.56884h-4.07387a3.56981,3.56981,0,0,1-3.375-2.45974c-5.07839-15.14552-15.373-22.08993-29.47055-22.08993-24.18311,0-39.75555,22.5342-39.75555,51.48068,0,31.69459,17.22135,49.83154,42.87,49.83154,14.47324,0,26.56468-4.76314,39.02246-15.38928v12.27483c-12.45778,10.44276-28.39677,16.67165-47.26681,16.67165-38.65614,0-63.57213-26.015-63.57213-62.839,0-37.74054,26.01519-63.9389,63.57213-63.9389,12.38822,0,23.70568,3.21264,32.41462,9.63757A3.56486,3.56486,0,0,0,146.29545,52.26116Z",
+    fill: "#fdfdfd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
 /***/ "./assets/icons/social/facebook.js":
 /*!*****************************************!*\
   !*** ./assets/icons/social/facebook.js ***!
@@ -1187,77 +1234,17 @@ var Footer = function Footer() {
     },
     __self: this
   }, __jsx("div", {
-    "class": "bg bg-black",
+    "class": "bg-grey",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }, __jsx("div", {
-    "class": "section ",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("div", {
-    "class": "footer-container footer-app-grid",
-    id: "footer-app",
-    style: {
-      paddingBottom: 0
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx("div", {
-    "class": "footer-app-grid-inner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "\u30AD\u30E3\u30F3\u30D1\u30FC\u306B\u3068\u3063\u3066\u3001\u6700\u9AD8\u306E\u30D1\u30FC\u30C8\u30CA\u30FC\u3092\u3054\u7528\u610F\u3057\u307E\u3059\u3002"), __jsx("a", {
-    "class": "button button-grey",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "\u8FD1\u65E5\u30EA\u30EA\u30FC\u30B9\u4E88\u5B9A")), __jsx("div", {
-    "class": "footer-app-grid-inner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, __jsx("img", {
-    src: "/images/home/hero.svg",
-    alt: "hero",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }))))), __jsx("div", {
-    "class": "bg-grey",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, __jsx("div", {
     "class": "section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 11
     },
     __self: this
   }, __jsx("div", {
@@ -1265,74 +1252,74 @@ var Footer = function Footer() {
     id: "footer-contents",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 12
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 13
     },
     __self: this
   }, __jsx("a", {
     "class": "logo-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 14
     },
     __self: this
   }, __jsx(_assets_logo_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 15
     },
     __self: this
   }))), __jsx("div", {
     "class": "footer-contents-grid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 18
     },
     __self: this
   }, __jsx("div", {
     "class": "footer-terms-contents-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 19
     },
     __self: this
   }, __jsx("h6", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 20
     },
     __self: this
   }, "\u30B5\u30FC\u30D3\u30B9"), __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 21
     },
     __self: this
   }, "\u4F7F\u3044\u65B9"), __jsx("a", {
     "class": "hover-line event-none",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 22
     },
     __self: this
   }, "\u8A18\u4E8B\uFF08\u6E96\u5099\u4E2D\uFF09")), __jsx("div", {
     "class": "footer-terms-contents-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 24
     },
     __self: this
   }, __jsx("h6", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 25
     },
     __self: this
   }, "Ceaper"), __jsx("a", {
@@ -1340,89 +1327,89 @@ var Footer = function Footer() {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 26
     },
     __self: this
   }, "Ceaper\u306B\u3064\u3044\u3066"), __jsx("div", {
     "class": "badge-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 27
     },
     __self: this
   }, __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 27
     },
     __self: this
   }, "\u30E9\u30A4\u30BF\u30FC\u52DF\u96C6"), __jsx(_assets_icons_ui_badge_new_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 27
     },
     __self: this
   })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/press",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 29
     },
     __self: this
   }, __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 30
     },
     __self: this
   }, "\u30D7\u30EC\u30B9")), __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 33
     },
     __self: this
   }, "\u6295\u8CC7\u306B\u95A2\u3059\u308B\u60C5\u5831")), __jsx("div", {
     "class": "footer-terms-contents-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 35
     },
     __self: this
   }, __jsx("h6", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 36
     },
     __self: this
   }, "\u30B5\u30DD\u30FC\u30C8"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/feedback",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 37
     },
     __self: this
   }, __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 38
     },
     __self: this
   }, "\u3054\u610F\u898B\u30FB\u3054\u8981\u671B")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/help/home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 42
     },
     __self: this
   }, __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 43
     },
     __self: this
   }, "\u30D8\u30EB\u30D7        ")), __jsx("a", {
@@ -1432,21 +1419,21 @@ var Footer = function Footer() {
     href: "mailto: support@ceaper.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 46
     },
     __self: this
   }, "\u304A\u554F\u3044\u5408\u308F\u305B"))))), __jsx("div", {
     "class": "section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 52
     },
     __self: this
   }, __jsx("div", {
     "class": "hr-paragraph",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 53
     },
     __self: this
   }), __jsx("div", {
@@ -1454,14 +1441,14 @@ var Footer = function Footer() {
     id: "footer-terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 55
     },
     __self: this
   }, __jsx("div", {
     "class": "footer-terms-inner1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 56
     },
     __self: this
   }, __jsx("p", {
@@ -1471,101 +1458,101 @@ var Footer = function Footer() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 57
     },
     __self: this
   }, "\xA9 2020 Ceaper"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 57
     },
     __self: this
   }, "/"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/terms",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 58
     },
     __self: this
   }, __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 59
     },
     __self: this
   }, "\u5229\u7528\u898F\u7D04")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/privacy",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 63
     },
     __self: this
   }, __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 64
     },
     __self: this
   }, "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC        ")), __jsx("a", {
     "class": "hover-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 67
     },
     __self: this
   }, "\u5E83\u544A\u63B2\u8F09")), __jsx("div", {
     "class": "footer-terms-inner2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 69
     },
     __self: this
   }, __jsx("div", {
     "class": "footer-social",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 70
     },
     __self: this
   }, __jsx("a", {
     "class": "user-social-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 71
     },
     __self: this
   }, __jsx(_assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 72
     },
     __self: this
   })), __jsx("a", {
     "class": "user-social-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 74
     },
     __self: this
   }, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 75
     },
     __self: this
   })), __jsx("a", {
     "class": "user-social-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 77
     },
     __self: this
   }, __jsx(_assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 78
     },
     __self: this
   }))))))));
@@ -1771,6 +1758,7 @@ var Header = function Header() {
     __self: this
   }))), __jsx("div", {
     id: "app-header",
+    "class": "bg-white",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
@@ -1819,9 +1807,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_icons_ui_home_solid_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/home_solid.js */ "./assets/icons/ui/home_solid.js");
 /* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
 /* harmony import */ var _assets_icons_ui_back_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/back.js */ "./assets/icons/ui/back.js");
+/* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/Users/kerry/ceaper/layouts/header_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -1834,7 +1827,7 @@ function User() {
     alt: "user image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   });
@@ -1844,120 +1837,84 @@ var HeaderApp = function HeaderApp() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
-  }, __jsx("div", {
+  }, " ", __jsx("div", {
     "class": "section",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("div", {
-    "class": "app-header-wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
   }, __jsx("div", {
+    "class": "app-header-wrapper",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("div", {
     "class": "app-header-inner app-header-inner1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
+    onClick: function onClick() {
+      return next_router__WEBPACK_IMPORTED_MODULE_7___default.a.back();
     },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 17
     },
     __self: this
   }, __jsx(_assets_icons_ui_back_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 18
     },
     __self: this
-  })))), __jsx("div", {
+  })), __jsx("div", {
     "class": "app-header-inner app-header-inner2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, __jsx("a", {
-    "class": "logo-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, __jsx(_assets_logo_dark_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  })))), __jsx("div", {
-    "class": "app-header-inner app-header-inner3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/user",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 20
     },
     __self: this
   }, __jsx("div", {
-    "class": "user-container",
+    "class": "search-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 21
     },
     __self: this
-  }, __jsx("div", {
-    "class": "user-avatar",
-    style: {
-      margin: 0
-    },
+  }, __jsx("span", {
+    "class": "search-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 22
     },
     __self: this
-  }, __jsx(User, {
+  }, __jsx("span", {
+    "class": "search-icon-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 22
     },
     __self: this
-  })))))))));
+  }, __jsx(_assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }))), __jsx("input", {
+    "class": "search xs-text",
+    type: "search",
+    name: "q",
+    placeholder: "\u6599\u7406\u3001\u6750\u6599\u3001\u30AD\u30E3\u30F3\u30D7\u9053\u5177...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderApp);
@@ -2093,7 +2050,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo.js */ "./assets/logo.js");
+/* harmony import */ var _assets_app_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/app-logo.js */ "./assets/app-logo.js");
 /* harmony import */ var _assets_icons_ui_home_solid_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/home_solid.js */ "./assets/icons/ui/home_solid.js");
 /* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
 /* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
@@ -2180,11 +2137,18 @@ var NavApp = function NavApp() {
       lineNumber: 19
     },
     __self: this
-  }, "\u30ED\u30B0\u30A4\u30F3"))), __jsx("a", {
-    "class": "app-nav-inner",
+  }, "\u30ED\u30B0\u30A4\u30F3"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
+    },
+    __self: this
+  }, __jsx("a", {
+    "class": "app-nav-inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
     },
     __self: this
   }, __jsx("span", {
@@ -2194,7 +2158,7 @@ var NavApp = function NavApp() {
       lineNumber: 24
     },
     __self: this
-  }, __jsx(_assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_assets_app_logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
@@ -2206,7 +2170,7 @@ var NavApp = function NavApp() {
       lineNumber: 25
     },
     __self: this
-  }, "\u8ABF\u3079\u308B")));
+  }, "Ceaper\u3068\u306F\uFF1F"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavApp);
@@ -6783,7 +6747,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 6:
+/***/ 1:
 /*!************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ffeedback&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffeedback.js ***!
   \************************************************************************************************************************/
@@ -6806,5 +6770,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=feedback.js.map

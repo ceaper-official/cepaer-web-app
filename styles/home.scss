@@ -1,6 +1,5 @@
 /*Hero*/
 #hero {
-  background: var(--black);
   & .hero-wrapper {
     display: grid;
     grid-template-columns:  50% 1fr;
@@ -19,12 +18,10 @@ align-items: flex-end;
 }
   }
   & h1 {
-    font-size: 4rem;
-    color: var(--white);
+    font-size: 3.5rem;
   }
   & p {
     margin-bottom: 5rem;
-    color: var(--d-articleText);
   }
 @media screen and (max-width: $desktop) {
   & .hero-wrapper {
@@ -44,7 +41,7 @@ align-items: flex-end;
 }
   @media screen and (max-width: $phablet) {
     & h1 {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
     & p {
       margin-bottom: 2rem;

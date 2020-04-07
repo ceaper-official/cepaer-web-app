@@ -116,7 +116,7 @@ export default () => (
 
   {/*項目・外部サービスの連携*/}
   <div class="edit-section" id="connections">
-    <h3 class="edit-section-title section-title edit-item">外部サービスの連携</h3>
+    <h3 class="edit-section-title section-title edit-item">外部サービスのログイン連携</h3>
           <div class = "edit-item edit-connections">
         <div class="ico"><Google/>Google</div>
           <a class="button

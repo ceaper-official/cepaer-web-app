@@ -7,20 +7,6 @@ import BadgeNew from "../assets/icons/ui/badge-new.js";
 
 const Footer = () => (
   <div id="footer">
-    <div class="bg bg-black">
-      <div class="section ">
-        <div class="footer-container footer-app-grid" id="footer-app"style={{ paddingBottom: 0 }}>
-        <div class="footer-app-grid-inner">
-  <h2>キャンパーにとって、最高のパートナーをご用意します。</h2>
-  <a class="button button-grey">近日リリース予定</a>
-        </div>
-        <div class="footer-app-grid-inner">
-          <img src="/images/home/hero.svg"  alt="hero"/>
-        </div>
-      </div>
-    </div>
-    </div>
-
     <div class="bg-grey">
         <div class="section">
       <div class="footer-container " id="footer-contents">

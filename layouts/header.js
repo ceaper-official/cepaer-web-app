@@ -43,7 +43,7 @@ const Header = () => (
 <HeaderMobile />
 </div>
 </div>
-<div id="app-header">
+<div id="app-header" class="bg-white">
 <HeaderApp />
 </div>
 <div id="app-nav">

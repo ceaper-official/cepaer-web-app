@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Logo from "../assets/logo.js";
+import AppLogo from "../assets/app-logo.js";
 import HomeApp from "../assets/icons/ui/home_solid.js";
 import HumanApp from "../assets/icons/ui/human_solid.js";
 import SearchApp from "../assets/icons/ui/search.js";
@@ -19,11 +19,12 @@ const NavApp = () => (
     <h6>ログイン</h6>
 </a>
         </Link>
+        <Link  href="/about">
   <a class="app-nav-inner">
-{/*クリックで、上部に検索ボタン表示*/}
-    <span class="app-nav-icon"><SearchApp /></span>
-    <h6>調べる</h6>
+    <span class="app-nav-icon"><AppLogo /></span>
+    <h6>Ceaperとは？</h6>
   </a>
+</Link>
 </div>
 )
 
