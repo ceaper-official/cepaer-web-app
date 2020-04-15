@@ -105,6 +105,13 @@ background: var(--horizontalRule);
     margin-top: 2rem;
   }
 }
+//入力
+.action-button-wrapper {
+  display: grid;
+margin: 1.5rem 0;
+grid-template-columns: minmax(-webkit-max-content, 500px);
+grid-template-columns: minmax(max-content, 500px);
+}
 }
 //アップロード
 .gs-upload-wrapper {

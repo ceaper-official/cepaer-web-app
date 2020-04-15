@@ -52,7 +52,8 @@ color: var(--articleText);
 label {
   display: block;
   margin: 0;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1;
   font-family: var(--headings);
 }
 

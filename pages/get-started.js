@@ -6,6 +6,8 @@ import Add from "../assets/icons/ui/add.js";
 import ArrowR from "../assets/icons/ui/arrow-r.js";
 import Circle from "../assets/icons/ui/gs-circle.js";
 import StepWizard from 'react-step-wizard';
+import Mail from "../assets/icons/ui/mail.js";
+import Password from "../assets/icons/ui/password.js";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />
@@ -123,9 +125,28 @@ function Step3(props) {
   return(
     <div>
     <h1 class='title'>Ceaperへようこそ！</h1>
-    <p>プロフィールの設定が完了しました。早速Ceaperを始めましょう！</p>
-    <button class="button button-green gs-button button-w100" >始める
-    </button>
+    <p>プロフィールの設定が完了しました。ログインをして、早速Ceaperを始めましょう！</p>
+
+    <div class="action-button-wrapper input-wrapper">
+    <span class="input-prefix">
+    <Mail />
+    </span>
+    <input class="input-inner" placeholder="Eメール"></input>
+</div>
+<div class="action-button-wrapper input-wrapper">
+<span class="input-prefix">
+<Password />
+</span>
+<input class="input-inner" placeholder="パスワード" type="password"></input>
+<span class="input-suffix">
+<Link href="/forgot-password">
+    <a class="xs-text accent  hover-black">お忘れですか？</a>
+</Link>
+</span></div>
+
+<button class="button button-green gs-button button-w100" >始める
+</button>
+
     </div>
   );
 }

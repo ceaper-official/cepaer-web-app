@@ -228,6 +228,9 @@
   justify-content: flex-start;
   position: relative;
 
+    & .input-inner {
+      padding: 1.2rem 2rem;
+    }
   & .input-prefix {
     left: 0;
     position: absolute;
