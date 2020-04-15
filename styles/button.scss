@@ -6,7 +6,9 @@
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1;
-  transition: .15s;
+  transition: 0.15s;
+  display: inline-block;
+  height: 100%;
 
   &:hover {
     color: var(--white);
@@ -55,32 +57,82 @@
   &:hover {
     color: var(--white);
     background: var(--black);
-  }
-}
-//レッド（ネガティブ）
-.button-red {
-    color: var(--white);
-    border: 1px solid var(--red);
-    background: var(--red);
       & svg {
         path {
           fill: var(--white);
         }
       }
-      &:hover {
-        background: var(--red-hover);
-      }
+  }
 }
 
+//グリーン
+
+/*ブラック*/
+.button-green {
+  color: var(--white);
+  border: 1px solid var(--green);
+  background: var(--green);
+
+  & svg {
+    path {
+      fill: var(--white);
+    }
+  }
+
+  &:hover {
+    background: var(--green-hover);
+  }
+}
+//ホワイト
+.button-white {
+  color: var(--black);
+  border: 1px solid var(--white);
+  background: var(--white);
+
+  & svg {
+    path {
+      fill: var(--black);
+    }
+  }
+
+  &:hover {
+    background: var(--grey);
+    border-color: var(--grey);
+    color:var(--black);
+
+      & svg {
+        fill: var(--black);
+      }
+  }
+}
+
+//レッド（ネガティブ）
+
+.button-red {
+  color: var(--white);
+  border: 1px solid var(--red);
+  background: var(--red);
+
+  & svg {
+    path {
+      fill: var(--white);
+    }
+  }
+
+  &:hover {
+    background: var(--red-hover);
+  }
+}
 //グレー
 .button-grey {
   color: var(--articleText);
   border: 1px solid var(--horizontalRule);
   background: var(--horizontalRule);
-    &:hover {
-      color: var(--articleText);
-      background: var(--grey-hover);
-    }
+
+  &:hover {
+    color: var(--articleText);
+    background: var(--grey-hover);
+  }
 }
 /*グレーアウト*/
 .button-grey-out {
@@ -108,16 +160,22 @@
 .ico {
   display: inline-flex;
   align-items: center;
+
   & svg {
     height: auto;
     width: 15px;
     margin-right: 0.5em;
   }
 }
+.ico-l svg {
+  width:20px;
+}
 //アイコン・バック
+
 .ico-back {
   display: inline-flex;
   align-items: center;
+
   & svg {
     height: auto;
     width: 15px;
@@ -235,54 +293,80 @@
     font-size: 1.3rem;
   }
 }
-
 //選択（２つ）
 .button-choice-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   & .button-choice-l {
     margin-right: 1rem;
     justify-content: center;
   }
+
   & .button-choice-r {
     margin-left: 1rem;
     justify-content: center;
   }
   @media screen and (max-width: $phablet) {
     grid-template-columns: 1fr;
-    & .button-choice-l, .button-choice-r {
+
+    & .button-choice-l,
+    .button-choice-r {
       margin: 0;
     }
+
     & .button-choice-l {
       margin-bottom: 2rem;
     }
+  }
 }
-}
-
 @media screen and (max-width: $phablet) {
   grid-template-columns: 1fr;
 }
 //フォーム・セレクトボタン
+
 .select-button {
-    height: 100%;
-    width: 100%;
-    color: var(--articleText);
-    padding: 3.5rem 3rem;
-    border: 1px solid var(--horizontalRule);
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1;
-    & svg {
-      width: 30px;
-      margin-right: 3rem;
-    }
-    &:hover {
-      border-color: var(--black);
-      background: var(--background-grey);
-    }
+  height: 100%;
+  width: 100%;
+  color: var(--articleText);
+  padding: 3.5rem 3rem;
+  border: 1px solid var(--horizontalRule);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1;
+
+  & svg {
+    width: 30px;
+    margin-right: 3rem;
+  }
+
+  &:hover {
+    border-color: var(--black);
+    background: var(--background-grey);
+  }
 }
 
 .select-button-bottom {
   margin-bottom: 1.5rem;
+}
+
+//アクティブ
+button.button-active {
+  border: 1px solid var(--horizontalRule);
+  border-radius: 50%;
+  svg {
+    margin: .4rem;
+    width: 7px;
+  }
+}
+.button-active-number {
+  margin: 0 .8rem;
+}
+
+//width100
+.button-w100 {
+  display: block;
+  width: 100%;
+  text-align: center;
 }

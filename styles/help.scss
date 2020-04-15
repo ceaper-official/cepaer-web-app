@@ -1,6 +1,9 @@
 //検索ボタン
 .help-search {
+  border-bottom:  1px solid var(--black);
+  padding-bottom: 1rem;
   & .search-icon {
+    padding-bottom: 1rem;
     & svg {
       width: 30px;
       & path {
@@ -10,10 +13,8 @@
   }
   & .search {
     width: 100%;
-    height: 70px;
     border: none;
     border-radius: 0;
-    border-bottom:  1px solid var(--black);
     padding-left: 50px;
     font-size: 2rem;
   font-family: var(--headings);

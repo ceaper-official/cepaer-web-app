@@ -10,9 +10,7 @@ import  PenSolid from "../assets/icons/ui/pen_solid.js";
 import  CookSolid from "../assets/icons/ui/cook-solid.js";
 import  StarSolid from "../assets/icons/ui/star-solid.js";
 
-
-
-function User() {
+function UserImg() {
   return <img src="images/default/user.jpg" alt="user image" />
 }
 
@@ -24,7 +22,7 @@ export default () => (
   <div class='section'>
   <div class="user-container">
     <div class="user-avatar">
-    <User />
+    <UserImg />
     </div>
 <div class="user-inner">
         <p class="user-text name">ケリー小田</p>

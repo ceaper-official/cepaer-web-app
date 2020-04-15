@@ -2695,6 +2695,10 @@ var _inherits = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./no
 
 var _slicedToArray = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
 
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 var _interopRequireWildcard3 = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -2743,7 +2747,7 @@ if (!('finally' in Promise.prototype)) {
 
 var data = JSON.parse(document.getElementById('__NEXT_DATA__').textContent);
 window.__NEXT_DATA__ = data;
-var version = "9.3.1";
+var version = "9.3.2";
 exports.version = version;
 var props = data.props,
     err = data.err,
@@ -2794,10 +2798,12 @@ var App, onPerfEntry;
 var Container = /*#__PURE__*/function (_react$default$Compon) {
   _inherits(Container, _react$default$Compon);
 
+  var _super = _createSuper(Container);
+
   function Container() {
     _classCallCheck(this, Container);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Container).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Container, [{
@@ -2873,7 +2879,7 @@ var emitter = (0, _mitt["default"])();
 exports.emitter = emitter;
 
 var _default = function _default(_temp) {
-  var _ref7, passedWebpackHMR, _ref8, app, mod, initialErr, _ref9, _require, isValidElementType, renderCtx;
+  var _ref7, passedWebpackHMR, _await$pageLoader$loa, app, mod, initialErr, _await$pageLoader$loa2, _require, isValidElementType, renderCtx;
 
   return _regeneratorRuntime.async(function _default$(_context) {
     while (1) {
@@ -2889,9 +2895,9 @@ var _default = function _default(_temp) {
           return _regeneratorRuntime.awrap(pageLoader.loadPageScript('/_app'));
 
         case 4:
-          _ref8 = _context.sent;
-          app = _ref8.page;
-          mod = _ref8.mod;
+          _await$pageLoader$loa = _context.sent;
+          app = _await$pageLoader$loa.page;
+          mod = _await$pageLoader$loa.mod;
           App = app;
 
           if (mod && mod.unstable_onPerformanceData) {
@@ -2918,8 +2924,8 @@ var _default = function _default(_temp) {
           return _regeneratorRuntime.awrap(pageLoader.loadPage(page));
 
         case 14:
-          _ref9 = _context.sent;
-          Component = _ref9.page;
+          _await$pageLoader$loa2 = _context.sent;
+          Component = _await$pageLoader$loa2.page;
 
           if (false) {}
 
@@ -3054,7 +3060,7 @@ function render(props) {
 
 
 function renderError(props) {
-  var App, err, _ref10, AppTree, appCtx, initProps;
+  var App, err, _await$pageLoader$loa3, AppTree, appCtx, initProps;
 
   return _regeneratorRuntime.async(function renderError$(_context3) {
     while (1) {
@@ -3076,8 +3082,8 @@ function renderError(props) {
           return _regeneratorRuntime.awrap(pageLoader.loadPage('/_error'));
 
         case 7:
-          _ref10 = _context3.sent;
-          ErrorComponent = _ref10.page;
+          _await$pageLoader$loa3 = _context3.sent;
+          ErrorComponent = _await$pageLoader$loa3.page;
           // In production we do a normal render with the `ErrorComponent` as component.
           // If we've gotten here upon initial render, we can use the props from the server.
           // Otherwise, we need to call `getInitialProps` on `App` before mounting.

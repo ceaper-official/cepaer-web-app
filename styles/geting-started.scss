@@ -1,0 +1,167 @@
+//ヘッダー
+#gs-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 5rem;
+height: 70px;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 900;
+//ロゴ
+& svg {
+    width: auto;
+    height: 30px;
+}
+@media screen and (max-width: $desktop) {
+justify-content: center;
+position: static;
+}
+}
+
+//ページ
+#gs-page {
+}
+.gs-wrapper {
+height: calc(100vh - 65px - 70px);
+  @media screen and (min-width: $desktop) {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100vh;
+    border-radius: 12px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.gs-inner {
+  height: calc(100vh - 65px - 70px);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+    @media screen and (min-width: $desktop) {
+    height: 100vh;
+  }
+}
+//ナビ
+.gs-inner-nav {
+  @media screen and (max-width: $desktop) {
+    display: none;
+}
+  h6 {
+    color: var(--horizontalRule);
+  }
+  .gs-progress {
+    padding:1rem 0;
+    position: relative;
+    display: flex;
+    height: 50px;
+    //アイコン　
+    .gs-progress-mark {
+    font-size: 22px;
+    line-height: 38px;
+    padding-right: 1.6rem;
+position: relative;
+z-index: 10;
+    & svg{
+      margin: 0;
+    width: 20px;
+      & circle {
+        stroke: var(--horizontalRule);
+      }
+    }
+    }
+    //ライン
+    .gs-progress-line {
+      display: block;
+position: absolute;
+left: 10px;
+width: 1px;
+z-index: 1;
+top: 35px;
+height: 30px;
+background: var(--horizontalRule);
+    }
+    //テキスト
+    &  h5 {
+      color: var(--horizontalRule);
+    }
+  }
+}
+//フォーム
+.gs-inner-form {
+  margin: auto;
+  .gs-inner-form-inner {
+    max-width: 500px;
+  }
+  //入力
+  .gs-input input {
+    @media screen and (max-width: $phone) {
+      display: block;
+      width: 100%;
+  }
+  }
+  //ボタン
+  .gs-button {
+    margin-top: 2rem;
+  }
+}
+}
+//アップロード
+.gs-upload-wrapper {
+  display: flex;
+  align-items: center;
+}
+.gs-upload {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px dotted var(--horizontalRule);
+  margin-right: 3rem;
+  cursor: pointer;
+  &:hover{
+    border-color: var(--accent);
+  }
+  //アイコン
+  & .gs-upload-icon-wrapper {
+    width: 100px;
+    height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    .gs-upload-icon{
+      position: relative;
+      top:-2px;
+    }
+    svg {
+display: flex;
+      height: auto;
+      width: 40px;
+    }
+    path {
+      fill: var(--horizontalRule);
+    }
+  }
+}
+//デスクトップ・ナビ
+.gs-dots-nav {
+  display: flex;
+height: 65px;
+justify-content: center;
+align-items: center;
+position: static;
+    @media screen and (min-width: $desktop) {
+      display: none;
+  }
+  //ドット
+  .gs-dot {
+        & svg{
+          margin: 0 1rem;
+        width: 15px;
+          & circle {
+            stroke: var(--horizontalRule);
+            fill: var(--horizontalRule);
+          }
+        }
+  }
+}

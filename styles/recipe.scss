@@ -1,4 +1,34 @@
 #recipe-hero {
+  //画像・アクション
+  .recipe-img-inner {
+    position: relative;
+    .recipe-actions {
+      position: absolute;
+      top:0;
+      right:0;
+      @media screen and (max-width: $phablet) {
+        display: none;
+
+    }
+    .button {
+      margin: 1rem;
+      @media screen and (max-width: $phablet) {
+        padding: .5rem;
+        background: none;
+  border:none;
+        svg {
+          margin: 0;
+          & path {
+            fill: var(--white);
+          }
+        }
+        span {
+          display: none;
+        }
+        }
+    }
+    }
+  }
   & h1 {
     font-size: 3rem;
     max-width: 550px;
@@ -13,11 +43,6 @@
     & p {
       margin: 0;
     }
-    @media screen and (min-width: $desktop) {
-      & .recipe-img .recipe-hr {
-        display: none;
-      }
-    }
     @media screen and (max-width: $desktop) {
       display: block;
           }
@@ -31,31 +56,52 @@
 
 /*データ*/
 .recipe-bio-wrapper {
-  padding: 0.5rem 0 1rem;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    @media screen and (max-width: $tablet) {
+      display: block;
 }
 
-.recipe-bio {
-  & h6 {
-    margin-bottom: 2rem;
-  }
+//タイトル
+.section-title {
+  padding-bottom: 2rem;
+}
 }
 
-.recipe-data {
-  display: inline-flex;
-  font-size: 1.3rem;
-  font-feature-settings: "palt";
-  letter-spacing: 0.06rem;
-
-  & .cook {
-    margin-left: 0;
-  }
-
-  & .servings {
-    margin-right: 0;
-  }
+//データ・ナビ
+  .recipe-bio-nav {
+    position: sticky;
+  top: 0;
+  height: fit-content;
+  @media screen and (max-width: $desktop) {
+  position: fixed;
+left: 0;
+top: auto;
+bottom: 0;
+width: 100%;
+background-color: var(--white);
+border-top: 1px solid var(--horizontalRule);
+z-index: 100;
+padding: 1.5rem 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+white-space: nowrap;
 }
+& .recipe-hr {
+  margin: 0;
+}
+.recipe-bio-content {
+  text-align: center;
+  padding: 1.5rem;
+}
+//レート
+.rating{
+  font-size: 2.5rem;
+}
+  }
+
 /*アクション*/
 .actions {
   display: flex;
@@ -89,21 +135,16 @@
     }
   }
 }
-/*データ・材料*/
-.recipe-bio {
+.recipe-bio-inner1 {
   & .flex {
     justify-content: space-between;
-    & svg {
-      width: 10px;
-        margin: 0  0 2rem 1.5rem;
-      }
+    align-items: baseline;
     & .servings {
-      & h6 {
+      & h4 {
         white-space: nowrap;
+        text-align: right;
+        padding-right: .7rem;
       }
-    & .servings-number {
-    color: var(--accent);
-    }
   }
 }
 }
@@ -115,7 +156,7 @@
   color: var(--articleText);
 }
 /*データ・キャンプ道具*/
-.camp {
+.tag-camp {
   & a {
     background: var(--grey20);
     border-radius: 15px;
@@ -124,7 +165,7 @@
     white-space: nowrap;
     margin: 0 1rem 1rem 0;
     display: inline-block;
-
+    line-height: 1;
     &:hover {
       background: var(--grey40);
     }
@@ -152,6 +193,12 @@
   margin: 2.5rem 0;
 }
 
+@media screen and (min-width: $desktop) {
+  .recipe-hr-desktop{
+    display: none;
+  }
+}
+
 .recipe-hr-l {
   border-left: 1px solid var(--horizontalRule);
   margin: 0 2.5rem;
@@ -165,6 +212,9 @@
   @media screen and (max-width: $phablet) {
     padding: 0 0 4rem;
   }
+  @media screen and (max-width: $phone){
+    padding: 0 0 2rem;
+}
 
   & .recipe-section-title {
     display: flex;
@@ -190,21 +240,6 @@
       }
     }
 
-    &:before {
-      content: "";
-      height: 1px;
-      flex-grow: 1;
-      background-color: var(--horizontalRule);
-      margin-right: 2rem;
-    }
-
-    &:after {
-      content: "";
-      height: 1px;
-      flex-grow: 1;
-      background-color: var(--horizontalRule);
-      margin-left: 2rem;
-    }
   }
 }
 /*作り方*/
@@ -230,8 +265,6 @@
   }
 
   & .make-inner {
-    background: var(--background-grey);
-
     & p {
       margin: 0;
     }
@@ -287,6 +320,7 @@
 .reviews-link {
   text-decoration: underline;
   padding-top: 6rem;
+  text-align: center;
 }
 /*レビュー＆料理済リストに追加ボタン*/
 .fixed-button {

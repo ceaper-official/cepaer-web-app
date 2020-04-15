@@ -41,10 +41,24 @@ color: var(--articleText);
 }
 }
 
-
 //送信
 .form-submit {
   text-align: right;
   display: block;
   text-align: center;
+}
+
+//ラベル
+label {
+  display: block;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-family: var(--headings);
+}
+
+//入力
+input {
+  &:focus {
+    border-color: var(--black);
+  }
 }

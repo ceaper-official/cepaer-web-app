@@ -72,14 +72,14 @@ hr{
        content: "";
 height: 1px;
 flex-grow: 1;
-background-color: var(--horizontalRule);
+background-color: var(--black);
 margin-right: 2rem;
      }
      &:after {
     content: "";
     height: 1px;
     flex-grow: 1;
-    background-color: var(--horizontalRule);
+    background-color: var(--black);
     margin-left: 2rem;
      }
      @media screen and (max-width: $phone){

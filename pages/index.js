@@ -6,7 +6,7 @@ class Home extends React.Component {
   render() {
     return (
       <HomeBaseLayout>
-        <div>
+        <div id="page">
 
         <div id="hero" class="bg-grey">
           <div class="section">

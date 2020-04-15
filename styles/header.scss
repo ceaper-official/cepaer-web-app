@@ -180,7 +180,6 @@ align-items: center;
     line-height: 1;
   }
 }
-//ロゴ
 .app-header-inner2 {
   .search::placeholder {
     font-size: 1.3rem;
@@ -255,8 +254,17 @@ padding-top: .6em;
 #home-header-app {
   .app-header-wrapper {
     grid-template-columns:  1fr;
+
+    & svg {
+      height: auto;
+      width: 12px;
+    }
     .search {
       width: 100%;
+      &::placeholder {
+       font-size: 1.3rem;
+       line-height: 1;
+     }
     }
   }
 }

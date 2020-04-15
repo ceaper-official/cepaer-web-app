@@ -3,6 +3,7 @@
     position: relative;
     display: inline-block;
     font-size: 1.4rem;
+    line-height: 1;
     top: -1px;
 }
 .star {
@@ -57,7 +58,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    justify-content: center;
     & .user-inner {
       display: block;
       line-height: 1;

@@ -6,7 +6,7 @@ function User() {
   return <img src="images/default/user.jpg" alt="user image" />
 }
 function RecipeImg() {
-  return <img src="images/default/food.jpg" alt="recipe image" />
+  return <img src="images/mock/food.jpg" alt="recipe image" />
 }
 
 export default function UserShot() {

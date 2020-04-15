@@ -17,7 +17,7 @@ export default () => (
     <span class="search-icon">
       <span class="search-icon-inner"><Search/></span>
     </span>
-    <input class="search" type="search" name="q" placeholder="お困りのキーワードで検索..."/>
+    <input class="search" type="search" name="q" placeholder="お困りのキーワードで検索"/>
   </div>
 </div>
 </div>

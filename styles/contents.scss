@@ -24,26 +24,38 @@
 .card {
   border-radius: 4px;
   overflow: hidden;
+  padding: 2rem;
+  border: 1px solid var(--horizontalRule);
 }
 .card-wrapper {
   padding: 2rem;
 }
 
 .card-border {
-      border-radius: 10px;
+      border-radius: 4px;
+      overflow: hidden;
       border: 1px solid var(--horizontalRule);
 }
 /*Border*/
 .border {
   border: 1px solid var(--horizontalRule);
 }
+//Border Radius
+.border-radius {
+        border-radius: 4px;
+        overflow: hidden;
+}
 
 /*Flex*/
 .flex {
 	display: flex;
+  align-items: center;
 }
 
-//高さ
+//幅
+.w-auto {
+  width: auto;
+}
 .w100 {
   width: 100%;
 }
