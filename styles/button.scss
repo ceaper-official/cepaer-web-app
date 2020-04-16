@@ -66,12 +66,10 @@
 }
 
 //グリーン
-
-/*ブラック*/
 .button-green {
   color: var(--white);
-  border: 1px solid var(--green);
-  background: var(--green);
+  border: 1px solid var(--green60);
+  background: var(--green60);
 
   & svg {
     path {
@@ -80,7 +78,8 @@
   }
 
   &:hover {
-    background: var(--green-hover);
+    background: var(--green80);
+    border-color: var(--green80);
   }
 }
 //ホワイト

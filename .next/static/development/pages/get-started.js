@@ -5259,28 +5259,28 @@ var GS = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 53,
           columnNumber: 13
         }
       }, __jsx(Step1, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55,
+          lineNumber: 54,
           columnNumber: 15
         }
       }), __jsx(Step2, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56,
+          lineNumber: 55,
           columnNumber: 15
         }
       }), __jsx(Step3, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57,
+          lineNumber: 56,
           columnNumber: 15
         }
       }))))), __jsx("div", {
@@ -5288,7 +5288,7 @@ var GS = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64,
+          lineNumber: 62,
           columnNumber: 1
         }
       }, __jsx("span", {
@@ -5296,14 +5296,14 @@ var GS = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65,
+          lineNumber: 63,
           columnNumber: 3
         }
       }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65,
+          lineNumber: 63,
           columnNumber: 32
         }
       })), __jsx("span", {
@@ -5311,14 +5311,14 @@ var GS = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66,
+          lineNumber: 64,
           columnNumber: 5
         }
       }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66,
+          lineNumber: 64,
           columnNumber: 34
         }
       })), __jsx("span", {
@@ -5326,14 +5326,14 @@ var GS = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67,
+          lineNumber: 65,
           columnNumber: 7
         }
       }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67,
+          lineNumber: 65,
           columnNumber: 36
         }
       }))))));
@@ -5354,7 +5354,7 @@ function Step1(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 83,
       columnNumber: 1
     }
   }, __jsx("h1", {
@@ -5362,21 +5362,21 @@ function Step1(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 84,
       columnNumber: 1
     }
   }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u306E\u8A2D\u5B9A"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 85,
       columnNumber: 1
     }
   }, "Cepaer\u3092\u59CB\u3081\u308B\u524D\u306B\u3001\u3042\u306A\u305F\u306E\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u3092\u5B8C\u6210\u3055\u305B\u307E\u3057\u3087\u3046\u3002\u3053\u306E\u9805\u76EE\u306F\u3001\u5F8C\u3067\u3082\u7DE8\u96C6\u304C\u53EF\u80FD\u3067\u3059\u3002"), __jsx("label", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 86,
       columnNumber: 1
     }
   }, "\u30E6\u30FC\u30B6\u30FC\u540D"), __jsx("div", {
@@ -5384,7 +5384,7 @@ function Step1(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 87,
       columnNumber: 1
     }
   }, __jsx("span", {
@@ -5392,14 +5392,14 @@ function Step1(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 88,
       columnNumber: 1
     }
   }, __jsx(_assets_icons_ui_human_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 89,
       columnNumber: 1
     }
   })), __jsx("input", {
@@ -5408,24 +5408,24 @@ function Step1(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 91,
       columnNumber: 1
     }
   })), __jsx("button", {
-    className: "button button-accent gs-button button-w100 ico-back",
+    className: "button button-black gs-button button-w100 ico-back",
     onClick: props.nextStep,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 93,
       columnNumber: 1
     }
   }, "\u6B21\u306B\u9032\u3080", __jsx(_assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 102
+      lineNumber: 93,
+      columnNumber: 101
     }
   })));
 }
@@ -5439,7 +5439,7 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 104,
       columnNumber: 1
     }
   }, __jsx("h1", {
@@ -5447,14 +5447,14 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 105,
       columnNumber: 1
     }
   }, "\u30A2\u30A4\u30B3\u30F3\u306E\u8A2D\u5B9A"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 106,
       columnNumber: 1
     }
   }, "\u304A\u6C17\u306B\u5165\u308A\u306E\u30E6\u30CB\u30FC\u30AF\u306A\u30A2\u30A4\u30B3\u30F3\u3092\u8A2D\u5B9A\u3057\u307E\u3057\u3087\u3046\uFF01\u8A2D\u5B9A\u3057\u306A\u3044\u5834\u5408\u3001\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30A2\u30A4\u30B3\u30F3\u304C\u8868\u793A\u3055\u308C\u307E\u3059\u3002"), __jsx("div", {
@@ -5465,7 +5465,7 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 108,
       columnNumber: 1
     }
   }, __jsx("div", {
@@ -5473,7 +5473,7 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 109,
       columnNumber: 1
     }
   }, __jsx("div", {
@@ -5481,7 +5481,7 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
+      lineNumber: 110,
       columnNumber: 3
     }
   }, __jsx("span", {
@@ -5489,14 +5489,14 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113,
+      lineNumber: 111,
       columnNumber: 1
     }
   }, __jsx(_assets_icons_ui_add_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114,
+      lineNumber: 112,
       columnNumber: 1
     }
   })))), __jsx("button", {
@@ -5504,24 +5504,24 @@ function Step2(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 116,
       columnNumber: 1
     }
   }, "\u753B\u50CF\u3092\u9078\u629E")), __jsx("button", {
-    className: "button button-accent gs-button button-w100 ico-back",
+    className: "button button-black gs-button button-w100 ico-back",
     onClick: props.nextStep,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 120,
       columnNumber: 1
     }
   }, "\u6B21\u306B\u9032\u3080", __jsx(_assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 102
+      lineNumber: 120,
+      columnNumber: 101
     }
   })));
 }
@@ -5535,7 +5535,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
+      lineNumber: 131,
       columnNumber: 5
     }
   }, __jsx("h1", {
@@ -5543,14 +5543,14 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134,
+      lineNumber: 132,
       columnNumber: 5
     }
   }, "Ceaper\u3078\u3088\u3046\u3053\u305D\uFF01"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 133,
       columnNumber: 5
     }
   }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u306E\u8A2D\u5B9A\u304C\u5B8C\u4E86\u3057\u307E\u3057\u305F\u3002\u30ED\u30B0\u30A4\u30F3\u3092\u3057\u3066\u3001\u65E9\u901FCeaper\u3092\u59CB\u3081\u307E\u3057\u3087\u3046\uFF01"), __jsx("div", {
@@ -5558,7 +5558,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137,
+      lineNumber: 135,
       columnNumber: 5
     }
   }, __jsx("span", {
@@ -5566,14 +5566,14 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 136,
       columnNumber: 5
     }
   }, __jsx(_assets_icons_ui_mail_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 137,
       columnNumber: 5
     }
   })), __jsx("input", {
@@ -5582,7 +5582,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 139,
       columnNumber: 5
     }
   })), __jsx("div", {
@@ -5590,7 +5590,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 141,
       columnNumber: 1
     }
   }, __jsx("span", {
@@ -5598,14 +5598,14 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
+      lineNumber: 142,
       columnNumber: 1
     }
   }, __jsx(_assets_icons_ui_password_js__WEBPACK_IMPORTED_MODULE_15__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145,
+      lineNumber: 143,
       columnNumber: 1
     }
   })), __jsx("input", {
@@ -5615,7 +5615,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 145,
       columnNumber: 1
     }
   }), __jsx("span", {
@@ -5623,7 +5623,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 146,
       columnNumber: 1
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -5631,7 +5631,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 147,
       columnNumber: 1
     }
   }, __jsx("a", {
@@ -5639,7 +5639,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150,
+      lineNumber: 148,
       columnNumber: 5
     }
   }, "\u304A\u5FD8\u308C\u3067\u3059\u304B\uFF1F")))), __jsx("button", {
@@ -5647,7 +5647,7 @@ function Step3(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154,
+      lineNumber: 152,
       columnNumber: 1
     }
   }, "\u59CB\u3081\u308B"));
