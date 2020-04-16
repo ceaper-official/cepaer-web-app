@@ -101,9 +101,6 @@ background: var(--horizontalRule);
   }
   }
   //ボタン
-  .gs-button {
-    margin-top: 2rem;
-  }
 }
 //入力
 .action-button-wrapper {
@@ -117,6 +114,7 @@ grid-template-columns: minmax(max-content, 500px);
 .gs-upload-wrapper {
   display: flex;
   align-items: center;
+  margin: 3rem 0;
 }
 .gs-upload {
   position: relative;

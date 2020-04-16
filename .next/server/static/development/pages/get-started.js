@@ -2717,6 +2717,9 @@ function Step2(props) {
     }
   }, "\u304A\u6C17\u306B\u5165\u308A\u306E\u30E6\u30CB\u30FC\u30AF\u306A\u30A2\u30A4\u30B3\u30F3\u3092\u8A2D\u5B9A\u3057\u307E\u3057\u3087\u3046\uFF01\u8A2D\u5B9A\u3057\u306A\u3044\u5834\u5408\u3001\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30A2\u30A4\u30B3\u30F3\u304C\u8868\u793A\u3055\u308C\u307E\u3059\u3002"), __jsx("div", {
     className: "gs-upload-wrapper",
+    style: {
+      justifyContent: "center"
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,

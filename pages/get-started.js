@@ -107,7 +107,7 @@ function Step2(props) {
 <h1 className='title'>アイコンの設定</h1>
 <p>お気に入りのユニークなアイコンを設定しましょう！設定しない場合、デフォルトのアイコンが表示されます。</p>
   {/*アップロードされたら、.gs-uploadの中に、画像表示*/}
-<div className="gs-upload-wrapper">
+<div className="gs-upload-wrapper"style={{ justifyContent: "center" }}>
 <div className="gs-upload">
   <div className="gs-upload-icon-wrapper">
 <span className="gs-upload-icon">
