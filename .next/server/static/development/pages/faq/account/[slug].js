@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2336,23 +2336,184 @@ function VoteYes() {
       lineNumber: 41,
       columnNumber: 7
     }
-  }, __jsx("h5", {
+  }, __jsx("h6", {
+    className: "headings",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42,
       columnNumber: 7
     }
-  }, "\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3057\u305F\uFF01")));
+  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5BC4\u305B\u9802\u304D\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01")));
 }
 
-function VoteNo() {
+class VoteNo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "state", {
+      Component: null
+    });
+
+    _defineProperty(this, "selectSubmit", () => this.setState({
+      Component: VoteSubmit
+    }));
+  }
+
+  render() {
+    const {
+      Component
+    } = this.state;
+    if (Component) return __jsx(Component, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53,
+        columnNumber: 26
+      }
+    });
+    return __jsx("div", {
+      className: "contents",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      id: "vote-wrapper",
+      className: "card card-wrapper",
+      style: {
+        textAlign: "left"
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56,
+        columnNumber: 4
+      }
+    }, __jsx("h5", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 6
+      }
+    }, "\u3088\u308D\u3057\u3051\u308C\u3070\u3001\u7406\u7531\u3092\u6559\u3048\u3066\u3044\u305F\u3060\u3051\u307E\u3059\u304B\uFF1F"), __jsx("label", {
+      class: "answer-label",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 1
+      }
+    }, __jsx("input", {
+      type: "checkbox",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 29
+      }
+    }), __jsx("span", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 53
+      }
+    }, "\u5185\u5BB9\u304C\u7406\u89E3\u3067\u304D\u306A\u3044\u3001\u8AAD\u307F\u306B\u304F\u304B\u3063\u305F")), __jsx("label", {
+      class: "answer-label",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 2
+      }
+    }, __jsx("input", {
+      type: "checkbox",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 30
+      }
+    }), __jsx("span", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 54
+      }
+    }, "\u81EA\u5206\u306E\u8CEA\u554F\u306B\u5BFE\u3059\u308B\u56DE\u7B54\u304C\u898B\u3064\u304B\u3089\u306A\u304B\u3063\u305F")), __jsx("label", {
+      class: "answer-label",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 6
+      }
+    }, __jsx("input", {
+      type: "checkbox",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 34
+      }
+    }), __jsx("span", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 58
+      }
+    }, "\u305D\u306E\u4ED6")), __jsx("div", {
+      className: "form-select",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 8
+      }
+    }, __jsx("textarea", {
+      className: "feedback-area",
+      placeholder: "\u4ED6\u306B\u539F\u56E0\u306F\u3042\u308A\u307E\u3059\u304B\uFF1F",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63,
+        columnNumber: 8
+      }
+    })), __jsx("div", {
+      className: "vote-submit",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65,
+        columnNumber: 9
+      }
+    }, __jsx("button", {
+      className: "button button-black",
+      onClick: this.selectSubmit,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65,
+        columnNumber: 38
+      }
+    }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u9001\u308B"))));
+  }
+
+}
+
+function VoteSubmit() {
   return __jsx("div", {
     className: "contents",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 76,
       columnNumber: 8
     }
   }, __jsx("div", {
@@ -2361,17 +2522,18 @@ function VoteNo() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 77,
       columnNumber: 7
     }
-  }, __jsx("h5", {
+  }, __jsx("h6", {
+    className: "headings",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 9
+      lineNumber: 78,
+      columnNumber: 7
     }
-  }, "\u7406\u7531\u3092\u6559\u3048\u3066\u3044\u305F\u3060\u3051\u307E\u3059\u304B\uFF1F")));
+  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5BC4\u305B\u9802\u304D\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01")));
 }
 
 /***/ }),
@@ -4246,7 +4408,7 @@ FaqTemplate.getInitialProps = async context => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*******************************************!*\
   !*** multi ./pages/faq/account/[slug].js ***!
   \*******************************************/

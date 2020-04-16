@@ -39,19 +39,44 @@ function VoteYes() {
   return(
        <div className='contents'>
       <div id="vote-wrapper" className="card card-wrapper">
-      <h5>ありがとうございました！</h5>
+      <h6 className="headings">フィードバックをお寄せ頂き、ありがとうございます！</h6>
        </div>
        </div>
   );
 }
 
+class VoteNo extends React.Component {
+  state = { Component: null }
+  selectSubmit = () => this.setState({Component: VoteSubmit})
+  render() {
+    const {Component} = this.state;
+    if(Component) return <Component />;
+  return (
+    <div className='contents'>
+   <div id="vote-wrapper" className="card card-wrapper"style={{ textAlign: "left" }}>
+     <h5>よろしければ、理由を教えていただけますか？</h5>
 
-function VoteNo() {
+<label class="answer-label"><input type="checkbox"/><span>内容が理解できない、読みにくかった</span></label>
+ <label class="answer-label"><input type="checkbox"/><span>自分の質問に対する回答が見つからなかった</span></label>
+     <label class="answer-label"><input type="checkbox"/><span>その他</span></label>
+       <div className = "form-select">
+       <textarea className="feedback-area" placeholder="他に原因はありますか？"></textarea>
+        </div>
+        <div className="vote-submit"><button className="button button-black"onClick={this.selectSubmit}>フィードバックを送る
+        </button></div>
+              </div>
+    </div>
+  );
+}
+}
+
+
+function VoteSubmit() {
   return(
        <div className='contents'>
       <div id="vote-wrapper" className="card card-wrapper">
-        <h5>理由を教えていただけますか？</h5>
-                 </div>
+      <h6 className="headings">フィードバックをお寄せ頂き、ありがとうございます！</h6>
+       </div>
        </div>
   );
 }

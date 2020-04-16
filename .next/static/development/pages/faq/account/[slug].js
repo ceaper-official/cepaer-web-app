@@ -2270,23 +2270,202 @@ function VoteYes() {
       lineNumber: 41,
       columnNumber: 7
     }
-  }, __jsx("h5", {
+  }, __jsx("h6", {
+    className: "headings",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42,
       columnNumber: 7
     }
-  }, "\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3057\u305F\uFF01")));
+  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5BC4\u305B\u9802\u304D\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01")));
 }
 
-function VoteNo() {
+var VoteNo = /*#__PURE__*/function (_React$Component2) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(VoteNo, _React$Component2);
+
+  var _super2 = _createSuper(VoteNo);
+
+  function VoteNo() {
+    var _this2;
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, VoteNo);
+
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
+
+    _this2 = _super2.call.apply(_super2, [this].concat(args));
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this2), "state", {
+      Component: null
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this2), "selectSubmit", function () {
+      return _this2.setState({
+        Component: VoteSubmit
+      });
+    });
+
+    return _this2;
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(VoteNo, [{
+    key: "render",
+    value: function render() {
+      var Component = this.state.Component;
+      if (Component) return __jsx(Component, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 26
+        }
+      });
+      return __jsx("div", {
+        className: "contents",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55,
+          columnNumber: 5
+        }
+      }, __jsx("div", {
+        id: "vote-wrapper",
+        className: "card card-wrapper",
+        style: {
+          textAlign: "left"
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56,
+          columnNumber: 4
+        }
+      }, __jsx("h5", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57,
+          columnNumber: 6
+        }
+      }, "\u3088\u308D\u3057\u3051\u308C\u3070\u3001\u7406\u7531\u3092\u6559\u3048\u3066\u3044\u305F\u3060\u3051\u307E\u3059\u304B\uFF1F"), __jsx("label", {
+        "class": "answer-label",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 1
+        }
+      }, __jsx("input", {
+        type: "checkbox",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 29
+        }
+      }), __jsx("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 53
+        }
+      }, "\u5185\u5BB9\u304C\u7406\u89E3\u3067\u304D\u306A\u3044\u3001\u8AAD\u307F\u306B\u304F\u304B\u3063\u305F")), __jsx("label", {
+        "class": "answer-label",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 2
+        }
+      }, __jsx("input", {
+        type: "checkbox",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 30
+        }
+      }), __jsx("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60,
+          columnNumber: 54
+        }
+      }, "\u81EA\u5206\u306E\u8CEA\u554F\u306B\u5BFE\u3059\u308B\u56DE\u7B54\u304C\u898B\u3064\u304B\u3089\u306A\u304B\u3063\u305F")), __jsx("label", {
+        "class": "answer-label",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 6
+        }
+      }, __jsx("input", {
+        type: "checkbox",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 34
+        }
+      }), __jsx("span", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 58
+        }
+      }, "\u305D\u306E\u4ED6")), __jsx("div", {
+        className: "form-select",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 8
+        }
+      }, __jsx("textarea", {
+        className: "feedback-area",
+        placeholder: "\u4ED6\u306B\u539F\u56E0\u306F\u3042\u308A\u307E\u3059\u304B\uFF1F",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63,
+          columnNumber: 8
+        }
+      })), __jsx("div", {
+        className: "vote-submit",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65,
+          columnNumber: 9
+        }
+      }, __jsx("button", {
+        className: "button button-black",
+        onClick: this.selectSubmit,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65,
+          columnNumber: 38
+        }
+      }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u9001\u308B"))));
+    }
+  }]);
+
+  return VoteNo;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+
+function VoteSubmit() {
   return __jsx("div", {
     className: "contents",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 76,
       columnNumber: 8
     }
   }, __jsx("div", {
@@ -2295,17 +2474,18 @@ function VoteNo() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 77,
       columnNumber: 7
     }
-  }, __jsx("h5", {
+  }, __jsx("h6", {
+    className: "headings",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 9
+      lineNumber: 78,
+      columnNumber: 7
     }
-  }, "\u7406\u7531\u3092\u6559\u3048\u3066\u3044\u305F\u3060\u3051\u307E\u3059\u304B\uFF1F")));
+  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5BC4\u305B\u9802\u304D\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01")));
 }
 
 /***/ }),
@@ -11894,7 +12074,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 4);
+const fs = __webpack_require__(/*! fs */ 2);
 const sections = __webpack_require__(/*! section-matter */ "./node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "./node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "./node_modules/gray-matter/lib/stringify.js");
@@ -30550,7 +30730,7 @@ FaqTemplate.getInitialProps = function _callee(context) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ffaq%2Faccount%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffaq%2Faccount%2F%5Bslug%5D.js ***!
   \************************************************************************************************************************************************************/
@@ -30562,7 +30742,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Ffaq%2F
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
@@ -30584,5 +30764,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[slug].js.map

@@ -38,7 +38,23 @@ div.bg-black {
 div.bg-grey {
   background: var(--background-grey);
 }
-//ネガティブ
+//ポジティブ
+div.bg-green {
+  background: var(--green);
+}
+div.bg-green80 {
+  background: var(--green80);
+}
+div.bg-green60 {
+  background: var(--green60);
+}
+
+div.bg-yellow {
+  background: var(--yellow);
+}
+div.bg-blue {
+  background: var(--blue);
+}
 div.bg-red {
   background: var(--red);
 }
