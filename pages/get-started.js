@@ -92,7 +92,7 @@ function Step1(props) {
 </span>
 <input className="input-inner" placeholder="例：キーパー山田"></input>
 </div>
-<button  className="button button-accent gs-button button-w100 ico-back">次に進む<ArrowR/>
+<button  className="button button-accent gs-button button-w100 ico-back"onClick={props.nextStep}>次に進む<ArrowR/>
 </button>
 </div>
   );
@@ -119,7 +119,7 @@ function Step2(props) {
 </div>
 
 
-<button className="button button-accent gs-button button-w100 ico-back" >次に進む<ArrowR/>
+<button className="button button-accent gs-button button-w100 ico-back" onClick={props.nextStep}>次に進む<ArrowR/>
 </button>
 </div>
   );

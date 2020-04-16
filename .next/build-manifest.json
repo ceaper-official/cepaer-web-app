@@ -20,11 +20,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/edit": [
+    "/faq/account/[slug]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/faq/account/[slug]": [
+    "/get-started": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
