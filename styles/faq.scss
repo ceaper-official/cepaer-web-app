@@ -1,0 +1,116 @@
+//検索ボタン
+
+.faq-search {
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 1rem;
+
+  & .search-icon {
+    padding-bottom: 1rem;
+
+    & svg {
+      width: 20px;
+      @media screen and (min-width: $tablet) {
+        width: 30px;
+      }
+
+      & path {
+        fill: var(--black);
+      }
+    }
+  }
+
+  & .search {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding-left: 40px;
+    font-size: 2rem;
+    font-family: var(--headings);
+
+    &::placeholder {
+      font-size: 2rem;
+      font-family: var(--headings);
+      font-weight: 500;
+      line-height: 1;
+    }
+    @media screen and (min-width: $tablet) {
+      padding-left: 50px;
+      font-size: 3rem;
+
+      &::placeholder {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+//カテゴリ
+.faq-cat-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+  //インナー
+  & .faq-cat-inner {
+    border: 1px solid var(--horizontalRule);
+    padding: 2rem;
+    display: flex;
+//タイトル
+h3 {
+  line-height: 40px;
+  @media screen and (max-width: $tablet) {
+    line-height: 30px;
+}
+}
+    & .faq-cat-inner-l {
+      padding-right: 2rem;
+      //アイコン
+      & svg {
+        height: auto;
+        width: 40px;
+        @media screen and (max-width: $tablet) {
+          width: 30px;
+        }
+      }
+    }
+
+    & .faq-cat-link-wrapper {
+      display: flow-root;
+
+      & .faq-cat-link {
+        padding: 0 2rem 0 0;
+      }
+    }
+  }
+}
+//ページ
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-column-gap: 5rem;
+  align-items: flex-start;
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  .article p {
+    max-width: 650px;
+    margin-left: 0;
+  }
+}
+
+
+//アンケート
+#vote-wrapper {
+  text-align: center;
+  //ボタン
+  .button-choice-wrapper {
+    display: block;
+    padding-top: 2rem;
+    .button {
+      margin: 0 1rem 1rem;
+    }
+  }
+}

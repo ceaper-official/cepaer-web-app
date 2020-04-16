@@ -11,16 +11,16 @@ function User() {
 }
 
 const HeaderApp = () => (
-<div > <div class="section">
-  <div class="app-header-wrapper">
+<div > <div className="section">
+  <div className="app-header-wrapper">
 
-    <div class="app-header-inner app-header-inner1" onClick={() => Router.back()}>
+    <div className="app-header-inner app-header-inner1" onClick={() => Router.back()}>
       {/* ホームページ時は、visibility:hidden */}<Back/></div>
 
-    <div class="app-header-inner app-header-inner2">
-      <div class="search-wrapper">
-        <span class="search-icon"><span class="search-icon-inner"><Search /></span></span>
-    <input class="search xs-text" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
+    <div className="app-header-inner app-header-inner2">
+      <div className="search-wrapper">
+        <span className="search-icon"><span className="search-icon-inner"><Search /></span></span>
+    <input className="search xs-text" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
   </div>
     </div>
 

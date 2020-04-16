@@ -8,28 +8,28 @@ class Home extends React.Component {
       <HomeBaseLayout>
         <div id="page">
 
-        <div id="hero" class="bg-grey">
-          <div class="section">
-            <div class="hero-wrapper">
-              <div class="hero-text-inner">
-                <div class="hero-text">
+        <div id="hero" className="bg-grey">
+          <div className="section">
+            <div className="hero-wrapper">
+              <div className="hero-text-inner">
+                <div className="hero-text">
                               <h1>Ceaperは、キャンプを愛する全ての人に向けた料理マネジメントサービスです。</h1>
                               <p>Ceaperは、キャンプを愛する人に向けた料理マネジメントサービスです。Ceaperは、キャンプを愛する人に向けた料理マネジメントサービスです。</p>
                                 <Link href="/signup">
-                                  <a class="button button-accent">アカウントを作成</a>
+                                  <a className="button button-accent">アカウントを作成</a>
                                 </Link>
-                        <a class="button-text black" href="/signup">使い方を学ぶ</a>
+                        <a className="button-text black" href="/signup">使い方を学ぶ</a>
                       </div>
               </div>
-              <div class="hero-img-inner">
+              <div className="hero-img-inner">
                 <img src="/images/home/hero.svg"  alt="hero"/>
               </div>
         </div>
         </div>
         </div>
 
-        <div class='contents'>
-        <div class='section'>
+        <div className='contents'>
+        <div className='section'>
 
 
 

@@ -4,10 +4,10 @@ import Logo from "../assets/logo.js";
 const GSHeader = () => (
   <div>
   <div id="gs-header">
-    <div class="gs-hader-wrapper">
-                <div class="nav-container">
+    <div className="gs-hader-wrapper">
+                <div className="nav-container">
                 <Link href="/">
-                <a class="logo-link">
+                <a className="logo-link">
           <Logo/>
           </a>
                     </Link>

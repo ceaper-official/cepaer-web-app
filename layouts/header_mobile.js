@@ -4,21 +4,21 @@ import Search from "../assets/icons/ui/search.js";
 import HumanSolid from "../assets/icons/ui/human_solid.js";
 
 const HeaderMobile = () => (
-  <div class="nav-container">
+  <div className="nav-container">
   <Link href="/">
-  <a class="logo-link">
+  <a className="logo-link">
 <Logo/>
 </a>
       </Link>
-  <div class="nav-inner">
+  <div className="nav-inner">
   {/*ログイン後、下部にスティッキーで、「検索」「マイページ」「お気に入り」のコンテンツ表示*/}
-    <a class="search-wrapper hover-accent">
+    <a className="search-wrapper hover-accent">
     {/*クリックで、上部に検索ボタン表示*/}
-      <span class="search-icon"><Search /></span>
+      <span className="search-icon"><Search /></span>
     </a>
-  <div class="nav-controls">
+  <div className="nav-controls">
   <Link  href="/signup">
-  <a  class="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>
+  <a  className="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>
 <HumanSolid />アカウントを作成
 </a>
       </Link>

@@ -11,36 +11,36 @@ function RecipeImg() {
 
 export default function UserShot() {
   return (
-    <div class="shots-wrapper">
+    <div className="shots-wrapper">
 
-    <div class="shot">
-    <div class="user-container">
-  <div class="user-avatar user-inner">
+    <div className="shot">
+    <div className="user-container">
+  <div className="user-avatar user-inner">
   <User />
   </div>
-  <div class="user-inner">
+  <div className="user-inner">
     <h6>ゴルゴンゾーラとトマトのカプレーゼ</h6>
-    <a class="user-link user-text name">ケリー小田</a>
+    <a className="user-link user-text name">ケリー小田</a>
   </div>
   </div>
 
-      <div class="shot-recipe-img">
+      <div className="shot-recipe-img">
     <a href="/recipe">
-    <RecipeImg class="card"/></a>
-    <div class="shot-ingredients-wrapper">
-  <span class="shot-ingredients">トマト, ゴルゴンゾーラ, バジル, オリーブオイル, 塩, 黒こしょう, ごぼう, 人参, プロセスチーズ, イチゴ, メロン, キノコ, 小麦粉, メロンジュース</span>
+    <RecipeImg className="card"/></a>
+    <div className="shot-ingredients-wrapper">
+  <span className="shot-ingredients">トマト, ゴルゴンゾーラ, バジル, オリーブオイル, 塩, 黒こしょう, ごぼう, 人参, プロセスチーズ, イチゴ, メロン, キノコ, 小麦粉, メロンジュース</span>
   </div>
     </div>
-    <div class="shot-recipe-inner">
-    <div class="shot-recipes-bio-wrapper">
-    <div class="recipes-inner shot-recipes-data">
-            <div class="cook">
-      <span class="recipes-ico">
+    <div className="shot-recipe-inner">
+    <div className="shot-recipes-bio-wrapper">
+    <div className="recipes-inner shot-recipes-data">
+            <div className="cook">
+      <span className="recipes-ico">
     <CookSolid />1135</span>
     </div>
     <span>・</span>
-    <div class="time">
-      <span class="recipes-ico">
+    <div className="time">
+      <span className="recipes-ico">
     <TimeSolid />15分</span>
     </div>
   </div>

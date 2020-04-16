@@ -3,7 +3,7 @@
 
         export default function ShotsUser() {
           return (
-                <div class="shots-wrapper">
+                <div className="shots-wrapper">
                   <ShotUser />
                   <ShotUser />
                   <ShotUser />

@@ -6,42 +6,42 @@ import Facebook from "../assets/icons/social/facebook.js";
 import Link from 'next/link';
 
 export default () => (
-    <div class="actions-row">
-    <div class="actions-row-bg"></div>
-    <div class="actions-wrapper">
-    <div class="actions-inner card">
-    <div class="actions-row-close"><Cross /></div>
+    <div className="actions-row">
+    <div className="actions-row-bg"></div>
+    <div className="actions-wrapper">
+    <div className="actions-inner card">
+    <div className="actions-row-close"><Cross /></div>
     <h1>ログイン</h1>
-    <div class="action-button-wrapper input-wrapper">
-    <span class="input-prefix">
+    <div className="action-button-wrapper input-wrapper">
+    <span className="input-prefix">
     <Mail />
     </span>
-    <input class="input-inner" placeholder="Eメール"></input>
+    <input className="input-inner" placeholder="Eメール"></input>
 </div>
-<div class="action-button-wrapper input-wrapper">
-<span class="input-prefix">
+<div className="action-button-wrapper input-wrapper">
+<span className="input-prefix">
 <Password />
 </span>
-<input class="input-inner" placeholder="パスワード" type="password"></input>
-<span class="input-suffix">
+<input className="input-inner" placeholder="パスワード" type="password"></input>
+<span className="input-suffix">
 <Link href="/forgot-password">
-    <a class="xs-text accent  hover-black">お忘れですか？</a>
+    <a className="xs-text accent  hover-black">お忘れですか？</a>
 </Link>
 </span></div>
-    <div class="action-button-wrapper">
-    <button class="button-black button">ログイン</button></div>
-    <span class="actions-subtitle xs-text">または</span>
-        <div class="action-button-wrapper">
-    <button class="button google-button social-button"><span class="button-prefix"><Google /></span><span class="social-button-inner">Googleでログイン</span></button>
+    <div className="action-button-wrapper">
+    <button className="button-black button">ログイン</button></div>
+    <span className="actions-subtitle xs-text">または</span>
+        <div className="action-button-wrapper">
+    <button className="button google-button social-button"><span className="button-prefix"><Google /></span><span className="social-button-inner">Googleでログイン</span></button>
     </div>
-        <div class="action-button-wrapper">
-            <button class="button facebook-button social-button"><span class="button-prefix"><Facebook /></span><span class="social-button-inner">Facebookでログイン</span></button>
+        <div className="action-button-wrapper">
+            <button className="button facebook-button social-button"><span className="button-prefix"><Facebook /></span><span className="social-button-inner">Facebookでログイン</span></button>
     </div>
-    <div class="hr-text"></div>
-    <div class="make-account-link">
-    <p class="xs-text">アカウントがまだありませんか？</p>
+    <div className="hr-text"></div>
+    <div className="make-account-link">
+    <p className="xs-text">アカウントがまだありませんか？</p>
     <Link href="/signup">
-        <a  class="xs-text hover-black accent">作成する</a>
+        <a  className="xs-text hover-black accent">作成する</a>
     </Link>
     </div>
 

@@ -5,23 +5,23 @@ import HumanApp from "../assets/icons/ui/human_solid.js";
 import SearchApp from "../assets/icons/ui/search.js";
 
 const NavApp = () => (
-<div class="app-nav-wrapper">
+<div className="app-nav-wrapper">
 
 <Link  href="/">
-<a class="app-nav-inner app-nav-active">
-<span class="app-nav-icon"><HomeApp /></span>
+<a className="app-nav-inner app-nav-active">
+<span className="app-nav-icon"><HomeApp /></span>
 <h6>ホーム</h6>
 </a>
     </Link>
     <Link  href="/signin">
-    <a class="app-nav-inner">
-    <span class="app-nav-icon"><HumanApp /></span>
+    <a className="app-nav-inner">
+    <span className="app-nav-icon"><HumanApp /></span>
     <h6>ログイン</h6>
 </a>
         </Link>
         <Link  href="/about">
-  <a class="app-nav-inner">
-    <span class="app-nav-icon"><AppLogo /></span>
+  <a className="app-nav-inner">
+    <span className="app-nav-icon"><AppLogo /></span>
     <h6>Ceaperとは？</h6>
   </a>
 </Link>

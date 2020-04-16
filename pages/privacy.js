@@ -7,17 +7,17 @@ import  NavPolicies from "../layouts/nav-policies.js";
 
 export default () => (
     <BaseLayout>
-      <div id="page"class="side-nav-page">
-     <div class='contents'>
+      <div id="page"className="side-nav-page">
+     <div className='contents'>
 
-     <div class='section policies-wrapper'>
+     <div className='section policies-wrapper'>
 <NavPolicies/>
   <NavPoliciesMobile/>
 
-       <div class="policies-inner">
-         <span class="grey xs-text updated">Updated: 2020/4/20 </span>
-<h1 class="policies-title">プライバシーポリシー </h1>
-<div class="policies-text">
+       <div className="policies-inner">
+         <span className="grey xs-text updated">Updated: 2020/4/20 </span>
+<h1 className="policies-title">プライバシーポリシー </h1>
+<div className="policies-text">
   <p>
   dely 株式会社（以下「当社」といいます。）は、当社が運営管理するサービス（以下「本サービス」と総称します。）におけるユーザーについての個人情報を含むユーザーの情報（以下「ユーザー情報」といいます。）の取り扱いについて、以下の通りプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。なお、当社は、本ポリシーとは別に、個別サービス毎のプライバシーポリシー（以下総称して「個別サービスポリシー」といいます。）を定める場合があります。 この場合、個別サービスポリシーに別段の定めがある場合を除き、当該個別サービスに関しては、本ポリシーとともに個別サービスポリシーが適用されます。
 </p>

@@ -10,28 +10,28 @@ const HomeHeader = () => (
   <div>
   <div id="header">
     <div id="desktop-nav">
-                <div class="nav-container">
+                <div className="nav-container">
                 <Link href="/">
-                <a class="logo-link">
+                <a className="logo-link">
           <Logo/>
           </a>
                     </Link>
-    <div class="nav-inner nav-inner-desktop">
-            <div class="nav-controls">
-        <div class="search-wrapper">
-          <span class="search-icon"><span class="search-icon-inner"><Search /></span></span>
-      <input class="search" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
+    <div className="nav-inner nav-inner-desktop">
+            <div className="nav-controls">
+        <div className="search-wrapper">
+          <span className="search-icon"><span className="search-icon-inner"><Search /></span></span>
+      <input className="search" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
     </div>
-      <a href="/blog" class="hover-accent articles">記事一覧</a>
+      <a href="/blog" className="hover-accent articles">記事一覧</a>
     </div>
-    <div class="nav-controls">
+    <div className="nav-controls">
     <Link  href="/signin">
-    <a class="hover-accent">
+    <a className="hover-accent">
 ログイン
 </a>
         </Link>
         <Link  href="/signup">
-        <a  class="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>
+        <a  className="button icon-button button-black nav-account-button ico"  style={{ margin: 0 }}>
 <HumanSolid />アカウントを作成
     </a>
             </Link>
@@ -43,7 +43,7 @@ const HomeHeader = () => (
 <HeaderMobile />
 </div>
 </div>
-<div id="app-header" class="bg-white">
+<div id="app-header" className="bg-white">
 <HomeHeaderApp />
 </div>
 <div id="app-nav">

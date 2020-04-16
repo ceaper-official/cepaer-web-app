@@ -22,7 +22,6 @@ const Header = () => (
           <span class="search-icon"><span class="search-icon-inner"><Search /></span></span>
       <input class="search" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
     </div>
-      <a href="/blog" class="hover-accent articles">記事一覧</a>
     </div>
     <div class="nav-controls">
     <Link  href="/signin">

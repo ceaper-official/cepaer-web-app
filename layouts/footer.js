@@ -5,84 +5,87 @@ import Twitter from "../assets/icons/social/twitter.js";
 import Logo from "../assets/logo.js";
 import BadgeNew from "../assets/icons/ui/badge-new.js";
 
-const Footer = () => (
-  <div id="footer">
-    <div class="bg-grey">
-        <div class="section">
-      <div class="footer-container " id="footer-contents">
-      <Link href="/">
-      <a class="logo-link">
-<Logo/>
-</a>
-          </Link>
-      <div class="footer-contents-grid">
-        <div class="footer-terms-contents-inner">
-          <h6>サービス</h6>
-          <a class="hover-line">使い方</a>
-          <a class="hover-line event-none">記事（準備中）</a>
-        </div>
-        <div class="footer-terms-contents-inner">
-          <h6>Ceaper</h6>
-          <a class="hover-line" href="/about">Ceaperについて</a>
-          <div class="badge-wrapper"><a class="hover-line">ライター募集</a><BadgeNew/>
-</div>
-<Link href="/press">
-< a class = "hover-line" >
-プレス< /a>
-</Link>
-          <a class="hover-line">投資に関する情報</a>
-        </div>
-        <div class="footer-terms-contents-inner">
-          <h6>サポート</h6>
-          <Link href="/feedback">
-          < a class = "hover-line" >
-          ご意見・ご要望< /a>
-          </Link>
-
-          <Link href="/help/home">
-          <a class="hover-line">
-          ヘルプ        </a>
+const Footer = () => (<div id="footer">
+  <div className="bg-grey">
+    <div className="section">
+      <div className="footer-container " id="footer-contents">
+        <Link href="/">
+          <a className="logo-link">
+            <Logo/>
+          </a>
+        </Link>
+        <div className="footer-contents-grid">
+          <div className="footer-terms-contents-inner">
+            <h6>サービス</h6>
+            <a className="hover-line">使い方</a>
+            <a className="hover-line event-none">記事（準備中）</a>
+          </div>
+          <div className="footer-terms-contents-inner">
+            <h6>Ceaper</h6>
+            <a className="hover-line" href="/about">Ceaperについて</a>
+            <div className="badge-wrapper">
+              <a className="hover-line">ライター募集</a><BadgeNew/>
+            </div>
+            <Link href="/press">
+              < a className="hover-line">
+                プレス< /a>
               </Link>
-                        <a class="hover-line"  target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">お問い合わせ</a>
-        </div>
-      </div>
-    </div>
-    </div>
+              <a className="hover-line">投資に関する情報</a>
+            </div>
+            <div className="footer-terms-contents-inner">
+              <h6>サポート</h6>
+              <Link href="/feedback">
+                < a className="hover-line">
+                  ご意見・ご要望< /a>
+                </Link>
 
-    <div class="section">
-      <div class="hr-paragraph">
-      </div>
-      <div class="footer-container"  id="footer-terms">
-        <div class="footer-terms-inner1">
-          <p class="footer-copylight"style={{ paddingLeft: 0 }}>© 2020 Ceaper</p><p>/</p>
-          <Link href="/terms">
-          <a class="hover-line">
-利用規約
-    </a>
+                <Link href="/faq/home">
+                  <a className="hover-line">
+                    よくある質問</a>
+                </Link>
+                <a className="hover-line" target="_blank" rel="nofollow noreferrer noopener" href="mailto: support@ceaper.com">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="hr-paragraph"></div>
+          <div className="footer-container" id="footer-terms">
+            <div className="footer-terms-inner1">
+              <p className="footer-copylight" style={{
+                  paddingLeft: 0
+                }}>© 2020 Ceaper</p>
+              <p>/</p>
+              <Link href="/terms">
+                <a className="hover-line">
+                  利用規約
+                </a>
               </Link>
               <Link href="/privacy">
-              <a class="hover-line">
-プライバシー        </a>
-                  </Link>
-          <a class="hover-line">広告掲載</a>
+                <a className="hover-line">
+                  プライバシー
+                </a>
+              </Link>
+              <a className="hover-line">広告掲載</a>
+            </div>
+            <div className="footer-terms-inner2">
+              <div className="footer-social">
+                <a className="user-social-link">
+                  <Instagram/>
+                </a>
+                <a className="user-social-link">
+                  <Facebook/>
+                </a>
+                <a className="user-social-link">
+                  <Twitter/>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      <div class="footer-terms-inner2">
-<div class="footer-social">
-<a class="user-social-link">
-<Instagram />
-</a>
-<a class="user-social-link">
-<Facebook />
-</a>
-<a class="user-social-link">
-<Twitter />
-</a>
-</div>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-)
+    )
 
 export default Footer

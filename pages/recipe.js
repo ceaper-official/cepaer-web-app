@@ -25,82 +25,82 @@ export default() => (<BaseLayout>
   <div id="page">
 
     {/* ヒーロー */}
-    <div class="contents" id="recipe-hero">
-      <div class="section">
-        <div class="recipe-wrapper">
-          <div class="recipe-inner1">
-            <div class="border-radius recipe-img-inner">
+    <div className="contents" id="recipe-hero">
+      <div className="section">
+        <div className="recipe-wrapper">
+          <div className="recipe-inner1">
+            <div className="border-radius recipe-img-inner">
               <FoodImg/>
-              <div class="recipe-actions" style={{
+              <div className="recipe-actions" style={{
                   paddingBottom: 0
                 }}>
                 {/* 追加済の場合、クラス追加 */}
-                <a class="button ico action-star button-white xs-text"><StarSolid/>
+                <a className="button ico action-star button-white xs-text"><StarSolid/>
                   <span>お気に入り</span>
                 </a>
-                <a class="button ico action-share  button-white xs-text"><ShareSolid/>
+                <a className="button ico action-share  button-white xs-text"><ShareSolid/>
                   <span>共有</span>
                 </a>
               </div>
             </div>
             <h1>ゴルゴンゾーラとトマトのカプレーゼ
             </h1>
-            <div class="recipe-inner">
-              <a class="user-link">
-                <div class="user-container">
-                  <div class="user-avatar user-inner">
+            <div className="recipe-inner">
+              <a className="user-link">
+                <div className="user-container">
+                  <div className="user-avatar user-inner">
                     <UserImg/>
                   </div>
-                  <div class="user-inner">
-                    <p class="user-text name">ケリー小田</p>
+                  <div className="user-inner">
+                    <p className="user-text name">ケリー小田</p>
                   </div>
                 </div>
               </a>
             </div>
 
-            <div class="recipe-hr"></div>
-            <div class="recipe-bio-wrapper">
+            <div className="recipe-hr"></div>
+            <div className="recipe-bio-wrapper">
 
-              <div class="recipe-bio-inner1">
+              <div className="recipe-bio-inner1">
                 <div>
-                  <div class="flex">
-                    <h4 class="section-title">材料</h4>
-                    <h4 class="servings ico xs-text w-auto">
+                  <div className="flex">
+                    <h4 className="section-title">材料</h4>
+                    <h4 className="servings ico xs-text w-auto">
                       {/* 数によって、材料の量が変更  最小：1 最大：10？ */}
                       <h4 style={{
                           margin: 0
-                        }} class="xs-text w-auto">人数：
+                        }} className="xs-text w-auto">人数：
                       </h4>
-                      <button class="ico button-active"><Minus/></button>
-                      <span class="button-active-number">2</span>
-                      <button class="ico button-active"><Add/></button>
+                      <button className="ico button-active"><Minus/></button>
+                      <span className="button-active-number">2</span>
+                      <button className="ico button-active"><Add/></button>
                     </h4>
                   </div>
-                  <div class="ingredients-wrapper xs-text">
+                  <div className="ingredients-wrapper xs-text">
                     {/* 入力の際、文字数制限：数量（〜5 */}
                     <span>1個</span>
-                    <span class="ingredient">
+                    <span className="ingredient">
                       トマト</span>
                     <span>100g</span>
-                    <span class="ingredient">
+                    <span className="ingredient">
                       ゴルゴンゾーラ</span>
                     <span>6枚</span>
-                    <span class="ingredient">
+                    <span className="ingredient">
                       バジル</span>
                     <span>大さじ1</span>
-                    <span class="ingredient">
+                    <span className="ingredient">
                       オリーブオイル</span>
                     <span>少々</span>
-                    <span class="ingredient">塩</span>
+                    <span className="ingredient">塩</span>
                     <span>少々</span>
-                    <span class="ingredient">黒こしょう</span>
+                    <span className="ingredient">黒こしょう</span>
                   </div>
                 </div>
               </div>
 
-              <div class="recipe-bio-inner2">
-                <h4 class="section-title">キャンプ道具</h4>
-                <div class="camp-wrapper tag-camp">
+              <div className="recipe-bio-inner2">
+                <h4 className="section-title">キャンプ道具</h4>
+                <div className="camp-wrapper tag-camp">
                   {/* タグに関連づけたレシピ一覧へリンク */}
                   <Link href="/">
                     <a>BBQグリル</a>
@@ -122,48 +122,48 @@ export default() => (<BaseLayout>
 
             </div>
 
-                          <div class="recipe-bio-inner3">
-                            <div class="recipe-hr"></div>
+                          <div className="recipe-bio-inner3">
+                            <div className="recipe-hr"></div>
                             <p>ミニトマト、ゴルゴンゾーラをシンプルに、オリーブオイルと塩で和えました。最後に散らしたバジルが味のアクセントとなっております。見た目もかわいらしく、おもてなし料理としてもぴったりです。冷蔵庫で冷たく冷やしてお召し上がり下さい。</p>
                           </div>
-            <div class="recipe-hr recipe-hr-desktop"></div>
+            <div className="recipe-hr recipe-hr-desktop"></div>
           </div>
 
 
 
           {/* データ取得 */}
-          <div class="recipe-bio-nav">
-            <div class="card"  style={{
+          <div className="recipe-bio-nav">
+            <div className="card"  style={{
                 padding: 0
               }}>
 
-              <div class="recipe-bio-content">
-                <div class="rating">
-                  <div class="star star4">
+              <div className="recipe-bio-content">
+                <div className="rating">
+                  <div className="star star4">
                     ★★★★
                   </div>
-                  <div class="star-bg">
+                  <div className="star-bg">
                     ★★★★★
                   </div>
                 </div>
               </div>
-              <div class="recipe-hr"></div>
+              <div className="recipe-hr"></div>
 
-              <div class="recipe-bio-content">
-                <div class="ico s-text">
+              <div className="recipe-bio-content">
+                <div className="ico s-text">
                   <TimeSolid/>
                   <span>12分</span>
                 </div>
-                <div class="ico s-text">
+                <div className="ico s-text">
                   <CookSolid/>
                   <span>1135</span>
                 </div>
               </div>
 
-              <div class="recipe-hr"></div>
+              <div className="recipe-hr"></div>
 
-                <div class="recipe-bio-content">
-                <a class="button action-make-button icon-button button-black-ol">クッキングリストに追加</a>
+                <div className="recipe-bio-content">
+                <a className="button action-make-button icon-button button-black-ol">クッキングリストに追加</a>
               </div>
 
             </div>
@@ -174,25 +174,25 @@ export default() => (<BaseLayout>
     </div>
 
     {/* 作り方 */}
-    <div class="contents">
-      <div class="section">
-        <div class="recipe-section-title-wrapper review hr-section-title">
-          <div class="recipe-section-title">
+    <div className="contents">
+      <div className="section">
+        <div className="recipe-section-title-wrapper review hr-section-title">
+          <div className="recipe-section-title">
             作り方
           </div>
         </div>
-        <div class="make-wrapper">
+        <div className="make-wrapper">
           {/* データ取得・作り方 */}
-          <div class="make-inner bg-grey card card-wrapper">
+          <div className="make-inner bg-grey card card-wrapper">
             <p>お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。</p>
           </div>
-          <div class="make-inner bg-grey card card-wrapper">
+          <div className="make-inner bg-grey card card-wrapper">
             <p>お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。</p>
           </div>
-          <div class="make-inner bg-grey card card-wrapper">
+          <div className="make-inner bg-grey card card-wrapper">
             <p>お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。</p>
           </div>
-          <div class="make-inner bg-grey card card-wrapper">
+          <div className="make-inner bg-grey card card-wrapper">
             <p>お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。</p>
           </div>
         </div>
@@ -200,37 +200,37 @@ export default() => (<BaseLayout>
     </div>
 
     {/* レビュー一覧 */}
-    <div class="contents" id="review">
-      <div class="section">
-        <div class="recipe-section-title-wrapper review  hr-section-title">
-          <div class="recipe-section-title">
+    <div className="contents" id="review">
+      <div className="section">
+        <div className="recipe-section-title-wrapper review  hr-section-title">
+          <div className="recipe-section-title">
             レビュー（514）
-            <div class="rating">
-              <div class="star star4">
+            <div className="rating">
+              <div className="star star4">
                 ★★★★
               </div>
-              <div class="star-bg">
+              <div className="star-bg">
                 ★★★★★
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section" style={{
+      <div className="section" style={{
           paddingRight: 0
         }}>
-        <div class="review-wrapper">
-          <div class="review shot card-wrapper card card-border">
-            <div class="recipes-inner">
-              <p class="s-text comment">美味しいです。ご飯にも合う味でした！もう一品欲しいときに便利！</p>
-              <a class="user-link">
-                <div class="user-container">
-                  <div class="user-avatar user-inner">
+        <div className="review-wrapper">
+          <div className="review shot card-wrapper card card-border">
+            <div className="recipes-inner">
+              <p className="s-text comment">美味しいです。ご飯にも合う味でした！もう一品欲しいときに便利！</p>
+              <a className="user-link">
+                <div className="user-container">
+                  <div className="user-avatar user-inner">
                     <UserImg/>
                   </div>
-                  <div class="user-inner">
-                    <p class="user-text name">ケリー小田</p>
-                    <p class="user-text date" style={{
+                  <div className="user-inner">
+                    <p className="user-text name">ケリー小田</p>
+                    <p className="user-text date" style={{
                         margin: 0
                       }}>2020.06.12</p>
                   </div>
@@ -241,24 +241,24 @@ export default() => (<BaseLayout>
           </div>
         </div>
       </div>
-      <div class="reviews-link">
-        <a class="hover-accent">
-          <h4 class="small-text">全てのレビューを見る</h4>
+      <div className="reviews-link">
+        <a className="hover-accent">
+          <h4 className="small-text">全てのレビューを見る</h4>
         </a>
       </div>
     </div>
 
     {/* 関連するレシピ */}
-    <div class="contents">
-      <div class="section">
-        <div class="recipe-section-title-wrapper review">
-          <div class="recipe-section-title hr-section-title">
+    <div className="contents">
+      <div className="section">
+        <div className="recipe-section-title-wrapper review">
+          <div className="recipe-section-title hr-section-title">
             関連するレシピ
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="shots-wrapper">
+      <div className="section">
+        <div className="shots-wrapper">
           {/* partial "shot.html" . */}
         </div>
       </div>

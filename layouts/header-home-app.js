@@ -10,13 +10,13 @@ function User() {
 }
 
 const HomeHeaderApp = () => (
-<div  id="home-header-app"> <div class="section">
-  <div class="app-header-wrapper">
+<div  id="home-header-app"> <div className="section">
+  <div className="app-header-wrapper">
 
-    <div class="app-header-inner home-app-header-inner1">
-      <div class="search-wrapper">
-        <span class="search-icon"><span class="search-icon-inner"><Search /></span></span>
-    <input class="search xs-text" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
+    <div className="app-header-inner home-app-header-inner1">
+      <div className="search-wrapper">
+        <span className="search-icon"><span className="search-icon-inner"><Search /></span></span>
+    <input className="search xs-text" type="search" name="q" placeholder="料理、材料、キャンプ道具..."/>
   </div>
     </div>
 
