@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/feedback.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/404.js"],{
 
 /***/ "./assets/app-logo.js":
 /*!****************************!*\
@@ -184,6 +184,43 @@ function Twitter() {
 
 /***/ }),
 
+/***/ "./assets/icons/ui/arrow-r.js":
+/*!************************************!*\
+  !*** ./assets/icons/ui/arrow-r.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ArrowR; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/arrow-r.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function ArrowR() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M12.08105,18.167a.99974.99974,0,0,1-.71923-1.69433L16.64453,11H1A1,1,0,0,1,1,9H16.64453L11.36182,3.52734a.9997.9997,0,1,1,1.43847-1.38867l6.91455,7.16211a1.01391,1.01391,0,0,1,.10889.13184l.001.002h0a.98794.98794,0,0,1,.12744.25977h0l.00049.00195A.98974.98974,0,0,1,20,9.999v.002a.98974.98974,0,0,1-.04736.30273l-.00049.00195h0a.98794.98794,0,0,1-.12744.25977h0l-.001.002a1.01391,1.01391,0,0,1-.10889.13184l-6.91455,7.16211A.99661.99661,0,0,1,12.08105,18.167Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
 /***/ "./assets/icons/ui/back.js":
 /*!*********************************!*\
   !*** ./assets/icons/ui/back.js ***!
@@ -245,53 +282,6 @@ function BadgeNew() {
     },
     __self: this
   }, "New");
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/bug.js":
-/*!********************************!*\
-  !*** ./assets/icons/ui/bug.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Bug; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/bug.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Bug() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M12.90034,1a6.12773,6.12773,0,0,1,1.46278.177L11.283,4.25719a3.15361,3.15361,0,1,0,4.45987,4.45989L18.823,5.63692a6.10114,6.10114,0,0,1-8.6101,6.93764L4.3647,18.42274a1.971,1.971,0,0,1-2.78742-2.78742L7.42544,9.78716A6.09913,6.09913,0,0,1,12.90034,1m0-1h0a7.09936,7.09936,0,0,0-6.66,9.558L.87017,14.92821a2.971,2.971,0,0,0,4.20164,4.20164l5.37091-5.37092a7.15731,7.15731,0,0,0,2.46038.43875A7.09857,7.09857,0,0,0,19.794,5.3981a1,1,0,0,0-1.67818-.4683L15.03571,8.01A2.1536,2.1536,0,0,1,11.99006,4.9643l3.08017-3.08017A1,1,0,0,0,14.60194.206,7.13188,7.13188,0,0,0,12.90036,0Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), __jsx("circle", {
-    cx: "3.06171",
-    cy: "16.93827",
-    r: "1",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
 }
 
 /***/ }),
@@ -378,512 +368,6 @@ function HumanApp() {
 
 /***/ }),
 
-/***/ "./assets/icons/ui/message.js":
-/*!************************************!*\
-  !*** ./assets/icons/ui/message.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Message; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/message.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Message() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M3.92139,20a.49235.49235,0,0,1-.18946-.03711A.50011.50011,0,0,1,3.42139,19.5V13.71582H1.20557A1.20709,1.20709,0,0,1,0,12.51074V1.20605A1.2073,1.2073,0,0,1,1.20557,0H18.79443A1.2073,1.2073,0,0,1,20,1.20605V12.51074a1.20709,1.20709,0,0,1-1.20557,1.20508H10.31689L4.27783,19.85059A.49978.49978,0,0,1,3.92139,20ZM1.20557,1A.20631.20631,0,0,0,1,1.20605V12.51074a.20548.20548,0,0,0,.20557.20508H3.92139a.49972.49972,0,0,1,.5.5V18.2793L9.751,12.86523a.50024.50024,0,0,1,.35644-.14941h8.687A.20548.20548,0,0,0,19,12.51074V1.20605A.20631.20631,0,0,0,18.79443,1Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), __jsx("path", {
-    d: "M16.07861,4.9834H3.92139a.5.5,0,0,1,0-1H16.07861a.5.5,0,1,1,0,1Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), __jsx("path", {
-    d: "M13.4375,7.3584H3.92139a.5.5,0,0,1,0-1H13.4375a.5.5,0,0,1,0,1Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }), __jsx("path", {
-    d: "M11.26221,9.7334H3.92139a.5.5,0,0,1,0-1h7.34082a.5.5,0,0,1,0,1Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/rate1.js":
-/*!**********************************!*\
-  !*** ./assets/icons/ui/rate1.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Rate1; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/rate1.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Rate1() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20.00277 20.00003",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("circle", {
-    className: "ratebg",
-    cx: "10.00138",
-    cy: "10.00002",
-    r: "10",
-    fill: "#ff4545",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 77
-    }
-  }), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 155
-    }
-  }, __jsx("path", {
-    d: "M14.9165,13.85645a6.07641,6.07641,0,0,0-9.83057,0,.50018.50018,0,0,0,.4043.79394h9.022a.50017.50017,0,0,0,.4043-.79394Z",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 172
-    }
-  })), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 322
-    }
-  }, __jsx("circle", {
-    cx: "5.81865",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 339
-    }
-  }), __jsx("circle", {
-    cx: "14.18687",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 396
-    }
-  })));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/rate2.js":
-/*!**********************************!*\
-  !*** ./assets/icons/ui/rate2.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Rate2; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/rate2.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Rate2() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20.00277 20.00003",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("circle", {
-    cx: "10.00138",
-    className: "ratebg",
-    cy: "10.00002",
-    r: "10",
-    fill: "#ff7d45",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 77
-    }
-  }), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 154
-    }
-  }, __jsx("path", {
-    d: "M10.0013,11.35254a6.01219,6.01219,0,0,0-4.915,2.50391.49986.49986,0,1,0,.80859.58789,5.07709,5.07709,0,0,1,8.21338,0,.49986.49986,0,0,0,.8086-.58789A6.01243,6.01243,0,0,0,10.0013,11.35254Z",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 171
-    }
-  })), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 390
-    }
-  }, __jsx("circle", {
-    cx: "5.81865",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 407
-    }
-  }), __jsx("circle", {
-    cx: "14.18687",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 464
-    }
-  })));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/rate3.js":
-/*!**********************************!*\
-  !*** ./assets/icons/ui/rate3.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Rate3; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/rate3.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Rate3() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20.00277 20.00003",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("circle", {
-    className: "ratebg",
-    cx: "10.00138",
-    cy: "10.00002",
-    r: "10",
-    fill: "#fff645",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 77
-    }
-  }), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 155
-    }
-  }, __jsx("path", {
-    d: "M14.5236,12.15625H5.47917a.5.5,0,0,0,0,1H14.5236a.5.5,0,1,0,0-1Z",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 172
-    }
-  })), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 267
-    }
-  }, __jsx("circle", {
-    cx: "5.81865",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 284
-    }
-  }), __jsx("circle", {
-    cx: "14.18687",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 341
-    }
-  })));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/rate4.js":
-/*!**********************************!*\
-  !*** ./assets/icons/ui/rate4.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Rate4; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/rate4.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Rate4() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20.00277 20.00003",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("circle", {
-    className: "ratebg",
-    cx: "10.00138",
-    cy: "10.00002",
-    r: "10",
-    fill: "#45e9ff",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 77
-    }
-  }), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 154
-    }
-  }, __jsx("path", {
-    d: "M14.10742,11.55762a5.07475,5.07475,0,0,1-8.2124,0,.50025.50025,0,0,0-.80957.58789,6.076,6.076,0,0,0,9.83154,0,.50025.50025,0,0,0-.80957-.58789Z",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 171
-    }
-  })), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 345
-    }
-  }, __jsx("circle", {
-    cx: "5.81865",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 362
-    }
-  }), __jsx("circle", {
-    cx: "14.18687",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 419
-    }
-  })));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/rate5.js":
-/*!**********************************!*\
-  !*** ./assets/icons/ui/rate5.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Rate5; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/rate5.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Rate5() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
-  }, __jsx("circle", {
-    className: "ratebg",
-    cx: "10.00276",
-    cy: "10",
-    r: "10",
-    fill: "#45ff99",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 65
-    }
-  }), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 137
-    }
-  }, __jsx("circle", {
-    cx: "5.81865",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 154
-    }
-  }), __jsx("circle", {
-    cx: "14.18687",
-    cy: "7.3438",
-    r: "1.2",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 211
-    }
-  })), __jsx("g", {
-    opacity: "0.6",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 273
-    }
-  }, __jsx("path", {
-    d: "M14.51221,11.35156h-9.022a.50054.50054,0,0,0-.40478.794,6.076,6.076,0,0,0,9.83154,0,.50054.50054,0,0,0-.40478-.794Z",
-    fill: "#231e28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 290
-    }
-  })));
-}
-
-/***/ }),
-
 /***/ "./assets/icons/ui/search.js":
 /*!***********************************!*\
   !*** ./assets/icons/ui/search.js ***!
@@ -910,43 +394,6 @@ function Search() {
     __self: this
   }, __jsx("path", {
     d: "M19.72093,18.37426l-3.45424-3.45378A9.1927,9.1927,0,1,0,14.92,16.26721L18.3742,19.721a.95228.95228,0,1,0,1.34673-1.34672ZM9.16011,1.90476a7.25586,7.25586,0,1,1-7.2554,7.25586A7.26419,7.26419,0,0,1,9.16011,1.90476Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/star-solid.js":
-/*!***************************************!*\
-  !*** ./assets/icons/ui/star-solid.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return StarSolid; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/star-solid.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function StarSolid() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M19.3488,7.33954,14.4631,6.5054a.782.782,0,0,1-.54331-.37584L10.67492.58569a.782.782,0,0,0-1.34984,0L6.08021,6.12956a.782.782,0,0,1-.54331.37584L.6512,7.33954a.782.782,0,0,0-.461,1.28112l3.70605,4.30451a.78205.78205,0,0,1,.18354.6057l-.66307,5.39147a.782.782,0,0,0,1.1328.79144l5.0939-2.61a.782.782,0,0,1,.71322,0l5.09393,2.61a.782.782,0,0,0,1.1328-.79145l-.6631-5.39146a.78209.78209,0,0,1,.18354-.60571l3.70605-4.3045A.782.782,0,0,0,19.3488,7.33954Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -1234,6 +681,102 @@ var BaseLayout = function BaseLayout(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BaseLayout);
+
+/***/ }),
+
+/***/ "./layouts/feedback.js":
+/*!*****************************!*\
+  !*** ./layouts/feedback.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Feedback; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/ui/arrow-r.js */ "./assets/icons/ui/arrow-r.js");
+var _jsxFileName = "/Users/kerry/ceaper/layouts/feedback.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Feedback() {
+  return __jsx("div", {
+    className: "contents",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 6
+    }
+  }, __jsx("div", {
+    className: "section",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 6
+    }
+  }, __jsx("div", {
+    className: "card card-wrapper",
+    style: {
+      textAlign: "center"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }, __jsx("h5", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 5
+    }
+  }, "\u30B5\u30FC\u30D3\u30B9\u306E\u6A5F\u80FD\u6539\u5584\u30FB\u5411\u4E0A\u306B\u3054\u5354\u529B\u304F\u3060\u3055\u3044"), __jsx("div", {
+    style: {
+      paddingTop: "2rem"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/feedback",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    className: "button button-accent ico-back",
+    style: {
+      marginBottom: "1rem"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 28
+    }
+  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u9001\u308B", __jsx(_assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 117
+    }
+  })))))));
+}
 
 /***/ }),
 
@@ -2874,21 +2417,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ffeedback&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffeedback.js!./":
-/*!********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ffeedback&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffeedback.js ***!
-  \********************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2F404.js!./":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2F404.js ***!
+  \**********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/feedback", function() {
-      var mod = __webpack_require__(/*! ./pages/feedback.js */ "./pages/feedback.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/404", function() {
+      var mod = __webpack_require__(/*! ./pages/404.js */ "./pages/404.js")
       if(true) {
-        module.hot.accept(/*! ./pages/feedback.js */ "./pages/feedback.js", function() {
-          if(!next.router.components["/feedback"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/feedback.js */ "./pages/feedback.js")
-          next.router.update("/feedback", updatedPage)
+        module.hot.accept(/*! ./pages/404.js */ "./pages/404.js", function() {
+          if(!next.router.components["/404"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/404.js */ "./pages/404.js")
+          next.router.update("/404", updatedPage)
         })
       }
       return mod
@@ -6608,10 +6151,10 @@ try {
 
 /***/ }),
 
-/***/ "./pages/feedback.js":
-/*!***************************!*\
-  !*** ./pages/feedback.js ***!
-  \***************************/
+/***/ "./pages/404.js":
+/*!**********************!*\
+  !*** ./pages/404.js ***!
+  \**********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6622,25 +6165,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_base_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/base.js */ "./layouts/base.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_icons_ui_message_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/message.js */ "./assets/icons/ui/message.js");
-/* harmony import */ var _assets_icons_ui_bug_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/bug.js */ "./assets/icons/ui/bug.js");
-/* harmony import */ var _assets_icons_ui_star_solid_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/star-solid.js */ "./assets/icons/ui/star-solid.js");
-/* harmony import */ var _assets_icons_ui_rate5_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/rate5.js */ "./assets/icons/ui/rate5.js");
-/* harmony import */ var _assets_icons_ui_rate4_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/ui/rate4.js */ "./assets/icons/ui/rate4.js");
-/* harmony import */ var _assets_icons_ui_rate3_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/ui/rate3.js */ "./assets/icons/ui/rate3.js");
-/* harmony import */ var _assets_icons_ui_rate2_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/icons/ui/rate2.js */ "./assets/icons/ui/rate2.js");
-/* harmony import */ var _assets_icons_ui_rate1_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/icons/ui/rate1.js */ "./assets/icons/ui/rate1.js");
+/* harmony import */ var _assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/arrow-r.js */ "./assets/icons/ui/arrow-r.js");
+/* harmony import */ var _layouts_feedback_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../layouts/feedback.js */ "./layouts/feedback.js");
 var _this = undefined,
-    _jsxFileName = "/Users/kerry/ceaper/pages/feedback.js";
+    _jsxFileName = "/Users/kerry/ceaper/pages/404.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-
 
 
 
@@ -6650,300 +6181,67 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 22
+      lineNumber: 7,
+      columnNumber: 3
     }
   }, __jsx("div", {
     id: "page",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 3
+      lineNumber: 8,
+      columnNumber: 1
     }
-  }, __jsx("div", {
-    className: "contents bg-grey",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: "section center-section",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 7
-    }
-  }, __jsx("h1", {
-    className: "title",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, "\u591A\u7A2E\u591A\u5F69\u306A\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5F85\u3061\u3057\u3066\u304A\u308A\u307E\u3059\u3002"), __jsx("p", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
-    }
-  }, "\u79C1\u9054Ceaper\u306F\u5E38\u306B\u30E6\u30FC\u30B6\u30FC\u306E\u65B9\u304C\u5FC3\u5730\u826F\u304F\u30B5\u30FC\u30D3\u30B9\u3092\u4F7F\u3048\u308B\u3088\u3046\u306B\u65B0\u3057\u3044\u6A5F\u80FD\u306E\u958B\u767A\u30FB\u4FEE\u6B63\u306B\u6311\u3093\u3067\u3044\u307E\u3059\u3002Ceaper\u306E\u30B5\u30FC\u30D3\u30B9\u3092\u4F7F\u7528\u3059\u308B\u4E2D\u3067\u3001\u6A5F\u80FD\u306B\u3064\u3044\u3066\u4E0D\u6E80\u306B\u601D\u3063\u305F\u4E8B\u3084\u3001\u3054\u8981\u671B\u306A\u3069\u304C\u3054\u3056\u3044\u307E\u3057\u305F\u3089\u3001\u304A\u6C17\u8EFD\u306B\u3054\u9023\u7D61\u304F\u3060\u3055\u3044\u3002"), __jsx("p", {
-    style: {
-      marginBottom: 0
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  }, "\u5F53\u30DA\u30FC\u30B8\u306F\u304A\u554F\u3044\u5408\u308F\u305B\u306E\u30D5\u30A9\u30FC\u30E0\u3067\u306F\u306A\u3044\u70BA\u3001\u539F\u5247\u3054\u8FD4\u4FE1\u306F\u51FA\u6765\u304B\u306D\u307E\u3059\u3002\u81F4\u547D\u7684\u306A\u6A5F\u80FD\u306E\u30D0\u30B0\u30FB\u4E0D\u5177\u5408\u306E\u3054\u5831\u544A\u306B\u3064\u304D\u307E\u3057\u3066\u306F\u3001\u3054\u8FD4\u4FE1\u3068\u5171\u306B\u3001\u65E9\u6025\u306A\u3054\u5BFE\u5FDC\u3092\u3044\u305F\u3057\u307E\u3059\u3002\u307E\u305F\u8FD4\u7B54\u304C\u5FC5\u8981\u306A\u8CEA\u554F\u3084\u30B5\u30DD\u30FC\u30C8\u304C\u5FC5\u8981\u306A\u5834\u5408\u306F\u3001", __jsx("a", {
-    className: "grey-paragraph border-text",
-    target: "_blank",
-    rel: "nofollow noreferrer noopener",
-    href: "mailto: support@ceaper.com",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 11
-    }
-  }, "\u30B5\u30DD\u30FC\u30C8\u7A93\u53E3"), "\u307E\u3067\u304A\u554F\u3044\u5408\u308F\u305B\u304F\u3060\u3055\u3044\u3002"))), __jsx("div", {
+  }, " ", __jsx("div", {
     className: "contents",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 5
+      lineNumber: 8,
+      columnNumber: 20
     }
   }, __jsx("div", {
     className: "section center-section",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 7
+      lineNumber: 9,
+      columnNumber: 3
     }
-  }, __jsx("div", {
-    className: "feedback-wrapper",
+  }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 9
+      lineNumber: 10,
+      columnNumber: 5
     }
-  }, __jsx("h5", {
-    className: "hr-section-title",
+  }, "\u3053\u306E\u30DA\u30FC\u30B8\u306F\u5B58\u5728\u3057\u307E\u305B\u3093\u3002"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 11
+      lineNumber: 11,
+      columnNumber: 5
     }
-  }, "\u3069\u306E\u3088\u3046\u306A\u5185\u5BB9\u3067\u3059\u304B\uFF1F"), __jsx("div", {
-    className: "form-select",
+  }, "\u7533\u3057\u8A33\u3042\u308A\u307E\u305B\u3093\u3002\u304A\u63A2\u3057\u306E\u30DA\u30FC\u30B8\u306F\u5B58\u5728\u3057\u306A\u3044\u304B\u3001\u524A\u9664\u3055\u308C\u305F\u53EF\u80FD\u6027\u304C\u3042\u308A\u307E\u3059\u3002\u5165\u529B\u3057\u305FURL\u3092\u30C1\u30A7\u30C3\u30AF\u3057\u3066\u3001\u6B63\u3057\u3044\u30DA\u30FC\u30B8\u3078\u30A2\u30AF\u30BB\u30B9\u3057\u3066\u304F\u3060\u3055\u3044\u3002"))), __jsx(_layouts_feedback_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 11
+      lineNumber: 15,
+      columnNumber: 1
     }
-  }, __jsx("a", {
-    className: "icon-button ico select-button select-button-bottom",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 13
-    }
-  }, __jsx(_assets_icons_ui_message_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 15
-    }
-  }), "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u306B\u3064\u3044\u3066"), __jsx("a", {
-    className: "icon-button ico select-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 13
-    }
-  }, __jsx(_assets_icons_ui_bug_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 15
-    }
-  }), "\u30D0\u30B0\u30FB\u4E0D\u5177\u5408\u306B\u3064\u3044\u3066"))), __jsx("div", {
-    className: "feedback-wrapper",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 9
-    }
-  }, __jsx("h5", {
-    className: "hr-section-title",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
-    }
-  }, "Ceaper\u306E\u30B5\u30FC\u30D3\u30B9\u306B\u6E80\u8DB3\u3057\u3066\u3044\u307E\u3059\u304B\uFF1F"), __jsx("div", {
-    className: "form-select",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 11
-    }
-  }, __jsx("div", {
-    className: " select-rating-wrapper",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "select-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 15
-    }
-  }, __jsx(_assets_icons_ui_rate1_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 17
-    }
-  })), __jsx("a", {
-    className: "select-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 15
-    }
-  }, __jsx(_assets_icons_ui_rate2_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 17
-    }
-  })), __jsx("a", {
-    className: "select-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 15
-    }
-  }, __jsx(_assets_icons_ui_rate3_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 17
-    }
-  })), __jsx("a", {
-    className: "select-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 15
-    }
-  }, __jsx(_assets_icons_ui_rate4_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 17
-    }
-  })), __jsx("a", {
-    className: "select-button",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 15
-    }
-  }, __jsx(_assets_icons_ui_rate5_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 17
-    }
-  }))))), __jsx("div", {
-    className: "feedback-wrapper",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 13
-    }
-  }, __jsx("h5", {
-    className: "hr-section-title",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 15
-    }
-  }, "\u5185\u5BB9\u3092\u8A73\u3057\u304F\u304A\u8A71\u3057\u304F\u3060\u3055\u3044"), __jsx("div", {
-    className: "form-select",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 15
-    }
-  }, __jsx("textarea", {
-    className: "feedback-area",
-    placeholder: "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u306B\u3064\u3044\u3066\u306E\u5834\u5408\uFF1ACeaper\u306E\u30B5\u30FC\u30D3\u30B9\u3092\u5229\u7528\u3057\u3066\u611F\u3058\u305F\u4E8B\u3001\u826F\u304B\u3063\u305F\u70B9\u307E\u305F\u306F\u3001\u6539\u5584\u70B9\u306A\u3069\u3082\u304A\u8A71\u3057\u304F\u3060\u3055\u3044\u3002\u3000\u30D0\u30B0\u30FB\u4E0D\u5177\u5408\u306B\u3064\u3044\u3066\u306E\u5834\u5408\uFF1A\u3069\u306E\u3088\u3046\u306A\u72B6\u6CC1\u30FB\u64CD\u4F5C\u3067\u554F\u984C\u304C\u767A\u751F\u3057\u307E\u3057\u305F\u304B\uFF1F \u554F\u984C\u304C\u767A\u751F\u3057\u305F\u6642\u306E\u72B6\u6CC1\u3092\u8A73\u3057\u304F\u304A\u8A71\u3057\u304F\u3060\u3055\u3044\u3002\u5185\u5BB9\u306B\u5FDC\u3058\u3066\u65E9\u6025\u306B\u5BFE\u5FDC\u3055\u305B\u3066\u3044\u305F\u3060\u304D\u307E\u3059\u3002",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 17
-    }
-  })), __jsx("a", {
-    className: "button form-submit button-accent",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 15
-    }
-  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u9001\u308B"))))));
+  })));
 });
 
 /***/ }),
 
-/***/ 3:
-/*!************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Ffeedback&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffeedback.js ***!
-  \************************************************************************************************************************/
+/***/ 4:
+/*!**************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2F404.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Ffeedback&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffeedback.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ffeedback&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Ffeedback.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2F404.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2F404.js!./");
 
 
 /***/ }),
@@ -6959,5 +6257,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=feedback.js.map
+},[[4,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=404.js.map

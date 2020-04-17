@@ -8,6 +8,10 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
+    "/404": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -20,15 +24,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/faq/account/[slug]": [
+    "/delete": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/feedback": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/get-started": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

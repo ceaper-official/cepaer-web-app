@@ -9,7 +9,7 @@ export default function Feedback() {
     <div className="card card-wrapper" style={{ textAlign: "center" }}>
     <h5>サービスの機能改善・向上にご協力ください</h5>
     <div style={{ paddingTop: "2rem" }}>
-    <Link href="/feedback"><a  className="button button-green ico-back" style={{ marginBottom: "1rem" }}>フィードバックを送る<ArrowR/></a></Link>
+    <Link href="/feedback"><a  className="button button-accent ico-back" style={{ marginBottom: "1rem" }}>フィードバックを送る<ArrowR/></a></Link>
      </div>
      </div>
       </div>

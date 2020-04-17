@@ -1,13 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../../../ssr-module-cache.js');
-/******/
-/******/ 	// object to store loaded chunks
-/******/ 	// "0" means "already loaded"
-/******/ 	var installedChunks = {
-/******/ 		"static/development/pages/faq/account/[slug].js": 0
-/******/ 	};
+/******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -39,26 +33,6 @@ module.exports =
 /******/ 		return module.exports;
 /******/ 	}
 /******/
-/******/ 	// This file contains only the entry chunk.
-/******/ 	// The chunk loading function for additional chunks
-/******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
-/******/ 		var promises = [];
-/******/
-/******/
-/******/ 		// require() chunk loading for javascript
-/******/
-/******/ 		// "0" is the signal for "already loaded"
-/******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../../../../../" + ({}[chunkId]||chunkId) + ".js");
-/******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
-/******/ 			for(var moduleId in moreModules) {
-/******/ 				modules[moduleId] = moreModules[moduleId];
-/******/ 			}
-/******/ 			for(var i = 0; i < chunkIds.length; i++)
-/******/ 				installedChunks[chunkIds[i]] = 0;
-/******/ 		}
-/******/ 		return Promise.all(promises);
-/******/ 	};
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
@@ -112,16 +86,9 @@ module.exports =
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
-/******/ 	// uncaught error handler for webpack runtime
-/******/ 	__webpack_require__.oe = function(err) {
-/******/ 		process.nextTick(function() {
-/******/ 			throw err; // catch this error by using import().catch()
-/******/ 		});
-/******/ 	};
-/******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -310,43 +277,6 @@ function Twitter() {
 
 /***/ }),
 
-/***/ "./assets/icons/ui/arrow-r.js":
-/*!************************************!*\
-  !*** ./assets/icons/ui/arrow-r.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ArrowR; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/arrow-r.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function ArrowR() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M12.08105,18.167a.99974.99974,0,0,1-.71923-1.69433L16.64453,11H1A1,1,0,0,1,1,9H16.64453L11.36182,3.52734a.9997.9997,0,1,1,1.43847-1.38867l6.91455,7.16211a1.01391,1.01391,0,0,1,.10889.13184l.001.002h0a.98794.98794,0,0,1,.12744.25977h0l.00049.00195A.98974.98974,0,0,1,20,9.999v.002a.98974.98974,0,0,1-.04736.30273l-.00049.00195h0a.98794.98794,0,0,1-.12744.25977h0l-.001.002a1.01391,1.01391,0,0,1-.10889.13184l-6.91455,7.16211A.99661.99661,0,0,1,12.08105,18.167Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
-
-/***/ }),
-
 /***/ "./assets/icons/ui/back.js":
 /*!*********************************!*\
   !*** ./assets/icons/ui/back.js ***!
@@ -412,22 +342,22 @@ function BadgeNew() {
 
 /***/ }),
 
-/***/ "./assets/icons/ui/down.js":
-/*!*********************************!*\
-  !*** ./assets/icons/ui/down.js ***!
-  \*********************************/
+/***/ "./assets/icons/ui/bug.js":
+/*!********************************!*\
+  !*** ./assets/icons/ui/bug.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Down; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Bug; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/down.js";
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/bug.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Down() {
+function Bug() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
@@ -437,7 +367,78 @@ function Down() {
     },
     __self: this
   }, __jsx("path", {
-    d: "M18.293,4.793,10,13.08594,1.707,4.793A.99989.99989,0,0,0,.293,6.207l9,9a.99963.99963,0,0,0,1.41406,0l9-9A.99989.99989,0,0,0,18.293,4.793Z",
+    d: "M12.90034,1a6.12773,6.12773,0,0,1,1.46278.177L11.283,4.25719a3.15361,3.15361,0,1,0,4.45987,4.45989L18.823,5.63692a6.10114,6.10114,0,0,1-8.6101,6.93764L4.3647,18.42274a1.971,1.971,0,0,1-2.78742-2.78742L7.42544,9.78716A6.09913,6.09913,0,0,1,12.90034,1m0-1h0a7.09936,7.09936,0,0,0-6.66,9.558L.87017,14.92821a2.971,2.971,0,0,0,4.20164,4.20164l5.37091-5.37092a7.15731,7.15731,0,0,0,2.46038.43875A7.09857,7.09857,0,0,0,19.794,5.3981a1,1,0,0,0-1.67818-.4683L15.03571,8.01A2.1536,2.1536,0,0,1,11.99006,4.9643l3.08017-3.08017A1,1,0,0,0,14.60194.206,7.13188,7.13188,0,0,0,12.90036,0Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("circle", {
+    cx: "3.06171",
+    cy: "16.93827",
+    r: "1",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/discontent.js":
+/*!***************************************!*\
+  !*** ./assets/icons/ui/discontent.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Discontent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/discontent.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Discontent() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M10.00162,19.99993a10,10,0,1,1,10-10A10.01177,10.01177,0,0,1,10.00162,19.99993Zm0-19a9,9,0,1,0,9,9A9.00984,9.00984,0,0,0,10.00162.99993Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M5.819,9.04388a1.7002,1.7002,0,1,1,1.69921-1.7002A1.70212,1.70212,0,0,1,5.819,9.04388Zm0-2.40039a.7002.7002,0,1,0,.69921.70019A.70143.70143,0,0,0,5.819,6.64349Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M14.18717,9.04388a1.7002,1.7002,0,1,1,1.69922-1.7002A1.70212,1.70212,0,0,1,14.18717,9.04388Zm0-2.40039a.7002.7002,0,1,0,.69922.70019A.70144.70144,0,0,0,14.18717,6.64349Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M14.91666,14.85638a.498.498,0,0,1-.40429-.206,5.57723,5.57723,0,0,0-9.02247,0,.49986.49986,0,1,1-.80859-.5879,6.57656,6.57656,0,0,1,10.63965,0,.5.5,0,0,1-.4043.79395Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -531,6 +532,157 @@ function HumanApp() {
 
 /***/ }),
 
+/***/ "./assets/icons/ui/message.js":
+/*!************************************!*\
+  !*** ./assets/icons/ui/message.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Message; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/message.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Message() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M3.92139,20a.49235.49235,0,0,1-.18946-.03711A.50011.50011,0,0,1,3.42139,19.5V13.71582H1.20557A1.20709,1.20709,0,0,1,0,12.51074V1.20605A1.2073,1.2073,0,0,1,1.20557,0H18.79443A1.2073,1.2073,0,0,1,20,1.20605V12.51074a1.20709,1.20709,0,0,1-1.20557,1.20508H10.31689L4.27783,19.85059A.49978.49978,0,0,1,3.92139,20ZM1.20557,1A.20631.20631,0,0,0,1,1.20605V12.51074a.20548.20548,0,0,0,.20557.20508H3.92139a.49972.49972,0,0,1,.5.5V18.2793L9.751,12.86523a.50024.50024,0,0,1,.35644-.14941h8.687A.20548.20548,0,0,0,19,12.51074V1.20605A.20631.20631,0,0,0,18.79443,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M16.07861,4.9834H3.92139a.5.5,0,0,1,0-1H16.07861a.5.5,0,1,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M13.4375,7.3584H3.92139a.5.5,0,0,1,0-1H13.4375a.5.5,0,0,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M11.26221,9.7334H3.92139a.5.5,0,0,1,0-1h7.34082a.5.5,0,0,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/notice.js":
+/*!***********************************!*\
+  !*** ./assets/icons/ui/notice.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Notice; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/notice.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Notice() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M19.75772,16.41424l-8-14.73686a2.00006,2.00006,0,0,0-3.51544,0l-8,14.73686A2,2,0,0,0,2,19.3684H18a2,2,0,0,0,1.75775-2.95416ZM8.99974,6.73316a1,1,0,0,1,2,0v5.94237a1,1,0,0,1-2,0ZM10,16.76721a1,1,0,1,1,1-1A1,1,0,0,1,10,16.76721Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/other.js":
+/*!**********************************!*\
+  !*** ./assets/icons/ui/other.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Other; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/other.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Other() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M9.99967,12.55746a2.55762,2.55762,0,1,1,2.55859-2.55761A2.56066,2.56066,0,0,1,9.99967,12.55746Zm0-4.11523a1.55762,1.55762,0,1,0,1.55859,1.55762A1.56,1.56,0,0,0,9.99967,8.44223Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M17.442,12.55746a2.55762,2.55762,0,1,1,2.55762-2.55761A2.56066,2.56066,0,0,1,17.442,12.55746Zm0-4.11523a1.55762,1.55762,0,1,0,1.55762,1.55762A1.56,1.56,0,0,0,17.442,8.44223Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M2.55826,12.55746A2.55762,2.55762,0,1,1,5.11588,9.99985,2.56087,2.56087,0,0,1,2.55826,12.55746Zm0-4.11523A1.55762,1.55762,0,1,0,4.11588,9.99985,1.5602,1.5602,0,0,0,2.55826,8.44223Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
 /***/ "./assets/icons/ui/search.js":
 /*!***********************************!*\
   !*** ./assets/icons/ui/search.js ***!
@@ -557,6 +709,43 @@ function Search() {
     __self: this
   }, __jsx("path", {
     d: "M19.72093,18.37426l-3.45424-3.45378A9.1927,9.1927,0,1,0,14.92,16.26721L18.3742,19.721a.95228.95228,0,1,0,1.34673-1.34672ZM9.16011,1.90476a7.25586,7.25586,0,1,1-7.2554,7.25586A7.26419,7.26419,0,0,1,9.16011,1.90476Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/trouble.js":
+/*!************************************!*\
+  !*** ./assets/icons/ui/trouble.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Trouble; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/trouble.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Trouble() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M5.546,19.99955a.49965.49965,0,0,1-.48535-.61914L7.2345,10.522H4.22961a.49971.49971,0,0,1-.47753-.64746L6.69251.35208A.49868.49868,0,0,1,7.17-.00045h7.415a.50024.50024,0,0,1,.46582.68066L12.68176,6.8013h3.08887a.49963.49963,0,0,1,.38281.82129L5.92883,19.82083A.5003.5003,0,0,1,5.546,19.99955ZM4.90735,9.522H7.87219a.49949.49949,0,0,1,.48535.61914L6.54407,17.5308l8.15527-9.7295H11.95227a.50024.50024,0,0,1-.46582-.68066L13.85559.99955H7.53919Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -802,53 +991,6 @@ function Logo() {
 
 /***/ }),
 
-/***/ "./faq/account lazy recursive ^\\.\\/.*\\.md$":
-/*!********************************************************!*\
-  !*** ./faq/account lazy ^\.\/.*\.md$ namespace object ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./01アカウントの作成.md": [
-		"./faq/account/01アカウントの作成.md",
-		0
-	],
-	"./アイコンを変更するには.md": [
-		"./faq/account/アイコンを変更するには.md",
-		1
-	],
-	"./アカウントを作成するには.md": [
-		"./faq/account/アカウントを作成するには.md",
-		2
-	],
-	"./メールが届きませんが.md": [
-		"./faq/account/メールが届きませんが.md",
-		3
-	]
-};
-function webpackAsyncContext(req) {
-	if(!__webpack_require__.o(map, req)) {
-		return Promise.resolve().then(function() {
-			var e = new Error("Cannot find module '" + req + "'");
-			e.code = 'MODULE_NOT_FOUND';
-			throw e;
-		});
-	}
-
-	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(function() {
-		return __webpack_require__(id);
-	});
-}
-webpackAsyncContext.keys = function webpackAsyncContextKeys() {
-	return Object.keys(map);
-};
-webpackAsyncContext.id = "./faq/account lazy recursive ^\\.\\/.*\\.md$";
-module.exports = webpackAsyncContext;
-
-/***/ }),
-
 /***/ "./layouts/base.js":
 /*!*************************!*\
   !*** ./layouts/base.js ***!
@@ -889,90 +1031,6 @@ const BaseLayout = props => __jsx("div", {
 }));
 
 /* harmony default export */ __webpack_exports__["default"] = (BaseLayout);
-
-/***/ }),
-
-/***/ "./layouts/faq/nav-search.js":
-/*!***********************************!*\
-  !*** ./layouts/faq/nav-search.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
-var _jsxFileName = "/Users/kerry/ceaper/layouts/faq/nav-search.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const NavSearch = () => __jsx("div", {
-  className: "contents bg-black",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 7
-  }
-}, __jsx("div", {
-  className: "section center-section",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "search-wrapper faq-search",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7,
-    columnNumber: 11
-  }
-}, __jsx("span", {
-  className: "search-icon",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 13
-  }
-}, __jsx("span", {
-  className: "search-icon-inner",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 15
-  }
-}, __jsx(_assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 51
-  }
-}))), __jsx("input", {
-  className: "search",
-  type: "search",
-  name: "q",
-  placeholder: "\u304A\u56F0\u308A\u306E\u30AD\u30FC\u30EF\u30FC\u30C9\u3067\u691C\u7D22...",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 13
-  }
-}))));
-
-/* harmony default export */ __webpack_exports__["default"] = (NavSearch);
 
 /***/ }),
 
@@ -1895,242 +1953,6 @@ const HeaderMobile = () => __jsx("div", {
 
 /***/ }),
 
-/***/ "./layouts/nav-faq-mobile.js":
-/*!***********************************!*\
-  !*** ./layouts/nav-faq-mobile.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavFAQMobile; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_icons_ui_down_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/ui/down.js */ "./assets/icons/ui/down.js");
-var _jsxFileName = "/Users/kerry/ceaper/layouts/nav-faq-mobile.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function NavFAQMobile() {
-  return __jsx("div", {
-    className: "side-nav-mobile",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 5
-    }
-  }, __jsx("input", {
-    id: "side-nav-check",
-    className: "side-nav-label-check",
-    type: "checkbox",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 7
-    }
-  }), __jsx("label", {
-    className: "side-nav-label ico xs-text",
-    for: "side-nav-check",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
-    }
-  }, "\u898F\u7D04", __jsx(_assets_icons_ui_down_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 76
-    }
-  })), __jsx("div", {
-    className: "side-nav-mobile-inner",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/privacy",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    className: "xs-text",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 17
-    }
-  }, "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/terms",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "xs-text",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 21
-    }
-  }, "\u5229\u7528\u898F\u7D04"))));
-}
-
-/***/ }),
-
-/***/ "./layouts/nav-faq.js":
-/*!****************************!*\
-  !*** ./layouts/nav-faq.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavFAQ; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/kerry/ceaper/layouts/nav-faq.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function NavFAQ() {
-  return __jsx("div", {
-    className: "side-nav-desktop",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 11
-    }
-  }, __jsx("div", {
-    className: "side-nav-desktop-inner",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 5
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/faq/home",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 7
-    }
-  }, __jsx("a", {
-    className: "xs-text hover-accent grey",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 9
-    }
-  }, "\u30DB\u30FC\u30E0")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }
-  }, __jsx("a", {
-    className: "xs-text hover-accent grey",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, "Ceaper\u306B\u3064\u3044\u3066")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/faq/account/01\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u4F5C\u6210",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 7
-    }
-  }, __jsx("a", {
-    className: "xs-text hover-accent grey",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 9
-    }
-  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u4F5C\u6210")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }
-  }, __jsx("a", {
-    className: "xs-text hover-accent grey",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 9
-    }
-  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7BA1\u7406")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 7
-    }
-  }, __jsx("a", {
-    className: "xs-text hover-accent grey",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
-    }
-  }, "\u30B5\u30DD\u30FC\u30C8")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 7
-    }
-  }, __jsx("a", {
-    className: "xs-text hover-accent grey",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 9
-    }
-  }, "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC"))));
-}
-
-/***/ }),
-
 /***/ "./layouts/nav_app.js":
 /*!****************************!*\
   !*** ./layouts/nav_app.js ***!
@@ -2282,341 +2104,6 @@ const NavApp = () => __jsx("div", {
 }, "Ceaper\u3068\u306F\uFF1F"))));
 
 /* harmony default export */ __webpack_exports__["default"] = (NavApp);
-
-/***/ }),
-
-/***/ "./layouts/vote-form.js":
-/*!******************************!*\
-  !*** ./layouts/vote-form.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/ui/arrow-r.js */ "./assets/icons/ui/arrow-r.js");
-var _jsxFileName = "/Users/kerry/ceaper/layouts/vote-form.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-class VoteForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  constructor(...args) {
-    super(...args);
-
-    _defineProperty(this, "state", {
-      Component: null
-    });
-
-    _defineProperty(this, "selectYes", () => this.setState({
-      Component: VoteYes
-    }));
-
-    _defineProperty(this, "selectNo", () => this.setState({
-      Component: VoteNo
-    }));
-  }
-
-  render() {
-    const {
-      Component
-    } = this.state;
-    if (Component) return __jsx(Component, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15,
-        columnNumber: 26
-      }
-    });
-    return __jsx("div", {
-      className: "contents",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 6
-      }
-    }, __jsx("div", {
-      id: "vote-wrapper",
-      className: "card card-wrapper",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 5
-      }
-    }, __jsx("h5", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 5
-      }
-    }, "\u3053\u306E\u56DE\u7B54\u306F\u304A\u5F79\u306B\u7ACB\u3061\u307E\u3057\u305F\u304B\uFF1F"), __jsx("div", {
-      className: "button-choice-wrapper",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 7
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/edit",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 9
-      }
-    }, __jsx("button", {
-      className: "button button-black-ol button-choice-l ",
-      onClick: this.selectYes,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 11
-      }
-    }, "\u306F\u3044")), __jsx("button", {
-      className: "button  button-black-ol button-choice-r",
-      onClick: this.selectNo,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 7
-      }
-    }, "\u3044\u3044\u3048"))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (VoteForm);
-
-function VoteYes() {
-  return __jsx("div", {
-    className: "contents",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    id: "vote-wrapper",
-    className: "card card-wrapper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 7
-    }
-  }, __jsx("h5", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 7
-    }
-  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5BC4\u305B\u9802\u304D\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01")));
-}
-
-class VoteNo extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  constructor(...args) {
-    super(...args);
-
-    _defineProperty(this, "state", {
-      Component: null
-    });
-
-    _defineProperty(this, "selectSubmit", () => this.setState({
-      Component: VoteSubmit
-    }));
-  }
-
-  render() {
-    const {
-      Component
-    } = this.state;
-    if (Component) return __jsx(Component, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 26
-      }
-    });
-    return __jsx("div", {
-      className: "contents",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55,
-        columnNumber: 5
-      }
-    }, __jsx("div", {
-      id: "vote-wrapper",
-      className: "card card-wrapper",
-      style: {
-        textAlign: "left"
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56,
-        columnNumber: 4
-      }
-    }, __jsx("h5", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57,
-        columnNumber: 6
-      }
-    }, "\u3088\u308D\u3057\u3051\u308C\u3070\u3001\u7406\u7531\u3092\u6559\u3048\u3066\u3044\u305F\u3060\u3051\u307E\u3059\u304B\uFF1F"), __jsx("label", {
-      class: "answer-label",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 1
-      }
-    }, __jsx("input", {
-      type: "checkbox",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 29
-      }
-    }), __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 53
-      }
-    }, "\u5185\u5BB9\u304C\u7406\u89E3\u3067\u304D\u306A\u3044\u3001\u8AAD\u307F\u306B\u304F\u304B\u3063\u305F")), __jsx("label", {
-      class: "answer-label",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 2
-      }
-    }, __jsx("input", {
-      type: "checkbox",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 30
-      }
-    }), __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60,
-        columnNumber: 54
-      }
-    }, "\u81EA\u5206\u306E\u8CEA\u554F\u306B\u5BFE\u3059\u308B\u56DE\u7B54\u304C\u898B\u3064\u304B\u3089\u306A\u304B\u3063\u305F")), __jsx("label", {
-      class: "answer-label",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 6
-      }
-    }, __jsx("input", {
-      type: "checkbox",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 34
-      }
-    }), __jsx("span", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61,
-        columnNumber: 58
-      }
-    }, "\u305D\u306E\u4ED6")), __jsx("div", {
-      className: "form-select",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 62,
-        columnNumber: 8
-      }
-    }, __jsx("textarea", {
-      className: "feedback-area",
-      placeholder: "\u4ED6\u306B\u539F\u56E0\u306F\u3042\u308A\u307E\u3059\u304B\uFF1F",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63,
-        columnNumber: 8
-      }
-    })), __jsx("div", {
-      className: "vote-submit",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 9
-      }
-    }, __jsx("button", {
-      className: "button button-black",
-      onClick: this.selectSubmit,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65,
-        columnNumber: 38
-      }
-    }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u9001\u308B"))));
-  }
-
-}
-
-function VoteSubmit() {
-  return __jsx("div", {
-    className: "contents",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76,
-      columnNumber: 8
-    }
-  }, __jsx("div", {
-    id: "vote-wrapper",
-    className: "card card-wrapper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 7
-    }
-  }, __jsx("h5", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 7
-    }
-  }, "\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u304A\u5BC4\u305B\u9802\u304D\u3001\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01")));
-}
 
 /***/ }),
 
@@ -4295,35 +3782,30 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/faq/account/[slug].js":
-/*!*************************************!*\
-  !*** ./pages/faq/account/[slug].js ***!
-  \*************************************/
+/***/ "./pages/delete.js":
+/*!*************************!*\
+  !*** ./pages/delete.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FaqTemplate; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gray-matter */ "gray-matter");
-/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown */ "react-markdown");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _layouts_base_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../layouts/base.js */ "./layouts/base.js");
-/* harmony import */ var _layouts_nav_faq_mobile_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../layouts/nav-faq-mobile.js */ "./layouts/nav-faq-mobile.js");
-/* harmony import */ var _layouts_nav_faq_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../layouts/nav-faq.js */ "./layouts/nav-faq.js");
-/* harmony import */ var _layouts_vote_form_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../layouts/vote-form.js */ "./layouts/vote-form.js");
-/* harmony import */ var _layouts_faq_nav_search_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../layouts/faq/nav-search.js */ "./layouts/faq/nav-search.js");
-var _jsxFileName = "/Users/kerry/ceaper/pages/faq/account/[slug].js";
+/* harmony import */ var _layouts_base_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/base.js */ "./layouts/base.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_icons_ui_message_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/message.js */ "./assets/icons/ui/message.js");
+/* harmony import */ var _assets_icons_ui_bug_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/bug.js */ "./assets/icons/ui/bug.js");
+/* harmony import */ var _assets_icons_ui_notice_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/notice.js */ "./assets/icons/ui/notice.js");
+/* harmony import */ var _assets_icons_ui_trouble_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/trouble.js */ "./assets/icons/ui/trouble.js");
+/* harmony import */ var _assets_icons_ui_other_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/ui/other.js */ "./assets/icons/ui/other.js");
+/* harmony import */ var _assets_icons_ui_discontent_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/ui/discontent.js */ "./assets/icons/ui/discontent.js");
+var _jsxFileName = "/Users/kerry/ceaper/pages/delete.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -4331,134 +3813,226 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-
-
-function FaqTemplate({
-  content,
-  data
-}) {
-  // This holds the data between `---` from the .md file
-  const frontmatter = data;
-  return __jsx(_layouts_base_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    id: "page",
-    className: "side-nav-page",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }
-  }, __jsx(_layouts_faq_nav_search_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 1
-    }
-  }), __jsx("div", {
-    className: "contents",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "section faq-wrapper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
-    }
-  }, __jsx(_layouts_nav_faq_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 4
-    }
-  }), __jsx(_layouts_nav_faq_mobile_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 6
-    }
-  }), __jsx("div", {
-    className: "faq-inner article",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 8
-    }
-  }, __jsx("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 7
-    }
-  }, frontmatter.title), __jsx(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    source: content,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }
-  }), __jsx(_layouts_vote_form_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 9
-    }
-  }))))));
-}
-
-FaqTemplate.getInitialProps = async context => {
-  const {
-    slug
-  } = context.query; // Import our .md file using the `slug` from the URL
-
-  const faq = await __webpack_require__("./faq/account lazy recursive ^\\.\\/.*\\.md$")(`./${slug}.md`); // Parse .md data through `matter`
-
-  const data = gray_matter__WEBPACK_IMPORTED_MODULE_1___default()(faq.default); // Pass data to the component props
-
-  return _objectSpread({}, data);
-};
+/* harmony default export */ __webpack_exports__["default"] = (() => __jsx(_layouts_base_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 3
+  }
+}, __jsx("div", {
+  id: "page",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11,
+    columnNumber: 3
+  }
+}, __jsx("div", {
+  className: "contents bg-red80",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12,
+    columnNumber: 3
+  }
+}, __jsx("div", {
+  className: "section center-section",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 3
+  }
+}, __jsx("h1", {
+  className: "title white",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 1
+  }
+}, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316"), __jsx("p", {
+  className: "white",
+  style: {
+    marginBottom: 0
+  },
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15,
+    columnNumber: 1
+  }
+}, "\u4E0B\u8A18\u306E\u624B\u9806\u306B\u6CBF\u3063\u3066\u3001\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316\u306E\u624B\u7D9A\u304D\u3092\u9032\u3081\u3066\u304F\u3060\u3055\u3044\u3002\u306A\u304A\u3001\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u7121\u52B9\u5316\u3059\u308B\u5834\u5408\u3001\u3053\u308C\u307E\u3067\u306B\u6295\u7A3F\u3057\u305F\u30EC\u30B7\u30D4\u306A\u3069\u306E\u30A2\u30AF\u30C6\u30A3\u30D3\u30C6\u30A3\u304C\u5168\u3066\u524A\u9664\u3055\u308C\u307E\u3059\u3002\u518D\u5EA6\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F5C\u6210\u3059\u308B\u5834\u5408\u3001\u4EE5\u524D\u7121\u52B9\u306B\u3057\u305F\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F7F\u7528\u30FB\u5FA9\u65E7\u3059\u308B\u4E8B\u306F\u4E00\u5207\u3067\u304D\u307E\u305B\u3093\u3002\u307E\u305F\u3001\u305D\u306E\u9593\u306B\u4ED6\u306E\u30E6\u30FC\u30B6\u30FC\u306E\u65B9\u304C\u3001\u7121\u52B9\u5316\u3057\u305F\u30E6\u30FC\u30B6\u30FC\u540D\u3092\u4F7F\u7528\u3067\u304D\u308B\u70BA\u3001\u4EE5\u524D\u4F7F\u7528\u3057\u3066\u3044\u305F\u30E6\u30FC\u30B6\u30FC\u540D\u304C\u4F7F\u3048\u306A\u3044\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\u4E88\u3081\u3054\u4E86\u627F\u304F\u3060\u3055\u3044\u3002"))), __jsx("div", {
+  className: "contents",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18,
+    columnNumber: 2
+  }
+}, __jsx("div", {
+  className: "section center-section",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19,
+    columnNumber: 2
+  }
+}, __jsx("div", {
+  className: "feedback-wrapper",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22,
+    columnNumber: 3
+  }
+}, __jsx("h5", {
+  className: "hr-section-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23,
+    columnNumber: 3
+  }
+}, "\u7121\u52B9\u5316\u3059\u308B\u7406\u7531\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044"), __jsx("div", {
+  className: "form-select",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 24,
+    columnNumber: 3
+  }
+}, __jsx("a", {
+  className: "icon-button ico select-button select-button-bottom",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 25,
+    columnNumber: 3
+  }
+}, __jsx(_assets_icons_ui_discontent_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 25,
+    columnNumber: 70
+  }
+}), "\u30B5\u30FC\u30D3\u30B9\u306E\u4E0D\u6E80"), __jsx("a", {
+  className: "icon-button ico select-button select-button-bottom",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27,
+    columnNumber: 1
+  }
+}, __jsx(_assets_icons_ui_trouble_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27,
+    columnNumber: 68
+  }
+}), "\u30C8\u30E9\u30D6\u30EB\u306E\u767A\u751F"), __jsx("a", {
+  className: "icon-button ico select-button",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29,
+    columnNumber: 1
+  }
+}, "  ", __jsx(_assets_icons_ui_other_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29,
+    columnNumber: 49
+  }
+}), "\u305D\u306E\u4ED6"))), __jsx("div", {
+  className: "feedback-wrapper",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34,
+    columnNumber: 6
+  }
+}, __jsx("h5", {
+  className: "hr-section-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35,
+    columnNumber: 6
+  }
+}, "\u5185\u5BB9\u3092\u8A73\u3057\u304F\u304A\u8A71\u3057\u304F\u3060\u3055\u3044\uFF08\u4EFB\u610F\uFF09"), __jsx("div", {
+  className: "form-select",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36,
+    columnNumber: 6
+  }
+}, __jsx("textarea", {
+  className: "feedback-area",
+  placeholder: "\u7121\u52B9\u5316\u3059\u308B\u7406\u7531\u3084\u3001\u30B5\u30FC\u30D3\u30B9\u306B\u4E0D\u6E80\u306A\u3069\u3054\u3056\u3044\u307E\u3057\u305F\u3089\u3001\u8A73\u3057\u304F\u304A\u8A71\u3057\u304F\u3060\u3055\u3044\u3002",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 37,
+    columnNumber: 6
+  }
+})), __jsx("div", {
+  className: "button-choice-wrapper",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 39,
+    columnNumber: 1
+  }
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/edit",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40,
+    columnNumber: 3
+  }
+}, __jsx("a", {
+  className: "button button-grey button-choice-l",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 41,
+    columnNumber: 5
+  }
+}, "\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B")), __jsx("a", {
+  className: "button  button-red button-choice-r ico",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44,
+    columnNumber: 1
+  }
+}, __jsx(_assets_icons_ui_notice_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44,
+    columnNumber: 56
+  }
+}), "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u524A\u9664"))))))));
 
 /***/ }),
 
-/***/ 8:
-/*!*******************************************!*\
-  !*** multi ./pages/faq/account/[slug].js ***!
-  \*******************************************/
+/***/ 7:
+/*!*******************************!*\
+  !*** multi ./pages/delete.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kerry/ceaper/pages/faq/account/[slug].js */"./pages/faq/account/[slug].js");
+module.exports = __webpack_require__(/*! /Users/kerry/ceaper/pages/delete.js */"./pages/delete.js");
 
-
-/***/ }),
-
-/***/ "gray-matter":
-/*!******************************!*\
-  !*** external "gray-matter" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("gray-matter");
 
 /***/ }),
 
@@ -4517,17 +4091,6 @@ module.exports = require("react-is");
 
 /***/ }),
 
-/***/ "react-markdown":
-/*!*********************************!*\
-  !*** external "react-markdown" ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-markdown");
-
-/***/ }),
-
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -4540,4 +4103,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=[slug].js.map
+//# sourceMappingURL=delete.js.map

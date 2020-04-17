@@ -1,174 +1,205 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/get-started.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/delete.js"],{
 
-/***/ "./assets/icons/ui/add.js":
-/*!********************************!*\
-  !*** ./assets/icons/ui/add.js ***!
-  \********************************/
+/***/ "./assets/app-logo.js":
+/*!****************************!*\
+  !*** ./assets/app-logo.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Add; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AppLogo; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/add.js";
+var _jsxFileName = "/Users/kerry/ceaper/assets/app-logo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Add() {
+function AppLogo() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M19,9H11V1A1,1,0,0,0,9,1V9H1a1,1,0,0,0,0,2H9v8a1,1,0,0,0,2,0V11h8a1,1,0,0,0,0-2Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/arrow-r.js":
-/*!************************************!*\
-  !*** ./assets/icons/ui/arrow-r.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ArrowR; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/arrow-r.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function ArrowR() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M12.08105,18.167a.99974.99974,0,0,1-.71923-1.69433L16.64453,11H1A1,1,0,0,1,1,9H16.64453L11.36182,3.52734a.9997.9997,0,1,1,1.43847-1.38867l6.91455,7.16211a1.01391,1.01391,0,0,1,.10889.13184l.001.002h0a.98794.98794,0,0,1,.12744.25977h0l.00049.00195A.98974.98974,0,0,1,20,9.999v.002a.98974.98974,0,0,1-.04736.30273l-.00049.00195h0a.98794.98794,0,0,1-.12744.25977h0l-.001.002a1.01391,1.01391,0,0,1-.10889.13184l-6.91455,7.16211A.99661.99661,0,0,1,12.08105,18.167Z",
-    fill: "#231e28",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/gs-circle.js":
-/*!**************************************!*\
-  !*** ./assets/icons/ui/gs-circle.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Circle; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/gs-circle.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Circle() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
+    viewBox: "0 0 212.73975 212.73975",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, __jsx("circle", {
-    cx: "10",
-    cy: "10",
-    r: "9.5",
-    fill: "none",
-    stroke: "#231e28",
-    "stroke-linecap": "round",
-    "stroke-linejoin": "round",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/icons/ui/human.js":
-/*!**********************************!*\
-  !*** ./assets/icons/ui/human.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Human; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/human.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Human() {
-  return __jsx("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 20 20",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("path", {
-    d: "M13.24359,10.08185a5.5667,5.5667,0,1,0-6.48749.00006A10.29093,10.29093,0,0,0,0,19.5a.5.5,0,0,0,1,0,9.269,9.269,0,0,1,6.97931-8.75146,5.49125,5.49125,0,0,0,4.04126-.00007A9.26892,9.26892,0,0,1,19,19.5a.5.5,0,0,0,1,0A10.291,10.291,0,0,0,13.24359,10.08185ZM5.43311,5.56641A4.56665,4.56665,0,1,1,10,10.13379,4.57212,4.57212,0,0,1,5.43311,5.56641Z",
+    cx: "106.36987",
+    cy: "106.36987",
+    r: "106.36987",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
+  }), __jsx("path", {
+    d: "M146.29545,52.26116l2.46008-2.47322a3.56883,3.56883,0,0,1,6.0991,2.51681v23.5655a3.56884,3.56884,0,0,1-3.56883,3.56884h-4.07387a3.56981,3.56981,0,0,1-3.375-2.45974c-5.07839-15.14552-15.373-22.08993-29.47055-22.08993-24.18311,0-39.75555,22.5342-39.75555,51.48068,0,31.69459,17.22135,49.83154,42.87,49.83154,14.47324,0,26.56468-4.76314,39.02246-15.38928v12.27483c-12.45778,10.44276-28.39677,16.67165-47.26681,16.67165-38.65614,0-63.57213-26.015-63.57213-62.839,0-37.74054,26.01519-63.9389,63.57213-63.9389,12.38822,0,23.70568,3.21264,32.41462,9.63757A3.56486,3.56486,0,0,0,146.29545,52.26116Z",
+    fill: "#fdfdfd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
   }));
 }
 
 /***/ }),
 
-/***/ "./assets/icons/ui/mail.js":
+/***/ "./assets/icons/social/facebook.js":
+/*!*****************************************!*\
+  !*** ./assets/icons/social/facebook.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Facebook; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/social/facebook.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Facebook() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 1024 1024",
+    fill: "#1b77f2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/social/instagram.js":
+/*!******************************************!*\
+  !*** ./assets/icons/social/instagram.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Instagram; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/social/instagram.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Instagram() {
+  return __jsx("svg", {
+    width: "13",
+    height: "13",
+    viewBox: "0 0 13 13",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M-3.05176e-05 3.97163C-3.05176e-05 1.77803 1.77824 -0.000244141 3.97184 -0.000244141H9.0281C11.2217 -0.000244141 13 1.77802 13 3.97163V9.02788C13 11.2215 11.2217 12.9998 9.0281 12.9998H3.97184C1.77824 12.9998 -3.05176e-05 11.2215 -3.05176e-05 9.02789V3.97163ZM3.97184 1.281C2.48585 1.281 1.28122 2.48564 1.28122 3.97163V9.02789C1.28122 10.5139 2.48585 11.7185 3.97184 11.7185H9.0281C10.5141 11.7185 11.7187 10.5139 11.7187 9.02788V3.97163C11.7187 2.48564 10.5141 1.281 9.0281 1.281H3.97184Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.07483 6.55115C3.07483 4.64454 4.61242 3.09253 6.51702 3.09253C8.42162 3.09253 9.95921 4.64454 9.95921 6.55115C9.95921 8.45776 8.42162 10.0098 6.51702 10.0098C4.61242 10.0098 3.07483 8.45776 3.07483 6.55115ZM6.51702 4.37378C5.32709 4.37378 4.35608 5.34508 4.35608 6.55115C4.35608 7.75722 5.32709 8.72853 6.51702 8.72853C7.70695 8.72853 8.67796 7.75722 8.67796 6.55115C8.67796 5.34508 7.70695 4.37378 6.51702 4.37378Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), __jsx("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.95062 3.87075C10.4035 3.87075 10.7706 3.50149 10.7706 3.04597C10.7706 2.59046 10.4035 2.22119 9.95062 2.22119C9.49776 2.22119 9.13065 2.59046 9.13065 3.04597C9.13065 3.50149 9.49776 3.87075 9.95062 3.87075Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/social/twitter.js":
+/*!****************************************!*\
+  !*** ./assets/icons/social/twitter.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Twitter; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/social/twitter.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Twitter() {
+  return __jsx("svg", {
+    width: "16",
+    height: "13",
+    viewBox: "0 0 16 13",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M14.0658 2.34438C14.7013 1.96349 15.1892 1.3604 15.419 0.641811C14.8244 0.994439 14.1658 1.25056 13.4648 1.3886C12.9034 0.7905 12.1036 0.416748 11.2185 0.416748C9.51888 0.416748 8.14096 1.79461 8.14096 3.49411C8.14096 3.7353 8.16822 3.97019 8.22068 4.19542C5.66301 4.06708 3.39543 2.84191 1.8776 0.980064C1.6127 1.43458 1.46094 1.96322 1.46094 2.52719C1.46094 3.59485 2.00428 4.5368 2.83003 5.08865C2.32553 5.07268 1.85104 4.93425 1.43608 4.70376C1.43586 4.71659 1.43586 4.72949 1.43586 4.74244C1.43586 6.23349 2.49666 7.47732 3.90448 7.75999C3.64622 7.83033 3.37436 7.86792 3.09366 7.86792C2.89537 7.86792 2.70257 7.84866 2.51471 7.81272C2.90629 9.03537 4.0428 9.92509 5.38945 9.94994C4.33623 10.7753 3.00928 11.2673 1.56749 11.2673C1.31911 11.2673 1.07413 11.2528 0.833374 11.2243C2.19527 12.0975 3.81291 12.6069 5.55081 12.6069C11.2113 12.6069 14.3067 7.91763 14.3067 3.85096C14.3067 3.71753 14.3037 3.5848 14.2978 3.45285C14.899 3.01896 15.4208 2.47694 15.8334 1.8598C15.2815 2.10456 14.6884 2.26998 14.0658 2.34438Z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/back.js":
 /*!*********************************!*\
-  !*** ./assets/icons/ui/mail.js ***!
+  !*** ./assets/icons/ui/back.js ***!
   \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Mail; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Back; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/mail.js";
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/back.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Mail() {
+function Back() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
@@ -178,7 +209,7 @@ function Mail() {
     },
     __self: this
   }, __jsx("path", {
-    d: "M19.96667,3.47577a.48082.48082,0,0,0-.04809-.09192.47135.47135,0,0,0-.02991-.05719c-.00549-.00684-.01367-.00964-.01947-.01611a.58039.58039,0,0,0-.3421-.164c-.00946-.00055-.01752-.00544-.0271-.00544H.5c-.00958,0-.01752.00489-.027.00544a.49165.49165,0,0,0-.0957.01928.49128.49128,0,0,0-.09253.02832.4942.4942,0,0,0-.07025.04743.491.491,0,0,0-.0838.069c-.0058.00641-.01392.00928-.01941.016a.47409.47409,0,0,0-.02979.057A.48307.48307,0,0,0,.03326,3.476a.47758.47758,0,0,0-.02038.10138A.46657.46657,0,0,0,0,3.64111V16.35889a.49972.49972,0,0,0,.5.5h19a.49972.49972,0,0,0,.5-.5V3.64111a.47033.47033,0,0,0-.01282-.06341A.47844.47844,0,0,0,19.96667,3.47577Zm-1.879.66534L10,10.688,1.91229,4.14111ZM1,15.85889V4.68909l8.68555,7.03064a.49978.49978,0,0,0,.6289,0L19,4.68909v11.1698Z",
+    d: "M15.207.293a.99962.99962,0,0,0-1.41406,0l-9,9a.99962.99962,0,0,0,0,1.41406l9,9A.99989.99989,0,0,0,15.207,18.293L6.91406,10l8.293-8.293A.99962.99962,0,0,0,15.207.293Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -190,70 +221,301 @@ function Mail() {
 
 /***/ }),
 
-/***/ "./assets/icons/ui/password.js":
-/*!*************************************!*\
-  !*** ./assets/icons/ui/password.js ***!
-  \*************************************/
+/***/ "./assets/icons/ui/badge-new.js":
+/*!**************************************!*\
+  !*** ./assets/icons/ui/badge-new.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Password; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BadgeNew; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/password.js";
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/badge-new.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Password() {
+function BadgeNew() {
+  return __jsx("span", {
+    "class": "badge badge-new",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, "New");
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/bug.js":
+/*!********************************!*\
+  !*** ./assets/icons/ui/bug.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Bug; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/bug.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Bug() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
-    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 5
-    }
+      lineNumber: 4
+    },
+    __self: this
   }, __jsx("path", {
-    d: "M18.0166,8.26807H16.31445V6.1626a6.1626,6.1626,0,1,0-12.32519,0V8.26807H1.9834a.49971.49971,0,0,0-.5.5V19.5a.49971.49971,0,0,0,.5.5H18.0166a.49971.49971,0,0,0,.5-.5V8.76807A.49971.49971,0,0,0,18.0166,8.26807ZM4.98926,6.1626a5.1626,5.1626,0,1,1,10.32519,0V8.26807H4.98926ZM17.5166,19H2.4834V9.26807H17.5166Z",
+    d: "M12.90034,1a6.12773,6.12773,0,0,1,1.46278.177L11.283,4.25719a3.15361,3.15361,0,1,0,4.45987,4.45989L18.823,5.63692a6.10114,6.10114,0,0,1-8.6101,6.93764L4.3647,18.42274a1.971,1.971,0,0,1-2.78742-2.78742L7.42544,9.78716A6.09913,6.09913,0,0,1,12.90034,1m0-1h0a7.09936,7.09936,0,0,0-6.66,9.558L.87017,14.92821a2.971,2.971,0,0,0,4.20164,4.20164l5.37091-5.37092a7.15731,7.15731,0,0,0,2.46038.43875A7.09857,7.09857,0,0,0,19.794,5.3981a1,1,0,0,0-1.67818-.4683L15.03571,8.01A2.1536,2.1536,0,0,1,11.99006,4.9643l3.08017-3.08017A1,1,0,0,0,14.60194.206,7.13188,7.13188,0,0,0,12.90036,0Z",
     fill: "#231e28",
-    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 65
-    }
-  }), __jsx("path", {
-    d: "M10,11.88385a1.49648,1.49648,0,0,0-.5,2.9082v1.092a.5.5,0,0,0,1,0v-1.092a1.49648,1.49648,0,0,0-.5-2.9082Z",
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("circle", {
+    cx: "3.06171",
+    cy: "16.93827",
+    r: "1",
     fill: "#231e28",
-    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4,
-      columnNumber: 398
-    }
+      lineNumber: 4
+    },
+    __self: this
   }));
 }
 
 /***/ }),
 
-/***/ "./assets/icons/ui/upload.js":
+/***/ "./assets/icons/ui/discontent.js":
+/*!***************************************!*\
+  !*** ./assets/icons/ui/discontent.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Discontent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/discontent.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Discontent() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M10.00162,19.99993a10,10,0,1,1,10-10A10.01177,10.01177,0,0,1,10.00162,19.99993Zm0-19a9,9,0,1,0,9,9A9.00984,9.00984,0,0,0,10.00162.99993Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M5.819,9.04388a1.7002,1.7002,0,1,1,1.69921-1.7002A1.70212,1.70212,0,0,1,5.819,9.04388Zm0-2.40039a.7002.7002,0,1,0,.69921.70019A.70143.70143,0,0,0,5.819,6.64349Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M14.18717,9.04388a1.7002,1.7002,0,1,1,1.69922-1.7002A1.70212,1.70212,0,0,1,14.18717,9.04388Zm0-2.40039a.7002.7002,0,1,0,.69922.70019A.70144.70144,0,0,0,14.18717,6.64349Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M14.91666,14.85638a.498.498,0,0,1-.40429-.206,5.57723,5.57723,0,0,0-9.02247,0,.49986.49986,0,1,1-.80859-.5879,6.57656,6.57656,0,0,1,10.63965,0,.5.5,0,0,1-.4043.79395Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/home_solid.js":
+/*!***************************************!*\
+  !*** ./assets/icons/ui/home_solid.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomeApp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/home_solid.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function HomeApp() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M10.36371.15094a.51375.51375,0,0,0-.72754,0l-9.5,10.07544a.5.5,0,0,0,.36377.843H2.58588v8.43042a.49979.49979,0,0,0,.5.50018H7.69525a.49979.49979,0,0,0,.5-.50018V14.10358h3.60938v5.39624a.49979.49979,0,0,0,.5.50018h4.60943a.49979.49979,0,0,0,.5-.50018V11.0694H19.5a.49974.49974,0,0,0,.36328-.843Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/human_solid.js":
+/*!****************************************!*\
+  !*** ./assets/icons/ui/human_solid.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HumanApp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/human_solid.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function HumanApp() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M14.28723,10.53a6.53219,6.53219,0,0,1-8.5744,0A10.27079,10.27079,0,0,0,0,19.5a.49971.49971,0,0,0,.5.5h19a.49971.49971,0,0,0,.5-.5A10.2706,10.2706,0,0,0,14.28723,10.53Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M6.7561,10.08191a5.5609,5.5609,0,1,0-2.323-4.5155A5.53006,5.53006,0,0,0,6.7561,10.08191Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/message.js":
+/*!************************************!*\
+  !*** ./assets/icons/ui/message.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Message; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/message.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Message() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M3.92139,20a.49235.49235,0,0,1-.18946-.03711A.50011.50011,0,0,1,3.42139,19.5V13.71582H1.20557A1.20709,1.20709,0,0,1,0,12.51074V1.20605A1.2073,1.2073,0,0,1,1.20557,0H18.79443A1.2073,1.2073,0,0,1,20,1.20605V12.51074a1.20709,1.20709,0,0,1-1.20557,1.20508H10.31689L4.27783,19.85059A.49978.49978,0,0,1,3.92139,20ZM1.20557,1A.20631.20631,0,0,0,1,1.20605V12.51074a.20548.20548,0,0,0,.20557.20508H3.92139a.49972.49972,0,0,1,.5.5V18.2793L9.751,12.86523a.50024.50024,0,0,1,.35644-.14941h8.687A.20548.20548,0,0,0,19,12.51074V1.20605A.20631.20631,0,0,0,18.79443,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M16.07861,4.9834H3.92139a.5.5,0,0,1,0-1H16.07861a.5.5,0,1,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M13.4375,7.3584H3.92139a.5.5,0,0,1,0-1H13.4375a.5.5,0,0,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M11.26221,9.7334H3.92139a.5.5,0,0,1,0-1h7.34082a.5.5,0,0,1,0,1Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/notice.js":
 /*!***********************************!*\
-  !*** ./assets/icons/ui/upload.js ***!
+  !*** ./assets/icons/ui/notice.js ***!
   \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Upload; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Notice; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/upload.js";
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/notice.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Upload() {
+function Notice() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
@@ -263,7 +525,44 @@ function Upload() {
     },
     __self: this
   }, __jsx("path", {
-    d: "M15.36475,14.80078H13.13818a.5.5,0,0,1,0-1h2.22657a3.6355,3.6355,0,0,0,0-7.271h-.15918a.50048.50048,0,0,1-.45606-.29444A4.90744,4.90744,0,0,0,5.42529,7.50586a.49992.49992,0,0,1-.62744.40576,2.99895,2.99895,0,1,0-1.5957,5.78174,3.07217,3.07217,0,0,0,.72461.10742H6.77588a.5.5,0,1,1,0,1H3.91309A4.0757,4.0757,0,0,1,2.937,14.6582a3.99965,3.99965,0,0,1-.91015-7.33447,3.9639,3.9639,0,0,1,2.51269-.48437A5.9077,5.9077,0,0,1,15.52,5.53223a4.63558,4.63558,0,0,1-.15527,9.26855Z",
+    d: "M19.75772,16.41424l-8-14.73686a2.00006,2.00006,0,0,0-3.51544,0l-8,14.73686A2,2,0,0,0,2,19.3684H18a2,2,0,0,0,1.75775-2.95416ZM8.99974,6.73316a1,1,0,0,1,2,0v5.94237a1,1,0,0,1-2,0ZM10,16.76721a1,1,0,1,1,1-1A1,1,0,0,1,10,16.76721Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/other.js":
+/*!**********************************!*\
+  !*** ./assets/icons/ui/other.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Other; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/other.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Other() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M9.99967,12.55746a2.55762,2.55762,0,1,1,2.55859-2.55761A2.56066,2.56066,0,0,1,9.99967,12.55746Zm0-4.11523a1.55762,1.55762,0,1,0,1.55859,1.55762A1.56,1.56,0,0,0,9.99967,8.44223Z",
     fill: "#231e28",
     __source: {
       fileName: _jsxFileName,
@@ -271,8 +570,207 @@ function Upload() {
     },
     __self: this
   }), __jsx("path", {
-    d: "M10,17.65625a.49971.49971,0,0,1-.5-.5v-5.791L7.80859,13.05664a.49995.49995,0,0,1-.707-.707L9.645,9.80615l.01269-.0122H9.6582l.00049-.00049a.48567.48567,0,0,1,.145-.09473.51567.51567,0,0,1,.39258,0,.48567.48567,0,0,1,.145.09473l.00049.00049h.00049l.01269.0122,2.54346,2.54346a.49995.49995,0,0,1-.707.707L10.5,11.36523v5.791A.49971.49971,0,0,1,10,17.65625Z",
+    d: "M17.442,12.55746a2.55762,2.55762,0,1,1,2.55762-2.55761A2.56066,2.56066,0,0,1,17.442,12.55746Zm0-4.11523a1.55762,1.55762,0,1,0,1.55762,1.55762A1.56,1.56,0,0,0,17.442,8.44223Z",
     fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M2.55826,12.55746A2.55762,2.55762,0,1,1,5.11588,9.99985,2.56087,2.56087,0,0,1,2.55826,12.55746Zm0-4.11523A1.55762,1.55762,0,1,0,4.11588,9.99985,1.5602,1.5602,0,0,0,2.55826,8.44223Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/search.js":
+/*!***********************************!*\
+  !*** ./assets/icons/ui/search.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Search; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/search.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Search() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M19.72093,18.37426l-3.45424-3.45378A9.1927,9.1927,0,1,0,14.92,16.26721L18.3742,19.721a.95228.95228,0,1,0,1.34673-1.34672ZM9.16011,1.90476a7.25586,7.25586,0,1,1-7.2554,7.25586A7.26419,7.26419,0,0,1,9.16011,1.90476Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/icons/ui/trouble.js":
+/*!************************************!*\
+  !*** ./assets/icons/ui/trouble.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Trouble; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/icons/ui/trouble.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Trouble() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M5.546,19.99955a.49965.49965,0,0,1-.48535-.61914L7.2345,10.522H4.22961a.49971.49971,0,0,1-.47753-.64746L6.69251.35208A.49868.49868,0,0,1,7.17-.00045h7.415a.50024.50024,0,0,1,.46582.68066L12.68176,6.8013h3.08887a.49963.49963,0,0,1,.38281.82129L5.92883,19.82083A.5003.5003,0,0,1,5.546,19.99955ZM4.90735,9.522H7.87219a.49949.49949,0,0,1,.48535.61914L6.54407,17.5308l8.15527-9.7295H11.95227a.50024.50024,0,0,1-.46582-.68066L13.85559.99955H7.53919Z",
+    fill: "#231e28",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/logo-dark.js":
+/*!*****************************!*\
+  !*** ./assets/logo-dark.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LogoDark; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/kerry/ceaper/assets/logo-dark.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function LogoDark() {
+  return __jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 342.40542 96.28959",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("path", {
+    d: "M337.76219,18.12145,333.565,19.38568a3.60336,3.60336,0,1,0,2.07848,6.90049l4.1972-1.26423a3.60336,3.60336,0,1,0-2.07847-6.90049Z",
+    fill: "#ff5445",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M324.57765,6.34937l-2.07393,3.86181a3.60336,3.60336,0,1,0,6.34909,3.40969l2.07393-3.86182a3.60336,3.60336,0,1,0-6.34909-3.40968Z",
+    fill: "#ff5445",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M338.761,35.76845l-3.86182-2.07393a3.60336,3.60336,0,1,0-3.40969,6.34909l3.86182,2.07393a3.60336,3.60336,0,1,0,3.40969-6.34909Z",
+    fill: "#ff5445",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M299.84885,39.77392V21.20625h-16.5042a1.97653,1.97653,0,0,0-1.09637,3.6211l3.09125,2.06078V63.11076l-3.09125,2.06078a1.97653,1.97653,0,0,0,1.09637,3.62111h19.14628a1.97653,1.97653,0,0,0,.95122-3.70911l-3.5933-1.97278V39.77392Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M157.38035,39.57112V55.19673c0,4.66727,2.13088,6.18926,4.46439,6.18926a6.765,6.765,0,0,0,3.95706-1.21754v4.97172a17.30235,17.30235,0,0,1-11.26229,3.95706c-4.8704,0-8.21882-1.72486-10.75521-5.78349-4.76884,4.36307-8.7259,5.98637-12.88609,5.98637a11.9636,11.9636,0,0,1-12.37852-11.97275c0-7.30548,5.27617-11.567,15.32092-13.19029l9.13191-1.522v-3.044c0-6.79815-2.43507-10.3492-8.21857-10.3492-4.05863,0-8.32013,1.72486-12.58164,5.78324l-1.42042-4.97172c5.479-6.595,12.683-9.53742,19.17666-9.53742C150.48088,20.496,157.38035,25.97506,157.38035,39.57112Zm-18.06069,9.33479c-5.47905.91309-7.20391,3.24685-7.20391,6.39214a5.22032,5.22032,0,0,0,5.58061,5.58061,8.353,8.353,0,0,0,5.27616-2.43508V48.297Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M55.73233,5.13967l1.36246-1.36975a1.97653,1.97653,0,0,1,3.37786,1.39389V18.21505a1.97652,1.97652,0,0,1-1.97652,1.97652H56.2399a1.97708,1.97708,0,0,1-1.86915-1.36227c-2.81255-8.388-8.514-12.234-16.32162-12.234-13.39329,0-22.01775,12.48008-22.01775,28.51146,0,17.55336,9.53767,27.59812,23.74262,27.59812,8.01569,0,14.71228-2.638,21.61174-8.523V60.98A39.89788,39.89788,0,0,1,35.208,70.21321C13.79918,70.21321,0,55.80538,0,35.41117,0,14.50939,14.408,0,35.208,0c6.861,0,13.12889,1.77925,17.95214,5.33756A1.97432,1.97432,0,0,0,55.73233,5.13967Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M98.62261,62.80641A19.62086,19.62086,0,0,0,111.61,58.5449v5.68193c-5.37748,3.95706-11.05941,5.58061-18.26357,5.58061-15.62537,0-26.279-9.53767-26.279-24.75727,0-14.30652,10.24789-24.5544,24.14839-24.5544,12.48008,0,20.90153,11.47047,20.90153,26.893H82.18546C82.38835,58.75283,88.67917,62.80641,98.62261,62.80641ZM82.48991,41.70679H97.50663c-.10156-8.92878-2.6382-16.5435-6.59527-16.5435C86.64985,25.16329,83.403,33.18378,82.48991,41.70679Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M223.26312,44.54284c0,15.92981-8.929,25.56905-21.91644,25.56905a24.09865,24.09865,0,0,1-13.69762-4.26151V90.60766l3.884,1.93656a1.97652,1.97652,0,0,1-.88194,3.74537H171.17a1.97652,1.97652,0,0,1-1.10259-3.61693l3.07226-2.065V26.88816l-3.07226-2.065A1.97652,1.97652,0,0,1,171.17,21.20623h16.47906v5.479A23.23437,23.23437,0,0,1,203.376,20.29289C215.24743,20.29289,223.26312,29.12035,223.26312,44.54284ZM187.64906,32.87453V59.35668a14.40539,14.40539,0,0,0,9.13191,3.24685c6.595,0,11.36386-5.88506,11.36386-16.84315,0-12.17564-5.07328-17.35024-11.161-17.35024C193.737,28.41014,190.49015,29.93213,187.64906,32.87453Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M261.94207,62.80641a19.62091,19.62091,0,0,0,12.98741-4.26151v5.68193c-5.37748,3.95706-11.05941,5.58061-18.26357,5.58061-15.62537,0-26.279-9.53767-26.279-24.75727,0-14.30652,10.24788-24.5544,24.14838-24.5544,12.48008,0,20.90154,11.47047,20.90154,26.893H245.50493C245.70781,58.75283,251.99863,62.80641,261.94207,62.80641ZM245.80938,41.70679H260.8261c-.10157-8.92878-2.63821-16.5435-6.59527-16.5435C249.96932,25.16329,246.72247,33.18378,245.80938,41.70679Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M306.835,35.01162l-2.10506-6.98877a.94852.94852,0,0,0-1.48551-.47538,3.68238,3.68238,0,0,0-1.29877,3.99466l.6245,2.07335a3.68257,3.68257,0,0,0,3.289,2.61289A.94852.94852,0,0,0,306.835,35.01162Z",
+    fill: "#fff",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("path", {
+    d: "M319.63089,36.90711a9.15485,9.15485,0,1,0-11.5486-10.881l-1.84631.55612a.94627.94627,0,0,0-.63315,1.179l2.10432,6.98632a.94628.94628,0,0,0,1.179.63315l1.84631-.55612A9.1507,9.1507,0,0,0,319.63089,36.90711Z",
+    fill: "#fff",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
@@ -400,10 +898,10 @@ function Logo() {
 
 /***/ }),
 
-/***/ "./layouts/base-get-started.js":
-/*!*************************************!*\
-  !*** ./layouts/base-get-started.js ***!
-  \*************************************/
+/***/ "./layouts/base.js":
+/*!*************************!*\
+  !*** ./layouts/base.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -411,36 +909,458 @@ function Logo() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _layouts_header_get_started_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/header-get-started.js */ "./layouts/header-get-started.js");
-var _jsxFileName = "/Users/kerry/ceaper/layouts/base-get-started.js";
+/* harmony import */ var _layouts_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/header.js */ "./layouts/header.js");
+/* harmony import */ var _layouts_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layouts/footer.js */ "./layouts/footer.js");
+var _jsxFileName = "/Users/kerry/ceaper/layouts/base.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var GSBaseLayout = function GSBaseLayout(props) {
+
+var BaseLayout = function BaseLayout(props) {
   return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx(_layouts_header_get_started_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
-  }), props.children);
+  }, __jsx(_layouts_header_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }), props.children, __jsx(_layouts_footer_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (GSBaseLayout);
+/* harmony default export */ __webpack_exports__["default"] = (BaseLayout);
 
 /***/ }),
 
-/***/ "./layouts/header-get-started.js":
-/*!***************************************!*\
-  !*** ./layouts/header-get-started.js ***!
-  \***************************************/
+/***/ "./layouts/footer.js":
+/*!***************************!*\
+  !*** ./layouts/footer.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/social/instagram.js */ "./assets/icons/social/instagram.js");
+/* harmony import */ var _assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/social/facebook.js */ "./assets/icons/social/facebook.js");
+/* harmony import */ var _assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/social/twitter.js */ "./assets/icons/social/twitter.js");
+/* harmony import */ var _assets_logo_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/logo.js */ "./assets/logo.js");
+/* harmony import */ var _assets_icons_ui_badge_new_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/badge-new.js */ "./assets/icons/ui/badge-new.js");
+var _this = undefined,
+    _jsxFileName = "/Users/kerry/ceaper/layouts/footer.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+var Footer = function Footer() {
+  return __jsx("div", {
+    id: "footer",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 23
+    }
+  }, __jsx("div", {
+    className: "bg-grey",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 3
+    }
+  }, __jsx("div", {
+    className: "section",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "footer-container ",
+    id: "footer-contents",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    className: "logo-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 11
+    }
+  }, __jsx(_assets_logo_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }))), __jsx("div", {
+    className: "footer-contents-grid",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "footer-terms-contents-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 11
+    }
+  }, __jsx("h6", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 13
+    }
+  }, "\u30B5\u30FC\u30D3\u30B9"), __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
+  }, "\u4F7F\u3044\u65B9"), __jsx("a", {
+    className: "hover-line event-none",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 13
+    }
+  }, "\u8A18\u4E8B\uFF08\u6E96\u5099\u4E2D\uFF09")), __jsx("div", {
+    className: "footer-terms-contents-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }, __jsx("h6", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  }, "Ceaper"), __jsx("a", {
+    className: "hover-line",
+    href: "/about",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }, "Ceaper\u306B\u3064\u3044\u3066"), __jsx("div", {
+    className: "badge-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 15
+    }
+  }, "\u30E9\u30A4\u30BF\u30FC\u52DF\u96C6"), __jsx(_assets_icons_ui_badge_new_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 51
+    }
+  })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/press",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 15
+    }
+  }, "\u30D7\u30EC\u30B9")), __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 15
+    }
+  }, "\u6295\u8CC7\u306B\u95A2\u3059\u308B\u60C5\u5831")), __jsx("div", {
+    className: "footer-terms-contents-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 13
+    }
+  }, __jsx("h6", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 15
+    }
+  }, "\u30B5\u30DD\u30FC\u30C8"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/feedback",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 17
+    }
+  }, "\u3054\u610F\u898B\u30FB\u3054\u8981\u671B")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/faq/home",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 19
+    }
+  }, "\u3088\u304F\u3042\u308B\u8CEA\u554F")), __jsx("a", {
+    className: "hover-line",
+    target: "_blank",
+    rel: "nofollow noreferrer noopener",
+    href: "mailto: support@ceaper.com",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 17
+    }
+  }, "\u304A\u554F\u3044\u5408\u308F\u305B"))))), __jsx("div", {
+    className: "section",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "hr-paragraph",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 11
+    }
+  }), __jsx("div", {
+    className: "footer-container",
+    id: "footer-terms",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "footer-terms-inner1",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 13
+    }
+  }, __jsx("p", {
+    className: "footer-copylight",
+    style: {
+      paddingLeft: 0
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 15
+    }
+  }, "\xA9 2020 Ceaper"), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 15
+    }
+  }, "/"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/terms",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 17
+    }
+  }, "\u5229\u7528\u898F\u7D04")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/privacy",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 17
+    }
+  }, "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC")), __jsx("a", {
+    className: "hover-line",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 15
+    }
+  }, "\u5E83\u544A\u63B2\u8F09")), __jsx("div", {
+    className: "footer-terms-inner2",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: "footer-social",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 15
+    }
+  }, __jsx("a", {
+    className: "user-social-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 17
+    }
+  }, __jsx(_assets_icons_social_instagram_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 19
+    }
+  })), __jsx("a", {
+    className: "user-social-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 17
+    }
+  }, __jsx(_assets_icons_social_facebook_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 19
+    }
+  })), __jsx("a", {
+    className: "user-social-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 17
+    }
+  }, __jsx(_assets_icons_social_twitter_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 19
+    }
+  }))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./layouts/header.js":
+/*!***************************!*\
+  !*** ./layouts/header.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -451,44 +1371,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo.js */ "./assets/logo.js");
+/* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
+/* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
+/* harmony import */ var _layouts_header_mobile_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../layouts/header_mobile.js */ "./layouts/header_mobile.js");
+/* harmony import */ var _layouts_header_app_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../layouts/header_app.js */ "./layouts/header_app.js");
+/* harmony import */ var _layouts_nav_app_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../layouts/nav_app.js */ "./layouts/nav_app.js");
 var _this = undefined,
-    _jsxFileName = "/Users/kerry/ceaper/layouts/header-get-started.js";
+    _jsxFileName = "/Users/kerry/ceaper/layouts/header.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var GSHeader = function GSHeader() {
+
+
+
+
+
+var Header = function Header() {
   return __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 10,
       columnNumber: 3
     }
   }, __jsx("div", {
-    id: "gs-header",
+    id: "header",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 11,
       columnNumber: 3
     }
   }, __jsx("div", {
-    className: "gs-hader-wrapper",
+    id: "desktop-nav",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, __jsx("div", {
-    className: "nav-container",
+    "class": "nav-container",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 13,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -496,28 +1426,615 @@ var GSHeader = function GSHeader() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 14,
       columnNumber: 17
     }
   }, __jsx("a", {
-    className: "logo-link",
+    "class": "logo-link",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 15,
       columnNumber: 17
     }
   }, __jsx(_assets_logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 16,
       columnNumber: 11
     }
-  })))))));
+  }))), __jsx("div", {
+    "class": "nav-inner nav-inner-desktop",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    "class": "nav-controls",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    "class": "search-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }
+  }, __jsx("span", {
+    "class": "search-icon",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    "class": "search-icon-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 37
+    }
+  }, __jsx(_assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 69
+    }
+  }))), __jsx("input", {
+    "class": "search",
+    type: "search",
+    name: "q",
+    placeholder: "\u6599\u7406\u3001\u6750\u6599\u3001\u30AD\u30E3\u30F3\u30D7\u9053\u5177...",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 7
+    }
+  }))), __jsx("div", {
+    "class": "nav-controls",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 5
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signin",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    "class": "hover-accent",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 5
+    }
+  }, "\u30ED\u30B0\u30A4\u30F3")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signup",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    "class": "button icon-button button-black nav-account-button ico",
+    style: {
+      margin: 0
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 9
+    }
+  }, __jsx(_assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 1
+    }
+  }), "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F5C\u6210")))))), __jsx("div", {
+    id: "mobile-nav",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 1
+    }
+  }, __jsx(_layouts_header_mobile_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 1
+    }
+  }))), __jsx("div", {
+    id: "app-header",
+    "class": "bg-white",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 1
+    }
+  }, __jsx(_layouts_header_app_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 1
+    }
+  })), __jsx("div", {
+    id: "app-nav",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 1
+    }
+  }, __jsx(_layouts_nav_app_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 1
+    }
+  })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (GSHeader);
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./layouts/header_app.js":
+/*!*******************************!*\
+  !*** ./layouts/header_app.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_logo_dark_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo-dark.js */ "./assets/logo-dark.js");
+/* harmony import */ var _assets_icons_ui_home_solid_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/home_solid.js */ "./assets/icons/ui/home_solid.js");
+/* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
+/* harmony import */ var _assets_icons_ui_back_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/back.js */ "./assets/icons/ui/back.js");
+/* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
+var _jsxFileName = "/Users/kerry/ceaper/layouts/header_app.js",
+    _this = undefined;
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+function User() {
+  return __jsx("img", {
+    src: "images/default/user.jpg",
+    alt: "user image",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 10
+    }
+  });
+}
+
+var HeaderApp = function HeaderApp() {
+  return __jsx("div", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 1
+    }
+  }, " ", __jsx("div", {
+    className: "section",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 8
+    }
+  }, __jsx("div", {
+    className: "app-header-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 3
+    }
+  }, __jsx("div", {
+    className: "app-header-inner app-header-inner1",
+    onClick: function onClick() {
+      return next_router__WEBPACK_IMPORTED_MODULE_7___default.a.back();
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 5
+    }
+  }, __jsx(_assets_icons_ui_back_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 41
+    }
+  })), __jsx("div", {
+    className: "app-header-inner app-header-inner2",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "search-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx("span", {
+    className: "search-icon",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, __jsx("span", {
+    className: "search-icon-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 39
+    }
+  }, __jsx(_assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 75
+    }
+  }))), __jsx("input", {
+    className: "search xs-text",
+    type: "search",
+    name: "q",
+    placeholder: "\u6599\u7406\u3001\u6750\u6599\u3001\u30AD\u30E3\u30F3\u30D7\u9053\u5177...",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 5
+    }
+  }))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (HeaderApp);
+
+/***/ }),
+
+/***/ "./layouts/header_mobile.js":
+/*!**********************************!*\
+  !*** ./layouts/header_mobile.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo.js */ "./assets/logo.js");
+/* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
+/* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
+var _this = undefined,
+    _jsxFileName = "/Users/kerry/ceaper/layouts/header_mobile.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var HeaderMobile = function HeaderMobile() {
+  return __jsx("div", {
+    className: "nav-container",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 3
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 3
+    }
+  }, __jsx("a", {
+    className: "logo-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 3
+    }
+  }, __jsx(_assets_logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 1
+    }
+  }))), __jsx("div", {
+    className: "nav-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 3
+    }
+  }, __jsx("a", {
+    className: "search-wrapper hover-accent",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }, __jsx("span", {
+    className: "search-icon",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 7
+    }
+  }, __jsx(_assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 37
+    }
+  }))), __jsx("div", {
+    className: "nav-controls",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 3
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signup",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 3
+    }
+  }, __jsx("a", {
+    className: "button icon-button button-black nav-account-button ico",
+    style: {
+      margin: 0
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 3
+    }
+  }, __jsx(_assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 1
+    }
+  }), "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F5C\u6210")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (HeaderMobile);
+
+/***/ }),
+
+/***/ "./layouts/nav_app.js":
+/*!****************************!*\
+  !*** ./layouts/nav_app.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_app_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/app-logo.js */ "./assets/app-logo.js");
+/* harmony import */ var _assets_icons_ui_home_solid_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/home_solid.js */ "./assets/icons/ui/home_solid.js");
+/* harmony import */ var _assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/human_solid.js */ "./assets/icons/ui/human_solid.js");
+/* harmony import */ var _assets_icons_ui_search_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/search.js */ "./assets/icons/ui/search.js");
+var _this = undefined,
+    _jsxFileName = "/Users/kerry/ceaper/layouts/nav_app.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+var NavApp = function NavApp() {
+  return __jsx("div", {
+    className: "app-nav-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 1
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 1
+    }
+  }, __jsx("a", {
+    className: "app-nav-inner app-nav-active",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 1
+    }
+  }, __jsx("span", {
+    className: "app-nav-icon",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 1
+    }
+  }, __jsx(_assets_icons_ui_home_solid_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 32
+    }
+  })), __jsx("h6", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 1
+    }
+  }, "\u30DB\u30FC\u30E0"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/signin",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    className: "app-nav-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 5
+    }
+  }, __jsx("span", {
+    className: "app-nav-icon",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 5
+    }
+  }, __jsx(_assets_icons_ui_human_solid_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 36
+    }
+  })), __jsx("h6", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 5
+    }
+  }, "\u30ED\u30B0\u30A4\u30F3"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    className: "app-nav-inner",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 3
+    }
+  }, __jsx("span", {
+    className: "app-nav-icon",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 5
+    }
+  }, __jsx(_assets_app_logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 36
+    }
+  })), __jsx("h6", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 5
+    }
+  }, "Ceaper\u3068\u306F\uFF1F"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavApp);
 
 /***/ }),
 
@@ -639,193 +2156,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
-  \****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/inherits.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/inherits.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inherits; });
-/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _possibleConstructorReturn; });
-/* harmony import */ var _helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
-/* harmony import */ var _assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
-
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (Object(_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return Object(_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
-  \***********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _typeof; });
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
-}
 
 /***/ }),
 
@@ -1250,21 +2580,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fget-started&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fget-started.js!./":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fget-started&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fget-started.js ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdelete&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fdelete.js!./":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdelete&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fdelete.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/get-started", function() {
-      var mod = __webpack_require__(/*! ./pages/get-started.js */ "./pages/get-started.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/delete", function() {
+      var mod = __webpack_require__(/*! ./pages/delete.js */ "./pages/delete.js")
       if(true) {
-        module.hot.accept(/*! ./pages/get-started.js */ "./pages/get-started.js", function() {
-          if(!next.router.components["/get-started"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/get-started.js */ "./pages/get-started.js")
-          next.router.update("/get-started", updatedPage)
+        module.hot.accept(/*! ./pages/delete.js */ "./pages/delete.js", function() {
+          if(!next.router.components["/delete"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/delete.js */ "./pages/delete.js")
+          next.router.update("/delete", updatedPage)
         })
       }
       return mod
@@ -4233,18 +5563,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-step-wizard/dist/react-step-wizard.min.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/react-step-wizard/dist/react-step-wizard.min.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-!function(t,n){ true?n(exports,__webpack_require__(/*! react */ "./node_modules/react/index.js")):undefined}(this,function(t,o){"use strict";var r="default"in o?o.default:o;function i(t){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function s(t,n){for(var e=0;e<n.length;e++){var a=n[e];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(t,a.key,a)}}function c(t,n,e){return n in t?Object.defineProperty(t,n,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[n]=e,t}function p(t){return(p=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function f(t,n){return(f=Object.setPrototypeOf||function(t,n){return t.__proto__=n,t})(t,n)}function u(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function n(t,n){void 0===n&&(n={});var e=n.insertAt;if(t&&"undefined"!=typeof document){var a=document.head||document.getElementsByTagName("head")[0],o=document.createElement("style");o.type="text/css","top"===e&&a.firstChild?a.insertBefore(o,a.firstChild):a.appendChild(o),o.styleSheet?o.styleSheet.cssText=t:o.appendChild(document.createTextNode(t))}}var l="rsw_1z",d="rsw_1M",h="rsw_19",m="rsw_3C",y="rsw_1u";n("/**\n * Snippets from animate.css\n * Credit goes to https://github.com/daneden\n * github.com/daneden/animate.css\n*/\n.rsw_1z {\n  -webkit-animation-duration: .8192s;\n  animation-duration: .8192s;\n  -webkit-animation-fill-mode: backwards;\n  animation-fill-mode: backwards;\n}\n\n/** fadeInRight */\n@-webkit-keyframes rsw_1M {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n\n@keyframes rsw_1M {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n\n.rsw_1M {\n  -webkit-animation-name: rsw_1M;\n  animation-name: rsw_1M;\n}\n\n/** fadeInLeft */\n@-webkit-keyframes rsw_19 {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n\n@keyframes rsw_19 {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n\n  to {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n\n.rsw_19 {\n  -webkit-animation-name: rsw_19;\n  animation-name: rsw_19;\n}\n\n/** fadeOutRight */\n@-webkit-keyframes rsw_3C {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n}\n\n@keyframes rsw_3C {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n}\n\n.rsw_3C {\n  -webkit-animation-name: rsw_3C;\n  animation-name: rsw_3C;\n}\n\n/** fadeOutLeft */\n@-webkit-keyframes rsw_1u {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n\n@keyframes rsw_1u {\n  from {\n    opacity: 1;\n  }\n\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n    transform: translate3d(-100%, 0, 0);\n  }\n}\n\n.rsw_1u {\n  -webkit-animation-name: rsw_1u;\n  animation-name: rsw_1u;\n}\n");var w="rsw_2Y",v="rsw_2f",S="rsw_3G";n("/** Step Wizard */\n.rsw_2Y {\n    position: relative;\n}\n\n.rsw_2f {\n    opacity: 0;\n    pointer-events: none;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 0;\n}\n\n.rsw_3G {\n    opacity: 1;\n    pointer-events: inherit;\n    position: relative;\n    z-index: 1;\n}\n");var e=function(){function a(t){var o,n,e;return function(t,n){if(!(t instanceof n))throw new TypeError("Cannot call a class as a function")}(this,a),n=this,e=p(a).call(this,t),o=!e||"object"!=typeof e&&"function"!=typeof e?u(n):e,c(u(o),"initialState",function(){var e={activeStep:0,classes:{},hashKeys:{}},t="object"===("undefined"==typeof window?"undefined":i(window))?o.getHash():"",n=r.Children.toArray(o.getSteps());n.forEach(function(t,n){e.hashKeys[n]=t.props&&t.props.hashKey||"step".concat(n+1),e.hashKeys[e.hashKeys[n]]=n});var a=o.props.initialStep-1;return a&&n[a]&&(e.activeStep=a),o.props.isHashEnabled&&t&&void 0!==e.hashKeys[t]&&(e.activeStep=e.hashKeys[t]),o.props.transitions&&(e.classes[e.activeStep]=o.props.transitions.intro||""),e}),c(u(o),"getHash",function(){return decodeURI(window.location.hash).replace(/^#/,"")}),c(u(o),"getTransitions",function(){return o.props.transitions||{enterRight:"".concat(l," ").concat(d),enterLeft:"".concat(l," ").concat(h),exitRight:"".concat(l," ").concat(m),exitLeft:"".concat(l," ").concat(y)}}),c(u(o),"onHashChange",function(){var t=o.state.hashKeys[o.getHash()];void 0!==t&&o.setActiveStep(t)}),c(u(o),"isInvalidStep",function(t){return t<0||t>=o.totalSteps}),c(u(o),"setActiveStep",function(t){var n=o.state.activeStep;if(n!==t)if(o.isInvalidStep(t))console.error("".concat(t+1," is an invalid step"));else{var e=o.state.classes,a=o.getTransitions();n<t?(e[n]=a.exitLeft,e[t]=a.enterRight):(e[n]=a.exitRight,e[t]=a.enterLeft),o.setState({activeStep:t,classes:e},function(){o.onStepChange({previousStep:n+1,activeStep:t+1})})}}),c(u(o),"onStepChange",function(t){o.props.onStepChange(t),o.props.isHashEnabled&&o.updateHash(o.state.activeStep)}),c(u(o),"getSteps",function(){return o.props.children.filter(function(t){return t})}),c(u(o),"firstStep",function(){return o.goToStep(1)}),c(u(o),"lastStep",function(){return o.goToStep(o.totalSteps)}),c(u(o),"nextStep",function(){return o.setActiveStep(o.state.activeStep+1)}),c(u(o),"previousStep",function(){return o.setActiveStep(o.state.activeStep-1)}),c(u(o),"goToStep",function(t){return o.setActiveStep(t-1)}),c(u(o),"updateHash",function(t){window.location.hash=o.state.hashKeys[t]}),c(u(o),"isReactComponent",function(t){var n=t.type;return"function"==typeof n||"object"===i(n)}),o.state=o.initialState(),o}var t,n,e;return function(t,n){if("function"!=typeof n&&null!==n)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(n&&n.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),n&&f(t,n)}(a,o.PureComponent),t=a,(n=[{key:"componentDidMount",value:function(){this.props.isHashEnabled&&window.addEventListener("hashchange",this.onHashChange),this.props.instance(this)}},{key:"componentWillUnmount",value:function(){this.props.isHashEnabled&&window.removeEventListener("hashchange",this.onHashChange)}},{key:"render",value:function(){var e=this,a={currentStep:this.currentStep,totalSteps:this.totalSteps,nextStep:this.nextStep,previousStep:this.previousStep,goToStep:this.goToStep,firstStep:this.firstStep,lastStep:this.lastStep},o=this.state.classes,t=r.Children.map(this.getSteps(),function(t,n){return t?(a.isActive=n===e.state.activeStep,a.transitions=o[n],!e.props.isLazyMount||e.props.isLazyMount&&a.isActive?r.createElement(b,a,e.isReactComponent(t)?r.cloneElement(t,a):t):null):null});return r.createElement("div",{className:this.props.className},this.props.nav&&r.cloneElement(this.props.nav,a),r.createElement("div",{className:w},t))}},{key:"currentStep",get:function(){return this.state.activeStep+1}},{key:"totalSteps",get:function(){return this.getSteps().length}}])&&s(t.prototype,n),e&&s(t,e),a}();e.defaultProps={children:[],className:null,initialStep:1,instance:function(){},isHashEnabled:!1,isLazyMount:!1,nav:null,onStepChange:function(){},transitions:void 0};var b=function(t){var n=t.children,e=t.isActive,a=t.transitions;return r.createElement("div",{className:"".concat(v," ").concat(a," ").concat(e?S:"").trim()},n)};"development",b.defaultProps={children:[],isActive:!1,transitions:""},t.Step=b,t.default=e,Object.defineProperty(t,"__esModule",{value:!0})});
-
-
-/***/ }),
-
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_82519ec661270f7f484f ***!
@@ -4996,45 +6314,31 @@ try {
 
 /***/ }),
 
-/***/ "./pages/get-started.js":
-/*!******************************!*\
-  !*** ./pages/get-started.js ***!
-  \******************************/
+/***/ "./pages/delete.js":
+/*!*************************!*\
+  !*** ./pages/delete.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _layouts_base_get_started_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../layouts/base-get-started.js */ "./layouts/base-get-started.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_icons_ui_upload_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/ui/upload.js */ "./assets/icons/ui/upload.js");
-/* harmony import */ var _assets_icons_ui_human_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/icons/ui/human.js */ "./assets/icons/ui/human.js");
-/* harmony import */ var _assets_icons_ui_add_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/icons/ui/add.js */ "./assets/icons/ui/add.js");
-/* harmony import */ var _assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../assets/icons/ui/arrow-r.js */ "./assets/icons/ui/arrow-r.js");
-/* harmony import */ var _assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/icons/ui/gs-circle.js */ "./assets/icons/ui/gs-circle.js");
-/* harmony import */ var react_step_wizard__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-step-wizard */ "./node_modules/react-step-wizard/dist/react-step-wizard.min.js");
-/* harmony import */ var react_step_wizard__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_step_wizard__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _assets_icons_ui_mail_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/icons/ui/mail.js */ "./assets/icons/ui/mail.js");
-/* harmony import */ var _assets_icons_ui_password_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/icons/ui/password.js */ "./assets/icons/ui/password.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _layouts_base_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/base.js */ "./layouts/base.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_icons_ui_message_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/ui/message.js */ "./assets/icons/ui/message.js");
+/* harmony import */ var _assets_icons_ui_bug_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/ui/bug.js */ "./assets/icons/ui/bug.js");
+/* harmony import */ var _assets_icons_ui_notice_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/ui/notice.js */ "./assets/icons/ui/notice.js");
+/* harmony import */ var _assets_icons_ui_trouble_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/ui/trouble.js */ "./assets/icons/ui/trouble.js");
+/* harmony import */ var _assets_icons_ui_other_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/ui/other.js */ "./assets/icons/ui/other.js");
+/* harmony import */ var _assets_icons_ui_discontent_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/icons/ui/discontent.js */ "./assets/icons/ui/discontent.js");
+var _this = undefined,
+    _jsxFileName = "/Users/kerry/ceaper/pages/delete.js";
 
 
-
-
-
-var _jsxFileName = "/Users/kerry/ceaper/pages/get-started.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
-
-function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -5043,626 +6347,227 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-
-
-
-
-
-function User() {
-  return __jsx("img", {
-    src: "images/default/user.jpg",
-    alt: "user image",
-    __self: this,
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return __jsx(_layouts_base_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 3
+    }
+  }, __jsx("div", {
+    id: "page",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 3
+    }
+  }, __jsx("div", {
+    className: "contents bg-red80",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 3
+    }
+  }, __jsx("div", {
+    className: "section center-section",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 3
+    }
+  }, __jsx("h1", {
+    className: "title white",
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14,
-      columnNumber: 10
-    }
-  });
-}
-
-var GS = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(GS, _React$Component);
-
-  var _super = _createSuper(GS);
-
-  function GS() {
-    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, GS);
-
-    return _super.apply(this, arguments);
-  }
-
-  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(GS, [{
-    key: "render",
-    value: function render() {
-      return __jsx(_layouts_base_get_started_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 3
-        }
-      }, __jsx("div", {
-        id: "gs-page",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 3
-        }
-      }, __jsx("div", {
-        className: "gs-wrapper",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24,
-          columnNumber: 3
-        }
-      }, __jsx("div", {
-        className: "section gs-inner-nav gs-inner bg-grey",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 3
-        }
-      }, __jsx("div", {
-        className: "gs-inner-nav-inner",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 5
-        }
-      }, __jsx("h6", {
-        className: "title grey xs-text gs-progress",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 1
-        }
-      }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u3092\u8A2D\u5B9A\u3057\u307E\u3057\u3087\u3046"), __jsx("div", {
-        className: "gs-progress",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30,
-          columnNumber: 1
-        }
-      }, __jsx("span", {
-        className: "gs-progress-mark ico",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 3
-        }
-      }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 42
-        }
-      })), __jsx("span", {
-        className: "gs-progress-line",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32,
-          columnNumber: 5
-        }
-      }), __jsx("h5", {
-        className: "grey",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33,
-          columnNumber: 5
-        }
-      }, "\u30E6\u30FC\u30B6\u30FC\u540D\u306E\u8A2D\u5B9A")), __jsx("div", {
-        className: "gs-progress",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36,
-          columnNumber: 1
-        }
-      }, __jsx("span", {
-        className: "gs-progress-mark ico",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37,
-          columnNumber: 3
-        }
-      }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37,
-          columnNumber: 42
-        }
-      })), __jsx("span", {
-        className: "gs-progress-line",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 5
-        }
-      }), __jsx("h5", {
-        className: "grey",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39,
-          columnNumber: 5
-        }
-      }, "\u30A2\u30A4\u30B3\u30F3\u306E\u8A2D\u5B9A")), __jsx("div", {
-        className: "gs-progress",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42,
-          columnNumber: 1
-        }
-      }, __jsx("span", {
-        className: "gs-progress-mark ico",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43,
-          columnNumber: 3
-        }
-      }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43,
-          columnNumber: 42
-        }
-      })), __jsx("h5", {
-        className: "grey",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44,
-          columnNumber: 5
-        }
-      }, "\u5B8C\u4E86")))), __jsx("div", {
-        className: "section gs-inner-form gs-inner",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50,
-          columnNumber: 3
-        }
-      }, __jsx("div", {
-        className: "gs-inner-form",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51,
-          columnNumber: 5
-        }
-      }, __jsx("div", {
-        className: "gs-inner-form-inner",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52,
-          columnNumber: 7
-        }
-      }, __jsx(react_step_wizard__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53,
-          columnNumber: 13
-        }
-      }, __jsx(Step1, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54,
-          columnNumber: 15
-        }
-      }), __jsx(Step2, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55,
-          columnNumber: 15
-        }
-      }), __jsx(Step3, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56,
-          columnNumber: 15
-        }
-      }))))), __jsx("div", {
-        className: "gs-dots-nav",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62,
-          columnNumber: 1
-        }
-      }, __jsx("span", {
-        className: "ico gs-dot",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63,
-          columnNumber: 3
-        }
-      }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63,
-          columnNumber: 32
-        }
-      })), __jsx("span", {
-        className: "ico gs-dot",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64,
-          columnNumber: 5
-        }
-      }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64,
-          columnNumber: 34
-        }
-      })), __jsx("span", {
-        className: "ico gs-dot",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65,
-          columnNumber: 7
-        }
-      }, __jsx(_assets_icons_ui_gs_circle_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65,
-          columnNumber: 36
-        }
-      }))))));
-    }
-  }]);
-
-  return GS;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (GS);
-
-function Step1(props) {
-  if (props.currentStep !== 1) {
-    return null;
-  }
-
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83,
       columnNumber: 1
     }
-  }, __jsx("h1", {
-    className: "title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84,
-      columnNumber: 1
-    }
-  }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u306E\u8A2D\u5B9A"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85,
-      columnNumber: 1
-    }
-  }, "Cepaer\u3092\u59CB\u3081\u308B\u524D\u306B\u3001\u3042\u306A\u305F\u306E\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u3092\u5B8C\u6210\u3055\u305B\u307E\u3057\u3087\u3046\u3002\u3053\u306E\u9805\u76EE\u306F\u3001\u5F8C\u3067\u3082\u7DE8\u96C6\u304C\u53EF\u80FD\u3067\u3059\u3002"), __jsx("label", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86,
-      columnNumber: 1
-    }
-  }, "\u30E6\u30FC\u30B6\u30FC\u540D"), __jsx("div", {
-    className: "action-button-wrapper input-wrapper gs-input",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87,
-      columnNumber: 1
-    }
-  }, __jsx("span", {
-    className: "input-prefix",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88,
-      columnNumber: 1
-    }
-  }, __jsx(_assets_icons_ui_human_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 1
-    }
-  })), __jsx("input", {
-    className: "input-inner",
-    placeholder: "\u4F8B\uFF1A\u30AD\u30FC\u30D1\u30FC\u5C71\u7530",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 1
-    }
-  })), __jsx("button", {
-    className: "button button-black gs-button button-w100 ico-back",
-    onClick: props.nextStep,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 1
-    }
-  }, "\u6B21\u306B\u9032\u3080", __jsx(_assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 101
-    }
-  })));
-}
-
-function Step2(props) {
-  if (props.currentStep !== 2) {
-    return null;
-  }
-
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 1
-    }
-  }, __jsx("h1", {
-    className: "title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 1
-    }
-  }, "\u30A2\u30A4\u30B3\u30F3\u306E\u8A2D\u5B9A"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 1
-    }
-  }, "\u304A\u6C17\u306B\u5165\u308A\u306E\u30E6\u30CB\u30FC\u30AF\u306A\u30A2\u30A4\u30B3\u30F3\u3092\u8A2D\u5B9A\u3057\u307E\u3057\u3087\u3046\uFF01\u8A2D\u5B9A\u3057\u306A\u3044\u5834\u5408\u3001\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30A2\u30A4\u30B3\u30F3\u304C\u8868\u793A\u3055\u308C\u307E\u3059\u3002"), __jsx("div", {
-    className: "gs-upload-wrapper",
+  }, "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316"), __jsx("p", {
+    className: "white",
     style: {
-      justifyContent: "center"
+      marginBottom: 0
     },
-    __self: this,
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 15,
       columnNumber: 1
     }
-  }, __jsx("div", {
-    className: "gs-upload",
-    __self: this,
+  }, "\u4E0B\u8A18\u306E\u624B\u9806\u306B\u6CBF\u3063\u3066\u3001\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u7121\u52B9\u5316\u306E\u624B\u7D9A\u304D\u3092\u9032\u3081\u3066\u304F\u3060\u3055\u3044\u3002\u306A\u304A\u3001\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u7121\u52B9\u5316\u3059\u308B\u5834\u5408\u3001\u3053\u308C\u307E\u3067\u306B\u6295\u7A3F\u3057\u305F\u30EC\u30B7\u30D4\u306A\u3069\u306E\u30A2\u30AF\u30C6\u30A3\u30D3\u30C6\u30A3\u304C\u5168\u3066\u524A\u9664\u3055\u308C\u307E\u3059\u3002\u518D\u5EA6\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F5C\u6210\u3059\u308B\u5834\u5408\u3001\u4EE5\u524D\u7121\u52B9\u306B\u3057\u305F\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u4F7F\u7528\u30FB\u5FA9\u65E7\u3059\u308B\u4E8B\u306F\u4E00\u5207\u3067\u304D\u307E\u305B\u3093\u3002\u307E\u305F\u3001\u305D\u306E\u9593\u306B\u4ED6\u306E\u30E6\u30FC\u30B6\u30FC\u306E\u65B9\u304C\u3001\u7121\u52B9\u5316\u3057\u305F\u30E6\u30FC\u30B6\u30FC\u540D\u3092\u4F7F\u7528\u3067\u304D\u308B\u70BA\u3001\u4EE5\u524D\u4F7F\u7528\u3057\u3066\u3044\u305F\u30E6\u30FC\u30B6\u30FC\u540D\u304C\u4F7F\u3048\u306A\u3044\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\u4E88\u3081\u3054\u4E86\u627F\u304F\u3060\u3055\u3044\u3002"))), __jsx("div", {
+    className: "contents",
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
-      columnNumber: 1
+      lineNumber: 18,
+      columnNumber: 2
     }
   }, __jsx("div", {
-    className: "gs-upload-icon-wrapper",
-    __self: this,
+    className: "section center-section",
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 19,
+      columnNumber: 2
+    }
+  }, __jsx("div", {
+    className: "feedback-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
       columnNumber: 3
     }
-  }, __jsx("span", {
-    className: "gs-upload-icon",
-    __self: this,
+  }, __jsx("h5", {
+    className: "hr-section-title",
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 1
+      lineNumber: 23,
+      columnNumber: 3
     }
-  }, __jsx(_assets_icons_ui_add_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __self: this,
+  }, "\u7121\u52B9\u5316\u3059\u308B\u7406\u7531\u3092\u9078\u3093\u3067\u304F\u3060\u3055\u3044"), __jsx("div", {
+    className: "form-select",
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 1
-    }
-  })))), __jsx("button", {
-    className: "button button-black-ol",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 1
-    }
-  }, "\u753B\u50CF\u3092\u9078\u629E")), __jsx("button", {
-    className: "button button-black gs-button button-w100 ico-back",
-    onClick: props.nextStep,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 1
-    }
-  }, "\u6B21\u306B\u9032\u3080", __jsx(_assets_icons_ui_arrow_r_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 101
-    }
-  })));
-}
-
-function Step3(props) {
-  if (props.currentStep !== 3) {
-    return null;
-  }
-
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 131,
-      columnNumber: 5
-    }
-  }, __jsx("h1", {
-    className: "title",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132,
-      columnNumber: 5
-    }
-  }, "Ceaper\u3078\u3088\u3046\u3053\u305D\uFF01"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 5
-    }
-  }, "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB\u306E\u8A2D\u5B9A\u304C\u5B8C\u4E86\u3057\u307E\u3057\u305F\u3002\u30ED\u30B0\u30A4\u30F3\u3092\u3057\u3066\u3001\u65E9\u901FCeaper\u3092\u59CB\u3081\u307E\u3057\u3087\u3046\uFF01"), __jsx("div", {
-    className: "action-button-wrapper input-wrapper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 5
-    }
-  }, __jsx("span", {
-    className: "input-prefix",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 136,
-      columnNumber: 5
-    }
-  }, __jsx(_assets_icons_ui_mail_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137,
-      columnNumber: 5
-    }
-  })), __jsx("input", {
-    className: "input-inner",
-    placeholder: "E\u30E1\u30FC\u30EB",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 5
-    }
-  })), __jsx("div", {
-    className: "action-button-wrapper input-wrapper",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141,
-      columnNumber: 1
-    }
-  }, __jsx("span", {
-    className: "input-prefix",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 142,
-      columnNumber: 1
-    }
-  }, __jsx(_assets_icons_ui_password_js__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 1
-    }
-  })), __jsx("input", {
-    className: "input-inner",
-    placeholder: "\u30D1\u30B9\u30EF\u30FC\u30C9",
-    type: "password",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 1
-    }
-  }), __jsx("span", {
-    className: "input-suffix",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146,
-      columnNumber: 1
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    href: "/forgot-password",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147,
-      columnNumber: 1
+      lineNumber: 24,
+      columnNumber: 3
     }
   }, __jsx("a", {
-    className: "xs-text accent  hover-black",
-    __self: this,
+    className: "icon-button ico select-button select-button-bottom",
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
-      columnNumber: 5
+      lineNumber: 25,
+      columnNumber: 3
     }
-  }, "\u304A\u5FD8\u308C\u3067\u3059\u304B\uFF1F")))), __jsx("button", {
-    className: "button button-accent gs-button button-w100",
-    __self: this,
+  }, __jsx(_assets_icons_ui_discontent_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152,
+      lineNumber: 25,
+      columnNumber: 70
+    }
+  }), "\u30B5\u30FC\u30D3\u30B9\u306E\u4E0D\u6E80"), __jsx("a", {
+    className: "icon-button ico select-button select-button-bottom",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
       columnNumber: 1
     }
-  }, "\u59CB\u3081\u308B"));
-}
+  }, __jsx(_assets_icons_ui_trouble_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 68
+    }
+  }), "\u30C8\u30E9\u30D6\u30EB\u306E\u767A\u751F"), __jsx("a", {
+    className: "icon-button ico select-button",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 1
+    }
+  }, "  ", __jsx(_assets_icons_ui_other_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 49
+    }
+  }), "\u305D\u306E\u4ED6"))), __jsx("div", {
+    className: "feedback-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 6
+    }
+  }, __jsx("h5", {
+    className: "hr-section-title",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 6
+    }
+  }, "\u5185\u5BB9\u3092\u8A73\u3057\u304F\u304A\u8A71\u3057\u304F\u3060\u3055\u3044\uFF08\u4EFB\u610F\uFF09"), __jsx("div", {
+    className: "form-select",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 6
+    }
+  }, __jsx("textarea", {
+    className: "feedback-area",
+    placeholder: "\u7121\u52B9\u5316\u3059\u308B\u7406\u7531\u3084\u3001\u30B5\u30FC\u30D3\u30B9\u306B\u4E0D\u6E80\u306A\u3069\u3054\u3056\u3044\u307E\u3057\u305F\u3089\u3001\u8A73\u3057\u304F\u304A\u8A71\u3057\u304F\u3060\u3055\u3044\u3002",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 6
+    }
+  })), __jsx("div", {
+    className: "button-choice-wrapper",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 1
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/edit",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 3
+    }
+  }, __jsx("a", {
+    className: "button button-grey button-choice-l",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 5
+    }
+  }, "\u30AD\u30E3\u30F3\u30BB\u30EB\u3059\u308B")), __jsx("a", {
+    className: "button  button-red button-choice-r ico",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 1
+    }
+  }, __jsx(_assets_icons_ui_notice_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 56
+    }
+  }), "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u524A\u9664")))))));
+});
 
 /***/ }),
 
-/***/ 1:
-/*!******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fget-started&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fget-started.js ***!
-  \******************************************************************************************************************************/
+/***/ 5:
+/*!********************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fdelete&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fdelete.js ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fget-started&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fget-started.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fget-started&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fget-started.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdelete&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fdelete.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdelete&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fdelete.js!./");
 
 
 /***/ }),
@@ -5678,5 +6583,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=get-started.js.map
+},[[5,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=delete.js.map

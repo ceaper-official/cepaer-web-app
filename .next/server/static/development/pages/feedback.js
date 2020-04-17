@@ -4389,7 +4389,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     columnNumber: 17
   }
 })), __jsx("a", {
-  className: "button form-submit button-green",
+  className: "button form-submit button-accent",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,

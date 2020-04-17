@@ -67,7 +67,7 @@ export default() => (<BaseLayout>
                 {/* 「どのような内容ですか？」の選択に応じて、placeholderの文を変更する */}
                 <textarea className="feedback-area" placeholder="フィードバックについての場合：Ceaperのサービスを利用して感じた事、良かった点または、改善点などもお話しください。　バグ・不具合についての場合：どのような状況・操作で問題が発生しましたか？ 問題が発生した時の状況を詳しくお話しください。内容に応じて早急に対応させていただきます。"></textarea>
               </div>
-              <a className="button form-submit button-green">フィードバックを送る
+              <a className="button form-submit button-accent">フィードバックを送る
               </a>
             </div>
 
