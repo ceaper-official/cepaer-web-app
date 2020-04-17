@@ -8,20 +8,11 @@ import Support from "../../assets/icons/ui/support-color.js";
 import Security from "../../assets/icons/ui/security-color.js";
 import ArrowR from "../../assets/icons/ui/arrow-r.js";
 import Feedback from "../../layouts/feedback.js";
-
+import NavSearch from "../../layouts/faq/nav-search.js";
 export default() => (<BaseLayout>
   <div id="page">
 
-    <div className='contents bg-grey'>
-      <div className='section center-section'>
-        <div className="search-wrapper faq-search">
-          <span className="search-icon">
-            <span className="search-icon-inner"><Search/></span>
-          </span>
-          <input className="search" type="search" name="q" placeholder="お困りのキーワードで検索"/>
-        </div>
-      </div>
-    </div>
+<NavSearch/>
 
     <div className='contents'>
       <div className='section'>

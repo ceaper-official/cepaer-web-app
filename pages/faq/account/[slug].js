@@ -4,8 +4,9 @@ import ReactMarkdown from 'react-markdown'
 import BaseLayout from '../../../layouts/base.js'
 import  NavFAQMobile from "../../../layouts/nav-faq-mobile.js";
 import  NavFAQ from "../../../layouts/nav-faq.js";
-import Search from "../../../assets/icons/ui/search.js";
 import VoteForm from "../../../layouts/vote-form.js";
+import NavSearch from "../../../layouts/faq/nav-search.js";
+
 
 
 export default function FaqTemplate({ content, data }) {
@@ -16,15 +17,7 @@ export default function FaqTemplate({ content, data }) {
     <BaseLayout>
       <div id="page"className="side-nav-page">
 
-        <div className = 'contents bg-grey'> <div className='section center-section'>
-          <div className="search-wrapper faq-search">
-            <span className="search-icon">
-              <span className="search-icon-inner"><Search/></span>
-            </span>
-            <input className="search" type="search" name="q" placeholder="お困りのキーワードで検索"/>
-          </div>
-        </div>
-        </div>
+<NavSearch/>
 
         <div className='contents'>
         <div className='section faq-wrapper'>

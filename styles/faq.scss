@@ -1,20 +1,23 @@
 //検索ボタン
-
 .faq-search {
-  border-bottom: 1px solid var(--black);
-  padding-bottom: 1rem;
-
+  border-bottom: 1px solid var(--white);
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 1rem;
+  }
   & .search-icon {
-    padding-bottom: 1rem;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 1rem;
+}
 
     & svg {
-      width: 25px;
+      width: 20px;
+      height: auto;
       @media screen and (min-width: $tablet) {
         width: 30px;
       }
 
       & path {
-        fill: var(--black);
+        fill: var(--white);
       }
     }
   }
@@ -26,12 +29,14 @@
     padding-left: 40px;
     font-size: 2rem;
     font-family: var(--headings);
+    color: var(--white);
 
     &::placeholder {
       font-size: 2rem;
       font-family: var(--headings);
       font-weight: 500;
       line-height: 1;
+      color: var(--white);
     }
     @media screen and (min-width: $tablet) {
       padding-left: 50px;
@@ -95,10 +100,22 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .article p {
+  .article {
+
+    & p {
     max-width: 650px;
     margin-left: 0;
+    & > a{
+      color:var(--green60);
+      &:after{
+        background: var(--green60);
+      }
+    }
   }
+  li:before{
+    color: var(--green60);
+  }
+}
 }
 
 

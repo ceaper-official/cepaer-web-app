@@ -458,63 +458,71 @@ function Rate1() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20.00277 20.00003",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 5
+    }
   }, __jsx("circle", {
+    className: "ratebg",
     cx: "10.00138",
     cy: "10.00002",
     r: "10",
     fill: "#ff4545",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 77
+    }
   }), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 155
+    }
   }, __jsx("path", {
     d: "M14.9165,13.85645a6.07641,6.07641,0,0,0-9.83057,0,.50018.50018,0,0,0,.4043.79394h9.022a.50017.50017,0,0,0,.4043-.79394Z",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 172
+    }
   })), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 322
+    }
   }, __jsx("circle", {
     cx: "5.81865",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 339
+    }
   }), __jsx("circle", {
     cx: "14.18687",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 396
+    }
   })));
 }
 
@@ -539,63 +547,71 @@ function Rate2() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20.00277 20.00003",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 5
+    }
   }, __jsx("circle", {
     cx: "10.00138",
+    className: "ratebg",
     cy: "10.00002",
     r: "10",
     fill: "#ff7d45",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 77
+    }
   }), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 154
+    }
   }, __jsx("path", {
     d: "M10.0013,11.35254a6.01219,6.01219,0,0,0-4.915,2.50391.49986.49986,0,1,0,.80859.58789,5.07709,5.07709,0,0,1,8.21338,0,.49986.49986,0,0,0,.8086-.58789A6.01243,6.01243,0,0,0,10.0013,11.35254Z",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 171
+    }
   })), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 390
+    }
   }, __jsx("circle", {
     cx: "5.81865",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 407
+    }
   }), __jsx("circle", {
     cx: "14.18687",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 464
+    }
   })));
 }
 
@@ -620,63 +636,71 @@ function Rate3() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20.00277 20.00003",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 5
+    }
   }, __jsx("circle", {
+    className: "ratebg",
     cx: "10.00138",
     cy: "10.00002",
     r: "10",
     fill: "#fff645",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 77
+    }
   }), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 155
+    }
   }, __jsx("path", {
     d: "M14.5236,12.15625H5.47917a.5.5,0,0,0,0,1H14.5236a.5.5,0,1,0,0-1Z",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 172
+    }
   })), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 267
+    }
   }, __jsx("circle", {
     cx: "5.81865",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 284
+    }
   }), __jsx("circle", {
     cx: "14.18687",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 341
+    }
   })));
 }
 
@@ -701,63 +725,71 @@ function Rate4() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20.00277 20.00003",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 5
+    }
   }, __jsx("circle", {
+    className: "ratebg",
     cx: "10.00138",
     cy: "10.00002",
     r: "10",
     fill: "#45e9ff",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 77
+    }
   }), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 154
+    }
   }, __jsx("path", {
     d: "M14.10742,11.55762a5.07475,5.07475,0,0,1-8.2124,0,.50025.50025,0,0,0-.80957.58789,6.076,6.076,0,0,0,9.83154,0,.50025.50025,0,0,0-.80957-.58789Z",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 171
+    }
   })), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 345
+    }
   }, __jsx("circle", {
     cx: "5.81865",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 362
+    }
   }), __jsx("circle", {
     cx: "14.18687",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 419
+    }
   })));
 }
 
@@ -782,63 +814,71 @@ function Rate5() {
   return __jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 5
+    }
   }, __jsx("circle", {
+    className: "ratebg",
     cx: "10.00276",
     cy: "10",
     r: "10",
     fill: "#45ff99",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 65
+    }
   }), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 137
+    }
   }, __jsx("circle", {
     cx: "5.81865",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 154
+    }
   }), __jsx("circle", {
     cx: "14.18687",
     cy: "7.3438",
     r: "1.2",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 211
+    }
   })), __jsx("g", {
     opacity: "0.6",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 273
+    }
   }, __jsx("path", {
     d: "M14.51221,11.35156h-9.022a.50054.50054,0,0,0-.40478.794,6.076,6.076,0,0,0,9.83154,0,.50054.50054,0,0,0-.40478-.794Z",
     fill: "#231e28",
+    __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+      lineNumber: 4,
+      columnNumber: 290
+    }
   })));
 }
 
