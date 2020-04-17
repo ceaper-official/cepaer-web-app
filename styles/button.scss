@@ -28,8 +28,8 @@
   }
 
   &:hover {
-    border: 1px solid var(--black);
-    background: var(--black);
+    border-color: var(--accent80);
+    background: var(--accent80);
   }
 }
 /*ブラック*/
@@ -45,8 +45,8 @@
   }
 
   &:hover {
-    border: 1px solid var(--accent);
-    background: var(--accent);
+    border: 1px solid var(--black80);
+    background: var(--black80);
   }
 }
 //ブラック・アウトライン
