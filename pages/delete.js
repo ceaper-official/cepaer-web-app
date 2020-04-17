@@ -9,7 +9,7 @@ import  Discontent from "../assets/icons/ui/discontent.js";
 export default () => (
   <BaseLayout>
   <div id="page">
-  <div className='contents bg-red'>
+  <div className='contents bg-red80'>
   <div className='section center-section'>
 <h1 className='title white'>アカウントの無効化</h1>
 <p className="white"  style={{ marginBottom: 0 }}>下記の手順に沿って、アカウントの無効化の手続きを進めてください。なお、アカウントを無効化する場合、これまでに投稿したレシピなどのアクティビティが全て削除されます。再度アカウントを作成する場合、以前無効にしたアカウントを使用・復旧する事は一切できません。また、その間に他のユーザーの方が、無効化したユーザー名を使用できる為、以前使用していたユーザー名が使えない場合がございます。予めご了承ください。</p>

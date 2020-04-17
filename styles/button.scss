@@ -49,6 +49,7 @@
     background: var(--accent);
   }
 }
+//ブラック・アウトライン
 
 .button-black-ol {
   color: var(--black);
@@ -57,14 +58,14 @@
   &:hover {
     color: var(--white);
     background: var(--black);
-      & svg {
-        path {
-          fill: var(--white);
-        }
+
+    & svg {
+      path {
+        fill: var(--white);
       }
+    }
   }
 }
-
 //グリーン
 .button-green {
   color: var(--white);
@@ -82,6 +83,27 @@
     border-color: var(--green80);
   }
 }
+
+//グリーン・アウトライン
+.button-green-ol {
+  color: var(--green60);
+  border: 1px solid var(--green60);
+    & svg {
+      path {
+        fill: var(--green60);
+      }
+    }
+
+  &:hover {
+    color: var(--white);
+    background: var(--green60);
+      & svg {
+        path {
+          fill: var(--white);
+        }
+      }
+  }
+}
 //ホワイト
 .button-white {
   color: var(--black);
@@ -97,20 +119,18 @@
   &:hover {
     background: var(--grey);
     border-color: var(--grey);
-    color:var(--black);
+    color: var(--black);
 
-      & svg {
-        fill: var(--black);
-      }
+    & svg {
+      fill: var(--black);
+    }
   }
 }
-
 //レッド（ネガティブ）
-
 .button-red {
   color: var(--white);
-  border: 1px solid var(--red);
-  background: var(--red);
+  border: 1px solid var(--red80);
+  background: var(--red80);
 
   & svg {
     path {
@@ -119,10 +139,12 @@
   }
 
   &:hover {
-    background: var(--red-hover);
+    border: 1px solid var(--red);
+    background: var(--red);
   }
 }
 //グレー
+
 .button-grey {
   color: var(--articleText);
   border: 1px solid var(--horizontalRule);
@@ -166,8 +188,9 @@
     margin-right: 0.5em;
   }
 }
+
 .ico-l svg {
-  width:20px;
+  width: 20px;
 }
 //アイコン・バック
 
@@ -227,9 +250,10 @@
   justify-content: flex-start;
   position: relative;
 
-    & .input-inner {
-      padding: 1.2rem 2rem;
-    }
+  & .input-inner {
+    padding: 1.2rem 2rem;
+  }
+
   & .input-prefix {
     left: 0;
     position: absolute;
@@ -296,6 +320,7 @@
   }
 }
 //選択（２つ）
+
 .button-choice-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -352,20 +377,20 @@
 .select-button-bottom {
   margin-bottom: 1.5rem;
 }
-
 //アクティブ
 button.button-active {
   border: 1px solid var(--horizontalRule);
   border-radius: 50%;
+
   svg {
-    margin: .4rem;
+    margin: 0.4rem;
     width: 7px;
   }
 }
-.button-active-number {
-  margin: 0 .8rem;
-}
 
+.button-active-number {
+  margin: 0 0.8rem;
+}
 //width100
 .button-w100 {
   display: block;

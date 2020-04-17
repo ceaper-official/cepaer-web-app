@@ -25,6 +25,8 @@ font-feature-settings: "pkna";
     --grey: #b0b0b0;
     /*SECONDAY*/
     --articleText: #4f4b57;
+    --accent80:#cc4337;
+    --accent60:#993229;
     --yellow: #ffda45;
     --yellow60: #998329;
     --blue: #45c4ff;
@@ -32,7 +34,9 @@ font-feature-settings: "pkna";
     --green: #45ff9f;
     --green80: #37cc7f;
     --green60:#29995f;
-    --red: #993229;
+    --red: #ff4545;
+    --red80: #cc3737;
+    --red60: #993229;
     /*OTHER*/
     --background-color: #fff;
     --background-grey: rgba(176,176,176, 0.1);
@@ -46,7 +50,6 @@ font-feature-settings: "pkna";
     //ホバー
     --grey-hover:#B4B4B5;
   --red-hover:#e63e3e;
-  --green-hover: #3ee68f;
     /*DARK*/
     --d-articleText: #d1d1d1;
 }

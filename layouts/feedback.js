@@ -9,7 +9,7 @@ export default function Feedback() {
     <div className="feedback-wrapper">
     <h5 className="hr-section-title">サービスの機能改善・向上にご協力ください</h5>
     <div className = "form-select">
-    <Link href="/feedback"><a  className="button button-black ico-back">フィードバックを送る<ArrowR/></a></Link>
+    <Link href="/feedback"><a  className="button button-green ico-back">フィードバックを送る<ArrowR/></a></Link>
      </div>
      </div>
       </div>
