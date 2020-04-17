@@ -149,7 +149,7 @@ function Step3(props) {
 </Link>
 </span></div>
 
-<button className="button button-green gs-button button-w100" >始める
+<button className="button button-accent gs-button button-w100" >始める
 </button>
 
     </div>

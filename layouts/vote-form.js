@@ -20,10 +20,10 @@ class VoteForm extends React.Component {
     <h5>この回答はお役に立ちましたか？</h5>
       <div className="button-choice-wrapper">
         <Link href="/edit">
-          <button  className="button button-green-ol button-choice-l "onClick={this.selectYes}>はい
+          <button  className="button button-black-ol button-choice-l "onClick={this.selectYes}>はい
         </button></Link>
 
-      <button  className="button  button-green-ol button-choice-r"onClick={this.selectNo}>いいえ
+      <button  className="button  button-black-ol button-choice-r"onClick={this.selectNo}>いいえ
       </button>
         </div>
      </div>
@@ -62,7 +62,7 @@ class VoteNo extends React.Component {
        <div className = "form-select">
        <textarea className="feedback-area" placeholder="他に原因はありますか？"></textarea>
         </div>
-        <div className="vote-submit"><button className="button button-green"onClick={this.selectSubmit}>フィードバックを送る
+        <div className="vote-submit"><button className="button button-black"onClick={this.selectSubmit}>フィードバックを送る
         </button></div>
               </div>
     </div>

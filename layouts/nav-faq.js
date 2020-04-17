@@ -5,7 +5,7 @@ export default function NavFAQ() {
   return (<div className='side-nav-desktop'>
     <div className="side-nav-desktop-inner">
       <Link href="/faq/home">
-        <a className="xs-text hover-accent">ホーム</a>
+        <a className="xs-text hover-accent grey">ホーム</a>
       </Link>
       <Link href="/">
         <a className="xs-text hover-accent grey">Ceaperについて</a>

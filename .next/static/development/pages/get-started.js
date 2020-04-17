@@ -5643,7 +5643,7 @@ function Step3(props) {
       columnNumber: 5
     }
   }, "\u304A\u5FD8\u308C\u3067\u3059\u304B\uFF1F")))), __jsx("button", {
-    className: "button button-green gs-button button-w100",
+    className: "button button-accent gs-button button-w100",
     __self: this,
     __source: {
       fileName: _jsxFileName,

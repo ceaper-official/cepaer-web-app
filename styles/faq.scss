@@ -99,23 +99,6 @@ h3 {
   @media screen and (max-width: $tablet) {
     grid-template-columns: 1fr;
   }
-
-  .article {
-
-    & p {
-    max-width: 650px;
-    margin-left: 0;
-    & > a{
-      color:var(--green60);
-      &:after{
-        background: var(--green60);
-      }
-    }
-  }
-  li:before{
-    color: var(--green60);
-  }
-}
 }
 
 
@@ -170,8 +153,8 @@ h3 {
       position: absolute;
       box-sizing: border-box;
         transform: rotate(45deg);
-        border-right: 3px solid  var(--green60);
-        border-bottom: 3px solid  var(--green60);
+        border-right: 3px solid  var(--black);
+        border-bottom: 3px solid  var(--black);
         top: calc(50% - (((17px / 12) * 5) / 2));
         display: block;
         margin-top: calc(((17px / 12) * 5) * -1);
@@ -182,7 +165,7 @@ h3 {
   }
   &:hover{
     &:before{
-      border-color: var(--green60);
+      border-color: var(--black);
     }
   }
   //テキスト
