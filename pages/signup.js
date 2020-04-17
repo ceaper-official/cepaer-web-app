@@ -75,7 +75,7 @@ function SignUpOK() {
     <div className="actions-inner card"style={{ paddingTop: "6rem" }}>
     <div className="actions-row-close"><Cross /></div>
 
-      <div id="vote-wrapper" className="card card-wrapper">
+      <div id="vote-wrapper" className="card card-wrapper success">
         <h1>ありがとうございます！</h1>
         <p className="xs-text"style={{ margin: "0" }}>先程、入力して頂いたメールアドレス宛に、アカウントの作成手順を記載したメールをお送りいたしました。届いたメールの内容に沿って、アカウントの作成手続きを進めてください。</p>
        </div>

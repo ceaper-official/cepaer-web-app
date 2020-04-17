@@ -38,7 +38,7 @@ export default VoteForm;
 function VoteYes() {
   return(
        <div className='contents'>
-      <div id="vote-wrapper" className="card card-wrapper">
+      <div id="vote-wrapper" className="card card-wrapper success">
       <h5>フィードバックをお寄せ頂き、ありがとうございます！</h5>
        </div>
        </div>
@@ -74,7 +74,7 @@ class VoteNo extends React.Component {
 function VoteSubmit() {
   return(
        <div className='contents'>
-      <div id="vote-wrapper" className="card card-wrapper">
+      <div id="vote-wrapper" className="card card-wrapper success">
       <h5>フィードバックをお寄せ頂き、ありがとうございます！</h5>
        </div>
        </div>

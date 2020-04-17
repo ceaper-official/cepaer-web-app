@@ -5174,7 +5174,7 @@ function SignUpOK() {
     }
   })), __jsx("div", {
     id: "vote-wrapper",
-    className: "card card-wrapper",
+    className: "card card-wrapper success",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -5204,7 +5204,7 @@ function SignUpOK() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsignup&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fsignup.js ***!
   \********************************************************************************************************************/
@@ -5227,5 +5227,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=signup.js.map
