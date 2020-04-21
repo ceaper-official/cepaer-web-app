@@ -25,7 +25,7 @@ export default () => (
 <input className="input-inner" placeholder="パスワード" type="password"></input>
 <span className="input-suffix">
 <Link href="/forgot-password">
-    <a className="xs-text accent  hover-black">お忘れですか？</a>
+    <a className="xs-text support  hover-black">お忘れですか？</a>
 </Link>
 </span></div>
     <div className="action-button-wrapper">

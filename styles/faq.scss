@@ -1,6 +1,6 @@
 //検索ボタン
 .faq-search {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--black);
     @media screen and (min-width: $tablet) {
       padding-bottom: 1rem;
   }
@@ -17,7 +17,7 @@
       }
 
       & path {
-        fill: var(--white);
+        fill: var(--black);
       }
     }
   }
@@ -29,14 +29,14 @@
     padding-left: 40px;
     font-size: 2rem;
     font-family: var(--headings);
-    color: var(--white);
+    color: var(--black);
 
     &::placeholder {
       font-size: 2rem;
       font-family: var(--headings);
       font-weight: 500;
       line-height: 1;
-      color: var(--white);
+      color: var(--black);
     }
     @media screen and (min-width: $tablet) {
       padding-left: 50px;
@@ -64,20 +64,14 @@
     display: flex;
 //タイトル
 h3 {
-  line-height: 40px;
-  @media screen and (max-width: $tablet) {
-    line-height: 30px;
-}
+  line-height: 50px;
 }
     & .faq-cat-inner-l {
       padding-right: 2rem;
       //アイコン
       & svg {
         height: auto;
-        width: 40px;
-        @media screen and (max-width: $tablet) {
-          width: 30px;
-        }
+        width: 50px;
       }
     }
 

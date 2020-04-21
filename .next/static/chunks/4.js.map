@@ -1,1 +1,0 @@
-{"version":3,"file":"static/chunks/4.js","sources":["webpack:///./faq/account/メールが届きませんが.md"],"sourcesContent":["export default \"---\\ntitle: \\\"パスワードの再設定・変更方法は？\\\"\\n---\\n\\n#### パスワードの再設定\\n\\b作成したアカウントのパスワードを忘れた場合、[パスワードの再設定](/forgot-password)から、ご登録のメールアドレスを入力し送信した後に届くメールに沿って、手続きをしてください。\\n\\n#### パスワードの変更\\n\";"],"mappings":";;;;;;;;;;AAAA;AAAA;;;;A","sourceRoot":""}

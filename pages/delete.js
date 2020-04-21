@@ -1,11 +1,10 @@
 import BaseLayout from '../layouts/base.js'
 import Link from 'next/link';
 import  Message from "../assets/icons/ui/message.js";
-import  Bug from "../assets/icons/ui/bug.js";
 import  Notice from "../assets/icons/ui/notice.js";
-import  Trouble from "../assets/icons/ui/trouble.js";
-import  Other from "../assets/icons/ui/other.js";
-import  Discontent from "../assets/icons/ui/discontent.js";
+import  TroubleColor from "../assets/icons/ui/trouble-color.js";
+import  OtherColor from "../assets/icons/ui/other-color.js";
+import  DiscontentColor from "../assets/icons/ui/discontent-color.js";
 export default () => (
   <BaseLayout>
   <div id="page">
@@ -22,11 +21,11 @@ export default () => (
   <div className="feedback-wrapper">
   <h5 className="hr-section-title">削除する理由を選んでください</h5>
   <div className = "form-select">
-  <a  className="icon-button ico select-button select-button-bottom"><Discontent/>サービスの不満
+  <a  className="icon-button ico select-button select-button-bottom ico-big card"><DiscontentColor/>サービスの不満
 </a>
-<a  className="icon-button ico select-button select-button-bottom"><Trouble/>トラブルの発生
+<a  className="icon-button ico select-button select-button-bottom ico-big card"><TroubleColor/>トラブルの発生
 </a>
-<a  className="icon-button ico select-button">  <Other/>その他
+<a  className="icon-button ico select-button select-button-bottom ico-big card">  <OtherColor/>その他
 </a>
    </div>
    </div>
@@ -38,7 +37,7 @@ export default () => (
       </div>
 <div className="button-choice-wrapper">
   <Link href="/edit">
-    <a  className="button button-grey button-choice-l">キャンセルする
+    <a  className="button button-cancel button-choice-l">キャンセルする
   </a></Link>
 
 <a  className="button  button-red button-choice-r ico"><Notice/>アカウントを削除

@@ -2,17 +2,15 @@ import BaseLayout from '../layouts/base.js'
 import React from "react";
 import Link from 'next/link';
 import  ArrowR from "../assets/icons/ui/arrow-r.js";
-import  NavPolicies from "../layouts/nav-policies.js";
-import  NavPoliciesMobile from "../layouts/nav-policies-mobile.js";
+import  NavPolicies from "../layouts/nav/nav-policies.js";
 
 export default () => (
     <BaseLayout>
-      <div id="page" className="side-nav-page">
+      <div id="page" className="side-nav-page support">
      <div className='contents'>
 
      <div className='section policies-wrapper'>
 <NavPolicies/>
-  <NavPoliciesMobile/>
 
        <div className="policies-inner">
          <span className="grey xs-text updated">Updated: 2020/4/20 </span>

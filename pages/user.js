@@ -57,8 +57,8 @@ export default () => (
       <span>フォロー</span>
         </a>
 </div>
-        <a className="button add-button button-accent ico"><Add />フォロー</a>
-    <Link href="/edit"><a className="button setting-button button-black ico"><SettingSolid />プロフィールを編集</a></Link>
+        <a className="button add-button button-black-ol ico"><Add />フォロー</a>
+    <Link href="/edit"><a className="button setting-button button-snow ico"><SettingSolid />プロフィールを編集</a></Link>
     </div>
   </div>
   </div>

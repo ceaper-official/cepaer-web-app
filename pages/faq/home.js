@@ -2,7 +2,7 @@ import BaseLayout from '../../layouts/base.js';
 import Link from 'next/link';
 import Search from "../../assets/icons/ui/search.js";
 import Bug from "../../assets/icons/ui/bug.js";
-import Base from "../../assets/icons/ui/base-color.js";
+import BaseColor from "../../assets/icons/ui/base-color.js";
 import Account from "../../assets/icons/ui/account-color.js";
 import Support from "../../assets/icons/ui/support-color.js";
 import Security from "../../assets/icons/ui/security-color.js";
@@ -20,7 +20,7 @@ export default() => (<BaseLayout>
 
           <div className="faq-cat-inner card">
             <div className="faq-cat-inner-l">
-              <Base/>
+              <BaseColor/>
             </div>
             <div className="faq-cat-inner-r">
               <h3>Ceaperについて</h3>
@@ -45,7 +45,7 @@ export default() => (<BaseLayout>
             <div className="faq-cat-inner-r">
               <h3>アカウント</h3>
               <div className="faq-cat-link-wrapper">
-                <Link href="/faq/account/01アカウントの作成">
+                <Link href="/faq/account/0アカウントの作成">
                   <a className="hover-line faq-cat-link ico-back xs-text xs-icon">アカウントの作成<ArrowR/></a>
                 </Link>
                 <Link href="/">

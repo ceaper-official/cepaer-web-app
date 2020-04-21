@@ -7,8 +7,30 @@ a{
         }
 }
 
-a:hover{
-  text-decoration-color: var(--accent);
+
+p > a {
+  color: var(--accent);
+  display: inline-block;
+  &:after {
+    content: "";
+    background: var(--accent);
+    height: .2rem;
+    transition: opacity .3s;
+    transform: translateY(-.01em);
+    width: 100%;
+    opacity: 0;
+    display: block;
+  }
+  &:hover:after {
+opacity: 1;
+ }
+}
+
+a.support {
+  color: var(--support);
+  &:after {
+    background: var(--support);
+  }
 }
 
 a.hover-accent:hover {
@@ -58,6 +80,29 @@ justify-content: flex-end;
 }
 
 //ボーター
-.border-text {
-  text-decoration: underline;
+.a-border {
+  &:after {
+    content: "";
+    background: var(--black);
+    height: .2rem;
+    transition: opacity .3s;
+    transform: translateY(-.01em);
+    width: 100%;
+    opacity: 0;
+    display: block;
+  }
+}
+
+
+.a-border-dark {
+  &:after {
+    content: "";
+    background: var(--d-articleText);
+    height: .2rem;
+    transition: opacity .3s;
+    transform: translateY(-.01em);
+    width: 100%;
+    opacity: 1;
+    display: block;
+  }
 }

@@ -8,12 +8,7 @@
   line-height: 1;
   transition: 0.15s;
   display: inline-block;
-  height: 100%;
-
-  &:hover {
-    color: var(--white);
-    background: var(--accent);
-  }
+  height: auto;
 }
 /*アクセント*/
 .button-accent {
@@ -32,6 +27,73 @@
     background: var(--accent80);
   }
 }
+//サポート
+.button-support {
+    color: var(--white);
+    border: 1px solid var(--support);
+    background: var(--support);
+
+    & svg {
+      & path {
+        fill: var(--white);
+      }
+    }
+
+    &:hover {
+      border-color: var(--support120);
+      background: var(--support120);
+    }
+  }
+  //Support - ol
+  .button-support-ol {
+    color: var(--support);
+    border: 1px solid var(--support);
+
+    &:hover {
+      color: var(--white);
+      background: var(--support);
+
+      & svg {
+        path {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+
+  //Snow
+  .button-snow {
+    color: var(--black);
+    border: 1px solid var(--snow);
+    background: var(--snow);
+    &:hover {
+      color: var(--black);
+      background: var(--snow80);
+    }
+  }
+
+
+  // Snow ol
+  .button-snow-ol {
+    color: var(--black);
+    border: 1px solid var(--snow);
+      & svg {
+        path {
+          fill: var(--black);
+        }
+      }
+
+    &:hover {
+      color: var(--white);
+      background: var(--green60);
+        & svg {
+          path {
+            fill: var(--white);
+          }
+        }
+    }
+  }
+
 /*ブラック*/
 .button-black {
   color: var(--white);
@@ -45,12 +107,11 @@
   }
 
   &:hover {
-    border: 1px solid var(--black80);
-    background: var(--black80);
+    border: 1px solid var(--black110);
+    background: var(--black110);
   }
 }
 //ブラック・アウトライン
-
 .button-black-ol {
   color: var(--black);
   border: 1px solid var(--black);
@@ -143,16 +204,15 @@
     background: var(--red);
   }
 }
-//グレー
-
-.button-grey {
+//キャンセル
+.button-cancel {
   color: var(--articleText);
   border: 1px solid var(--horizontalRule);
   background: var(--horizontalRule);
 
   &:hover {
     color: var(--articleText);
-    background: var(--grey-hover);
+    background: var(--grey60);
   }
 }
 /*グレーアウト*/
@@ -168,40 +228,18 @@
 }
 /*テキスト*/
 .button-text {
-  padding: 0.5rem 2rem;
-  color: var(--accent);
+  color: var(--black);
   border-radius: 4px;
   font-weight: 500;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    line-height: 1;
+    transition: 0.15s;
+    display: inline-block;
+    height: auto;
 
   &:hover {
     text-decoration: underline;
-  }
-}
-/*アイコン*/
-.ico {
-  display: inline-flex;
-  align-items: center;
-
-  & svg {
-    height: auto;
-    width: 15px;
-    margin-right: 0.5em;
-  }
-}
-
-.ico-l svg {
-  width: 20px;
-}
-//アイコン・バック
-
-.ico-back {
-  display: inline-flex;
-  align-items: center;
-
-  & svg {
-    height: auto;
-    width: 15px;
-    margin-left: 0.5em;
   }
 }
 //ソーシャル
@@ -215,7 +253,7 @@
   border-color: var(--black);
 
   &:hover {
-    background: var(--black);
+    background: var(--snow);
   }
 
   & .button-prefix {
@@ -249,10 +287,6 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-
-  & .input-inner {
-    padding: 1.2rem 2rem;
-  }
 
   & .input-prefix {
     left: 0;
@@ -352,25 +386,18 @@
 }
 //フォーム・セレクトボタン
 
-.select-button {
+.select-button.ico {
   height: 100%;
   width: 100%;
   color: var(--articleText);
-  padding: 3.5rem 3rem;
   border: 1px solid var(--horizontalRule);
-  border-radius: 4px;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1;
-
-  & svg {
-    width: 30px;
-    margin-right: 3rem;
-  }
-
+  justify-content: flex-start;
   &:hover {
     border-color: var(--black);
-    background: var(--background-grey);
+    background: var(--snow);
   }
 }
 

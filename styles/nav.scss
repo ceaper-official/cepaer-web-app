@@ -1,13 +1,16 @@
 //デスクトップ・サイドナビ
 .side-nav-desktop {
-    position: sticky;
-    top: 0;
     line-height: 1;
-    & .side-nav-desktop-inner a, .side-nav-desktop-inner h6{
+    & .side-nav-desktop-inner a{
       display: block;
-      padding-top: 2rem;
       text-align: left;
       font-family: var(--headings);
+        padding: 1rem 1.5rem;
+        border-left: 2px solid var(--snow);
+        &:hover{
+          border-color: var(--black);
+        color: var(--black);
+        }
 
     }
 @media screen and (max-width: $tablet) {

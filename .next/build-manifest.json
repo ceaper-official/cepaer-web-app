@@ -1,7 +1,7 @@
 {
   "devFiles": [
-    "static/development/dll/dll_88bfe47d29bf84228398.js",
-    "static/development/dll/dll_88bfe47d29bf84228398.js.map"
+    "static/development/dll/dll_da7be6dcac53e7102143.js",
+    "static/development/dll/dll_da7be6dcac53e7102143.js.map"
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
@@ -20,23 +20,7 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/faq/account/[slug]": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/faq/home": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/forgot-password": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/signin": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/signup": [
+    "/privacy": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

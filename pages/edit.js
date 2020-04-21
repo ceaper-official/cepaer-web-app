@@ -39,12 +39,12 @@ export default () => (
     </div>
     <div className="edit-user-button-wrapper">
       <button  className="button button-black ico" ><Upload/>アイコンをアップロード</button>
-        <button  className="button button-grey ico" >削除</button>
+        <button  className="button button-cancel ico" >削除</button>
         </div>
                     </div>
 
           <div className = "edit-item">
-      <label className="edit-title s-text edit-required">ユーザー名</label>
+      <label className="edit-title s-text required">ユーザー名</label>
 <input className="input-inner edit-input-inner" autocomplete="username" type="text" value="ケリー小田"  required/>
  </div>
 
@@ -124,7 +124,7 @@ export default () => (
  </div>
  <div className = "edit-item edit-connections">
 <div className="ico"><Facebook/>Facebook</div>
- <a className="button button-black">連携する</a>
+ <a className="button button-black-ol">連携する</a>
 </div>
 </div>
 

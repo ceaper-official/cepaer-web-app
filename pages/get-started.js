@@ -23,7 +23,7 @@ class GS extends React.Component {
 
   <div className='gs-wrapper'>
 
-  <div className='section gs-inner-nav gs-inner bg-grey'>
+  <div className='section gs-inner-nav gs-inner bg-snow'>
     <div className='gs-inner-nav-inner'>
 <h6 className='title grey xs-text gs-progress'>プロフィールを設定しましょう</h6>
 
@@ -145,7 +145,7 @@ function Step3(props) {
 <input className="input-inner" placeholder="パスワード" type="password"></input>
 <span className="input-suffix">
 <Link href="/forgot-password">
-    <a className="xs-text accent  hover-black">お忘れですか？</a>
+    <a className="xs-text support  hover-black">お忘れですか？</a>
 </Link>
 </span></div>
 

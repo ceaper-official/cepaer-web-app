@@ -63,3 +63,44 @@ figcaption p.small-text {
 		transform: translatey(0px);
 	}
 }
+
+//SVG
+svg{
+  transition: 0.15s;
+}
+
+/*SVG - Button*/
+.ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content:center;
+
+  & svg {
+    height: auto;
+    width: 15px;
+    margin-right: 0.5em;
+  }
+}
+.ico-big {
+  & svg{
+    width:50px;
+    margin-right: 2rem;
+  }
+}
+
+.ico-l svg {
+  width: 20px;
+}
+
+/*SVG - Button Back*/
+.ico-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    height: auto;
+    width: 15px;
+    margin-left: 0.5em;
+  }
+}

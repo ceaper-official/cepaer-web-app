@@ -46,15 +46,6 @@ width: 100%;
     color: var(--articleText);
     font-weight: 400;
   }
-  //入力・必須
-  .edit-required {
-    &:after {
-    content: '*';
-    color: var(--accent);
-    display: inline-block;
-    padding-left: .3em;
-  }
-}
   //テキストエリア
   & .edit-area {
     border-radius: 4px;
@@ -116,6 +107,7 @@ padding: 1rem 0;
 & .edit-toggle-text {
   width: 100%;
   color: var(--articleText);
+  margin: 0;
 }
   }
   //hr

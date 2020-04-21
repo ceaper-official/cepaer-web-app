@@ -6,7 +6,7 @@ import Logo from "../assets/logo.js";
 import BadgeNew from "../assets/icons/ui/badge-new.js";
 
 const Footer = () => (<div id="footer">
-  <div className="bg-grey">
+  <div className="bg-snow">
     <div className="section">
       <div className="footer-container " id="footer-contents">
         <Link href="/">
@@ -30,7 +30,6 @@ const Footer = () => (<div id="footer">
               < a className="hover-line">
                 プレス< /a>
               </Link>
-              <a className="hover-line">投資に関する情報</a>
             </div>
             <div className="footer-terms-contents-inner">
               <h6>サポート</h6>

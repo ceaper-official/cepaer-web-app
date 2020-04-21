@@ -79,11 +79,14 @@ h6{
 }
 
 /*タイトル・装飾*/
-.section-title:before {
-  content: " ";
-border-left: 3px solid var(--accent);
-padding-right: 1rem;
+.section-title {
+  &:before {
+    content: " ";
+  border-left: 3px solid var(--black);
+  padding-right: 1rem;
 }
+}
+
 
 .headings {
   font-weight: 500;

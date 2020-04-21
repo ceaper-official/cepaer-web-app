@@ -6,7 +6,7 @@
 
 //フォーム・セレクト
 .form-select {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 //評価・セレクト
 .select-rating-wrapper {
@@ -17,11 +17,21 @@
     svg circle.ratebg{
       fill: var(--horizontalRule);
     }
+    .select-label{
+      color: var(--horizontalRule);
+    }
   }
+  //アイコン
   & svg {
     width: auto;
     height: 40px;
     margin: 0;
+  }
+  //ラベル
+  .select-label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--black);
   }
   @media screen and (max-width: $tablet){
     & .select-button {
@@ -67,8 +77,20 @@ input {
   &:focus {
     border-color: var(--black);
   }
+  &::-webkit-search-cancel-button {
+   -webkit-appearance: none;
+}
 }
 
+//入力・必須
+.required {
+  &:after {
+  content: '*';
+  color: var(--accent);
+  display: inline-block;
+  padding-left: .3em;
+}
+}
 
 //メッセージ・成功
 .success{
@@ -81,6 +103,6 @@ width: 1rem;
 height: 100%;
    top: 0;
    left: 0;
-    background: var(--green80);
+    background: var(--green);
   }
 }
