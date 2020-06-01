@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1772,7 +1772,7 @@ function NavPolicies() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 9
     }
   }, __jsx("a", {
@@ -1780,7 +1780,7 @@ function NavPolicies() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 11
     }
   }, "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -3865,7 +3865,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 /***/ }),
 
-/***/ 3:
+/***/ 10:
 /*!********************************!*\
   !*** multi ./pages/privacy.js ***!
   \********************************/

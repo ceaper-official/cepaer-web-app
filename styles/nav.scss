@@ -1,6 +1,8 @@
 //デスクトップ・サイドナビ
 .side-nav-desktop {
     line-height: 1;
+    position: sticky;
+    top:4rem;
     & .side-nav-desktop-inner a{
       display: block;
       text-align: left;

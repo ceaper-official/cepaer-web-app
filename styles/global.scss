@@ -132,6 +132,12 @@ body {
   font-kerning: normal;
 }
 
+
+html{
+  scroll-padding-top: 20px;
+  scroll-behavior: smooth;
+}
+
 a,
 button {
   text-decoration: none;

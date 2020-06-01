@@ -5,7 +5,7 @@ import  ArrowR from "../assets/icons/ui/arrow-r.js";
 import  NavPolicies from "../layouts/nav/nav-policies.js";
 
 export default () => (
-    <BaseLayout>
+    <BaseLayout className="terms">
       <div id="page" className="side-nav-page support">
      <div className='contents'>
 

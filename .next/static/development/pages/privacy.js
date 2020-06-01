@@ -1699,7 +1699,7 @@ function NavPolicies() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 12,
       columnNumber: 9
     }
   }, __jsx("a", {
@@ -1707,7 +1707,7 @@ function NavPolicies() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 11
     }
   }, "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -6401,7 +6401,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 /***/ }),
 
-/***/ 1:
+/***/ 9:
 /*!**********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprivacy&absolutePagePath=%2FUsers%2Fkerry%2Fceaper%2Fpages%2Fprivacy.js ***!
   \**********************************************************************************************************************/
@@ -6424,5 +6424,5 @@ module.exports = dll_e523b008480827a2b85d;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[9,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=privacy.js.map

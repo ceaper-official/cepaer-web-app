@@ -8,10 +8,10 @@ export default function NavPolicies() {
     <div>
     <div className='side-nav-desktop'>
       <div className="side-nav-desktop-inner">
+
         <Link href="/privacy">
           <a className="xs-text grey">プライバシーポリシー</a>
         </Link>
-
         <Link href="/terms">
           <a className="xs-text grey">利用規約</a>
         </Link>
