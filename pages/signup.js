@@ -8,6 +8,43 @@ import Link from 'next/link';
 
 
 class SignUp extends React.Component {
+    //Email作成
+    constructor(props){
+    // Stateの定義
+    super(props)
+    this.state = {
+      email: '',
+      password: '', 
+        }
+    }
+  handleSignUp = (e) => {
+    e.preventDefault()
+    // stateからemailとpasswordを取得する
+    const { email, password } = this.state;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(user => {
+    // 存在確認済のメールアドレスかどうか(true or false)
+    var verified = firebase.auth().currentUser.emailVerified;
+    console.log(verified);
+    // 未確認のメールアドレスの場合、メールを送信する
+    if (!verified) {
+    // メール送信処理
+    firebase.auth().currentUser.sendEmailVerification();
+
+    var email = firebase.auth().currentUser.email;
+    console.log(email);
+    }
+          alert('確認メールを送信しました。メールから承認をするとアカウントが有効になります。');
+        console.log(user);
+        this.setState({ email: null, password: null })
+      })
+      .catch(error => {
+          alert('すでにこのメールアドレスは登録されています。');
+        console.log('firebase error', error);
+      });
+  }
+     //end Email
   state = { Component: null }
   selectSignUp = () => this.setState({Component: SignUpOK})
   render() {
@@ -24,13 +61,13 @@ class SignUp extends React.Component {
       <span className="input-prefix">
       <Mail />
       </span>
-      <input className="input-inner" placeholder="Eメール"></input>
+      <input className="input-inner" placeholder="Eメール" onChange={e => this.setState({ email: e.target.value })}></input>
   </div>
   <div className="action-button-wrapper input-wrapper">
   <span className="input-prefix">
   <Password />
   </span>
-  <input className="input-inner" placeholder="パスワード" type="password"></input></div>
+  <input className="input-inner" placeholder="パスワード" type="password" onChange={e => this.setState({ password: e.target.value })}></input></div>
       <div className="action-button-wrapper">
       <button className="button-black button"onClick={this.selectSignUp}>アカウント作成</button>
               </div>
