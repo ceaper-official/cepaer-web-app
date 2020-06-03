@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useCallback } from "react";
 import GSBaseLayout from "../layouts/base-get-started.js";
 import Link from "next/link";
 import Upload from "../assets/icons/ui/upload.js";
@@ -114,22 +114,65 @@ function Step2(props) {
   if (props.currentStep !== 2) {
     return null;
   }
+
+  const [src, setSrc] = useState("");
+  const inputRef = useRef(null);
+
+  const onClick = useCallback(() => {
+    if (inputRef.current) {
+      inputRef.current.click();
+    }
+  }, [inputRef]);
+
+  const onChange = useCallback((event) => {
+    if (event.target.files === null) {
+      return;
+    }
+    const file = event.target.files.item(0);
+    if (file === null) {
+      return;
+    }
+
+    try {
+      // TODO: Firebaseのアップロード追加
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        setSrc(reader.result);
+      };
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
   return (
     <div>
       <h1 className="title">アイコンの設定</h1>
       <p>
         お気に入りのユニークなアイコンを設定しましょう！設定しない場合、デフォルトのアイコンが表示されます。
       </p>
-      {/*アップロードされたら、.gs-uploadの中に、画像表示*/}
+      <input
+        ref={inputRef}
+        onChange={onChange}
+        style={{ display: "none" }}
+        type="file"
+      />
+      {/* アップロードされたら、.gs-uploadの中に、画像表示 */}
       <div className="gs-upload-wrapper" style={{ justifyContent: "center" }}>
-        <div className="gs-upload">
-          <div className="gs-upload-icon-wrapper">
-            <span className="gs-upload-icon">
-              <Add />
-            </span>
-          </div>
+        <div className={`gs-upload ${src && "gs-uploaded"}`}>
+          {src ? (
+            <img className="gs-uploaded-image" src={src} alt="profile" />
+          ) : (
+            <div className="gs-upload-icon-wrapper" onClick={onClick}>
+              <span className="gs-upload-icon">
+                <Add />
+              </span>
+            </div>
+          )}
         </div>
-        <button className="button button-black-ol">画像を選択</button>
+        <button className="button button-black-ol" onClick={onClick}>
+          画像を選択
+        </button>
       </div>
 
       <button

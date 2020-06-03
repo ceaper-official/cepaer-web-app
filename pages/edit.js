@@ -1,3 +1,4 @@
+import React from "react";
 import BaseLayout from "../layouts/base.js";
 import Link from "next/link";
 import Add from "../assets/icons/ui/add.js";
@@ -16,7 +17,7 @@ function User() {
   return <img src="images/default/user.jpg" alt="user image" />;
 }
 
-/*入力された文・値は保存*/
+/* 入力された文・値は保存 */
 export default () => (
   <BaseLayout>
     <div id="page" className="side-nav-page">
@@ -27,7 +28,7 @@ export default () => (
             <NavEditMobile />
 
             <div className="edit-inner">
-              {/*項目・プロフィール*/}
+              {/* 項目・プロフィール */}
               <div className="edit-section" id="profile">
                 <div className="user-container">
                   <h3 className="edit-section-title section-title edit-item">
@@ -68,7 +69,7 @@ export default () => (
                 </div>
               </div>
 
-              {/*項目・アカウント設定*/}
+              {/* 項目・アカウント設定 */}
               <div className="edit-section" id="settings">
                 <h3 className="edit-section-title section-title edit-item">
                   アカウント設定
@@ -96,7 +97,7 @@ export default () => (
                 </div>
               </div>
 
-              {/*項目・パスワード*/}
+              {/* 項目・パスワード */}
               <div className="edit-section" id="password">
                 <h3 className="edit-section-title section-title edit-item">
                   パスワード
@@ -120,7 +121,7 @@ export default () => (
                 </div>
               </div>
 
-              {/*項目・ソーシャルメディア*/}
+              {/* 項目・ソーシャルメディア */}
               <div className="edit-section" id="social-settings">
                 <h3 className="edit-section-title section-title edit-item">
                   ソーシャルメディア
@@ -163,7 +164,7 @@ export default () => (
                 </div>
               </div>
 
-              {/*項目・外部サービスの連携*/}
+              {/* 項目・外部サービスの連携 */}
               <div className="edit-section" id="connections">
                 <h3 className="edit-section-title section-title edit-item">
                   外部サービスのログイン連携
@@ -189,7 +190,7 @@ export default () => (
                 </div>
               </div>
 
-              {/*項目・お知らせ*/}
+              {/* 項目・お知らせ */}
               <div className="edit-section" id="notifications">
                 <h3 className="edit-section-title section-title edit-item">
                   お知らせ
@@ -271,7 +272,7 @@ export default () => (
                 </div>
               </div>
 
-              {/*項目・保存する*/}
+              {/* 項目・保存する */}
               <div
                 className="edit-section edit-item edit-save-button"
                 id="save"
