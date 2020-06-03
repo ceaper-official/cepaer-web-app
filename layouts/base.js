@@ -1,5 +1,5 @@
-import Header from '../layouts/header.js'
-import Footer from '../layouts/footer.js'
+import Header from "../layouts/header.js";
+import Footer from "../layouts/footer.js";
 
 const BaseLayout = (props) => (
   <div>
@@ -7,6 +7,6 @@ const BaseLayout = (props) => (
     {props.children}
     <Footer />
   </div>
-)
+);
 
-export default BaseLayout
+export default BaseLayout;

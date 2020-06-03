@@ -1,12 +1,19 @@
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import Down from "../assets/icons/ui/down.js";
 
 export default function NavEditMobile() {
   return (
     <div className="side-nav-mobile">
-      <input id="side-nav-check" className="side-nav-label-check" type="checkbox"/>
-      <label className="side-nav-label ico xs-text" for="side-nav-check">プロフィール編集<Down/></label>
+      <input
+        id="side-nav-check"
+        className="side-nav-label-check"
+        type="checkbox"
+      />
+      <label className="side-nav-label ico xs-text" for="side-nav-check">
+        プロフィール編集
+        <Down />
+      </label>
       <div className="side-nav-mobile-inner">
         <Link href="#profile">
           <a className="xs-text">プロフィール</a>

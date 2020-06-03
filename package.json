@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint ./assets/*.js ./lib/*.js ./src ./pages ./layouts/*.js ./layouts/faq/**/*.js ./layouts/nav/**/*.js",
-    "lint:fix": "eslint --fix ./assets/*.js ./lib/*.js ./src ./pages ./layouts/*.js ./layouts/faq/**/*.js ./layouts/nav/**/*.js",
-    "prettier": "prettier --write ./assets/*.js ./lib/*.js ./src ./pages ./layouts/*.js ./layouts/faq/**/*.js ./layouts/nav/**/*.js"
+    "lint:fix": "prettier --write ./assets/*.js ./lib/*.js ./src ./pages ./layouts/*.js ./layouts/faq/**/*.js ./layouts/nav/**/*.js"
   },
   "repository": {
     "type": "git",
