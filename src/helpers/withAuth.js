@@ -2,19 +2,19 @@ import React from "react";
 import router from "next/router";
 import { auth } from "../firebase";
 
-const withAuth = Component => {
+const withAuth = (Component) => {
   return class extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        status: "LOADING"
+        status: "LOADING",
       };
     }
     componentDidMount() {
-      auth.onAuthStateChanged(authUser => {
+      auth.onAuthStateChanged((authUser) => {
         if (authUser) {
           this.setState({
-            status: "SIGNED_IN"
+            status: "SIGNED_IN",
           });
         } else {
           router.push("/");

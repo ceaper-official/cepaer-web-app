@@ -1,5 +1,5 @@
-import HomeHeader from '../layouts/header-home.js'
-import Footer from '../layouts/footer.js'
+import HomeHeader from "../layouts/header-home.js";
+import Footer from "../layouts/footer.js";
 
 const HomeBaseLayout = (props) => (
   <div>
@@ -7,6 +7,6 @@ const HomeBaseLayout = (props) => (
     {props.children}
     <Footer />
   </div>
-)
+);
 
-export default HomeBaseLayout
+export default HomeBaseLayout;
