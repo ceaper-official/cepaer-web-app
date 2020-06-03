@@ -18,10 +18,5 @@ module.exports = {
   plugins: ["react", "prettier"],
   rules: {
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": "off",
-    "react/jsx-props-no-spreading": "warn",
-    "react/prop-types": "warn",
-    "jsx-a11y/anchor-is-valid": "warn",
-    "jsx-a11y/label-has-associated-control": "warn",
   },
 };
