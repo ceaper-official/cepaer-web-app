@@ -9,6 +9,9 @@ import Circle from "../assets/icons/ui/gs-circle.js";
 import StepWizard from "react-step-wizard";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
+import { getCurrentUser, storage } from "../lib/firebase";
+import generateRandomId from "../src/helpers/generateRandomId";
+import withAuth from "../src/helpers/withAuth";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />;
@@ -80,7 +83,7 @@ class GS extends React.Component {
     );
   }
 }
-export default GS;
+export default withAuth(GS);
 
 function Step1(props) {
   if (props.currentStep !== 1) {
@@ -124,7 +127,7 @@ function Step2(props) {
     }
   }, [inputRef]);
 
-  const onChange = useCallback((event) => {
+  const onChange = useCallback(async (event) => {
     if (event.target.files === null) {
       return;
     }
@@ -134,12 +137,17 @@ function Step2(props) {
     }
 
     try {
-      // TODO: Firebaseのアップロード追加
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = () => {
         setSrc(reader.result);
       };
+
+      // Firebase Storageへアップロード
+      const user = getCurrentUser();
+      const ref = storage.ref();
+      const fileName = `${generateRandomId()}_original.jpg`;
+      await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
     } catch (error) {
       console.error(error);
     }
