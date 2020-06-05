@@ -9,7 +9,7 @@ import Circle from "../assets/icons/ui/gs-circle.js";
 import StepWizard from "react-step-wizard";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
-import { getCurrentUser, storage } from "../lib/firebase";
+import { getCurrentUser, storage, db } from "../lib/firebase";
 import generateRandomId from "../src/helpers/generateRandomId";
 import withAuth from "../src/helpers/withAuth";
 
@@ -118,7 +118,7 @@ function Step2(props) {
     return null;
   }
 
-  const [src, setSrc] = useState("");
+  const [profileImageUrl, setProfileImageUrl] = useState("");
   const inputRef = useRef(null);
 
   const onClick = useCallback(() => {
@@ -127,7 +127,7 @@ function Step2(props) {
     }
   }, [inputRef]);
 
-  const onChange = useCallback(async (event) => {
+  const onChangeImage = useCallback(async (event) => {
     if (event.target.files === null) {
       return;
     }
@@ -140,14 +140,23 @@ function Step2(props) {
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = () => {
-        setSrc(reader.result);
+        setProfileImageUrl(reader.result);
       };
 
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
       const fileName = `${generateRandomId()}_original.jpg`;
-      await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
+      const snapshot = await ref
+        .child(`images/profile/${user.uid}/${fileName}`)
+        .put(file);
+
+      // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
+      // const savedImageUrl = await snapshot.ref.getDownloadURL();
+      // await db.collection("users").doc(user.id).update({
+      //   image: savedImageUrl,
+      // });
+      console.log(savedImageUrl);
     } catch (error) {
       console.error(error);
     }
@@ -161,15 +170,19 @@ function Step2(props) {
       </p>
       <input
         ref={inputRef}
-        onChange={onChange}
+        onChange={onChangeImage}
         style={{ display: "none" }}
         type="file"
       />
       {/* アップロードされたら、.gs-uploadの中に、画像表示 */}
       <div className="gs-upload-wrapper" style={{ justifyContent: "center" }}>
-        <div className={`gs-upload ${src && "gs-uploaded"}`}>
-          {src ? (
-            <img className="gs-uploaded-image" src={src} alt="profile" />
+        <div className={`gs-upload ${profileImageUrl && "gs-uploaded"}`}>
+          {profileImageUrl ? (
+            <img
+              className="gs-uploaded-image"
+              src={profileImageUrl}
+              alt="profile"
+            />
           ) : (
             <div className="gs-upload-icon-wrapper" onClick={onClick}>
               <span className="gs-upload-icon">
