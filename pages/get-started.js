@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useCallback } from "react";
 import GSBaseLayout from "../layouts/base-get-started.js";
 import Link from "next/link";
 import Upload from "../assets/icons/ui/upload.js";
@@ -9,6 +9,9 @@ import Circle from "../assets/icons/ui/gs-circle.js";
 import StepWizard from "react-step-wizard";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
+import { getCurrentUser, storage, db } from "../lib/firebase";
+import generateRandomId from "../src/helpers/generateRandomId";
+import withAuth from "../src/helpers/withAuth";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />;
@@ -80,7 +83,7 @@ class GS extends React.Component {
     );
   }
 }
-export default GS;
+export default withAuth(GS);
 
 function Step1(props) {
   if (props.currentStep !== 1) {
@@ -114,22 +117,83 @@ function Step2(props) {
   if (props.currentStep !== 2) {
     return null;
   }
+
+  const [profileImageUrl, setProfileImageUrl] = useState("");
+  const inputRef = useRef(null);
+
+  const onClick = useCallback(() => {
+    if (inputRef.current) {
+      inputRef.current.click();
+    }
+  }, [inputRef]);
+
+  const onChangeImage = useCallback(async (event) => {
+    if (event.target.files === null) {
+      return;
+    }
+    const file = event.target.files.item(0);
+    if (file === null) {
+      return;
+    }
+
+    try {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        setProfileImageUrl(reader.result);
+      };
+
+      // Firebase Storageへアップロード
+      const user = getCurrentUser();
+      const ref = storage.ref();
+      const fileName = `${generateRandomId()}_original.jpg`;
+      const snapshot = await ref
+        .child(`images/profile/${user.uid}/${fileName}`)
+        .put(file);
+
+      // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
+      // const savedImageUrl = await snapshot.ref.getDownloadURL();
+      // await db.collection("users").doc(user.id).update({
+      //   image: savedImageUrl,
+      // });
+      console.log(savedImageUrl);
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
   return (
     <div>
       <h1 className="title">アイコンの設定</h1>
       <p>
         お気に入りのユニークなアイコンを設定しましょう！設定しない場合、デフォルトのアイコンが表示されます。
       </p>
-      {/*アップロードされたら、.gs-uploadの中に、画像表示*/}
+      <input
+        ref={inputRef}
+        onChange={onChangeImage}
+        style={{ display: "none" }}
+        type="file"
+      />
+      {/* アップロードされたら、.gs-uploadの中に、画像表示 */}
       <div className="gs-upload-wrapper" style={{ justifyContent: "center" }}>
-        <div className="gs-upload">
-          <div className="gs-upload-icon-wrapper">
-            <span className="gs-upload-icon">
-              <Add />
-            </span>
-          </div>
+        <div className={`gs-upload ${profileImageUrl && "gs-uploaded"}`}>
+          {profileImageUrl ? (
+            <img
+              className="gs-uploaded-image"
+              src={profileImageUrl}
+              alt="profile"
+            />
+          ) : (
+            <div className="gs-upload-icon-wrapper" onClick={onClick}>
+              <span className="gs-upload-icon">
+                <Add />
+              </span>
+            </div>
+          )}
         </div>
-        <button className="button button-black-ol">画像を選択</button>
+        <button className="button button-black-ol" onClick={onClick}>
+          画像を選択
+        </button>
       </div>
 
       <button
