@@ -5,6 +5,7 @@ import Password from "../assets/icons/ui/password.js";
 import Google from "../assets/icons/social/google.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Link from "next/link";
+import { auth, firebase } from "../src/firebase";
 
 class SignUp extends React.Component {
   //Email作成
@@ -49,7 +50,6 @@ class SignUp extends React.Component {
   };
   //end Email
   state = { Component: null };
-  selectSignUp = () => this.setState({ Component: SignUpOK });
   render() {
     const { Component } = this.state;
     if (Component) return <Component />;
@@ -86,7 +86,7 @@ class SignUp extends React.Component {
             <div className="action-button-wrapper">
               <button
                 className="button-black button"
-                onClick={this.selectSignUp}
+                onClick={e => this.handleSignUp(e)}
               >
                 アカウント作成
               </button>
@@ -137,24 +137,4 @@ class SignUp extends React.Component {
 
 export default SignUp;
 
-function SignUpOK() {
-  return (
-    <div className="actions-row">
-      <div className="actions-row-bg"></div>
-      <div className="actions-wrapper">
-        <div className="actions-inner card" style={{ paddingTop: "6rem" }}>
-          <div className="actions-row-close">
-            <Cross />
-          </div>
 
-          <div id="vote-wrapper" className="card card-wrapper success">
-            <h1>ありがとうございます！</h1>
-            <p className="xs-text" style={{ margin: "0" }}>
-              先程、入力して頂いたメールアドレス宛に、アカウントの作成手順を記載したメールをお送りいたしました。届いたメールの内容に沿って、アカウントの作成手続きを進めてください。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
