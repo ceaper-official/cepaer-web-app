@@ -4,12 +4,11 @@ $phablet: 540px;
 $tablet: 735px;
 $desktop: 1070px;
 $desktop_medium: 1280px;
-$desktop_large: 1440px;
+$desktop_large: 1500px;
 
 body {
   //Typography
-  --headings: "Apercu", "Heisei Kaku Gothic", sans-serif;
-  --paragraph: "Ceaper Round" , sans-serif;
+  --text: "DINPro", "Heisei Kaku Gothic", sans-serif;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -39,8 +38,8 @@ body {
   --blue: #345bf4;
   --green: #2ed9a3;
   --orange: #f48434;
-  --yellow:#f4ee34;
-   --red: #f43434;
+  --yellow: #f4ee34;
+  --red: #f43434;
   //Tertiary - Gradations
   --blue80: #2948c1;
   --green80: #23a67d;
@@ -51,6 +50,8 @@ body {
   --articleText: #4f4b57;
   --background-color: #fff;
   --horizontalRule: rgba(8, 8, 11, 0.15);
+  --fade: 0.2s;
+  --rounded: 4px;
   //Other - Gradations
   --articleText80: rgba(79,75,87, .8);
   --accent60: rgba(255, 84, 69, .6);

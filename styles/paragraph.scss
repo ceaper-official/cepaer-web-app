@@ -1,29 +1,34 @@
 p {
   line-height: 1.756;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--articleText);
-  font-family: var(--paragraph);
+  font-family: var(--text);
   margin: 0 auto 2.5rem;
   width: 100%;
   white-space: normal;
+
   & .p-icon svg {
     height: 1.6rem;
     fill: var(--articleText);
   }
   @media screen and (max-width: 735px) {
-      margin-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
 }
-}
+
 .s-text {
   font-size: 1.5rem;
 }
+
 .xs-text {
   font-size: 1.3rem;
 }
+
 .xs-icon svg {
   width: 10px;
+
   & path {
-  fill: var(--articleText);
+    fill: var(--articleText);
   }
 }
 

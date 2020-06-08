@@ -1,4 +1,5 @@
 //ヘッダー
+
 #gs-header {
   display: flex;
   justify-content: space-between;
@@ -19,20 +20,20 @@
     position: static;
   }
 }
-
 //ページ
-#gs-page {
-}
+#gs-page {}
+
 .gs-wrapper {
   height: calc(100vh - 65px - 70px);
   @media screen and (min-width: $desktop) {
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100vh;
-    border-radius: 12px 0px 0px 0px;
+    border-radius: 12px 0 0 0;
     justify-content: center;
     align-items: center;
   }
+
   .gs-inner {
     height: calc(100vh - 65px - 70px);
     align-items: center;
@@ -47,9 +48,11 @@
     @media screen and (max-width: $desktop) {
       display: none;
     }
+
     h6 {
       color: var(--horizontalRule);
     }
+
     .gs-progress {
       padding: 1rem 0;
       position: relative;
@@ -62,9 +65,11 @@
         padding-right: 1.6rem;
         position: relative;
         z-index: 10;
+
         & svg {
           margin: 0;
           width: 20px;
+
           & circle {
             stroke: var(--horizontalRule);
           }
@@ -90,6 +95,7 @@
   //フォーム
   .gs-inner-form {
     margin: auto;
+
     .gs-inner-form-inner {
       max-width: 500px;
     }
@@ -111,19 +117,22 @@
   }
 }
 //アップロード
+
 .gs-upload-wrapper {
   display: flex;
   align-items: center;
   margin: 3rem 0;
 }
+
 .gs-upload {
   position: relative;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 2px dotted var(--horizontalRule);
+  border: 2px dashed var(--horizontalRule);
   margin-right: 3rem;
   cursor: pointer;
+
   &:hover {
     border-color: var(--accent);
   }
@@ -134,20 +143,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .gs-upload-icon {
       position: relative;
       top: -2px;
     }
+
     svg {
       display: flex;
       height: auto;
       width: 40px;
     }
+
     path {
       fill: var(--horizontalRule);
     }
   }
 }
+
 .gs-uploaded {
   border: none;
 
@@ -160,6 +173,7 @@
   }
 }
 //デスクトップ・ナビ
+
 .gs-dots-nav {
   display: flex;
   height: 65px;
@@ -174,6 +188,7 @@
     & svg {
       margin: 0 1rem;
       width: 15px;
+
       & circle {
         stroke: var(--horizontalRule);
         fill: var(--horizontalRule);

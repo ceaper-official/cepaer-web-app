@@ -1,0 +1,169 @@
+.post-row {
+  display: grid;
+  @media (min-width: $phablet) {
+    grid-template-columns: 1fr 450px;
+
+    & .post-details {
+      padding-left: 0;
+    }
+  }
+  //main
+  & .post-main {
+    margin-bottom: 4rem;
+  }
+}
+
+.post-title {
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: $phablet) {
+  .post-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+@media (max-width: $phablet) {
+  #header {
+    display: block;
+  }
+
+  #header .logo-link {
+    display: none;
+  }
+}
+
+#post-nav {
+  border-top: 1px solid var(--horizontalRule);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#post-nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+//dropdown
+
+.drop-area-hero {
+  border: 2px dashed var(--horizontalRule);
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  @media (min-width: $phablet) {
+    position: sticky;
+    top: 5rem;
+    align-self: baseline;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+  }
+
+  & * {
+    transition: var(--fade);
+    color: var(--grey);
+    fill: var(--grey);
+  }
+
+  &:hover {
+    border-color: var(--accent);
+  }
+
+  & h3 {
+    max-width: 350px;
+    width: auto;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  .ico {
+    margin: 3rem;
+
+    & svg {
+      width: 6rem;
+      margin-bottom: 2rem;
+      @media (max-width: $phablet) {
+        width: 3rem;
+      }
+    }
+  }
+}
+//field
+
+.post-field {
+  & .post-content {
+    margin-bottom: 3rem;
+  }
+  //tag
+  & .post-tag-label {
+    margin: 0;
+    line-height: 1;
+  }
+
+  & .post-tag {
+    color: var(--accent);
+  }
+}
+
+.post-field-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+//ingredient
+
+.post-ingredients {
+  & .post-ingredient {
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr 10rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .post-content {
+    margin: 0;
+  }
+}
+//making
+
+.post-making {
+  counter-reset: number 0;
+  margin-top: 2rem;
+
+  & .post-making-item {
+    display: flex;
+
+    & textarea {
+      border: 0;
+      padding: 0 0 1rem;
+      border-radius: 0;
+      border-bottom: 1px solid var(--horizontalRule);
+      overflow: hidden;
+      height: 6rem;
+    }
+
+    &:before {
+      counter-increment: number 1;
+      content: counter(number);
+      margin-right: 0.3em;
+      margin-top: 0.2em;
+    }
+  }
+}
+
+a.making-button {
+  display: flex;
+}

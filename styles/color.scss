@@ -1,11 +1,14 @@
 .accent {
   color: var(--accent);
+
+  & * {
+    fill: var(--accent);
+  }
 }
 
 .grey {
   color: var(--grey);
 }
-
 
 .grey-paragraph {
   color: var(--articleText80);
@@ -14,6 +17,7 @@
 .black {
   color: var(--black);
 }
+
 .white {
   color: var(--white);
 }
@@ -21,42 +25,48 @@
 .d-paragraph {
   color: var(--d-articleText);
 }
-
 /*Background*/
-div.bg-accent {
+.bg-accent {
   background: var(--accent);
 }
-div.bg-accent80 {
+
+.bg-accent80 {
   background: var(--accent80);
 }
-div.bg-accent60 {
+
+.bg-accent60 {
   background: var(--accent60);
 }
-div.bg-white {
+
+.bg-white {
   background: var(--white);
 }
-div.bg-black {
+
+.bg-black {
   background: var(--black);
 }
 
-div.bg-snow {
+.bg-snow {
   background: var(--snow);
 }
-
-
 //
+
 div.bg-yellow {
   background: var(--yellow);
 }
+
 div.bg-blue {
   background: var(--blue);
 }
+
 div.bg-red {
   background: var(--red);
 }
+
 div.bg-red80 {
   background: var(--red80);
 }
+
 div.bg-red60 {
   background: var(--red60);
 }

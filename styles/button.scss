@@ -3,7 +3,7 @@
   color: var(--accent);
   border: 1px solid var(--accent);
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   transition: 0.15s;
@@ -28,72 +28,75 @@
   }
 }
 //サポート
+
 .button-support {
+  color: var(--white);
+  border: 1px solid var(--support);
+  background: var(--support);
+
+  & svg {
+    & path {
+      fill: var(--white);
+    }
+  }
+
+  &:hover {
+    border-color: var(--support120);
+    background: var(--support120);
+  }
+}
+//Support - ol
+
+.button-support-ol {
+  color: var(--support);
+  border: 1px solid var(--support);
+
+  &:hover {
     color: var(--white);
-    border: 1px solid var(--support);
     background: var(--support);
 
     & svg {
-      & path {
+      path {
         fill: var(--white);
       }
     }
+  }
+}
+//Snow
 
-    &:hover {
-      border-color: var(--support120);
-      background: var(--support120);
+.button-snow {
+  color: var(--black);
+  border: 1px solid var(--snow);
+  background: var(--snow);
+
+  &:hover {
+    color: var(--black);
+    background: var(--snow80);
+  }
+}
+// Snow ol
+
+.button-snow-ol {
+  color: var(--black);
+  border: 1px solid var(--snow);
+
+  & svg {
+    path {
+      fill: var(--black);
     }
   }
-  //Support - ol
-  .button-support-ol {
-    color: var(--support);
-    border: 1px solid var(--support);
 
-    &:hover {
-      color: var(--white);
-      background: var(--support);
+  &:hover {
+    color: var(--white);
+    background: var(--green60);
 
-      & svg {
-        path {
-          fill: var(--white);
-        }
+    & svg {
+      path {
+        fill: var(--white);
       }
     }
   }
-
-  //Snow
-  .button-snow {
-    color: var(--black);
-    border: 1px solid var(--snow);
-    background: var(--snow);
-    &:hover {
-      color: var(--black);
-      background: var(--snow80);
-    }
-  }
-
-
-  // Snow ol
-  .button-snow-ol {
-    color: var(--black);
-    border: 1px solid var(--snow);
-      & svg {
-        path {
-          fill: var(--black);
-        }
-      }
-
-    &:hover {
-      color: var(--white);
-      background: var(--green60);
-        & svg {
-          path {
-            fill: var(--white);
-          }
-        }
-    }
-  }
-
+}
 /*ブラック*/
 .button-black {
   color: var(--white);
@@ -112,6 +115,7 @@
   }
 }
 //ブラック・アウトライン
+
 .button-black-ol {
   color: var(--black);
   border: 1px solid var(--black);
@@ -128,6 +132,7 @@
   }
 }
 //グリーン
+
 .button-green {
   color: var(--white);
   border: 1px solid var(--green60);
@@ -144,28 +149,31 @@
     border-color: var(--green80);
   }
 }
-
 //グリーン・アウトライン
+
 .button-green-ol {
   color: var(--green60);
   border: 1px solid var(--green60);
-    & svg {
-      path {
-        fill: var(--green60);
-      }
+
+  & svg {
+    path {
+      fill: var(--green60);
     }
+  }
 
   &:hover {
     color: var(--white);
     background: var(--green60);
-      & svg {
-        path {
-          fill: var(--white);
-        }
+
+    & svg {
+      path {
+        fill: var(--white);
       }
+    }
   }
 }
 //ホワイト
+
 .button-white {
   color: var(--black);
   border: 1px solid var(--white);
@@ -188,6 +196,7 @@
   }
 }
 //レッド（ネガティブ）
+
 .button-red {
   color: var(--white);
   border: 1px solid var(--red80);
@@ -205,6 +214,7 @@
   }
 }
 //キャンセル
+
 .button-cancel {
   color: var(--articleText);
   border: 1px solid var(--horizontalRule);
@@ -230,13 +240,13 @@
 .button-text {
   color: var(--black);
   border-radius: 4px;
-  font-weight: 500;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    line-height: 1;
-    transition: 0.15s;
-    display: inline-block;
-    height: auto;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: 0.15s;
+  display: inline-block;
+  height: auto;
 
   &:hover {
     text-decoration: underline;
@@ -343,7 +353,7 @@
   padding: 1.5rem 2rem;
   border: 1px solid var(--horizontalRule);
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 600;
 
   &:hover {}
 
@@ -391,10 +401,11 @@
   width: 100%;
   color: var(--articleText);
   border: 1px solid var(--horizontalRule);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   justify-content: flex-start;
+
   &:hover {
     border-color: var(--black);
     background: var(--snow);
@@ -405,6 +416,7 @@
   margin-bottom: 1.5rem;
 }
 //アクティブ
+
 button.button-active {
   border: 1px solid var(--horizontalRule);
   border-radius: 50%;
@@ -419,6 +431,7 @@ button.button-active {
   margin: 0 0.8rem;
 }
 //width100
+
 .button-w100 {
   display: block;
   width: 100%;

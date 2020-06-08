@@ -1,124 +1,111 @@
-ul{
-    list-style: none;
-    counter-reset: list;
-    color: var(--articleText);
-    font-size: 1.6rem;
-      @media screen and (max-width: $phone) {
-        font-size: 1.6rem;
-      }
+ul {
+  list-style: none;
+  counter-reset: list;
+  color: var(--articleText);
+  font-size: 1.5rem;
 }
 
 li::before {
   font-family: var(--headings);
-    content: "•";
-    color: var(--black);
-    font-weight: 700;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em
+  content: "•";
+  color: var(--black);
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-li{
-    position: relative;
-    list-style: none;
-    margin: 0 auto 1.5rem;
-margin-left: 2rem;
-line-height: 1.756;
-@media screen and (max-width: 735px) {
+li {
+  position: relative;
+  list-style: none;
+  margin: 0 auto 1.5rem 2rem;
+  line-height: 1.756;
+  @media screen and (max-width: 735px) {
     margin-bottom: 2em;
   }
 }
-
 /*TABLET*/
-@media screen and (max-width: 735px){
-    ul li p{
-        padding: 0;
-    }
+@media screen and (max-width: 735px) {
+  ul li p {
+    padding: 0;
+  }
 }
 
-
-ul li > *{
-    display: inline;
+ul li > * {
+  display: inline;
 }
 
-
-ol{
-    list-style: none;
-    counter-reset: list;
-    color: var(--articleText);
-    position: relative;
-    padding: 15px 0 30px 30px;
-    margin: 0 auto;
-    font-size: 1.6rem;
-    width: 100%;
-    max-width: 680px;
+ol {
+  list-style: none;
+  counter-reset: list;
+  color: var(--articleText);
+  position: relative;
+  padding: 15px 0 30px 30px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 680px;
 }
-
 /*DESKTOP*/
-@media screen and (max-width: 1070px){
-    ol{
-        max-width: 507px;
-    }
+@media screen and (max-width: 1070px) {
+  ol {
+    max-width: 507px;
+  }
 }
-
 /*TABLET*/
-@media screen and (max-width: 735px){
-    ol{
-        max-width: 486px;
-        padding-left: 0px;
-    }
+@media screen and (max-width: 735px) {
+  ol {
+    max-width: 486px;
+    padding-left: 0;
+  }
 }
-
 /*PHABLET*/
-@media screen and (max-width: 540px){
-    ol{
-        padding-left: 20px;
-    }
+@media screen and (max-width: 540px) {
+  ol {
+    padding-left: 20px;
+  }
 }
 
-ol li{
-    position: relative;
-    padding-bottom: 15px;
+ol li {
+  position: relative;
+  padding-bottom: 15px;
 }
-
 /*TABLET*/
-@media screen and (max-width: 735px){
-    ol li{
-        padding-left: 30px;
-        padding: 0;
-    }
-    ol li p{
-        padding-left: 30px;
-    }
-}
+@media screen and (max-width: 735px) {
+  ol li {
+    padding: 0;
+  }
 
+  ol li p {
+    padding-left: 30px;
+  }
+}
 /*PHABLET*/
-@media screen and (max-width: 540px){
-    ol li{
-        padding-left: 30px;
-    }
+@media screen and (max-width: 540px) {
+  ol li {
+    padding-left: 30px;
+  }
 }
 
-ol li > *{
-    display: inline;
+ol li > * {
+  display: inline;
 }
 
 ol li::before {
-    width: 3rem;
-    display: inline-block;
-    position: absolute;
-    color: var(--articleText);
-    counter-increment: list;
-    content: counter(list) ".";
-    font-weight: 600;
-    position: absolute;
-    left: -3rem;
-    top: -0.3rem;
-    font-size: 2rem;
+  width: 3rem;
+  display: inline-block;
+  position: absolute;
+  color: var(--articleText);
+  counter-increment: list;
+  content: counter(list) ".";
+  font-weight: 600;
+  position: absolute;
+  left: -3rem;
+  top: -0.3rem;
+  font-size: 2rem;
 }
-
-@media screen and (max-width: 735px){
-    ol li::before{
-        left: 0;
-    }
+@media screen and (max-width: 735px) {
+  ol li::before {
+    left: 0;
+  }
 }

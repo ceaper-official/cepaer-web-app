@@ -19,6 +19,7 @@
 @import "hero.scss";
 @import "home.scss";
 @import "horizontal-rule.scss";
+@import "post.scss";
 @import "image.scss";
 @import "layout.scss";
 @import "lists.scss";
@@ -35,60 +36,35 @@
 @import "section.scss";
 @import "paginator.scss";
 @import "user.scss";
-
 @font-face {
-  font-family: 'Ceaper Round';
-  src: url('/fonts/Ceaper-Light.woff2') format('woff2'),
-       url('/fons/Ceaper-Light.woff') format('woff');
-       font-weight: 300;
-}
-@font-face {
-  font-family: 'Ceaper Round';
-  src: url('/fonts/Ceaper-Regular.woff2') format('woff2'),
-       url('/fons/Ceaper-Regular.woff') format('woff');
-       font-weight: 400;
-}
-@font-face {
-  font-family: 'Ceaper Round';
-  src: url('/fonts/Ceaper-Medium.woff2') format('woff2'),
-       url('/fons/Ceaper-Medium.woff') format('woff');
-       font-weight: 500;
-}
-@font-face {
-  font-family: 'Ceaper Round';
-  src: url('/fonts/Ceaper-Regular.woff2') format('woff2'),
-       url('/fons/Ceaper-Regular.woff') format('woff');
-       font-weight: 400;
-}
-@font-face {
-  font-family: 'Ceaper Round';
-  src: url('/fonts/Ceaper-Medium.woff2') format('woff2'),
-       url('/fons/Ceaper-Medium.woff') format('woff');
-       font-weight: 500;
+  font-family: 'Heisei Kaku Gothic';
+  src: url("/fonts/Heisei-Kaku-Gothic-400.otf") format('otf');
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Heisei Kaku Gothic';
-  src: url('/fonts/Heisei-Kaku-Gothic-Medium.woff2') format('woff2'),
-       url('/fons/Heisei-Kaku-Gothic-Medium.woff') format('woff');
-       font-weight: 600;
+  src: url("/fonts/Heisei-Kaku-Gothic-600.otf") format('otf');
+  font-weight: 600;
 }
 @font-face {
   font-family: 'Heisei Kaku Gothic';
-  src: url('/fonts/Heisei-Kaku-Gothic-Bold.woff2') format('woff2'),
-       url('/fons/Heisei-Kaku-Gothic-Bold.woff') format('woff');
-       font-weight: 700;
+  src: url("/fonts/Heisei-Kaku-Gothic-700.otf") format('otf');
+  font-weight: 700;
 }
 @font-face {
-  font-family: 'Apercu';
-  src: url('/fonts/Apercu-Medium.woff2') format('woff2'),
-       url('/fons/Apercu-Medium.woff') format('woff');
-       font-weight: 600;
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-400.otf") format('otf');
+  font-weight: 400;
 }
 @font-face {
-  font-family: 'Apercu';
-  src: url('/fonts/Apercu-Bold.woff2') format('woff2'),
-       url('/fons/Apercu-Bold.woff') format('woff');
-       font-weight: 700;
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-600.otf") format('otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-700.otf") format('otf');
+  font-weight: 700;
 }
 
 :root {
@@ -123,8 +99,8 @@
 }
 
 body {
-  font-family:  var(--paragraph);
-  font-size: 1.6rem;
+  font-family: var(--text);
+  font-size: 1.5rem;
   margin: 0;
   font-weight: 400;
   height: 100%;
@@ -132,8 +108,7 @@ body {
   font-kerning: normal;
 }
 
-
-html{
+html {
   scroll-padding-top: 20px;
   scroll-behavior: smooth;
 }
@@ -158,21 +133,30 @@ video {
 }
 
 button,
+select {
+  border: none;
+}
+
+:focus {
+  outline: none;
+}
+
+button,
 input,
 select,
 textarea {
-  font-family:  var(--paragraph);
+  font-family: var(--paragraph);
   color: inherit;
   font-family: inherit;
   font-style: inherit;
   font-weight: inherit;
-  border: none;
   -webkit-appearance: none;
-    -moz-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   resize: none;
   background: none;
 }
+
 :focus {
   outline: none;
 }
@@ -262,12 +246,12 @@ img.Image__Zoom ~ div {
 ::placeholder {
   font-size: 1.4rem;
 }
+
 .icon-image {
   path {
     fill: var(--primary);
   }
 }
-
 @-webkit-keyframes image-load-in {
   0% {
     -webkit-filter: blur(8px);
