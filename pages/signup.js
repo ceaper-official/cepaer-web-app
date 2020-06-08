@@ -86,7 +86,7 @@ class SignUp extends React.Component {
             <div className="action-button-wrapper">
               <button
                 className="button-black button"
-                onClick={e => this.handleSignUp(e)}
+                onClick={(e) => this.handleSignUp(e)}
               >
                 アカウント作成
               </button>
@@ -136,5 +136,3 @@ class SignUp extends React.Component {
 }
 
 export default SignUp;
-
-

@@ -34,7 +34,7 @@ const Header = () => (
             </div>
             <div class="nav-controls">
               <Link href="/signin">
-                <a class="hover-accent">ログイン</a>
+                <a class="button-text">ログイン</a>
               </Link>
               <Link href="/signup">
                 <a

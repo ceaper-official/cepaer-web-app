@@ -5,6 +5,46 @@ $tablet: 735px;
 $desktop: 1070px;
 $desktop_medium: 1280px;
 $desktop_large: 1500px;
+@font-face {
+  font-family: 'Heisei Kaku Gothic';
+  src: url("/fonts/Heisei-Kaku-Gothic-400.otf") format('otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Heisei Kaku Gothic';
+  src: url("/fonts/Heisei-Kaku-Gothic-600.otf") format('otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Heisei Kaku Gothic';
+  src: url("/fonts/Heisei-Kaku-Gothic-700.otf") format('otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Heisei Kaku Gothic';
+  src: url("/fonts/Heisei-Kaku-Gothic-800.otf") format('otf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-400.otf") format('otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-600.otf") format('otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-700.otf") format('otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("/fonts/DINPro-800.otf") format('otf');
+  font-weight: 800;
+}
 
 body {
   //Typography

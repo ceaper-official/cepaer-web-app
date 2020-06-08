@@ -18,9 +18,6 @@ export default () => (
               <LogoDark />
             </a>
           </Link>
-          <div className="post-title">
-            <h6 className="white">レシピの投稿</h6>
-          </div>
         </div>
       </div>
     </header>

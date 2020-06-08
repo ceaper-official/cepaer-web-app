@@ -12,25 +12,11 @@
     margin-bottom: 4rem;
   }
 }
-
-.post-title {
-  margin: auto;
-  text-align: center;
-}
 @media (min-width: $phablet) {
   .post-title {
     position: absolute;
     left: 0;
     right: 0;
-  }
-}
-@media (max-width: $phablet) {
-  #header {
-    display: block;
-  }
-
-  #header .logo-link {
-    display: none;
   }
 }
 

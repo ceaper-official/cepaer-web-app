@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import HomeBaseLayout from "../layouts/base-home.js";
+import BaseLayout from "../layouts/base.js";
 
 class Home extends React.Component {
   render() {
     return (
-      <HomeBaseLayout>
+      <BaseLayout>
         <div id="page">
           <div id="hero" className="bg-grey">
             <div className="section">
@@ -37,7 +37,7 @@ class Home extends React.Component {
             <div className="section"></div>
           </div>
         </div>
-      </HomeBaseLayout>
+      </BaseLayout>
     );
   }
 }

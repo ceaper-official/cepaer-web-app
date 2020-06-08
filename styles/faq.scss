@@ -1,13 +1,15 @@
 //検索ボタン
+
 .faq-search {
   border-bottom: 1px solid var(--black);
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 1rem;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 1rem;
   }
+
   & .search-icon {
     @media screen and (min-width: $tablet) {
       padding-bottom: 1rem;
-}
+    }
 
     & svg {
       width: 20px;
@@ -34,8 +36,9 @@
     &::placeholder {
       font-size: 2rem;
       font-family: var(--headings);
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1;
+      padding: 1rem 0;
       color: var(--black);
     }
     @media screen and (min-width: $tablet) {
@@ -49,6 +52,7 @@
   }
 }
 //カテゴリ
+
 .faq-cat-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -61,11 +65,12 @@
   & .faq-cat-inner {
     border: 1px solid var(--horizontalRule);
     padding: 2rem;
-    display: flex;
-//タイトル
-h3 {
-  line-height: 50px;
-}
+    display: flex; //タイトル
+
+    h3 {
+      line-height: 50px;
+    }
+
     & .faq-cat-inner-l {
       padding-right: 2rem;
       //アイコン
@@ -85,6 +90,7 @@ h3 {
   }
 }
 //ページ
+
 .faq-wrapper {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -94,32 +100,33 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
-
-
 //アンケート
+
 #vote-wrapper {
   text-align: center;
   //ボタン
   .button-choice-wrapper {
     display: block;
     padding-top: 2rem;
+
     .button {
       margin: 0 1rem 1rem;
     }
   }
   //回答
-  textarea{
+  textarea {
     height: 100px;
     padding: 1.4rem;
-  &::placeholder{
-    font-size: 1.6rem;
-    color:var(--grey);
+
+    &::placeholder {
+      font-size: 1.6rem;
+      color: var(--grey);
+    }
   }
-}
-//送信
-.vote-submit{
-  text-align: right;
-}
+  //送信
+  .vote-submit {
+    text-align: right;
+  }
 }
 
 .answer-label {
@@ -130,42 +137,45 @@ h3 {
   padding-left: 4rem;
   line-height: 25px;
   margin: 2rem 0;
+
   &:before {
-      content: '';
-      position: absolute;
-      box-sizing: border-box;
-        width: 25px;
-        height: 25px;
-        left: 0;
-        top: 0;
-        border: 1px solid var(--horizontalRule);
-        border-radius: 4px;
-        z-index: 3;
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    border: 1px solid var(--horizontalRule);
+    border-radius: 4px;
+    z-index: 3;
   }
-  &:after{
-      content: '';
-      position: absolute;
-      box-sizing: border-box;
-        transform: rotate(45deg);
-        border-right: 3px solid  var(--black);
-        border-bottom: 3px solid  var(--black);
-        top: calc(50% - (((17px / 12) * 5) / 2));
-        display: block;
-        margin-top: calc(((17px / 12) * 5) * -1);
-        width: calc(((17px / 12) * 5));
-        height: 17px;
-        z-index: 1;
-        left: calc((25px / 2) - (((17px / 12) * 5) / 2));
+
+  &:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    border-right: 3px solid var(--black);
+    border-bottom: 3px solid var(--black);
+    top: calc(50% - (((17px / 12) * 5) / 2));
+    display: block;
+    margin-top: calc(((17px / 12) * 5) * -1);
+    width: calc(((17px / 12) * 5));
+    height: 17px;
+    z-index: 1;
+    left: calc((25px / 2) - (((17px / 12) * 5) / 2));
   }
-  &:hover{
-    &:before{
+
+  &:hover {
+    &:before {
       border-color: var(--black);
     }
   }
   //テキスト
-  span{
-font-family: var(--paragraph);
-color: var(--articleText);
+  span {
+    font-family: var(--paragraph);
+    color: var(--articleText);
   }
 }
 
