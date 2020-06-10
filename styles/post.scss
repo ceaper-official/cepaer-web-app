@@ -1,5 +1,7 @@
 .post-row {
   display: grid;
+  max-width: $desktop_large;
+  margin: auto;
   @media (min-width: $phablet) {
     grid-template-columns: 1fr 450px;
 

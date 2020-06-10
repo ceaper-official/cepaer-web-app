@@ -128,7 +128,7 @@ export default () => (
         </div>
 
         <fieldset className="post-field">
-          <a className="icon-button button-text ico accent making-button post-content">
+          <a className="icon-button button-text ico making-button post-content">
             <Add />
             材料を追加{" "}
           </a>
@@ -144,7 +144,7 @@ export default () => (
               <textarea placeholder="" className="post-content"></textarea>
             </div>
           </div>
-          <a className="icon-button button-text ico accent making-button post-content">
+          <a className="icon-button button-text ico making-button post-content">
             <Add />
             作り方を追加
           </a>
@@ -156,8 +156,8 @@ export default () => (
       <div className="section">
         <div className="nav-container">
           {/* 直前のページに戻る */}
-          <button className="button button-black-ol">キャンセル</button>
-          <button className="button button-accent">レシピを投稿する</button>
+          <button className="button-ol">キャンセル</button>
+          <button className="button">レシピを投稿する</button>
         </div>
       </div>
     </nav>

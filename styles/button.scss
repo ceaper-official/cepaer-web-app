@@ -1,201 +1,67 @@
 .button {
   padding: 1rem 2rem;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 4px;
+  color: var(--white);
+  background: var(--black);
+  border: 1px solid var(--black);
+  border-radius: var(--rounded);
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
-  transition: 0.15s;
+  transition: var(--fade);
   display: inline-block;
   height: auto;
-}
-/*アクセント*/
-.button-accent {
-  color: var(--white);
-  border: 1px solid var(--accent);
-  background: var(--accent);
 
-  & svg {
-    & path {
-      fill: var(--white);
-    }
+  & svg * {
+    fill: var(--white);
   }
 
   &:hover {
-    border-color: var(--accent80);
-    background: var(--accent80);
+    background: var(--accent);
+    border: 1px solid var(--accent);
   }
 }
-//サポート
 
-.button-support {
-  color: var(--white);
-  border: 1px solid var(--support);
-  background: var(--support);
-
-  & svg {
-    & path {
-      fill: var(--white);
-    }
-  }
-
-  &:hover {
-    border-color: var(--support120);
-    background: var(--support120);
-  }
-}
-//Support - ol
-
-.button-support-ol {
-  color: var(--support);
-  border: 1px solid var(--support);
-
-  &:hover {
-    color: var(--white);
-    background: var(--support);
-
-    & svg {
-      path {
-        fill: var(--white);
-      }
-    }
-  }
-}
-//Snow
-
-.button-snow {
+.button-ol {
+  padding: 1rem 2rem;
   color: var(--black);
-  border: 1px solid var(--snow);
-  background: var(--snow);
-
-  &:hover {
-    color: var(--black);
-    background: var(--snow80);
-  }
-}
-// Snow ol
-
-.button-snow-ol {
-  color: var(--black);
-  border: 1px solid var(--snow);
-
-  & svg {
-    path {
-      fill: var(--black);
-    }
-  }
-
-  &:hover {
-    color: var(--white);
-    background: var(--green60);
-
-    & svg {
-      path {
-        fill: var(--white);
-      }
-    }
-  }
-}
-/*ブラック*/
-.button-black {
-  color: var(--white);
+  border-radius: var(--rounded);
   border: 1px solid var(--black);
-  background: var(--black);
-
-  & svg {
-    path {
-      fill: var(--white);
-    }
-  }
-
-  &:hover {
-    border: 1px solid var(--black110);
-    background: var(--black110);
-  }
-}
-//ブラック・アウトライン
-
-.button-black-ol {
-  color: var(--black);
-  border: 1px solid var(--black);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: var(--fade);
+  display: inline-block;
+  height: auto;
 
   &:hover {
     color: var(--white);
     background: var(--black);
 
-    & svg {
-      path {
-        fill: var(--white);
-      }
-    }
-  }
-}
-//グリーン
-
-.button-green {
-  color: var(--white);
-  border: 1px solid var(--green60);
-  background: var(--green60);
-
-  & svg {
-    path {
+    & svg * {
       fill: var(--white);
     }
   }
-
-  &:hover {
-    background: var(--green80);
-    border-color: var(--green80);
-  }
 }
-//グリーン・アウトライン
 
-.button-green-ol {
-  color: var(--green60);
-  border: 1px solid var(--green60);
-
-  & svg {
-    path {
-      fill: var(--green60);
-    }
-  }
-
-  &:hover {
-    color: var(--white);
-    background: var(--green60);
-
-    & svg {
-      path {
-        fill: var(--white);
-      }
-    }
-  }
-}
-//ホワイト
-
-.button-white {
+.button-text {
+  padding: 1rem 2rem;
   color: var(--black);
-  border: 1px solid var(--white);
-  background: var(--white);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: var(--fade);
+  display: inline-block;
+  height: auto;
 
-  & svg {
-    path {
-      fill: var(--black);
-    }
+  & svg * {
+    fill: var(--black);
   }
 
   &:hover {
-    background: var(--grey);
-    border-color: var(--grey);
-    color: var(--black);
-
-    & svg {
-      fill: var(--black);
-    }
+    text-decoration: underline;
   }
 }
-//レッド（ネガティブ）
+//negative
 
 .button-red {
   color: var(--white);
@@ -235,22 +101,6 @@
 .action-button {
   font-size: 1.3rem;
   padding: 0.5rem 0.7rem;
-}
-/*テキスト*/
-.button-text {
-  color: var(--black);
-  border-radius: 4px;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  font-size: 1.4rem;
-  line-height: 1;
-  transition: 0.15s;
-  display: inline-block;
-  height: auto;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 //ソーシャル
 
@@ -352,7 +202,7 @@
 .input-inner {
   padding: 1.5rem 2rem;
   border: 1px solid var(--horizontalRule);
-  border-radius: 4px;
+  border-radius: var(--rounded);
   font-weight: 600;
 
   &:hover {}

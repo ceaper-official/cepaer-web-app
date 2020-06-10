@@ -38,7 +38,7 @@ const Header = () => (
               </Link>
               <Link href="/signup">
                 <a
-                  class="button icon-button button-black nav-account-button ico"
+                  class="button icon-button nav-account-button ico"
                   style={{ margin: 0 }}
                 >
                   <HumanSolid />

@@ -30,6 +30,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: $desktop_large;
+  margin: auto;
 
   & a,
   .search {
