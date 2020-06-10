@@ -48,6 +48,11 @@
     align-self: baseline;
   }
 
+  & .preview-image {
+    margin: 0;
+    object-fit: cover;
+  }
+
   &:before {
     content: "";
     display: block;
