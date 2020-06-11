@@ -1,33 +1,24 @@
-a{
+a {
   color: var(--articleText);
-      line-height: 1.756;
-      transition: .15s;
-      @media screen and (max-width: $phone) {
-          font-size: 1.6rem;
-        }
+  line-height: 1.756;
+  transition: 0.15s;
+  @media screen and (max-width: $phone) {
+    font-size: 1.6rem;
+  }
 }
-
 
 p > a {
   color: var(--accent);
   display: inline-block;
-  &:after {
-    content: "";
-    background: var(--accent);
-    height: .2rem;
-    transition: opacity .3s;
-    transform: translateY(-.01em);
-    width: 100%;
-    opacity: 0;
-    display: block;
+
+  &:hover {
+    text-decoration: underline;
   }
-  &:hover:after {
-opacity: 1;
- }
 }
 
 a.support {
   color: var(--support);
+
   &:after {
     background: var(--support);
   }
@@ -35,10 +26,10 @@ a.support {
 
 a.hover-accent:hover {
   color: var(--accent);
-   & svg path {
-    fill: var(--accent);
 
-   }
+  & svg path {
+    fill: var(--accent);
+  }
 }
 
 a.hover-black:hover {
@@ -55,37 +46,37 @@ a.hover-line:hover {
 }
 
 a.hover-opacity:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
-
-
 /*もっと見る*/
 .learn-more {
   white-space: nowrap;
   font-size: 1.5rem;
-align-items: center;
-padding-top: 2.5rem;
-justify-content: flex-end;
-  & svg{
+  align-items: center;
+  padding-top: 2.5rem;
+  justify-content: flex-end;
+
+  & svg {
     width: 15px;
     margin-left: 2rem;
   }
-  &:hover{
-  text-decoration: underline;
- }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 /*イベント無効*/
 .event-none {
   pointer-events: none;
 }
-
 //ボーター
+
 .a-border {
   &:after {
     content: "";
     background: var(--black);
-    height: .2rem;
-    transition: opacity .3s;
+    height: 0.2rem;
+    transition: opacity 0.3s;
     transform: translateY(-.01em);
     width: 100%;
     opacity: 0;
@@ -93,13 +84,12 @@ justify-content: flex-end;
   }
 }
 
-
 .a-border-dark {
   &:after {
     content: "";
     background: var(--d-articleText);
-    height: .2rem;
-    transition: opacity .3s;
+    height: 0.2rem;
+    transition: opacity 0.3s;
     transform: translateY(-.01em);
     width: 100%;
     opacity: 1;

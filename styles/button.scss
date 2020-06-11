@@ -107,13 +107,20 @@
 .social-button {
   position: relative;
   overflow: hidden;
-  display: flex;
+  padding: 1rem 2rem;
   color: var(--black);
-  background: var(--white);
-  border-color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: var(--rounded);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: var(--fade);
+  display: inline-flex;
+  height: auto;
 
   &:hover {
-    background: var(--snow);
+    background: var(--black);
+    color: var(--white);
   }
 
   & .button-prefix {

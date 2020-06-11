@@ -1,28 +1,32 @@
 //デスクトップ・サイドナビ
-.side-nav-desktop {
-    line-height: 1;
-    position: sticky;
-    top:4rem;
-    & .side-nav-desktop-inner a{
-      display: block;
-      text-align: left;
-      font-family: var(--headings);
-        padding: 1rem 1.5rem;
-        border-left: 2px solid var(--snow);
-        &:hover{
-          border-color: var(--black);
-        color: var(--black);
-        }
 
+.side-nav-desktop {
+  line-height: 1;
+  position: sticky;
+  top: 4rem;
+
+  & .side-nav-desktop-inner a {
+    display: block;
+    text-align: left;
+    font-family: var(--headings);
+    padding: 1rem 1.5rem;
+    border-left: 2px solid var(--snow);
+
+    &:hover {
+      border-color: var(--black);
+      color: var(--black);
     }
-@media screen and (max-width: $tablet) {
-  display: none;
-}}
+  }
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
 //モバイル・サイドナビ
+
 .side-nav-mobile {
   @media screen and (min-width: $tablet) {
     display: none;
-}
+  }
   @media screen and (max-width: $phablet) {
     position: fixed;
     left: 0;
@@ -32,37 +36,48 @@
     padding: 0 2rem;
     background: var(--white);
     border-bottom: 1px solid var(--horizontalRule);
+  }
 }
+
+.side-nav-label-check {
+  display: none;
 }
-.side-nav-label-check{
-	display: none;
+
+.side-nav-label {
+  padding: 1.2rem 0;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  font-family: var(--headings);
 }
-.side-nav-label{
-padding: 1.2rem 0;
-display: inline-flex;
-justify-content: space-between;
-width: 100%;
-font-family: var(--headings);
-}
-.side-nav-mobile-inner{
-	height: 0;
-	opacity: 0;
+
+.side-nav-mobile-inner {
+  height: 0;
+  opacity: 0;
   visibility: hidden;
+
   & a {
     display: block;
     padding: 1.2rem 0;
     font-family: var(--headings);
   }
 }
-.side-nav-label-check:checked + .side-nav-label + .side-nav-mobile-inner{
-	height: auto;
-	opacity: 1;
+
+.side-nav-label-check:checked + .side-nav-label + .side-nav-mobile-inner {
+  height: auto;
+  opacity: 1;
   visibility: visible;
 }
-
 //サイドナビ・ページ
-.side-nav-page{
+
+.side-nav-page {
   @media screen and (max-width: $phablet) {
-  padding-top: 43px;
+    padding-top: 43px;
+  }
 }
+
+.side-nav-desktop a.active {
+  color: var(--black);
+  border-color: var(--black);
 }

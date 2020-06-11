@@ -103,10 +103,7 @@ class Home extends React.Component {
             </div>
             <span className="actions-subtitle xs-text">または</span>
             <div className="action-button-wrapper">
-              <button
-                onClick={this.handleSignIn}
-                className="button google-button social-button"
-              >
+              <button onClick={this.handleSignIn} className="social-button">
                 <span className="button-prefix">
                   <Google />
                 </span>
@@ -114,7 +111,7 @@ class Home extends React.Component {
               </button>
             </div>
             <div className="action-button-wrapper">
-              <button className="button facebook-button social-button">
+              <button className="social-button">
                 <span className="button-prefix">
                   <Facebook />
                 </span>

@@ -1,6 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import Down from "../../assets/icons/ui/down.js";
+import $ from "jquery";
+
+$(function () {
+  $(".side-nav-desktop a").each(function () {
+    var $href = $(this).attr("href");
+    if (location.href.match($href)) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
+  });
+});
 
 export default function NavPolicies() {
   return (
@@ -16,6 +28,13 @@ export default function NavPolicies() {
         </div>
       </div>
       <NavPoliciesMobile />
+
+      <style jsx>{`
+        .side-nav-desktop a.active {
+          color: var(--black);
+          border-color: var(--black);
+        }
+      `}</style>
     </div>
   );
 }

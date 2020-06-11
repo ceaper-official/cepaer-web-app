@@ -106,7 +106,7 @@ class SignUp extends React.Component {
             </p>
             <span className="actions-subtitle xs-text">または</span>
             <div className="action-button-wrapper">
-              <button className="button google-button social-button">
+              <button className="social-button">
                 <span className="button-prefix">
                   <Google />
                 </span>
@@ -114,7 +114,7 @@ class SignUp extends React.Component {
               </button>
             </div>
             <div className="action-button-wrapper">
-              <button className="button facebook-button social-button">
+              <button className="social-button">
                 <span className="button-prefix">
                   <Facebook />
                 </span>
