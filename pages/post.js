@@ -1,28 +1,45 @@
-import  React 、 {  useState 、 useCallback  }  from  "react" ;
+import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import { useDropzone } from "react-dropzone";
 import LogoDark from "../assets/logo-dark.js";
 import Upload from "../assets/icons/ui/upload.js";
 import Add from "../assets/icons/ui/add.js";
+import { storage } from "../lib/firebase";
+import generateRandomId from "../src/helpers/generateRandomId";
+import withAuth from "../src/helpers/withAuth";
 
-export default function Post() {
-  const [previewFile, setPreviewFile] = useState(null);
-  const onDrop = useCallback((acceptedFiles) => {
-    const file = acceptedFiles[0];
+const Post = () => {
+  const [previewImageUrl, setPreviewImage] = useState(null);
+  const onDrop = useCallback(async (acceptedFiles) => {
+          const file = acceptedFiles[0];
     // 許可されていないファイル形式の場合
     if (!file) {
-      console.log("許可されていないファイル形式です");
+// eslint-disable-next-line no-alert
+      alert("許可されていないファイル形式です");
       return;
     }
-    setPreviewFile(URL.createObjectURL(file));
 
-    // TODO: 投稿IDをFirebaseから生成
+// previewに画像をセット
+    setPreviewImage(URL.createObjectURL(file));
 
-    // TODO: 画像アップロード
+try {
+      // TODO: 投稿IDをFirebaseから生成
+      const postId = "aaaa";
 
-    // TODO: アップロードした画像URLをダウンロード
+     // Firebase Storageへアップロード
+      const ref = storage.ref();
+      const fileName = `${generateRandomId()}_original.jpg`;
+      const snapshot = await ref
+        .child(`images/post/${postId}/${fileName}`)
+        .put(file);
+      // アップロードした画像URLをダウンロード
+      const imageUrl = await snapshot.ref.getDownloadURL();
 
-    // TODO: DB保存
+      // ダウンロードした画像をPreviewにセット
+      setPreviewImage(imageUrl);
+    } catch (error) {
+      console.error(error);
+    }
   }, []);
 
   const { getRootProps, getInputProps } = useDropzone({
@@ -48,15 +65,14 @@ export default function Post() {
             </Link>
           </div>
         </div>
-      </div>
       </header>
 
 <div className="contents post-row">
         <div className="section post-main">
           <div className="drop-area-hero" {...getRootProps()}>
             <input {...getInputProps()} />
-            {previewFile ? (
-              <img src={previewFile} />
+            {previewImageUrl ? (
+              <img className="preview-image" src={previewImageUrl} />
             ) : (
               <div className="ico">
                 <div>
@@ -200,4 +216,6 @@ export default function Post() {
       </nav>
     </div>
   );
-}
+};
+
+export default withAuth(Post);
