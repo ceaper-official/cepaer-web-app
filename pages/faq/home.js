@@ -1,11 +1,6 @@
 import BaseLayout from "../../layouts/base.js";
 import Link from "next/link";
 import Search from "../../assets/icons/ui/search.js";
-import Bug from "../../assets/icons/ui/bug.js";
-import BaseColor from "../../assets/icons/ui/base-color.js";
-import Account from "../../assets/icons/ui/account-color.js";
-import Support from "../../assets/icons/ui/support-color.js";
-import Security from "../../assets/icons/ui/security-color.js";
 import ArrowR from "../../assets/icons/ui/arrow-r.js";
 import Feedback from "../../layouts/feedback.js";
 import NavSearch from "../../layouts/faq/nav-search.js";
@@ -18,9 +13,6 @@ export default () => (
         <div className="section">
           <div className="faq-cat-wrapper">
             <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-l">
-                <BaseColor />
-              </div>
               <div className="faq-cat-inner-r">
                 <h3>Ceaperについて</h3>
                 <div className="faq-cat-link-wrapper">
@@ -47,9 +39,6 @@ export default () => (
             </div>
 
             <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-l">
-                <Account />
-              </div>
               <div className="faq-cat-inner-r">
                 <h3>アカウント</h3>
                 <div className="faq-cat-link-wrapper">
@@ -76,9 +65,6 @@ export default () => (
             </div>
 
             <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-l">
-                <Support />
-              </div>
               <div className="faq-cat-inner-r">
                 <h3>サポート</h3>
                 <div className="faq-cat-link-wrapper"></div>
@@ -86,9 +72,6 @@ export default () => (
             </div>
 
             <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-l">
-                <Security />
-              </div>
               <div className="faq-cat-inner-r">
                 <h3>規約・個人情報の扱い</h3>
                 <div className="faq-cat-link-wrapper"></div>
