@@ -209,8 +209,8 @@ const Post = () => {
         <div className="section">
           <div className="nav-container">
             {/* 直前のページに戻る */}
-            <button className="button button-black-ol">キャンセル</button>
-            <button className="button button-accent">レシピを投稿する</button>
+            <button className="button-ol">キャンセル</button>
+            <button className="button">レシピを投稿する</button>
           </div>
         </div>
       </nav>
