@@ -11,22 +11,22 @@ import withAuth from "../src/helpers/withAuth";
 const Post = () => {
   const [previewImageUrl, setPreviewImage] = useState(null);
   const onDrop = useCallback(async (acceptedFiles) => {
-          const file = acceptedFiles[0];
+    const file = acceptedFiles[0];
     // 許可されていないファイル形式の場合
     if (!file) {
-// eslint-disable-next-line no-alert
+      // eslint-disable-next-line no-alert
       alert("許可されていないファイル形式です");
       return;
     }
 
-// previewに画像をセット
+    // previewに画像をセット
     setPreviewImage(URL.createObjectURL(file));
 
-try {
+    try {
       // TODO: 投稿IDをFirebaseから生成
       const postId = "aaaa";
 
-     // Firebase Storageへアップロード
+      // Firebase Storageへアップロード
       const ref = storage.ref();
       const fileName = `${generateRandomId()}_original.jpg`;
       const snapshot = await ref
@@ -67,7 +67,7 @@ try {
         </div>
       </header>
 
-<div className="contents post-row">
+      <div className="contents post-row">
         <div className="section post-main">
           <div className="drop-area-hero" {...getRootProps()}>
             <input {...getInputProps()} />
@@ -91,17 +91,17 @@ try {
           </fieldset>
 
           <div className="post-field-2col">
-            <fieldset className="post-field">    
-            <label>調理時間（分）</label>
-            <input type="text" placeholder="15" className="post-content" />
+            <fieldset className="post-field">
+              <label>調理時間（分）</label>
+              <input type="text" placeholder="15" className="post-content" />
             </fieldset>
             <fieldset className="post-field">
-            <label>人数（人）</label>
-            <input type="text" placeholder="2" className="post-content" />
+              <label>人数（人）</label>
+              <input type="text" placeholder="2" className="post-content" />
             </fieldset>
           </div>
 
-<fieldset className="post-field">
+          <fieldset className="post-field">
             <label>レシピについて</label>
             <textarea
               placeholder="レシピについての説明、キャッチフレーズをお書きください。"
@@ -162,7 +162,7 @@ try {
                 <input type="text" placeholder="1/2" className="post-content" />
               </fieldset>
             </div>
-<div className="post-field-2col post-ingredient">
+            <div className="post-field-2col post-ingredient">
               <fieldset className="post-field">
                 <input
                   type="text"
@@ -180,7 +180,7 @@ try {
             </div>
           </div>
 
-<fieldset className="post-field">
+          <fieldset className="post-field">
             <a className="icon-button button-text ico accent making-button post-content">
               <Add />
               材料を追加{" "}
@@ -205,7 +205,7 @@ try {
         </div>
       </div>
 
-<nav id="post-nav" className="bg-white">
+      <nav id="post-nav" className="bg-white">
         <div className="section">
           <div className="nav-container">
             {/* 直前のページに戻る */}
