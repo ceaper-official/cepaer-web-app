@@ -51,8 +51,8 @@ export default function Upload() {
             <ReactCrop
               src={src}
               crop={crop}
-              keepSelection
-              ruleOfThirds
+              keepSelection // 選択状態を保持
+              ruleOfThirds // 縦横三等分の線を表示
               onChange={(newCrop) => setCrop(newCrop)}
               onImageLoaded={onLoad}
             />
