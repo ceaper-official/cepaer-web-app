@@ -294,3 +294,27 @@ button.button-active {
   width: 100%;
   text-align: center;
 }
+//アイコン
+
+.ico-button {
+  padding: 1rem;
+  border: 1px solid var(--horizontalRule);
+  border-radius: 50%;
+  transition: var(--fade);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    height: auto;
+    width: 1.5rem;
+  }
+
+  &:hover {
+    border-color: var(--accent);
+
+    & svg * {
+      fill: var(--accent);
+    }
+  }
+}

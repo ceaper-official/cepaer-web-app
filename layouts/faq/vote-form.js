@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import ArrowR from "../../assets/icons/ui/arrow-r.js";
+import Arrow from "../../assets/icons/ui/arrow.js";
 
 class VoteForm extends React.Component {
   state = { Component: null };

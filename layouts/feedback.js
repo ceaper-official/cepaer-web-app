@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import ArrowR from "../assets/icons/ui/arrow-r.js";
+import Arrow from "../assets/icons/ui/arrow.js";
 
 export default function Feedback() {
   return (
@@ -15,7 +15,7 @@ export default function Feedback() {
                 style={{ marginBottom: "1rem" }}
               >
                 フィードバックを送る
-                <ArrowR />
+                <Arrow />
               </a>
             </Link>
           </div>

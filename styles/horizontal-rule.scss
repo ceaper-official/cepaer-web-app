@@ -1,97 +1,48 @@
-hr:before {
-    line-height: 1.4;
-    text-indent: 0.6em;
-    letter-spacing: 0.6em;
-    content: "・・・";
-    color: var(--articleText);
-}
-
-hr{
-    position: relative;
-    width: 100%;
-    max-width: 680px;
-    text-align: center;
-    margin: 50px auto;
-    border: 0;
-    background-repeat: repeat-x;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-position: center;
-}
-
-@media screen and (max-width: 1070px){
-    hr{
-        max-width: 507px;
-    }
-}
-
-@media screen and (max-width: 735px){
-    hr{
-        max-width: 486px;
-        width: calc(100vw - 40px);
-        margin: 0px auto 40px;
-    }
-}
-
-@media screen and (max-width: 340px){
-    hr{
-        padding: 0 20px;
-    }
-}
-
-.hr {
-  height: 1px;
+hr {
+  position: relative;
   width: 100%;
-  border-top: 1px solid var(--horizontalRule);
+  text-align: center;
+  margin: auto;
+  border: 0;
+  border-bottom: 1px solid var(--horizontalRule);
+  background-repeat: repeat-x;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: center;
 }
-
-.hr-paragraph {
-  height: 1px;
-  width: 100%;
-  border-top: 1px solid var(--horizontalRule);
-  margin: 3rem 0;
-}
-
-.hr-text {
-  height: 1px;
-  width: 100%;
-  border-top: 1px solid var(--horizontalRule);
-  margin: 1.5rem 0;
-}
-
-.m-dot {
-  margin: 0 1rem;
-}
-
 //セクション・タイトル
+
 .hr-section-title {
-     display: flex;
-     align-items: center;
-     margin: 0;
-     &:before {
-       content: "";
-height: 1px;
-flex-grow: 1;
-background-color: var(--black);
-margin-right: 2rem;
-     }
-     &:after {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &:before {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: var(--black);
+    margin-right: 2rem;
+  }
+
+  &:after {
     content: "";
     height: 1px;
     flex-grow: 1;
     background-color: var(--black);
     margin-left: 2rem;
-     }
-     @media screen and (max-width: $phone){
-       &:before {
-         display: none;
-       }
-       &:after {
-         display: none;
-       }
-}
+  }
+  @media screen and (max-width: $phone) {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
 }
 
-.hr-bottom{
+.hr-bottom {
   border-bottom: 1px solid var(--horizontalRule);
 }

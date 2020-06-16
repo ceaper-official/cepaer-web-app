@@ -4,7 +4,7 @@ $phablet: 540px;
 $tablet: 735px;
 $desktop: 1070px;
 $desktop_medium: 1280px;
-$desktop_large: 1500px;
+$desktop_large: 1500px; //フォント選定後どちらか削除
 @font-face {
   font-family: 'Heisei Kaku Gothic';
   src: url("/fonts/Heisei-Kaku-Gothic-400.otf") format('otf');
@@ -21,34 +21,39 @@ $desktop_large: 1500px;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Heisei Kaku Gothic';
-  src: url("/fonts/Heisei-Kaku-Gothic-800.otf") format('otf');
-  font-weight: 800;
-}
-@font-face {
-  font-family: 'DINPro';
-  src: url("/fonts/DINPro-400.otf") format('otf');
+  font-family: 'DNP Shuei Gothic Kin Std';
+  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-L.otf") format('otf');
   font-weight: 400;
 }
 @font-face {
-  font-family: 'DINPro';
-  src: url("/fonts/DINPro-600.otf") format('otf');
+  font-family: 'DNP Shuei Gothic Kin Std';
+  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-M.otf") format('otf');
   font-weight: 600;
 }
 @font-face {
-  font-family: 'DINPro';
-  src: url("/fonts/DINPro-700.otf") format('otf');
+  font-family: 'DNP Shuei Gothic Kin Std';
+  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-B.otf") format('otf');
   font-weight: 700;
 }
 @font-face {
-  font-family: 'DINPro';
-  src: url("/fonts/DINPro-800.otf") format('otf');
-  font-weight: 800;
+  font-family: 'Circular';
+  src: url("/fonts/Circular-Book.otf") format('otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Circular';
+  src: url("/fonts/Circular-Medium.otf") format('otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Circular';
+  src: url("/fonts/Circular-Bold.otf") format('otf');
+  font-weight: 700;
 }
 
 body {
   //Typography
-  --text: "DINPro", "Heisei Kaku Gothic", sans-serif;
+  --text: "Circular", "DNP Shuei Gothic Kin Std", sans-serif;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -56,6 +61,14 @@ body {
   -moz-font-feature-settings: "pkna";
   -webkit-font-feature-settings: "pkna";
   font-feature-settings: "pkna";
+  font-family: var(--text);
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+  height: 100%;
+  padding: 0;
+  font-kerning: normal;
+  color: var(--black);
   //Primary
   --snow: #f7f7f9;
   --white: #fff;
@@ -80,18 +93,15 @@ body {
   --orange: #f48434;
   --yellow: #f4ee34;
   --red: #f43434;
-  //Tertiary - Gradations
-  --blue80: #2948c1;
-  --green80: #23a67d;
-  --orange80: #c16829;
-  --yellow80: #c1bc29;
-  --red80: #c12929;
   //Other
   --articleText: #4f4b57;
   --background-color: #fff;
   --horizontalRule: rgba(8, 8, 11, 0.15);
+  --xs: 0.9rem;
+  --small: 1.2rem;
   --fade: 0.2s;
-  --rounded: 4px;
+  --rounded: 8px;
+  --scroll: all 0.7s cubic-bezier(.63,.03,.17,.95);
   //Other - Gradations
   --articleText80: rgba(79,75,87, .8);
   --accent60: rgba(255, 84, 69, .6);

@@ -5,6 +5,7 @@ import HumanApp from "../assets/icons/ui/human_solid.js";
 import Back from "../assets/icons/ui/back.js";
 import Search from "../assets/icons/ui/search.js";
 import Router from "next/router";
+import Back from "../assets/icons/ui/back.js";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />;
@@ -23,21 +24,14 @@ const HeaderApp = () => (
           <Back />
         </div>
 
-        <div className="app-header-inner app-header-inner2">
-          <div className="search-wrapper">
-            <span className="search-icon">
-              <span className="search-icon-inner">
-                <Search />
-              </span>
-            </span>
-            <input
-              className="search xs-text"
-              type="search"
-              name="q"
-              placeholder="料理、材料、キャンプ道具..."
-            />
-          </div>
-        </div>
+                  <div className="app-header-inner">
+                      <span className="search-icon">
+                        <span className="search-icon-inner">
+                          <Search />
+                        </span>
+                      </span>
+
+                                </div>
       </div>
     </div>
   </div>

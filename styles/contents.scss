@@ -1,61 +1,69 @@
 .contents {
-  padding: 5rem 0;
+  margin: 10rem 0;
   background: var(--bacground-color);
-}
-.contents2 {
-  padding: 10rem 0;
-}
-.contents-top2 {
-  padding-top:10rem;
-}
-@media screen and (max-width: $phablet) {
-  .contents {
-    padding: 3rem 0;
-  }
-  .contents2 {
-    padding: 6rem 0;
-  }
-  .contents-top2 {
-    padding-top:6rem;
+  @media (max-width: $phablet) {
+    margin: 6rem 0;
   }
 }
-
 /*Card*/
 .card {
-  border-radius: 4px;
+  border-radius: var(--rounded);
   overflow: hidden;
   padding: 2rem;
   border: 1px solid var(--horizontalRule);
 }
+
 .card-wrapper {
   padding: 2rem;
 }
 
 .card-border {
-      border-radius: 4px;
-      overflow: hidden;
-      border: 1px solid var(--horizontalRule);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  border: 1px solid var(--horizontalRule);
 }
 /*Border*/
 .border {
   border: 1px solid var(--horizontalRule);
 }
 //Border Radius
-.border-radius {
-        border-radius: 4px;
-        overflow: hidden;
-}
 
+.border-radius {
+  border-radius: var(--rounded);
+  overflow: hidden;
+}
 /*Flex*/
 .flex {
-	display: flex;
+  display: flex;
   align-items: center;
 }
-
 //幅
+
 .w-auto {
   width: auto;
 }
+
 .w100 {
   width: 100%;
+}
+//セクション
+
+.section-contents {
+  padding-top: 2rem;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--horizontalRule);
+    width: calc(100% - 10rem);
+    margin: auto;
+    left: 0;
+    right: 0;
+    @media screen and (max-width:$phablet) {
+      width: calc(100% - 4rem);
+    }
+  }
 }

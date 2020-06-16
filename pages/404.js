@@ -1,6 +1,5 @@
 import BaseLayout from "../layouts/base.js";
 import Link from "next/link";
-import ArrowR from "../assets/icons/ui/arrow-r.js";
 import Feedback from "../layouts/feedback.js";
 
 export default () => (

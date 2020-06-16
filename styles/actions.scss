@@ -30,7 +30,6 @@
     }
   }
   //閉じる
-
   .actions-row-close {
     position: absolute;
     right: 0;
@@ -52,11 +51,10 @@
     }
   }
   //タイトル
-
   & h1 {
     font-size: 1.8rem;
     margin-bottom: 3rem;
-    font-weight: 500;
+    font-weight: 600;
     max-width: 300px;
   }
   //入力
@@ -122,24 +120,25 @@
     }
   }
 }
-
 //プロフィール登録
 .drop-area-wrapper {
   display: flex;
 }
 //アイコン
-  .drop-area {
-height: 70px;
-width: 70px;
-overflow: hidden;
-border-radius: 50%;
-width: 100px;
-height: 100px;
-border: 2px dashed var(--horizontalRule);
-border-radius: 50%;
-overflow: hidden;
+
+.drop-area {
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed var(--horizontalRule);
+  border-radius: 50%;
+  overflow: hidden;
 }
 //テキスト
+
 .drop-area-text-wrapper {
   padding-left: 2rem;
 }

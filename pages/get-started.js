@@ -4,7 +4,7 @@ import Link from "next/link";
 import Upload from "../assets/icons/ui/upload.js";
 import Human from "../assets/icons/ui/human.js";
 import Add from "../assets/icons/ui/add.js";
-import ArrowR from "../assets/icons/ui/arrow-r.js";
+import Arrow from "../assets/icons/ui/arrow.js";
 import Circle from "../assets/icons/ui/gs-circle.js";
 import StepWizard from "react-step-wizard";
 import Mail from "../assets/icons/ui/mail.js";
@@ -107,7 +107,7 @@ function Step1(props) {
         onClick={props.nextStep}
       >
         次に進む
-        <ArrowR />
+        <Arrow />
       </button>
     </div>
   );
@@ -201,7 +201,7 @@ function Step2(props) {
         onClick={props.nextStep}
       >
         次に進む
-        <ArrowR />
+        <Arrow />
       </button>
     </div>
   );

@@ -1,7 +1,7 @@
 import BaseLayout from "../../layouts/base.js";
 import Link from "next/link";
 import Search from "../../assets/icons/ui/search.js";
-import ArrowR from "../../assets/icons/ui/arrow-r.js";
+import Arrow from "../../assets/icons/ui/arrow.js";
 import Feedback from "../../layouts/feedback.js";
 import NavSearch from "../../layouts/faq/nav-search.js";
 export default () => (
@@ -19,19 +19,19 @@ export default () => (
                   <Link href="/">
                     <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
                       Ceaperとは？
-                      <ArrowR />
+                      <Arrow />
                     </a>
                   </Link>
                   <Link href="/">
                     <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
                       使い方
-                      <ArrowR />
+                      <Arrow />
                     </a>
                   </Link>
                   <Link href="/">
                     <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
                       ランキングの基準
-                      <ArrowR />
+                      <Arrow />
                     </a>
                   </Link>
                 </div>
@@ -45,19 +45,19 @@ export default () => (
                   <Link href="/faq/account/0アカウントの作成">
                     <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
                       アカウントの作成
-                      <ArrowR />
+                      <Arrow />
                     </a>
                   </Link>
                   <Link href="/">
                     <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
                       アカウントの管理
-                      <ArrowR />
+                      <Arrow />
                     </a>
                   </Link>
                   <Link href="/">
                     <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
                       アカウントの削除
-                      <ArrowR />
+                      <Arrow />
                     </a>
                   </Link>
                 </div>

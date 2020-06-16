@@ -7,7 +7,6 @@ h6 {
   margin: 0 auto;
   font-weight: 700;
   color: var(--primary);
-  font-family: var(--text);
   width: 100%;
   max-width: $desktop_large;
   font-feature-settings: "palt";
@@ -29,7 +28,6 @@ h3 * {
 h1 {
   font-size: 4rem;
   line-height: 1.35;
-  font-weight: 700;
 }
 
 h2 {
@@ -55,6 +53,7 @@ h5 {
 h6 {
   font-size: 1.5rem;
   line-height: 1.756;
+  font-weight: 600;
 }
 
 .h6 {
@@ -85,13 +84,22 @@ h6 {
     font-size: 1.5rem;
   }
 }
-/*タイトル・装飾*/
-.section-title {
-  &:before {
-    content: " ";
-    border-left: 3px solid var(--black);
-    padding-right: 1rem;
+/*セクションタイトル・装飾*/
+.section-title:before {}
+
+.section-title-2ol {
+  display: flex;
+  justify-content: space-between;
+
+  & * {
+    width: auto;
   }
+}
+/*セクション・リンク*/
+.recipe-section-title.section-link {
+  text-decoration: underline;
+  text-align: right;
+  font-size: var(--small);
 }
 
 .bold {

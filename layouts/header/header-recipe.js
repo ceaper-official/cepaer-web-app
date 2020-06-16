@@ -1,27 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import Logo from "../assets/logo.js";
-import Search from "../assets/icons/ui/search.js";
-import HumanSolid from "../assets/icons/ui/human_solid.js";
-import HomeApp from "../assets/icons/ui/home_solid.js";
-import HumanApp from "../assets/icons/ui/human_solid.js";
-import AppLogo from "../assets/app-logo.js";
-import Back from "../assets/icons/ui/back.js";
+import Logo from "../../assets/logo.js";
+import Search from "../../assets/icons/ui/search.js";
+import Share  from "../../assets/icons/ui/share.js";
+import Like  from "../../assets/icons/ui/like.js";
+import HumanSolid from "../../assets/icons/ui/human_solid.js";
+import NavApp from "../../layouts/nav_app.js";
+import Router from "next/router";
+import Back from "../../assets/icons/ui/back.js";
 
 function User() {
   return <img src="images/default/user.svg" alt="user image" />;
 }
 
-const Header = () => (
+
+const RecipeHeader = () => (
   <div>
     <div id="header">
       <div id="desktop-nav">
         <div class="nav-container">
-          <Link href="/">
-            <a class="logo-link">
-              <Logo />
-            </a>
-          </Link>
+
           <div class="nav-inner nav-inner-desktop">
             <div class="nav-controls">
               <div class="search-wrapper">
@@ -65,7 +63,9 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default RecipeHeader;
+
+
 
 function HeaderApp() {
   return (
@@ -80,13 +80,16 @@ function HeaderApp() {
             {/* ホームページ時は、visibility:hidden */}
             <Back />
           </div>
-
+          {/*アイコンは、アクティブ時 class付与（色変更）*/}
           <div className="app-header-inner">
-              <span className="search-icon">
-                <span className="search-icon-inner">
-                  <Search />
-                </span>
+            {/* シェア*/}
+              <span className="share app-header-icon">
+                  <Share />
               </span>
+              {/*ライク*/}
+                <span className="like app-header-icon">
+                    <Like/>
+                </span>
                         </div>
         </div>
       </div>
@@ -94,34 +97,34 @@ function HeaderApp() {
   );
 }
 
-function NavApp() {
-  return (
 
-      <div className="app-nav-wrapper">
-        <Link href="/">
-          <a className="app-nav-inner app-nav-active">
-            <span className="app-nav-icon">
-              <HomeApp />
-            </span>
-            <h6>ホーム</h6>
-          </a>
-        </Link>
-        <Link href="/signin">
-          <a className="app-nav-inner">
-            <span className="app-nav-icon">
-              <HumanApp />
-            </span>
-            <h6>ログイン</h6>
-          </a>
-        </Link>
-        <Link href="/about">
-          <a className="app-nav-inner">
-            <span className="app-nav-icon">
-              <AppLogo />
-            </span>
-            <h6>Ceaperとは？</h6>
-          </a>
-        </Link>
-      </div>
-  );
-}
+(function() {
+  const target = document.getElementById('app-header'),
+    height = 0;
+  let offset = 0,
+    lastPosition = 0,
+    ticking = false;
+
+  function onScroll() {
+    if (lastPosition > height) {
+      if (lastPosition > offset) {
+        target.classList.add('move');
+      } else {
+        target.classList.remove('move');
+      }
+      offset = lastPosition;
+    }
+  }
+
+  window.addEventListener('scroll', function(e) {
+    lastPosition = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        onScroll(lastPosition);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
