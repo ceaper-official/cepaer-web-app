@@ -24,14 +24,13 @@ const HeaderApp = () => (
           <Back />
         </div>
 
-                  <div className="app-header-inner">
-                      <span className="search-icon">
-                        <span className="search-icon-inner">
-                          <Search />
-                        </span>
-                      </span>
-
-                                </div>
+        <div className="app-header-inner">
+          <span className="search-icon">
+            <span className="search-icon-inner">
+              <Search />
+            </span>
+          </span>
+        </div>
       </div>
     </div>
   </div>

@@ -30,13 +30,14 @@ const Footer = () => (
                 <a className="hover-line">ライター募集</a>
                 <BadgeNew />
               </div>
-                <a
-                  className="hover-line"
-                  target="_blank"
-                  rel="nofollow noreferrer noopener"
-                  href="mailto: support@ceaper.com"
-                >
-プレス                </a>
+              <a
+                className="hover-line"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                href="mailto: support@ceaper.com"
+              >
+                プレス{" "}
+              </a>
             </div>
             <div className="footer-terms-contents-inner">
               <h6>サポート</h6>

@@ -6,48 +6,48 @@ $desktop: 1070px;
 $desktop_medium: 1280px;
 $desktop_large: 1500px; //フォント選定後どちらか削除
 @font-face {
-  font-family: 'Heisei Kaku Gothic';
-  src: url("/fonts/Heisei-Kaku-Gothic-400.otf") format('otf');
+  font-family: "Heisei Kaku Gothic";
+  src: url("/fonts/Heisei-Kaku-Gothic-400.otf") format("otf");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Heisei Kaku Gothic';
-  src: url("/fonts/Heisei-Kaku-Gothic-600.otf") format('otf');
+  font-family: "Heisei Kaku Gothic";
+  src: url("/fonts/Heisei-Kaku-Gothic-600.otf") format("otf");
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Heisei Kaku Gothic';
-  src: url("/fonts/Heisei-Kaku-Gothic-700.otf") format('otf');
+  font-family: "Heisei Kaku Gothic";
+  src: url("/fonts/Heisei-Kaku-Gothic-700.otf") format("otf");
   font-weight: 700;
 }
 @font-face {
-  font-family: 'DNP Shuei Gothic Kin Std';
-  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-L.otf") format('otf');
+  font-family: "DNP Shuei Gothic Kin Std";
+  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-L.otf") format("otf");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'DNP Shuei Gothic Kin Std';
-  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-M.otf") format('otf');
+  font-family: "DNP Shuei Gothic Kin Std";
+  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-M.otf") format("otf");
   font-weight: 600;
 }
 @font-face {
-  font-family: 'DNP Shuei Gothic Kin Std';
-  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-B.otf") format('otf');
+  font-family: "DNP Shuei Gothic Kin Std";
+  src: url("/fonts/DNP-Shuei-Gothic-Kin-Std-B.otf") format("otf");
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Circular';
-  src: url("/fonts/Circular-Book.otf") format('otf');
+  font-family: "Circular";
+  src: url("/fonts/Circular-Book.otf") format("otf");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Circular';
-  src: url("/fonts/Circular-Medium.otf") format('otf');
+  font-family: "Circular";
+  src: url("/fonts/Circular-Medium.otf") format("otf");
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Circular';
-  src: url("/fonts/Circular-Bold.otf") format('otf');
+  font-family: "Circular";
+  src: url("/fonts/Circular-Bold.otf") format("otf");
   font-weight: 700;
 }
 
@@ -84,9 +84,9 @@ body {
   //Secondary
   --grey: #b6b6bf; //(snow75)
   //Secondary - GRADATIONS
-  --grey60: rgba(176,176,176,.6);
-  --grey40: rgba(176,176,176, .4);
-  --grey20: rgba(176,176,176,.2);
+  --grey60: rgba(176, 176, 176, 0.6);
+  --grey40: rgba(176, 176, 176, 0.4);
+  --grey20: rgba(176, 176, 176, 0.2);
   //Tertiary
   --blue: #345bf4;
   --green: #2ed9a3;
@@ -101,10 +101,11 @@ body {
   --small: 1.2rem;
   --fade: 0.2s;
   --rounded: 8px;
-  --scroll: all 0.7s cubic-bezier(.63,.03,.17,.95);
+  --btn-rounded: 4px;
+  --scroll: all 0.7s cubic-bezier(0.63, 0.03, 0.17, 0.95);
   //Other - Gradations
-  --articleText80: rgba(79,75,87, .8);
-  --accent60: rgba(255, 84, 69, .6);
+  --articleText80: rgba(79, 75, 87, 0.8);
+  --accent60: rgba(255, 84, 69, 0.6);
   //Dark
   --d-articleText: #c2bbd2;
 }

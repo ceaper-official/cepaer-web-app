@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Logo from "../../assets/logo.js";
 import Search from "../../assets/icons/ui/search.js";
-import Share  from "../../assets/icons/ui/share.js";
-import Like  from "../../assets/icons/ui/like.js";
+import Share from "../../assets/icons/ui/share.js";
+import Like from "../../assets/icons/ui/like.js";
 import HumanSolid from "../../assets/icons/ui/human_solid.js";
 import NavApp from "../../layouts/nav_app.js";
 import Router from "next/router";
@@ -13,13 +13,11 @@ function User() {
   return <img src="images/default/user.svg" alt="user image" />;
 }
 
-
 const RecipeHeader = () => (
   <div>
     <div id="header">
       <div id="desktop-nav">
         <div class="nav-container">
-
           <div class="nav-inner nav-inner-desktop">
             <div class="nav-controls">
               <div class="search-wrapper">
@@ -65,66 +63,29 @@ const RecipeHeader = () => (
 
 export default RecipeHeader;
 
-
-
 function HeaderApp() {
   return (
     <div>
       {" "}
       <div className="section">
         <div className="app-header-wrapper">
-          <div
-            className="app-header-inner"
-            onClick={() => Router.back()}
-          >
+          <div className="app-header-inner" onClick={() => Router.back()}>
             {/* ホームページ時は、visibility:hidden */}
             <Back />
           </div>
           {/*アイコンは、アクティブ時 class付与（色変更）*/}
           <div className="app-header-inner">
             {/* シェア*/}
-              <span className="share app-header-icon">
-                  <Share />
-              </span>
-              {/*ライク*/}
-                <span className="like app-header-icon">
-                    <Like/>
-                </span>
-                        </div>
+            <span className="share app-header-icon">
+              <Share />
+            </span>
+            {/*ライク*/}
+            <span className="like app-header-icon">
+              <Like />
+            </span>
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
-
-(function() {
-  const target = document.getElementById('app-header'),
-    height = 0;
-  let offset = 0,
-    lastPosition = 0,
-    ticking = false;
-
-  function onScroll() {
-    if (lastPosition > height) {
-      if (lastPosition > offset) {
-        target.classList.add('move');
-      } else {
-        target.classList.remove('move');
-      }
-      offset = lastPosition;
-    }
-  }
-
-  window.addEventListener('scroll', function(e) {
-    lastPosition = window.scrollY;
-
-    if (!ticking) {
-      window.requestAnimationFrame(function() {
-        onScroll(lastPosition);
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-})();

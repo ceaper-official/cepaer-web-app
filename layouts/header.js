@@ -73,21 +73,18 @@ function HeaderApp() {
       {" "}
       <div className="section">
         <div className="app-header-wrapper">
-          <div
-            className="app-header-inner"
-            onClick={() => Router.back()}
-          >
+          <div className="app-header-inner" onClick={() => Router.back()}>
             {/* ホームページ時は、visibility:hidden */}
             <Back />
           </div>
 
           <div className="app-header-inner">
-              <span className="search-icon">
-                <span className="search-icon-inner">
-                  <Search />
-                </span>
+            <span className="search-icon">
+              <span className="search-icon-inner">
+                <Search />
               </span>
-                        </div>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -96,32 +93,31 @@ function HeaderApp() {
 
 function NavApp() {
   return (
-
-      <div className="app-nav-wrapper">
-        <Link href="/">
-          <a className="app-nav-inner app-nav-active">
-            <span className="app-nav-icon">
-              <HomeApp />
-            </span>
-            <h6>ホーム</h6>
-          </a>
-        </Link>
-        <Link href="/signin">
-          <a className="app-nav-inner">
-            <span className="app-nav-icon">
-              <HumanApp />
-            </span>
-            <h6>ログイン</h6>
-          </a>
-        </Link>
-        <Link href="/about">
-          <a className="app-nav-inner">
-            <span className="app-nav-icon">
-              <AppLogo />
-            </span>
-            <h6>Ceaperとは？</h6>
-          </a>
-        </Link>
-      </div>
+    <div className="app-nav-wrapper">
+      <Link href="/">
+        <a className="app-nav-inner app-nav-active">
+          <span className="app-nav-icon">
+            <HomeApp />
+          </span>
+          <h6>ホーム</h6>
+        </a>
+      </Link>
+      <Link href="/signin">
+        <a className="app-nav-inner">
+          <span className="app-nav-icon">
+            <HumanApp />
+          </span>
+          <h6>ログイン</h6>
+        </a>
+      </Link>
+      <Link href="/about">
+        <a className="app-nav-inner">
+          <span className="app-nav-icon">
+            <AppLogo />
+          </span>
+          <h6>Ceaperとは？</h6>
+        </a>
+      </Link>
+    </div>
   );
 }

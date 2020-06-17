@@ -9,7 +9,6 @@ import Instagram from "../assets/icons/social/instagram.js";
 import Twitter from "../assets/icons/social/twitter.js";
 import Google from "../assets/icons/social/google.js";
 import Facebook from "../assets/icons/social/facebook.js";
-import UserShot from "../layouts/shot_user.js";
 import NavEdit from "../layouts/nav-edit.js";
 import NavEditMobile from "../layouts/nav-edit-mobile.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
