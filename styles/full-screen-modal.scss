@@ -1,0 +1,18 @@
+#root-full-screen-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1300;
+}
+
+#full-screen-modal {
+  background-color: white;
+  height: 100%;
+
+  & .container {
+    height: 100%;
+    overflow-y: auto;
+  }
+}

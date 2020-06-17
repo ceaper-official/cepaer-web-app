@@ -11,10 +11,11 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head></Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
+          <div id="root-full-screen-modal" />
         </body>
       </html>
     );
