@@ -35,18 +35,15 @@ const RecipeHeader = () => (
               </div>
             </div>
             <div class="nav-controls">
-              <Link href="/signin">
-                <a class="button-text">ログイン</a>
-              </Link>
-              <Link href="/signup">
-                <a
-                  class="button icon-button nav-account-button ico"
-                  style={{ margin: 0 }}
-                >
-                  <HumanSolid />
-                  アカウントを作成
-                </a>
-              </Link>
+              {/*アイコンは、アクティブ時 class付与（色変更）*/}
+              {/* シェア*/}
+              <span className="share header-icon">
+                <Share />
+              </span>
+              {/*ライク*/}
+              <span className="like header-icon">
+                <Like />
+              </span>
             </div>
           </div>
         </div>

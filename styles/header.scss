@@ -15,10 +15,10 @@
     align-items: center;
     margin-right: 3.5rem;
   }
-  @media screen and (max-width: 540px) {
+  @media (max-width: 540px) {
     padding: 0 2rem;
   }
-  @media screen and (max-width: $phablet) {
+  @media (max-width: $phablet) {
     display: none;
   }
 }
@@ -44,8 +44,9 @@
     height: 30px;
   }
   @media (min-width: $desktop_large) {
-    & a {}
-    @media screen and (max-width: $tablet) {
+    & a {
+    }
+    @media (max-width: $tablet) {
       padding-top: 3rem;
     }
   }
@@ -60,7 +61,7 @@
     fill: var(--accent);
   }
 }
-@media screen and (max-width: $phone) {
+@media (max-width: $phone) {
   #logo-desktop svg {
     height: 25px;
     width: auto;
@@ -128,7 +129,7 @@
 }
 
 #desktop-nav {
-  @media screen and (max-width: $desktop) {
+  @media (max-width: $phablet) {
     display: none;
   }
 }
@@ -157,8 +158,23 @@
       justify-content: center;
     }
   }
-  @media screen and (min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: none;
+  }
+}
+//アイコン
+
+.header-icon {
+  margin: 0 1rem;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & svg {
+    width: auto;
+    height: 2rem;
   }
 }
 /*アプリ*/
@@ -206,7 +222,7 @@
       }
     }
   }
-  @media screen and (min-width: $phablet) {
+  @media (min-width: $phablet) {
     display: none;
   }
 }
@@ -264,7 +280,7 @@
       }
     }
   }
-  @media screen and (min-width: $phablet) {
+  @media (min-width: $phablet) {
     display: none;
   }
 }
@@ -303,7 +319,8 @@
   transition: 0.2s -webkit-transform var(--ease-out-quad);
   -o-transition: 0.2s transform var(--ease-out-quad);
   transition: 0.2s transform var(--ease-out-quad);
-  transition: 0.2s transform var(--ease-out-quad), 0.2s -webkit-transform var(--ease-out-quad);
+  transition: 0.2s transform var(--ease-out-quad),
+    0.2s -webkit-transform var(--ease-out-quad);
   opacity: 0;
   padding-right: 30px;
   -webkit-animation: fadein 0.3s linear forwards;
@@ -319,7 +336,7 @@
     opacity: 1;
   }
 }
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .back-arrow-ico-container {
     display: none;
   }
@@ -355,7 +372,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  @media screen and (max-width: 540px) {
+  @media (max-width: 540px) {
     right: -5px;
   }
 }

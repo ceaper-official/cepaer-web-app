@@ -139,7 +139,7 @@
   margin: 2rem 0;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     box-sizing: border-box;
     width: 25px;
@@ -147,12 +147,12 @@
     left: 0;
     top: 0;
     border: 1px solid var(--horizontalRule);
-    border-radius: 4px;
+    border-radius: 50%;
     z-index: 3;
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     box-sizing: border-box;
     transform: rotate(45deg);

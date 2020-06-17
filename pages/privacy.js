@@ -1,7 +1,6 @@
 import BaseLayout from "../layouts/base.js";
 import React from "react";
 import Link from "next/link";
-import ArrowR from "../assets/icons/ui/arrow-r.js";
 import NavPolicies from "../layouts/nav/nav-policies.js";
 
 export default () => (

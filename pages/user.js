@@ -5,13 +5,12 @@ import SettingSolid from "../assets/icons/ui/setting_solid.js";
 import Instagram from "../assets/icons/social/instagram.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
-import UserShot from "../layouts/shot_user.js";
 import PenSolid from "../assets/icons/ui/pen_solid.js";
 import CookSolid from "../assets/icons/ui/cook-solid.js";
 import StarSolid from "../assets/icons/ui/star-solid.js";
 
 function UserImg() {
-  return <img src="images/default/user.jpg" alt="user image" />;
+  return <img src="images/default/user.svg" alt="user image" />;
 }
 
 export default () => (
@@ -95,27 +94,21 @@ export default () => (
               投稿したレシピ
               <span className="tab-label-data">{/*数値取得*/}30</span>
             </label>
-            <div className="tab-content">
-              <UserShot />
-            </div>
+            <div className="tab-content"></div>
             <input id="tab02" type="radio" name="tab" className="tab-switch" />
             <label className="tab-label s-text ico" for="tab02">
               <CookSolid />
               作ったレシピ
               <span className="tab-label-data">{/*数値取得*/}6</span>
             </label>
-            <div className="tab-content">
-              <UserShot />
-            </div>
+            <div className="tab-content"></div>
             <input id="tab03" type="radio" name="tab" className="tab-switch" />
             <label className="tab-label s-text ico" for="tab03">
               <StarSolid />
               お気に入り
               <span className="tab-label-data">{/*数値取得*/}102</span>
             </label>
-            <div className="tab-content">
-              <UserShot />
-            </div>
+            <div className="tab-content"></div>
           </div>
         </div>
       </div>
