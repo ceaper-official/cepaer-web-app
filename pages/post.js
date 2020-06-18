@@ -50,7 +50,7 @@ const Post = () => {
     multiple: false,
   });
 
-  // 保存実行
+  // アップロード実行
   const onUpload = useCallback(async (blob) => {
     try {
       // 事前にpreview用の画像URLを表示してモーダルを閉じる

@@ -57,11 +57,21 @@ export default function FullScreenModal(props) {
 
       setImageRef(img);
 
-      const width = img.width > img.height ? img.width / aspect : img.width;
-      const height = img.height > img.width ? img.height / aspect : img.height;
+      let { width, height } = img;
+      if (aspect === 1) {
+        if (img.width > img.height) {
+          width = img.height;
+        } else {
+          height = img.width;
+        }
+      } else if (img.width > img.height) {
+        width = img.width / aspect;
+      } else {
+        height = img.height / aspect;
+      }
       const x = img.width > img.height ? (img.width - width) / 2 : 0;
       const y = img.height > img.width ? (img.height - height) / 2 : 0;
-
+      // eslint-disable-next-line no-shadow
       const crop = {
         unit: "px",
         width,
@@ -70,6 +80,7 @@ export default function FullScreenModal(props) {
         y,
         aspect,
       };
+      console.log(crop);
       setCrop(crop);
 
       getCroppedImg(img, crop).then((blob) => {
