@@ -12,11 +12,13 @@ import Facebook from "../assets/icons/social/facebook.js";
 import NavEdit from "../layouts/nav-edit.js";
 import NavEditMobile from "../layouts/nav-edit-mobile.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
-import generateRandomId from "../src/helpers/generateRandomId";
 import withAuth from "../src/helpers/withAuth";
+import generateRandomId from "../src/helpers/generateRandomId";
+import getImageFileType from "../src/helpers/getImageFileType";
+import FullScreenModal from "../layouts/full-screen-modal.js";
 
 function User({ imageUrl }) {
-  return <img src={imageUrl || "images/default/user.jpg"} alt="user image" />;
+  return <img src={imageUrl || "/images/default/user.svg"} alt="user image" />;
 }
 
 /* 入力された文・値は保存 */
@@ -26,6 +28,11 @@ export class Edit extends React.Component {
     this.inputRef = React.createRef();
     this.state = {
       profileImageUrl: "",
+      modalProps: {
+        open: false,
+        src: null,
+        fileType: null,
+      },
     };
   }
 
@@ -43,6 +50,16 @@ export class Edit extends React.Component {
     // }
   }
 
+  onCloseModal = () => {
+    this.setState({
+      modalProps: {
+        open: false,
+        src: null,
+        fileType: null,
+      },
+    });
+  };
+
   onClickProfileImage = () => {
     if (this.inputRef.current) {
       this.inputRef.current.click();
@@ -58,20 +75,44 @@ export class Edit extends React.Component {
       return;
     }
 
+    // crop用modalに画像をセット
+    this.setState({
+      modalProps: {
+        open: true,
+        src: URL.createObjectURL(file),
+        fileType: file.type,
+      },
+    });
+  };
+
+  onUpload = async (blob) => {
     try {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        this.setState({
-          profileImageUrl: reader.result,
-        });
-      };
+      // 事前にpreview用の画像URLを表示
+      this.setState({
+        profileImageUrl: URL.createObjectURL(blob),
+      });
+
+      const fileType = getImageFileType(this.state.modalProps.fileType);
+      if (!fileType) {
+        return;
+      }
+
+      // モーダルを閉じる
+      this.onCloseModal();
 
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}_original.jpg`;
-      await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
+      const fileName = `${generateRandomId()}_original.${fileType.ext}`;
+      const snapshot = await ref
+        .child(`images/profile/${user.uid}/${fileName}`)
+        .put(blob);
+
+      // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
+      // const savedImageUrl = await snapshot.ref.getDownloadURL();
+      // await db.collection("users").doc(user.id).update({
+      //   image: savedImageUrl,
+      // });
     } catch (error) {
       console.error(error);
     }
@@ -80,6 +121,14 @@ export class Edit extends React.Component {
   render() {
     return (
       <BaseLayout>
+        <FullScreenModal
+          open={this.state.modalProps.open}
+          src={this.state.modalProps.src}
+          fileType={this.state.modalProps.fileType}
+          aspect={1}
+          onClose={this.onCloseModal}
+          onContinue={this.onUpload}
+        />
         <div id="page" className="side-nav-page">
           <div className="user-row edit-row">
             <div className="contents">

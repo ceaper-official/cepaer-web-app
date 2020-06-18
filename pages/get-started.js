@@ -1,17 +1,19 @@
 import React, { useState, useRef, useCallback } from "react";
-import GSBaseLayout from "../layouts/base-get-started.js";
 import Link from "next/link";
+import StepWizard from "react-step-wizard";
+import GSBaseLayout from "../layouts/base-get-started.js";
 import Upload from "../assets/icons/ui/upload.js";
 import Human from "../assets/icons/ui/human.js";
 import Add from "../assets/icons/ui/add.js";
 import Arrow from "../assets/icons/ui/arrow.js";
 import Circle from "../assets/icons/ui/gs-circle.js";
-import StepWizard from "react-step-wizard";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
-import generateRandomId from "../src/helpers/generateRandomId";
 import withAuth from "../src/helpers/withAuth";
+import generateRandomId from "../src/helpers/generateRandomId";
+import getImageFileType from "../src/helpers/getImageFileType";
+import FullScreenModal from "../layouts/full-screen-modal.js";
 
 function User() {
   return <img src="images/default/user.jpg" alt="user image" />;
@@ -33,7 +35,7 @@ class GS extends React.Component {
                   <span className="gs-progress-mark ico">
                     <Circle />
                   </span>
-                  <span className="gs-progress-line"></span>
+                  <span className="gs-progress-line" />
                   <h5 className="grey">ユーザー名の設定</h5>
                 </div>
 
@@ -41,7 +43,7 @@ class GS extends React.Component {
                   <span className="gs-progress-mark ico">
                     <Circle />
                   </span>
-                  <span className="gs-progress-line"></span>
+                  <span className="gs-progress-line" />
                   <h5 className="grey">アイコンの設定</h5>
                 </div>
 
@@ -100,7 +102,7 @@ function Step1(props) {
         <span className="input-prefix">
           <Human />
         </span>
-        <input className="input-inner" placeholder="例：キーパー山田"></input>
+        <input className="input-inner" placeholder="例：キーパー山田" />
       </div>
       <button
         className="button button-black gs-button button-w100 ico-back"
@@ -118,8 +120,22 @@ function Step2(props) {
     return null;
   }
 
+  const [modalProps, setModalProps] = useState({
+    open: false,
+    src: null,
+    fileType: null,
+  });
   const [profileImageUrl, setProfileImageUrl] = useState("");
   const inputRef = useRef(null);
+
+  // モーダルを閉じる
+  const onCloseModal = useCallback(() => {
+    setModalProps({
+      open: false,
+      src: null,
+      fileType: null,
+    });
+  });
 
   const onClick = useCallback(() => {
     if (inputRef.current) {
@@ -136,34 +152,53 @@ function Step2(props) {
       return;
     }
 
+    // crop用modalに画像をセット
+    setModalProps({
+      open: true,
+      src: URL.createObjectURL(file),
+      fileType: file.type,
+    });
+  }, []);
+
+  const onUpload = useCallback(async (blob) => {
     try {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        setProfileImageUrl(reader.result);
-      };
+      // 事前にpreview用の画像URLを表示する
+      setProfileImageUrl(URL.createObjectURL(blob));
+
+      const fileType = getImageFileType(modalProps.fileType);
+      if (!fileType) {
+        return;
+      }
+
+      // モーダルを閉じる
+      onCloseModal();
 
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}_original.jpg`;
+      const fileName = `${generateRandomId()}_original.${fileType.ext}`;
       const snapshot = await ref
         .child(`images/profile/${user.uid}/${fileName}`)
-        .put(file);
+        .put(blob);
 
       // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
       // const savedImageUrl = await snapshot.ref.getDownloadURL();
       // await db.collection("users").doc(user.id).update({
       //   image: savedImageUrl,
       // });
-      console.log(savedImageUrl);
     } catch (error) {
       console.error(error);
     }
-  }, []);
+  });
 
   return (
     <div>
+      <FullScreenModal
+        {...modalProps}
+        aspect={1}
+        onClose={onCloseModal}
+        onContinue={(blob) => onUpload(blob)}
+      />
       <h1 className="title">アイコンの設定</h1>
       <p>
         お気に入りのユニークなアイコンを設定しましょう！設定しない場合、デフォルトのアイコンが表示されます。
@@ -222,7 +257,7 @@ function Step3(props) {
         <span className="input-prefix">
           <Mail />
         </span>
-        <input className="input-inner" placeholder="Eメール"></input>
+        <input className="input-inner" placeholder="Eメール" />
       </div>
       <div className="action-button-wrapper input-wrapper">
         <span className="input-prefix">
@@ -232,7 +267,7 @@ function Step3(props) {
           className="input-inner"
           placeholder="パスワード"
           type="password"
-        ></input>
+        />
         <span className="input-suffix">
           <Link href="/forgot-password">
             <a className="xs-text support  hover-black">お忘れですか？</a>
