@@ -5,9 +5,12 @@ import SettingSolid from "../assets/icons/ui/setting_solid.js";
 import Instagram from "../assets/icons/social/instagram.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Twitter from "../assets/icons/social/twitter.js";
-import PenSolid from "../assets/icons/ui/pen_solid.js";
 import CookSolid from "../assets/icons/ui/cook-solid.js";
-import StarSolid from "../assets/icons/ui/star-solid.js";
+import LikeSolid from "../assets/icons/ui/like-solid.js";
+import CollectionSolid from "../assets/icons/ui/collection-solid.js";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import UserShot from "../layouts/shots/shot.js";
+import UserCollection from "../layouts/collections/collection.js";
 
 function UserImg() {
   return <img src="images/default/user.svg" alt="user image" />;
@@ -40,36 +43,9 @@ export default () => (
                     <Twitter />
                   </a>
                 </div>
-                <div className="user-data">
-                  <a
-                    className="user-data-inner xs-text user-data-inner-start"
-                    style={{ paddingLeft: 0 }}
-                  >
-                    <h6>3</h6>
-                    <span>レシピ</span>
-                  </a>
-                  <a className="user-data-inner xs-text">
-                    <h6>134</h6>
-                    <span>作ったレシピ</span>
-                  </a>
-                  <a className="user-data-inner xs-text">
-                    <h6>204</h6>
-                    <span>フォロワー</span>
-                  </a>
-                  <a
-                    className="user-data-inner xs-text user-data-inner-last"
-                    style={{ paddingRight: 0 }}
-                  >
-                    <h6>13</h6>
-                    <span>フォロー</span>
-                  </a>
-                </div>
-                <a className="button add-button button-black-ol ico">
-                  <Add />
-                  フォロー
-                </a>
+
                 <Link href="/edit">
-                  <a className="button setting-button button-snow ico">
+                  <a className="button setting-button button-snow ico" style={{ marginTop: 25 }}>
                     <SettingSolid />
                     プロフィールを編集
                   </a>
@@ -79,37 +55,49 @@ export default () => (
           </div>
         </div>
       </div>
+
       <div className="contents">
         <div className="section">
-          <div className="tab-wrapper">
-            <input
-              id="tab01"
-              type="radio"
-              name="tab"
-              className="tab-switch"
-              checked="checked"
-            />
-            <label className="tab-label s-text ico" for="tab01">
-              <PenSolid />
-              投稿したレシピ
-              <span className="tab-label-data">{/*数値取得*/}30</span>
-            </label>
-            <div className="tab-content"></div>
-            <input id="tab02" type="radio" name="tab" className="tab-switch" />
-            <label className="tab-label s-text ico" for="tab02">
-              <CookSolid />
-              作ったレシピ
-              <span className="tab-label-data">{/*数値取得*/}6</span>
-            </label>
-            <div className="tab-content"></div>
-            <input id="tab03" type="radio" name="tab" className="tab-switch" />
-            <label className="tab-label s-text ico" for="tab03">
-              <StarSolid />
-              お気に入り
-              <span className="tab-label-data">{/*数値取得*/}102</span>
-            </label>
-            <div className="tab-content"></div>
-          </div>
+
+          <Tabs>
+           <TabList className="tab-label-wrapper user-data-wrapper">
+             <Tab className="tab-label ico"><CookSolid />投稿したレシピ<span className="user-data">73</span></Tab>
+             <Tab className="tab-label ico"><LikeSolid />お気に入り<span className="user-data">410</span></Tab>
+             <Tab className="tab-label ico"><CollectionSolid/>コレクション<span className="user-data">3</span></Tab>
+           </TabList>
+
+           {/*全件表示*/}
+           <TabPanel className="tab-content shots-wrapper">
+<UserShot/>
+  <UserShot/>
+    <UserShot/>
+  <UserShot/>
+    <UserShot/>
+  <UserShot/>
+    <UserShot/>
+  <UserShot/>
+           </TabPanel>
+           <TabPanel className="tab-content shots-wrapper">
+<UserShot/>
+  <UserShot/>
+    <UserShot/>
+  <UserShot/>
+    <UserShot/>
+  <UserShot/>
+    <UserShot/>
+  <UserShot/>
+           </TabPanel>
+           <TabPanel className="tab-content shots-wrapper collection-wrapper">
+<UserCollection/>
+  <UserCollection/>
+    <UserCollection/>
+      <UserCollection/>
+        <UserCollection/>
+          <UserCollection/>
+
+           </TabPanel>
+         </Tabs>
+
         </div>
       </div>
     </div>

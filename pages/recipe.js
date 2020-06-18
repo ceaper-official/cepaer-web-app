@@ -29,7 +29,7 @@ export default () => (
           <div className="recipe-wrapper">
             <a
               onClick={() => Router.back()}
-              className="recipe-back-page ico-button"
+              className="back-button ico-button"
             >
               <Arrow />
             </a>

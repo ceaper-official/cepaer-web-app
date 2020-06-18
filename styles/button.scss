@@ -34,12 +34,7 @@
   height: auto;
 
   &:hover {
-    color: var(--white);
-    background: var(--black);
-
-    & svg * {
-      fill: var(--white);
-    }
+    background: var(--horizontalRule);
   }
 }
 
@@ -59,6 +54,32 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+//ラッパー
+
+.button-wrapper-l {
+  & button:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.button-wrapper-r {
+  & button:last-of-type {
+    margin-right: 0;
+  }
+
+  & .button-inner {
+    justify-content: flex-end;
+  }
+}
+
+.button-inner {
+  display: inline-flex;
+  width: 100%;
+
+  & button {
+    margin: 0 1rem;
   }
 }
 //negative
@@ -212,8 +233,7 @@
   border-radius: var(--btn-rounded);
   font-weight: 600;
 
-  &:hover {
-  }
+  &:hover {}
 
   &::placeholder {
     color: var(--grey);
@@ -316,5 +336,21 @@ button.button-active {
     & svg * {
       fill: var(--accent);
     }
+  }
+}
+//バックページ
+
+.back-button {
+  font-size: var(--small);
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 3rem;
+  color: var(--black);
+
+  & svg {
+    transform: rotate(180deg);
+  }
+  @media(max-width: $desktop) {
+    display: none;
   }
 }

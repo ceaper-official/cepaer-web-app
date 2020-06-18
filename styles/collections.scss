@@ -1,0 +1,67 @@
+//コレクション
+
+.collection-wrapper {
+  & .shot-wrapper:hover {
+    & .collection-title {
+      color: var(--accent);
+    }
+
+    & .shot:before {
+      opacity: 0.2;
+    }
+  }
+
+  & .shot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    border-radius: none;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      background: var(--white);
+      opacity: 0;
+      transition: var(--fade);
+    }
+
+    & .shot-img {
+      border-radius: 0;
+      height: 15rem;
+
+      &:before {
+        display: none;
+      }
+
+      &:first-of-type {
+        grid-column: 1 / 3;
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+      }
+
+      &:nth-of-type(2) {
+        border-bottom-left-radius: 0.8rem;
+      }
+
+      &:nth-of-type(3) {
+        border-bottom-right-radius: 0.8rem;
+      }
+    }
+  }
+}
+
+.collection-title {
+  margin: 1rem auto 0;
+  font-size: var(--normal);
+  transition: var(--fade);
+}
+
+.collection-data {
+  font-size: var(--small);
+}

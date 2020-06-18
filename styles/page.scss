@@ -1,5 +1,6 @@
 #page {
   padding-bottom: 12rem;
+  position: relative;
   @media screen and (max-width: $phablet) {}
   //タイトル
   & .title {}

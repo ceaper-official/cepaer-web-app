@@ -109,3 +109,37 @@ ol li::before {
     left: 0;
   }
 }
+//ドロップダウン
+
+.dropdown-wrapper {
+  position: relative;
+
+  & .dropdown-contents {
+    position: absolute;
+    transition: var(--fade);
+    top: 5rem;
+    right: 0;
+    background: var(--white);
+    z-index: 100;
+
+    &.hide {
+      display: none;
+    }
+
+    & .dropdown-item {
+      line-height: 1;
+      white-space: nowrap;
+      font-size: var(--small);
+      display: block;
+      margin-bottom: 2rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import CookSolid from "../../assets/icons/ui/cook-solid.js";
 import TimeSolid from "../../assets/icons/ui/time-solid.js";
 import StarSolid from "../../assets/icons/ui/star-solid.js";
+import Link from "next/link";
 
 function User() {
   return <img src="images/default/user.svg" alt="user image" />;
@@ -12,9 +13,8 @@ function RecipeImg() {
 
 export default function UserShot() {
   return (
-    <a
-      href=""
-      className="topic shot"
+    <Link href="/recipe">
+    <a      className="topic shot"
       style={{
         padding: 0,
       }}
@@ -59,5 +59,6 @@ export default function UserShot() {
         </div>
       </div>
     </a>
+  </Link>
   );
 }
