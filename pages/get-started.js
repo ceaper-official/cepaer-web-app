@@ -1,12 +1,12 @@
 import React, { useState, useRef, useCallback } from "react";
-import GSBaseLayout from "../layouts/base-get-started.js";
 import Link from "next/link";
+import StepWizard from "react-step-wizard";
+import GSBaseLayout from "../layouts/base-get-started.js";
 import Upload from "../assets/icons/ui/upload.js";
 import Human from "../assets/icons/ui/human.js";
 import Add from "../assets/icons/ui/add.js";
 import Arrow from "../assets/icons/ui/arrow.js";
 import Circle from "../assets/icons/ui/gs-circle.js";
-import StepWizard from "react-step-wizard";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
@@ -33,7 +33,7 @@ class GS extends React.Component {
                   <span className="gs-progress-mark ico">
                     <Circle />
                   </span>
-                  <span className="gs-progress-line"></span>
+                  <span className="gs-progress-line" />
                   <h5 className="grey">ユーザー名の設定</h5>
                 </div>
 
@@ -41,7 +41,7 @@ class GS extends React.Component {
                   <span className="gs-progress-mark ico">
                     <Circle />
                   </span>
-                  <span className="gs-progress-line"></span>
+                  <span className="gs-progress-line" />
                   <h5 className="grey">アイコンの設定</h5>
                 </div>
 
@@ -100,7 +100,7 @@ function Step1(props) {
         <span className="input-prefix">
           <Human />
         </span>
-        <input className="input-inner" placeholder="例：キーパー山田"></input>
+        <input className="input-inner" placeholder="例：キーパー山田" />
       </div>
       <button
         className="button button-black gs-button button-w100 ico-back"
@@ -156,7 +156,6 @@ function Step2(props) {
       // await db.collection("users").doc(user.id).update({
       //   image: savedImageUrl,
       // });
-      console.log(savedImageUrl);
     } catch (error) {
       console.error(error);
     }
@@ -222,7 +221,7 @@ function Step3(props) {
         <span className="input-prefix">
           <Mail />
         </span>
-        <input className="input-inner" placeholder="Eメール"></input>
+        <input className="input-inner" placeholder="Eメール" />
       </div>
       <div className="action-button-wrapper input-wrapper">
         <span className="input-prefix">
@@ -232,7 +231,7 @@ function Step3(props) {
           className="input-inner"
           placeholder="パスワード"
           type="password"
-        ></input>
+        />
         <span className="input-suffix">
           <Link href="/forgot-password">
             <a className="xs-text support  hover-black">お忘れですか？</a>

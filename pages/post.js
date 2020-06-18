@@ -6,12 +6,27 @@ import Upload from "../assets/icons/ui/upload.js";
 import Add from "../assets/icons/ui/add.js";
 import { storage } from "../lib/firebase";
 import generateRandomId from "../src/helpers/generateRandomId";
+import getImageFileType from "../src/helpers/getImageFileType";
 import withAuth from "../src/helpers/withAuth";
 import FullScreenModal from "../layouts/full-screen-modal.js";
 
 const Post = () => {
+  const [modalProps, setModalProps] = useState({
+    open: false,
+    src: null,
+    fileType: null,
+  });
   const [previewImageUrl, setPreviewImage] = useState(null);
-  const [isModalOpen, toggleModalOpen] = useState(false);
+
+  // モーダルを閉じる
+  const onCloseModal = useCallback(() => {
+    setModalProps({
+      open: false,
+      src: null,
+      fileType: null,
+    });
+  });
+
   const onDrop = useCallback(async (acceptedFiles) => {
     const file = acceptedFiles[0];
     // 許可されていないファイル形式の場合
@@ -21,34 +36,48 @@ const Post = () => {
       return;
     }
 
-    // previewに画像をセット
-    setPreviewImage(URL.createObjectURL(file));
-    toggleModalOpen(true);
-
-    // try {
-    //   // TODO: 投稿IDをFirebaseから生成
-    //   const postId = "aaaa";
-
-    //   // Firebase Storageへアップロード
-    //   const ref = storage.ref();
-    //   const fileName = `${generateRandomId()}_original.jpg`;
-    //   const snapshot = await ref
-    //     .child(`images/post/${postId}/${fileName}`)
-    //     .put(file);
-    //   // アップロードした画像URLをダウンロード
-    //   const imageUrl = await snapshot.ref.getDownloadURL();
-
-    //   // ダウンロードした画像をPreviewにセット
-    //   setPreviewImage(imageUrl);
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    // crop用modalに画像をセット
+    setModalProps({
+      open: true,
+      src: URL.createObjectURL(file),
+      fileType: file.type,
+    });
   }, []);
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: "image/jpeg, image/png",
     multiple: false,
+  });
+
+  // 保存実行
+  const onUpload = useCallback(async (blob) => {
+    try {
+      // 事前にpreview用の画像URLを表示してモーダルを閉じる
+      setPreviewImage(URL.createObjectURL(blob));
+      onCloseModal();
+
+      const fileType = getImageFileType(modalProps.fileType);
+      if (!fileType) {
+        return;
+      }
+
+      // TODO: 投稿IDをFirebaseから生成
+      const postId = "aaaa";
+
+      // Firebase Storageへアップロード
+      const ref = storage.ref();
+      const fileName = `${generateRandomId()}_original.${fileType.ext}`;
+      const snapshot = await ref
+        .child(`images/post/${postId}/${fileName}`)
+        .put(blob);
+
+      // アップロードした画像URLをダウンロード & ダウンロードした画像をPreviewにセット
+      const imageUrl = await snapshot.ref.getDownloadURL();
+      setPreviewImage(imageUrl);
+    } catch (error) {
+      console.error(error);
+    }
   });
 
   return (
@@ -70,10 +99,10 @@ const Post = () => {
         </div>
       </header>
       <FullScreenModal
-        open={isModalOpen}
-        src={previewImageUrl}
-        onClose={() => toggleModalOpen(false)}
-        onContinue={() => toggleModalOpen(false)}
+        {...modalProps}
+        aspect={4 / 3}
+        onClose={onCloseModal}
+        onContinue={(blob) => onUpload(blob)}
       />
       <div className="contents post-row">
         <div className="section post-main">
