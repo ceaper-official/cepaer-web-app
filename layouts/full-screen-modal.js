@@ -80,7 +80,6 @@ export default function FullScreenModal(props) {
         y,
         aspect,
       };
-      console.log(crop);
       setCrop(crop);
 
       getCroppedImg(img, crop).then((blob) => {

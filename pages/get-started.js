@@ -10,9 +10,9 @@ import Circle from "../assets/icons/ui/gs-circle.js";
 import Mail from "../assets/icons/ui/mail.js";
 import Password from "../assets/icons/ui/password.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
+import withAuth from "../src/helpers/withAuth";
 import generateRandomId from "../src/helpers/generateRandomId";
 import getImageFileType from "../src/helpers/getImageFileType";
-import withAuth from "../src/helpers/withAuth";
 import FullScreenModal from "../layouts/full-screen-modal.js";
 
 function User() {
@@ -162,14 +162,16 @@ function Step2(props) {
 
   const onUpload = useCallback(async (blob) => {
     try {
-      // 事前にpreview用の画像URLを表示してモーダルを閉じる
+      // 事前にpreview用の画像URLを表示する
       setProfileImageUrl(URL.createObjectURL(blob));
-      onCloseModal();
 
       const fileType = getImageFileType(modalProps.fileType);
       if (!fileType) {
         return;
       }
+
+      // モーダルを閉じる
+      onCloseModal();
 
       // Firebase Storageへアップロード
       const user = getCurrentUser();

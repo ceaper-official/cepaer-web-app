@@ -53,14 +53,16 @@ const Post = () => {
   // アップロード実行
   const onUpload = useCallback(async (blob) => {
     try {
-      // 事前にpreview用の画像URLを表示してモーダルを閉じる
+      // 事前にpreview用の画像URLを表示
       setPreviewImage(URL.createObjectURL(blob));
-      onCloseModal();
 
       const fileType = getImageFileType(modalProps.fileType);
       if (!fileType) {
         return;
       }
+
+      // モーダルを閉じる
+      onCloseModal();
 
       // TODO: 投稿IDをFirebaseから生成
       const postId = "aaaa";
