@@ -8,7 +8,7 @@ import Twitter from "../assets/icons/social/twitter.js";
 import CookSolid from "../assets/icons/ui/cook-solid.js";
 import LikeSolid from "../assets/icons/ui/like-solid.js";
 import CollectionSolid from "../assets/icons/ui/collection-solid.js";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import UserShot from "../layouts/shots/shot.js";
 import UserCollection from "../layouts/collections/collection.js";
 
@@ -45,7 +45,10 @@ export default () => (
                 </div>
 
                 <Link href="/edit">
-                  <a className="button setting-button button-snow ico" style={{ marginTop: 25 }}>
+                  <a
+                    className="button setting-button button-snow ico"
+                    style={{ marginTop: 25 }}
+                  >
                     <SettingSolid />
                     プロフィールを編集
                   </a>
@@ -58,46 +61,52 @@ export default () => (
 
       <div className="contents">
         <div className="section">
-
           <Tabs>
-           <TabList className="tab-label-wrapper user-data-wrapper">
-             <Tab className="tab-label ico"><CookSolid />投稿したレシピ<span className="user-data">73</span></Tab>
-             <Tab className="tab-label ico"><LikeSolid />お気に入り<span className="user-data">410</span></Tab>
-             <Tab className="tab-label ico"><CollectionSolid/>コレクション<span className="user-data">3</span></Tab>
-           </TabList>
+            <TabList className="tab-label-wrapper user-data-wrapper">
+              <Tab className="tab-label ico">
+                <CookSolid />
+                投稿したレシピ<span className="user-data">73</span>
+              </Tab>
+              <Tab className="tab-label ico">
+                <LikeSolid />
+                お気に入り<span className="user-data">410</span>
+              </Tab>
+              <Tab className="tab-label ico">
+                <CollectionSolid />
+                コレクション<span className="user-data">3</span>
+              </Tab>
+            </TabList>
 
-           {/*全件表示*/}
-           <TabPanel className="tab-content shots-wrapper">
-<UserShot/>
-  <UserShot/>
-    <UserShot/>
-  <UserShot/>
-    <UserShot/>
-  <UserShot/>
-    <UserShot/>
-  <UserShot/>
-           </TabPanel>
-           <TabPanel className="tab-content shots-wrapper">
-<UserShot/>
-  <UserShot/>
-    <UserShot/>
-  <UserShot/>
-    <UserShot/>
-  <UserShot/>
-    <UserShot/>
-  <UserShot/>
-           </TabPanel>
-           <TabPanel className="tab-content shots-wrapper collection-wrapper">
-<UserCollection/>
-  <UserCollection/>
-    <UserCollection/>
-      <UserCollection/>
-        <UserCollection/>
-          <UserCollection/>
-
-           </TabPanel>
-         </Tabs>
-
+            {/*全件表示*/}
+            <TabPanel className="tab-content shots-wrapper">
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+            </TabPanel>
+            <TabPanel className="tab-content shots-wrapper">
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+              <UserShot />
+            </TabPanel>
+            <TabPanel className="tab-content shots-wrapper collection-wrapper">
+              <UserCollection />
+              <UserCollection />
+              <UserCollection />
+              <UserCollection />
+              <UserCollection />
+              <UserCollection />
+            </TabPanel>
+          </Tabs>
         </div>
       </div>
     </div>

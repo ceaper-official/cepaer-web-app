@@ -1,0 +1,81 @@
+@import "react-image-crop/lib/ReactCrop.scss";
+
+.ReactCrop {
+  /* 外枠を白線に変更 */
+  &__crop-selection {
+    border-image: none;
+    border-color: white;
+  }
+
+  /* 縦横三等分の線のopacityを1に変更 */
+  &__rule-of-thirds-vt::before,
+  &__rule-of-thirds-vt::after,
+  &__rule-of-thirds-hz::before,
+  &__rule-of-thirds-hz::after {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &__drag-handle {
+    &::after {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  /* 4隅のstyleを変更 */
+  .ord-nw {
+    margin-top: -2px;
+    margin-left: -2px;
+
+    &::after {
+      border-top-color: white;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-left-color: white;
+      border-left-style: solid;
+      border-left-width: 2px;
+    }
+  }
+
+  .ord-ne {
+    margin-top: -2px;
+    margin-right: -2px;
+
+    &::after {
+      border-top-color: white;
+      border-top-style: solid;
+      border-top-width: 2px;
+      border-right-color: white;
+      border-right-style: solid;
+      border-right-width: 2px;
+    }
+  }
+
+  .ord-se {
+    margin-bottom: -2px;
+    margin-right: -2px;
+
+    &::after {
+      border-bottom-color: white;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-right-color: white;
+      border-right-style: solid;
+      border-right-width: 2px;
+    }
+  }
+
+  .ord-sw {
+    margin-bottom: -2px;
+    margin-left: -2px;
+
+    &::after {
+      border-bottom-color: white;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-left-color: white;
+      border-left-style: solid;
+      border-left-width: 2px;
+    }
+  }
+}

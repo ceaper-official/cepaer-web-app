@@ -27,10 +27,7 @@ export default () => (
       <div className="contents" id="recipe-hero">
         <div className="section">
           <div className="recipe-wrapper">
-            <a
-              onClick={() => Router.back()}
-              className="back-button ico-button"
-            >
+            <a onClick={() => Router.back()} className="back-button ico-button">
               <Arrow />
             </a>
 
