@@ -4,7 +4,7 @@ const admin = require("firebase-admin");
 const os = require("os");
 const path = require("path");
 const sharp = require("sharp");
-const fs = require("fs");
+const fs = require("fs-extra");
 
 /**
  *
