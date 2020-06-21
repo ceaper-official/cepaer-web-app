@@ -21,7 +21,7 @@ module.exports = functions
 
     // サムネイル生成パラメータの設定
     const imageUrl = afterData.originalImageUrl;
-    const destination = `/images/post/${postId}`;
+    const destination = `images/post/${postId}`;
     const sizes = [
       [700, 525],
       [1200, 900],
@@ -34,7 +34,7 @@ module.exports = functions
       sizes
     );
 
-    if (!thumbnailImageUrls || thumbnailImageUrls.length === sizes.length) {
+    if (!thumbnailImageUrls || thumbnailImageUrls.length !== sizes.length) {
       console.error("thumbnailImageUrls not found");
       return;
     }

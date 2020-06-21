@@ -21,7 +21,7 @@ module.exports = functions
 
     // サムネイル生成パラメータの設定
     const imageUrl = afterData.originalImageUrl;
-    const destination = `/images/profile/${userId}`;
+    const destination = `images/profile/${userId}`;
     const sizes = [[400, 400]];
 
     // サムネイル画像生成実行
@@ -31,7 +31,7 @@ module.exports = functions
       sizes
     );
 
-    if (!thumbnailImageUrls || thumbnailImageUrls.length === sizes.length) {
+    if (!thumbnailImageUrls || thumbnailImageUrls.length !== sizes.length) {
       console.error("thumbnailImageUrls not found");
       return;
     }

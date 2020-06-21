@@ -4,7 +4,7 @@ const admin = require("firebase-admin");
 const os = require("os");
 const path = require("path");
 const sharp = require("sharp");
-const fs = require("fs");
+const fs = require("fs-extra");
 
 /**
  *
@@ -19,11 +19,13 @@ module.exports = async (imageUrl, destination, sizes) => {
     return;
   }
 
-  const fileName = path.basename(imageUrl);
+  const fileName = getFileName(imageUrl);
   if (!fileName) {
     console.error(`fileName not found`);
     return;
   }
+
+  console.log("fileName", fileName);
 
   const filePath = path.join(destination, fileName);
   if (!filePath) {
@@ -33,10 +35,12 @@ module.exports = async (imageUrl, destination, sizes) => {
 
   const bucketDir = path.dirname(filePath);
 
+  console.log("bucketDir", bucketDir);
+
   const workingDir = path.join(os.tmpdir(), "thumbnails");
   const tmpFilePath = path.join(workingDir, fileName);
 
-  const thumbIdentifier = "thumb@";
+  const thumbIdentifier = "thumbnail@";
 
   // 1. サムネイルのフォルダ確認(なければ作成)
   await fs.ensureDir(workingDir);
@@ -44,20 +48,24 @@ module.exports = async (imageUrl, destination, sizes) => {
   // 2. GCSから画像をダウンロード
   const bucket = getBucket();
 
+  console.log("filePath", filePath);
+
   await bucket.file(filePath).download({
     destination: tmpFilePath,
   });
 
   // 3. 画像のりサイズを行うPromiseを配列で生成
   const uploadPromises = sizes.map(async (size) => {
-    const thumbName = `${thumbIdentifier}${size[0]}x${size[1]}_${fileName}`;
+    const ext = path.extname(fileName);
+    const name = path.basename(fileName, ext);
+    const thumbName = `${name}_${thumbIdentifier}${size[0]}x${size[1]}${ext}`;
     const thumbPath = path.join(workingDir, thumbName);
 
     // Resize source image
     await sharp(tmpFilePath).resize(size[0], size[1]).toFile(thumbPath);
 
     // Upload to GCS
-    const uploadPath = path.join(bucketDir, thumbName);
+    const uploadPath = path.join(bucketDir, "thumbnails", thumbName);
     await bucket.upload(thumbPath, {
       destination: uploadPath,
     });
@@ -77,8 +85,18 @@ module.exports = async (imageUrl, destination, sizes) => {
 };
 
 /**
+ * Firebase StorageのURLからファイル名の取得
+ */
+function getFileName(url) {
+  const decoded = decodeURIComponent(url);
+  const basename = path.basename(decoded);
+
+  // ?以下のextは除外
+  return basename.split("?alt=")[0];
+}
+
+/**
  * storageBucketのURLを取得
- * example: https://storage.googleapis.com/fasta-development-d9d7a.appspot.com
  */
 function getStorageBucket() {
   const config = process.env.FIREBASE_CONFIG;
