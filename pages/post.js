@@ -69,7 +69,7 @@ const Post = () => {
 
       // Firebase Storageへアップロード
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}_original.${fileType.ext}`;
+      const fileName = `${generateRandomId()}.${fileType.ext}`;
       const snapshot = await ref
         .child(`images/post/${postId}/${fileName}`)
         .put(blob);

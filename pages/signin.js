@@ -6,7 +6,6 @@ import Password from "../assets/icons/ui/password.js";
 import Google from "../assets/icons/social/google.js";
 import Facebook from "../assets/icons/social/facebook.js";
 import Link from "next/link";
-
 class Home extends React.Component {
   //Email
   constructor(props) {
@@ -41,7 +40,6 @@ class Home extends React.Component {
     }
   };
   //end Email
-
   //Google
   handleSignIn = () => {
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -57,6 +55,23 @@ class Home extends React.Component {
       });
   };
   //end Google
+  //facebook
+  handleFacebookSignIn = () => {
+    var provider = new firebase.auth.FacebookAuthProvider();
+    auth
+    .signInWithPopup(provider)
+    .then((result) => {
+      // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = result.user;
+    })
+    .catch((error) => {
+      alert("問題が発生しました。最初からやり直してください。");
+      console.log(error);
+    })
+  };
+  //end facebook
   render() {
     return (
       <div className="actions-row">
@@ -111,7 +126,7 @@ class Home extends React.Component {
               </button>
             </div>
             <div className="action-button-wrapper">
-              <button className="social-button">
+              <button onClick={this.handleFacebookSignIn} className="social-button">
                 <span className="button-prefix">
                   <Facebook />
                 </span>

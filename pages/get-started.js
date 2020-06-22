@@ -180,7 +180,7 @@ function Step2(props) {
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}_original.${fileType.ext}`;
+      const fileName = `${generateRandomId()}.${fileType.ext}`;
       const snapshot = await ref
         .child(`images/profile/${user.uid}/${fileName}`)
         .put(blob);
