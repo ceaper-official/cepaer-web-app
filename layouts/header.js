@@ -7,6 +7,7 @@ import HomeApp from "../assets/icons/ui/home_solid.js";
 import HumanApp from "../assets/icons/ui/human_solid.js";
 import AppLogo from "../assets/app-logo.js";
 import Back from "../assets/icons/ui/back.js";
+import Router from "next/router";
 
 function User() {
   return <img src="images/default/user.svg" alt="user image" />;

@@ -1,8 +1,8 @@
 .contents {
-  margin: 10rem 0;
+  margin: 10rem auto;
   background: var(--bacground-color);
   @media (max-width: $phablet) {
-    margin: 6rem 0;
+    margin: 6rem auto;
   }
 }
 /*Card*/
@@ -62,7 +62,7 @@
     margin: auto;
     left: 0;
     right: 0;
-    @media screen and (max-width:$phablet) {
+    @media screen and (max-width: $phablet) {
       width: calc(100% - 4rem);
     }
   }

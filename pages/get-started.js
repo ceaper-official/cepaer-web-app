@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from "react";
 import Link from "next/link";
+import { NavLink } from "react-router-dom";
 import StepWizard from "react-step-wizard";
 import GSBaseLayout from "../layouts/base-get-started.js";
 import Upload from "../assets/icons/ui/upload.js";
@@ -19,6 +20,35 @@ function User() {
   return <img src="images/default/user.jpg" alt="user image" />;
 }
 
+function GSNav() {
+  return (
+    <div>
+      <div className="gs-progress active" id="gs-nav1">
+        <span className="gs-progress-mark ico">
+          <Circle />
+        </span>
+        <h5 className="grey">ユーザー名の設定</h5>
+      </div>
+
+      <div className="gs-progress" id="gs-nav2">
+        <span className="gs-progress-mark ico">
+          <Circle />
+        </span>
+        <span className="gs-progress-line" />
+        <h5 className="grey">アイコンの設定</h5>
+      </div>
+
+      <div className="gs-progress" id="gs-nav3">
+        <span className="gs-progress-mark ico">
+          <Circle />
+        </span>
+        <span className="gs-progress-line" />
+        <h5 className="grey">Ceaperへようこそ！</h5>
+      </div>
+    </div>
+  );
+}
+
 class GS extends React.Component {
   render() {
     return (
@@ -31,35 +61,14 @@ class GS extends React.Component {
                   プロフィールを設定しましょう
                 </h6>
 
-                <div className="gs-progress">
-                  <span className="gs-progress-mark ico">
-                    <Circle />
-                  </span>
-                  <span className="gs-progress-line" />
-                  <h5 className="grey">ユーザー名の設定</h5>
-                </div>
-
-                <div className="gs-progress">
-                  <span className="gs-progress-mark ico">
-                    <Circle />
-                  </span>
-                  <span className="gs-progress-line" />
-                  <h5 className="grey">アイコンの設定</h5>
-                </div>
-
-                <div className="gs-progress">
-                  <span className="gs-progress-mark ico">
-                    <Circle />
-                  </span>
-                  <h5 className="grey">完了</h5>
-                </div>
+                <StepWizard nav={<GSNav />}></StepWizard>
               </div>
             </div>
 
             <div className="section gs-inner-form gs-inner">
               <div className="gs-inner-form">
                 <div className="gs-inner-form-inner">
-                  <StepWizard>
+                  <StepWizard isHashEnabled={true}>
                     <Step1 />
                     <Step2 />
                     <Step3 />
@@ -93,23 +102,18 @@ function Step1(props) {
   }
   return (
     <div>
-      <h1 className="title">プロフィールの設定</h1>
+      <h1 className="title">ユーザー名の設定</h1>
       <p>
         Cepaerを始める前に、あなたのプロフィールを完成させましょう。この項目は、後でも編集が可能です。
       </p>
-      <label>ユーザー名</label>
       <div className="action-button-wrapper input-wrapper gs-input">
         <span className="input-prefix">
           <Human />
         </span>
         <input className="input-inner" placeholder="例：キーパー山田" />
       </div>
-      <button
-        className="button button-black gs-button button-w100 ico-back"
-        onClick={props.nextStep}
-      >
+      <button className="button button-w100" onClick={props.nextStep} id="gs1">
         次に進む
-        <Arrow />
       </button>
     </div>
   );
@@ -231,13 +235,21 @@ function Step2(props) {
         </button>
       </div>
 
-      <button
-        className="button button-black gs-button button-w100 ico-back"
-        onClick={props.nextStep}
-      >
-        次に進む
-        <Arrow />
-      </button>
+      <div className="button-choice-wrapper">
+        <button
+          className="button-ol button-choice-l"
+          onClick={props.previousStep}
+        >
+          前に戻る
+        </button>
+        <button
+          className="button button-choice-r"
+          onClick={props.nextStep}
+          id="gs2"
+        >
+          次に進む
+        </button>
+      </div>
     </div>
   );
 }
@@ -275,9 +287,19 @@ function Step3(props) {
         </span>
       </div>
 
-      <button className="button button-accent gs-button button-w100">
-        始める
-      </button>
+      <div className="button-choice-wrapper">
+        <button
+          className="button-ol button-choice-l"
+          onClick={props.previousStep}
+        >
+          前に戻る
+        </button>
+        <Link href="/">
+          <button className="button button-choice-r" onClick={props.nextStep}>
+            始める{" "}
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -64,7 +64,10 @@ class FeedBackForm extends React.Component {
                 <h5 className="hr-section-title">どのような内容ですか？</h5>
                 <div className="form-select">
                   <a className="icon-button ico select-button select-button-bottom ico-big card">
-                    フィードバックについて
+                    サービスについて{" "}
+                  </a>
+                  <a className="icon-button ico select-button select-button-bottom ico-big card">
+                    機能の提案・要望について{" "}
                   </a>
                   <a className="icon-button ico select-button ico-big card">
                     バグ・不具合について

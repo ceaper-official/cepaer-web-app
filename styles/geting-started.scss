@@ -21,7 +21,9 @@
   }
 }
 //ページ
-#gs-page {}
+
+#gs-page {
+}
 
 .gs-wrapper {
   height: calc(100vh - 65px - 70px);
@@ -52,29 +54,30 @@
     h6 {
       color: var(--horizontalRule);
     }
+    //アイコン
+    .gs-progress-mark {
+      font-size: 22px;
+      line-height: 38px;
+      padding-right: 1.6rem;
+      position: relative;
+      z-index: 10;
+
+      & svg {
+        margin: 0;
+        width: 20px;
+
+        & circle {
+          stroke: var(--horizontalRule);
+        }
+      }
+    }
 
     .gs-progress {
       padding: 1rem 0;
       position: relative;
       display: flex;
+      align-items: center;
       height: 50px;
-      //アイコン
-      .gs-progress-mark {
-        font-size: 22px;
-        line-height: 38px;
-        padding-right: 1.6rem;
-        position: relative;
-        z-index: 10;
-
-        & svg {
-          margin: 0;
-          width: 20px;
-
-          & circle {
-            stroke: var(--horizontalRule);
-          }
-        }
-      }
       //ライン
       .gs-progress-line {
         display: block;
@@ -82,19 +85,35 @@
         left: 10px;
         width: 1px;
         z-index: 1;
-        top: 35px;
+        bottom: 35px;
         height: 30px;
         background: var(--horizontalRule);
       }
       //テキスト
       & h5 {
         color: var(--horizontalRule);
+        font-weight: 600;
+        line-height: 1;
+        font-size: 1.8rem;
+      }
+      //アクティブ
+      &.active {
+        & * {
+          color: var(--black);
+          fill: var(--black);
+          stroke: var(--black);
+        }
+
+        & .gs-progress-line {
+          background: var(--black);
+        }
       }
     }
   }
   //フォーム
   .gs-inner-form {
     margin: auto;
+    overflow: hidden;
 
     .gs-inner-form-inner {
       max-width: 500px;
