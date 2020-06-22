@@ -71,7 +71,6 @@ export default Header;
 function HeaderApp() {
   return (
     <div>
-      {" "}
       <div className="section">
         <div className="app-header-wrapper">
           <div className="app-header-inner" onClick={() => Router.back()}>

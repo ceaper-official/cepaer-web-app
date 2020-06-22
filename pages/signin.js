@@ -59,26 +59,26 @@ class Home extends React.Component {
   handleFacebookSignIn = () => {
     var provider = new firebase.auth.FacebookAuthProvider();
     auth
-    .signInWithPopup(provider)
-    .then((result) => {
-      // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-      var token = result.credential.accessToken;
-      // The signed-in user info.
-      var user = result.user;
-    })
-    .catch((error) => {
-      alert("問題が発生しました。最初からやり直してください。");
-      console.log(error);
-    })
+      .signInWithPopup(provider)
+      .then((result) => {
+        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+      })
+      .catch((error) => {
+        alert("問題が発生しました。最初からやり直してください。");
+        console.log(error);
+      });
   };
   //end facebook
   render() {
     return (
-      <div className="actions-row">
-        <div className="actions-row-bg"></div>
-        <div className="actions-wrapper">
-          <div className="actions-inner card">
-            <div className="actions-row-close">
+      <div className="popup-row">
+        <div className="popup-row-bg"></div>
+        <div className="popup-wrapper">
+          <div className="popup-inner card">
+            <div className="popup-row-close">
               <Cross />
             </div>
             <h1>ログイン</h1>
@@ -116,7 +116,7 @@ class Home extends React.Component {
                 ログイン
               </button>
             </div>
-            <span className="actions-subtitle xs-text">または</span>
+            <span className="popup-subtitle xs-text">または</span>
             <div className="action-button-wrapper">
               <button onClick={this.handleSignIn} className="social-button">
                 <span className="button-prefix">
@@ -126,7 +126,10 @@ class Home extends React.Component {
               </button>
             </div>
             <div className="action-button-wrapper">
-              <button onClick={this.handleFacebookSignIn} className="social-button">
+              <button
+                onClick={this.handleFacebookSignIn}
+                className="social-button"
+              >
                 <span className="button-prefix">
                   <Facebook />
                 </span>

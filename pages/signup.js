@@ -54,11 +54,11 @@ class SignUp extends React.Component {
     const { Component } = this.state;
     if (Component) return <Component />;
     return (
-      <div className="actions-row">
-        <div className="actions-row-bg"></div>
-        <div className="actions-wrapper">
-          <div className="actions-inner card">
-            <div className="actions-row-close">
+      <div className="popup-row">
+        <div className="popup-row-bg"></div>
+        <div className="popup-wrapper">
+          <div className="popup-inner card">
+            <div className="popup-row-close">
               <Cross />
             </div>
             <h1>アカウント作成</h1>
@@ -104,7 +104,7 @@ class SignUp extends React.Component {
               </Link>
               に同意するものとします。
             </p>
-            <span className="actions-subtitle xs-text">または</span>
+            <span className="popup-subtitle xs-text">または</span>
             <div className="action-button-wrapper">
               <button className="social-button">
                 <span className="button-prefix">

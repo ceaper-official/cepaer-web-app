@@ -4,11 +4,11 @@ import Password from "../assets/icons/ui/password.js";
 import Link from "next/link";
 
 export default () => (
-  <div className="actions-row">
-    <div className="actions-row-bg"></div>
-    <div className="actions-wrapper">
-      <div className="actions-inner card">
-        <div className="actions-row-close">
+  <div className="popup-row">
+    <div className="popup-row-bg"></div>
+    <div className="popup-wrapper">
+      <div className="popup-inner card">
+        <div className="popup-row-close">
           <Cross />
         </div>
         <h1>パスワードの再設定</h1>

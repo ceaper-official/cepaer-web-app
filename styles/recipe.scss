@@ -429,3 +429,8 @@
     }
   }
 }
+
+.active.like * {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
