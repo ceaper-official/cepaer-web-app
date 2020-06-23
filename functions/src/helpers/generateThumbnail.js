@@ -6,6 +6,9 @@ const path = require("path");
 const sharp = require("sharp");
 const fs = require("fs-extra");
 
+// 許可する拡張子(クライアント側でjpg形式に変換しているため、jpg形式のみ許可する)
+const ACCEPT_EXTS = [".jpg"];
+
 /**
  *
  * @param {string} imageUrl 取得した画像URL
@@ -26,6 +29,14 @@ module.exports = async (imageUrl, destination, sizes) => {
   }
 
   console.log("fileName", fileName);
+
+  const ext = path.extname(fileName);
+  const name = path.basename(fileName, ext);
+
+  if (!ACCEPT_EXTS.includes(ext)) {
+    console.error(`file extention not allowed`);
+    return;
+  }
 
   const filePath = path.join(destination, fileName);
   if (!filePath) {
@@ -56,9 +67,8 @@ module.exports = async (imageUrl, destination, sizes) => {
 
   // 3. 画像のりサイズを行うPromiseを配列で生成
   const uploadPromises = sizes.map(async (size) => {
-    const ext = path.extname(fileName);
-    const name = path.basename(fileName, ext);
-    const thumbName = `${name}_${thumbIdentifier}${size[0]}x${size[1]}${ext}`;
+    // 全てjpgファイルに変換
+    const thumbName = `${name}_${thumbIdentifier}${size[0]}x${size[1]}.jpg`;
     const thumbPath = path.join(workingDir, thumbName);
 
     // Resize source image

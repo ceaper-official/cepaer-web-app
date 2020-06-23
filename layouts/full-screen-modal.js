@@ -58,19 +58,18 @@ export default function FullScreenModal(props) {
       setImageRef(img);
 
       let { width, height } = img;
-      if (aspect === 1) {
-        if (img.width > img.height) {
-          width = img.height;
-        } else {
-          height = img.width;
-        }
-      } else if (img.width > img.height) {
-        width = img.width / aspect;
+      console.log(width);
+      console.log(height);
+      if (img.width > img.height) {
+        width = img.height * aspect;
       } else {
-        height = img.height / aspect;
+        height = img.width / aspect;
       }
-      const x = img.width > img.height ? (img.width - width) / 2 : 0;
-      const y = img.height > img.width ? (img.height - height) / 2 : 0;
+      console.log(width);
+      console.log(height);
+
+      const x = img.width >= img.height ? (img.width - width) / 2 : 0;
+      const y = img.height >= img.width ? (img.height - height) / 2 : 0;
       // eslint-disable-next-line no-shadow
       const crop = {
         unit: "px",

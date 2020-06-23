@@ -6,7 +6,7 @@ import Upload from "../assets/icons/ui/upload.js";
 import Add from "../assets/icons/ui/add.js";
 import { storage } from "../lib/firebase";
 import generateRandomId from "../src/helpers/generateRandomId";
-import getImageFileType from "../src/helpers/getImageFileType";
+import acceptImageFileType from "../src/helpers/acceptImageFileType";
 import withAuth from "../src/helpers/withAuth";
 import FullScreenModal from "../layouts/full-screen-modal.js";
 
@@ -46,7 +46,7 @@ const Post = () => {
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
-    accept: "image/jpeg, image/png",
+    accept: acceptImageFileType,
     multiple: false,
   });
 
@@ -56,11 +56,6 @@ const Post = () => {
       // 事前にpreview用の画像URLを表示
       setPreviewImage(URL.createObjectURL(blob));
 
-      const fileType = getImageFileType(modalProps.fileType);
-      if (!fileType) {
-        return;
-      }
-
       // モーダルを閉じる
       onCloseModal();
 
@@ -69,7 +64,7 @@ const Post = () => {
 
       // Firebase Storageへアップロード
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}.${fileType.ext}`;
+      const fileName = `${generateRandomId()}.jpg`;
       const snapshot = await ref
         .child(`images/post/${postId}/${fileName}`)
         .put(blob);

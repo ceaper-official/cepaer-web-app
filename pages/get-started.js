@@ -13,7 +13,7 @@ import Password from "../assets/icons/ui/password.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
 import withAuth from "../src/helpers/withAuth";
 import generateRandomId from "../src/helpers/generateRandomId";
-import getImageFileType from "../src/helpers/getImageFileType";
+import acceptImageFileType from "../src/helpers/acceptImageFileType";
 import FullScreenModal from "../layouts/full-screen-modal.js";
 
 function User() {
@@ -61,14 +61,14 @@ class GS extends React.Component {
                   プロフィールを設定しましょう
                 </h6>
 
-                <StepWizard nav={<GSNav />}></StepWizard>
+                <StepWizard nav={<GSNav />} />
               </div>
             </div>
 
             <div className="section gs-inner-form gs-inner">
               <div className="gs-inner-form">
                 <div className="gs-inner-form-inner">
-                  <StepWizard isHashEnabled={true}>
+                  <StepWizard isHashEnabled>
                     <Step1 />
                     <Step2 />
                     <Step3 />
@@ -169,18 +169,13 @@ function Step2(props) {
       // 事前にpreview用の画像URLを表示する
       setProfileImageUrl(URL.createObjectURL(blob));
 
-      const fileType = getImageFileType(modalProps.fileType);
-      if (!fileType) {
-        return;
-      }
-
       // モーダルを閉じる
       onCloseModal();
 
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}.${fileType.ext}`;
+      const fileName = `${generateRandomId()}.jpg`;
       const snapshot = await ref
         .child(`images/profile/${user.uid}/${fileName}`)
         .put(blob);
@@ -210,6 +205,7 @@ function Step2(props) {
       <input
         ref={inputRef}
         onChange={onChangeImage}
+        accept={acceptImageFileType}
         style={{ display: "none" }}
         type="file"
       />

@@ -14,7 +14,7 @@ import NavEditMobile from "../layouts/nav-edit-mobile.js";
 import { getCurrentUser, storage, db } from "../lib/firebase";
 import withAuth from "../src/helpers/withAuth";
 import generateRandomId from "../src/helpers/generateRandomId";
-import getImageFileType from "../src/helpers/getImageFileType";
+import acceptImageFileType from "../src/helpers/acceptImageFileType";
 import FullScreenModal from "../layouts/full-screen-modal.js";
 
 function User({ imageUrl }) {
@@ -92,18 +92,13 @@ export class Edit extends React.Component {
         profileImageUrl: URL.createObjectURL(blob),
       });
 
-      const fileType = getImageFileType(this.state.modalProps.fileType);
-      if (!fileType) {
-        return;
-      }
-
       // モーダルを閉じる
       this.onCloseModal();
 
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}.${fileType.ext}`;
+      const fileName = `${generateRandomId()}.jpg`;
       const snapshot = await ref
         .child(`images/profile/${user.uid}/${fileName}`)
         .put(blob);
@@ -145,6 +140,7 @@ export class Edit extends React.Component {
                       </h3>
                       <input
                         ref={this.inputRef}
+                        accept={acceptImageFileType}
                         onChange={this.onChangeProfileImage}
                         style={{ display: "none" }}
                         type="file"
