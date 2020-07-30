@@ -152,7 +152,7 @@ function SendMail() {
         <CardForm title="ありがとうございます">
           入力して頂いたメールアドレス宛に、確認メールを送信しました。届いたメールのリンクに沿って、アカウントの作成を進めてください。
         </CardForm>
-    </Hero>
-  </BaseLayout>
+      </Hero>
+    </BaseLayout>
   );
 }
