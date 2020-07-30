@@ -143,7 +143,7 @@ class SignIn extends React.Component {
             </SocialButton>
             <LinkItem
               title="アカウントがまだありませんか？"
-              text="作成する"
+              text="作成"
               href="/signup"
             />
           </CardForm>
