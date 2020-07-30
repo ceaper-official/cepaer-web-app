@@ -3,6 +3,17 @@ import Link from "next/link";
 
 import { auth, firebase } from "@src/firebase";
 
+import BaseLayout from "@components/layout/BaseLayout";
+import Hero from "@components/hero/Hero";
+import Content from "@components/content/Content";
+import CardForm from "@components/form/CardForm";
+import Input from "@components/form/Input";
+import SectionItem from "@components/form/SectionItem";
+import LinkItem from "@components/form/LinkItem";
+import NoteItem from "@components/form/NoteItem";
+import Button from "@components/button/Button";
+import SocialButton from "@components/button/SocialButton";
+
 import Cross from "@icons/ui/cross.js";
 import Mail from "@icons/ui/mail.js";
 import Password from "@icons/ui/password.js";
@@ -94,82 +105,40 @@ class SignUp extends React.Component {
     const { Component } = this.state;
     if (Component) return <Component />;
     return (
-      <div className="popup-row">
-        <div className="popup-wrapper">
-          <div className="popup-inner card">
-            <h1>アカウント作成</h1>
-            <div className="action-button-wrapper input-wrapper">
-              <span className="input-prefix">
-                <Mail />
-              </span>
-              <input
-                className="input-inner"
-                placeholder="Eメール"
-                onChange={(e) => this.setState({ email: e.target.value })}
-              ></input>
-            </div>
-            <div className="action-button-wrapper input-wrapper">
-              <span className="input-prefix">
-                <Password />
-              </span>
-              <input
-                className="input-inner"
-                placeholder="パスワード"
-                type="password"
-                onChange={(e) => this.setState({ password: e.target.value })}
-              ></input>
-            </div>
-            <div className="action-button-wrapper">
-              <button
-                className="button-black button"
-                onClick={(e) => this.handleSignUp(e)}
-              >
-                アカウント作成
-              </button>
-            </div>
-            <p className="xs-text grey">
-              アカウントを作成する事で、Ceaperの
-              <Link href="/terms">
-                <a className="border-text grey xs-text">利用規約</a>
-              </Link>
-              、
-              <Link href="/privacy">
-                <a className="border-text grey xs-text">
-                  データに関するポリシー、Cookieポリシー
-                </a>
-              </Link>
-              に同意するものとします。
-            </p>
-            <span className="popup-subtitle xs-text">または</span>
-            <div className="action-button-wrapper">
-              <button className="social-button" onClick={this.handleSignIn}>
-                <span className="button-prefix">
-                  <Google />
-                </span>
-                <span className="social-button-inner">Googleでログイン</span>
-              </button>
-            </div>
-            <div className="action-button-wrapper">
-              <button
-                className="social-button"
-                onClick={this.handleFacebookSignIn}
-              >
-                <span className="button-prefix">
-                  <Facebook />
-                </span>
-                <span className="social-button-inner">Facebookでログイン</span>
-              </button>
-            </div>
-            <div className="hr-text"></div>
-            <div className="make-account-link">
-              <p className="xs-text">すでにアカウントをお持ちですか？</p>
-              <Link href="/signin">
-                <a className="xs-text hover-black accent">ログイン</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BaseLayout>
+        <Hero>
+          <CardForm title="アカウントの作成">
+            <Input
+              placeholder="Eメール"
+              icon={<Mail/>}
+              onChange={(e) => this.setState({ email: e.target.value })}
+            />
+            <Input
+              placeholder="パスワード"
+              icon={<Password/>}
+              onChange={(e) => this.setState({ password: e.target.value })}
+            />
+            <Button onClick={(e) => this.handleSignUp(e)}>
+              アカウントを作成
+            </Button>
+            <NoteItem>
+              アカウントを作成する事で、Ceaperの<Link href="/privacy"><a>利用規約</a></Link>、データに関するポリシー、Cookieポリシーに同意するものとします。
+            </NoteItem>
+            <SectionItem title="または"/>
+            <SocialButton icon=<Google/> onClick={this.handleSignIn}>
+              Googleで作成
+            </SocialButton>
+            <SocialButton icon=<Facebook/> onClick={this.handleFacebookSignIn}>
+              Facebookで作成
+            </SocialButton>
+            <LinkItem
+              title="すでにアカウントをお持ちですか？"
+              text="ログイン"
+              href="/signin"
+            />
+          </CardForm>
+      </Hero>
+    </BaseLayout>
     );
   }
 }
@@ -178,15 +147,12 @@ export default SignUp;
 
 function SendMail() {
   return (
-    <div className="popup-row">
-      <div className="popup-wrapper">
-        <div className="popup-inner card">
-          <h1>ありがとうございます！</h1>
-          <p className="xs-text">
-            入力して頂いたメールアドレス宛に、確認メールを送信しました。届いたメールのリンクに沿って、アカウントの作成を進めてください。
-          </p>
-        </div>
-      </div>
-    </div>
+    <BaseLayout>
+      <Hero>
+        <CardForm title="ありがとうございます">
+          入力して頂いたメールアドレス宛に、確認メールを送信しました。届いたメールのリンクに沿って、アカウントの作成を進めてください。
+        </CardForm>
+    </Hero>
+  </BaseLayout>
   );
 }

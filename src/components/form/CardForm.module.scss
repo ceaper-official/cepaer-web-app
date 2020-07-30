@@ -41,6 +41,23 @@
   }
 }
 
+//note item
+.note__item {
+  margin: 0;
+  font-size: $font-size-s;
+  color: $grey;
+  text-align: left;
+
+  & a {
+    color: $title;
+    text-decoration: underline;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
 //link item
 .link__item {
   @include flex;
