@@ -105,9 +105,9 @@ class UserHeaderContents extends React.Component {
   }
   render() {
     return (
-      <div class="nav-inner nav-inner-desktop">
-        <div class="nav-controls"></div>
-        <div class="nav-controls">
+      <div className="nav-inner nav-inner-desktop">
+        <div className="nav-controls"></div>
+        <div className="nav-controls">
           <div className={`${s.header__item} ${s.header__desktop__item}`}>
           <Dropdown button={<span className={s.header__icon}><Bell/></span>}>
             <DropdownItem fix  name="全ての通知を見る" href="/activity"/>
@@ -166,8 +166,8 @@ class UserHeaderContents extends React.Component {
 
 function GuestHeaderContents() {
   return (
-    <div class="nav-inner nav-inner-desktop">
-      <div class="nav-controls">
+    <div className="nav-inner nav-inner-desktop">
+      <div className="nav-controls">
         <div className={`${s.header__item} ${s.header__desktop__item}`}>
           <Button href="/signin" outline>
             ログイン

@@ -5,7 +5,6 @@ import Logo from "@icons/logo.js";
 
 const Footer = () => (
   <div id="footer">
-    <div className="bg-snow">
       <div className="section">
         <div className="footer-container " id="footer-contents">
           <Link href="/">
@@ -88,7 +87,6 @@ const Footer = () => (
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 );
