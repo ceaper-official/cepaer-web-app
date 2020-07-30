@@ -1,0 +1,220 @@
+@import 'font-family';
+@import 'variables';
+@import 'grid';
+@import 'mixins';
+@import 'reset';
+@import 'fonts';
+
+@import "ads.scss";
+@import "actions.scss";
+@import "anchor.scss";
+@import "animations.scss";
+@import "article.scss";
+@import "filter.scss";
+@import "blockquote.scss";
+@import "collections.scss";
+@import "color.scss";
+@import "contents.scss";
+@import "custom-react-image-crop.scss";
+@import "search.scss";
+@import "edit.scss";
+@import "footer.scss";
+@import "button";
+@import "form.scss";
+@import "full-screen-modal.scss";
+@import "geting-started.scss";
+@import "faq.scss";
+@import "hero.scss";
+@import "home.scss";
+@import "horizontal-rule.scss";
+@import "post.scss";
+@import "image.scss";
+@import "layout.scss";
+@import "header";
+@import "icons.scss";
+@import "lists.scss";
+@import "nav.scss";
+@import "page.scss";
+@import "policies.scss";
+@import "progress.scss";
+@import "recipe.scss";
+@import "recipes.scss";
+@import "shots.scss";
+@import "social-links.scss";
+@import "tables.scss";
+@import "tabs.scss";
+@import "section.scss";
+@import "paginator.scss";
+@import "user.scss";
+@import "popup.scss";
+
+body {
+  text-size-adjust: 100%;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  font-kerning: normal;
+  color: $black;
+}
+
+html {
+  scroll-padding-top: 20px;
+  scroll-behavior: smooth;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+button,
+select {
+  border: none;
+}
+
+:focus {
+  outline: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  background: none;
+}
+
+:focus {
+  outline: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+}
+
+button,
+fieldset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+details {
+  display: block;
+}
+
+input {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &[type="number"] {
+    width: auto;
+  }
+}
+
+img.Image__Zoom ~ div {
+  background: transparent !important;
+}
+
+.Image__Small {
+  width: 100%;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.Image__medium {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.Image__large {
+  width: 100%;
+  margin-bottom: 35px;
+
+  img {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+
+::placeholder {
+  font-size: 1.4rem;
+}
+
+.icon-image {
+  path {
+    fill: $black;
+  }
+}
+
+hr {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 $container-gutter;
+  border: 0;
+  border-top: 1px solid $horizontalRule;
+  background-repeat: repeat-x;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: center;
+}

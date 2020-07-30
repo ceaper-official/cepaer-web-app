@@ -1,0 +1,25 @@
+#page {
+  padding: 14rem 0 12rem;
+  position: relative;
+  @media (max-width: $phablet) {
+    padding: 7.5rem 0 8rem;
+  }
+  //タイトル
+  & .title {}
+
+  & .sub-title {
+    font-size: 1.9rem;
+  }
+
+  & .contents:first-of-type {
+    margin-top: 0;
+  }
+}
+
+#page.hero-page {
+  padding-top: 7.5rem;
+  position: relative;
+  @media (max-width: $phablet) {
+    padding-top: 5rem;
+  }
+}

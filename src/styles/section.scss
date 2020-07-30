@@ -1,0 +1,15 @@
+.row {
+  padding-bottom: 9rem;
+}
+.section{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    @media screen and (max-width: 540px){
+        padding: 0 2rem;;
+    }
+}
+.center-section {
+max-width: 850px;
+}

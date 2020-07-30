@@ -1,0 +1,15 @@
+@import '@styles/config';
+
+.column3 {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $container-gutter $container-gutter;
+  }
+}
+
+.column3__fix {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $container-gutter $container-gutter;
+}

@@ -1,0 +1,30 @@
+//ヒーロー
+
+#hero-search {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  @media (max-width: $phablet) {
+    display: block;
+  }
+
+  & input {
+    background: var(--white);
+    border-radius: var(--rounded);
+    padding: 2.5rem;
+    overflow: hidden;
+    @media (min-width: $phablet) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  & button {
+    @media (min-width: $phablet) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    @media (max-width: $phablet) {
+      display: none;
+    }
+  }
+}

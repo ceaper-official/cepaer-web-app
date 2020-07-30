@@ -1,0 +1,115 @@
+//Flex
+@mixin flex($align-items: center,$justify-content: center) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+@mixin inline-flex($align-items: center,$justify-content: center) {
+  display: inline-flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+//Image
+@mixin icon ($icon-size: $icon-size, $icon-color: $black) {
+  width: auto;
+  height: $icon-size;
+  transition: $fade;
+
+  & * {
+    fill: $icon-color;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+//Button
+@mixin button($color:$white,$bg: $accent,$border-color: $accent, $border-width: 1px) {
+  @include inline-flex;
+  padding: 0.8rem 2rem;
+  color: $color;
+  background: $bg;
+  border: $border-width solid $border-color;
+  border-radius: $btn-rounded;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: $fade;
+  height: auto;
+  white-space: nowrap;
+
+  &:hover {
+    background: $accent80;
+  }
+
+  & svg {
+    @include icon;
+    margin-right: 0.4em;
+  }
+}
+
+//Card
+@mixin card {
+  overflow: hidden;
+  border-radius: $rounded;
+  border: $border;
+  padding: $gutter;
+}
+
+@mixin card-dropdown {
+  overflow: hidden;
+  border-radius: $rounded;
+}
+
+//Text
+@mixin line-clamp1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+@mixin line-clamp2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+@mixin line-clamp3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+@mixin line-clamp5 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+//Img 4:3
+@mixin img-standard {
+  @include flex;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+  }
+
+  & img {
+    height: 100%;
+    overflow: hidden;
+    border-radius: $rounded;
+    margin: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}

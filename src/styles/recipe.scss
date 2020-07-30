@@ -1,0 +1,482 @@
+#recipe-hero {
+  //画像・アクション
+  margin-top: 5rem;
+  @media(max-width: $phablet) {
+    margin-top: 0;
+  }
+
+  #recipe-img {
+    position: relative;
+    width: 100%;
+    border-radius: var(--rounded);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    @media(max-width: $desktop) {
+      margin-bottom: 3rem;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 75%;
+    }
+
+    & img {
+      margin: 0;
+      object-fit: cover;
+    }
+    //アクション
+    & .recipe-actions-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+      display: flex;
+      align-items: center;
+
+      & .recipe-action-ico {
+        border-radius: 50%;
+        margin: 2rem 1rem;
+        width: 4rem;
+        height: 4rem;
+        display: inline-flex;
+        background: var(--background-color);
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @media (max-width: $phablet) {
+          margin: 1.5rem 0.5rem;
+          width: 3.4rem;
+          height: 3.4rem;
+        }
+
+        & svg {
+          width: auto;
+          height: 1.5rem;
+        }
+
+        &:hover {
+          box-shadow: var(--shadow);
+        }
+
+        &:last-child {
+          margin-right: 2rem;
+          @media (max-width: $phablet) {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  & h1 {
+    font-size: 3rem;
+  }
+
+  & .recipe-wrapper {
+    display: flex;
+    flex-flow: row-reverse;
+    position: relative;
+
+    & p {
+      margin: 0;
+    }
+    @media(max-width: $desktop) {
+      display: block;
+    }
+  }
+  @media(max-width: $desktop) {
+    & h1 {
+      font-size: 2.3rem;
+    }
+  }
+  //ヒーロー・データ
+  @media(min-width: $desktop) {
+    .recipe-bio-wrapper {
+      margin: auto 10rem auto 5rem;
+
+      & .recipe-bio {
+        margin: auto 0;
+      }
+    }
+  }
+  //バックページ
+  .back-button {
+    position: absolute;
+    left: 5rem;
+    @media(max-width: $desktop) {
+      display: none;
+    }
+  }
+
+  .recipe-inner {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+
+    & * {
+      line-height: 1;
+    }
+
+    & .margin {
+      margin: 0 0.4rem;
+    }
+  }
+
+  & #recipe-hero-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    text-align: center;
+    margin-top: 2.5rem;
+
+    & h6 {
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 400;
+      @media(max-width: $phablet) {
+        font-size: 2.5rem;
+      }
+    }
+
+    & span {
+      font-size: var(--small);
+      color: var(--grey);
+    }
+  }
+}
+/*データ*/
+.recipe-bio-wrapper {
+  //タイトル
+  .title {
+    padding-bottom: 1.5rem;
+    font-size: var(--small);
+  }
+
+  .recipe-bio-inner {
+    margin-bottom: 3rem;
+  }
+}
+
+.recipe-bio-inner1 {
+  & .flex {
+    justify-content: space-between;
+    align-items: baseline;
+
+    & .servings {
+      & h4 {
+        white-space: nowrap;
+        text-align: right;
+        padding-right: 0.7rem;
+      }
+    }
+  }
+}
+
+.ingredients-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  color: var(--articleText);
+
+  & span {
+    border-bottom: 1px solid var(--horizontalRule);
+    padding: 1em 0;
+  }
+
+  & .ingredient {
+    text-align: right;
+  }
+}
+/*データ・キャンプ道具*/
+.tag-camp {
+  & a {
+    background: var(--grey20);
+    border-radius: 15px;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.1rem;
+    white-space: nowrap;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    line-height: 1;
+
+    &:hover {
+      background: var(--grey40);
+    }
+  }
+}
+/*線*/
+.recipe-hr {
+  border-top: 1px solid var(--horizontalRule);
+  margin: 2.5rem 0;
+}
+@media(min-width: $desktop) {
+  .recipe-hr-desktop {
+    display: none;
+  }
+}
+
+.recipe-hr-l {
+  border-left: 1px solid var(--horizontalRule);
+  margin: 0 2.5rem;
+  height: 25px;
+}
+/*セクションタイトル*/
+.recipe-section-title {
+  position: relative;
+  font-size: 2rem;
+  margin: 3rem 0 2rem;
+  @media(max-width: $tablet) {
+    font-size: 1.7rem;
+  }
+
+  & .rating {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+
+    & * {
+      line-height: 1;
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    & svg {
+      margin-right: 0.3em;
+      height: 1.6rem;
+      top: 0;
+
+      * {
+        fill: var(--accent);
+      }
+    }
+  }
+}
+//概要
+
+.recipe-summary-wrapper {
+  @media(min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+  }
+
+  & h6 {
+    margin: 3rem auto 1.5rem;
+  }
+}
+/*作り方*/
+.make-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  counter-reset: number 0;
+  @media(max-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media(max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  & .make-inner p:before {
+    counter-increment: number 1;
+    content: " STEP "counter(number);
+    font-weight: 600;
+    color: var(--black);
+    display: flex;
+  }
+
+  & .make-inner {
+    & p {
+      margin: 0;
+    }
+  }
+}
+/*レビュー*/
+.review {
+  & .rating {
+    top: 0.02rem;
+  }
+}
+
+.review-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+
+  & .review {
+    display: inline-block;
+    height: auto;
+    width: 300px;
+    margin-right: 3rem;
+
+    & p {
+      margin: 0;
+    }
+
+    & .comment {
+      padding-bottom: 2rem;
+    }
+  }
+
+  & .user-container {
+    justify-content: flex-start;
+
+    & div.user-avatar {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  & .recipes-bio-wrapper {
+    padding-bottom: 0;
+    border-top: 1px solid var(--horizontalRule);
+    margin-top: 1rem;
+  }
+
+  & .date {
+    font-size: 1.2rem;
+  }
+}
+/*レビュー＆料理済リストに追加ボタン*/
+.fixed-button {
+  padding: 1.7rem;
+  border-radius: 50%;
+  background: var(--black);
+  box-shadow: transparent 0 0 0 1px, transparent 0 0 0 4px, rgba(0, 0, 0, 0.18) 0 2px 4px;
+
+  & svg {
+    width: 25px;
+
+    & path,
+    line {
+      stroke: var(--white);
+    }
+  }
+}
+/*レシピ・フッターメニュー*/
+.recipe-menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  border-top: 1px solid var(--horizontalRule);
+  z-index: 100;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+
+  & .recipe-menu-inner {
+    display: inline-block;
+
+    &.recipe-menu-bio {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+
+      & svg {
+        width: 30px;
+      }
+
+      & .recipe-hr-l {
+        margin: 0 5rem;
+      }
+
+      & .recipe-menu-user {
+        display: flex;
+        align-items: center;
+
+        & .user-avatar {
+          height: 35px;
+          width: 35px;
+        }
+
+        & h6 {
+          margin: 0;
+          font-size: 1.4rem;
+        }
+
+        & .rating {
+          display: flex;
+          align-items: center;
+
+          & .star {
+            top: auto;
+          }
+        }
+
+        & p {
+          margin: 0 0 0 0.4rem;
+          font-size: 1.3rem;
+          color: var(--grey);
+        }
+      }
+
+      & .recipe-menu-bio-inner {
+        display: flex;
+        align-items: center;
+        @media(max-width: $phablet) {
+          padding-left: 0;
+        }
+      }
+    }
+
+    & .recipe-menu-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    & svg path {
+      stroke: var(--white);
+    }
+
+    & a:hover {
+      & path {
+        stroke: var(--black);
+      }
+    }
+  }
+  @media(max-width: $phablet) {
+    & .ico-button {
+      font-size: 1.3rem;
+    }
+
+    & .recipe-menu-inner.recipe-menu-bio svg {
+      width: 25px;
+    }
+  }
+}
+@media(max-width: $desktop) {
+  .recipe-hr-l,
+  .recipe-menu .recipe-menu-inner.recipe-menu-bio .recipe-menu-user {
+    display: none;
+  }
+}
+/*アプリ*/
+.recipe-menu {
+  @media(max-width: $phablet) {
+    top: 0;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 1px solid var(--horizontalRule);
+  }
+
+  #recipe-menu-back {
+    & svg {
+      width: 15px;
+    }
+    @media(min-width: $phablet) {
+      display: none;
+    }
+  }
+}
+
+.header-icon.active * {
+  fill: var(--accent);
+  stroke: var(--accent);
+}

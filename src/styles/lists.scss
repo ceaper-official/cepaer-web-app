@@ -1,0 +1,163 @@
+li::before {
+  font-family: $title;
+  content: '•';
+  color: $black;
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+/*TABLET*/
+@media screen and (max-width: 735px) {
+  ul li p {
+    padding: 0;
+  }
+}
+
+ul li > * {
+  display: inline;
+}
+
+ol {
+  list-style: none;
+  counter-reset: list;
+  color: $articleText;
+  position: relative;
+  padding: 15px 0 30px 30px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 680px;
+}
+/*DESKTOP*/
+@media screen and (max-width: 1070px) {
+  ol {
+    max-width: 507px;
+  }
+}
+/*TABLET*/
+@media screen and (max-width: 735px) {
+  ol {
+    max-width: 486px;
+    padding-left: 0;
+  }
+}
+/*PHABLET*/
+@media screen and (max-width: 540px) {
+  ol {
+    padding-left: 20px;
+  }
+}
+
+ol li {
+  position: relative;
+  padding-bottom: 15px;
+}
+/*TABLET*/
+@media screen and (max-width: 735px) {
+  ol li {
+    padding: 0;
+  }
+
+  ol li p {
+    padding-left: 30px;
+  }
+}
+/*PHABLET*/
+@media screen and (max-width: 540px) {
+  ol li {
+    padding-left: 30px;
+  }
+}
+
+ol li > * {
+  display: inline;
+}
+
+ol li::before {
+  width: 3rem;
+  display: inline-block;
+  position: absolute;
+  color: $articleText;
+  counter-increment: list;
+  content: counter(list) '.';
+  font-weight: 600;
+  position: absolute;
+  left: -3rem;
+  top: -0.3rem;
+  font-size: 2rem;
+}
+@media screen and (max-width: 735px) {
+  ol li::before {
+    left: 0;
+  }
+}
+//ドロップダウン
+
+.dropdown-wrapper {
+  position: relative;
+
+  & .dropdown-contents {
+    position: absolute;
+    transition: $fade;
+    top: 5rem;
+    right: 0;
+    background: $white;
+    z-index: 9000;
+    box-shadow: $shadow;
+    min-width: 18rem;
+    padding: 1.5rem 0;
+
+    &.card {
+      border: none;
+    }
+
+    & .dropdown-item {
+      line-height: 1;
+      white-space: nowrap;
+      font-size: $small;
+      display: block;
+      margin: 0;
+      padding: 1.5rem 2rem;
+      font-weight: 600;
+      color: $black;
+
+      &:hover {
+        background: $snow;
+      }
+    }
+
+    & .dropdown-item-negative {
+      font-weight: 400;
+      color: $articleText;
+    }
+
+    & .dropdown-section-item {
+      border-top: 1px solid $horizontalRule;
+      padding-top: 2rem;
+      margin-top: 1rem;
+    }
+
+    & hr {
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+.dropdown-nav {
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  border-bottom: 1px solid $horizontalRule;
+  padding-bottom: 1.5rem;
+}
+
+.hide {
+  display: none !important;
+}

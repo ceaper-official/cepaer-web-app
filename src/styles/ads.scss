@@ -1,0 +1,17 @@
+//2カラム
+
+.ad-2col {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 5rem;
+  }
+
+  & .ad-2col-ad {
+    position: sticky;
+    top: 13rem;
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+}

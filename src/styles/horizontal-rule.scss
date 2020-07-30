@@ -1,0 +1,53 @@
+hr {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  text-align: center;
+  margin: auto;
+  border: 0;
+  background: var(--horizontalRule);
+  background-repeat: repeat-x;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: center;
+  width: calc(100% - 10rem);
+  @media (max-width: $phablet) {
+    width: calc(100% - 4rem);
+  }
+}
+//セクション・タイトル
+
+.hr-section-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &:before {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: var(--black);
+    margin-right: 2rem;
+  }
+
+  &:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: var(--black);
+    margin-left: 2rem;
+  }
+  @media screen and (max-width: $phone) {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.hr-bottom {
+  border-bottom: 1px solid var(--horizontalRule);
+}

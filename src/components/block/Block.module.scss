@@ -1,0 +1,27 @@
+@import '@styles/config';
+
+.block {
+  margin: 10rem auto;
+  @media (max-width: $phablet) {
+    margin: 6rem auto;
+  }
+}
+
+.section {
+  width: 100%;
+  max-width: $desktop_large;
+  margin: 0 auto;
+  padding: 0 $container-gutter;
+}
+
+.block__title {
+  font-size: $font-size-l;
+  margin-bottom: $gutter;
+  padding: 0 $container-gutter;
+  @include flex($justify-content:flex-start);
+
+  & svg {
+    @include icon($icon-color:$accent);
+    margin: 0 0.3em 0 0;
+  }
+}

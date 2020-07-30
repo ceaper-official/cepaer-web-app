@@ -1,0 +1,107 @@
+//デスクトップ・サイドナビ
+
+.side-nav-desktop {
+  line-height: 1;
+  position: sticky;
+  top: 10rem;
+
+  & .side-nav-desktop-inner a {
+    display: block;
+    text-align: left;
+    font-family: $title;
+    padding: 1rem 1.5rem;
+    border-left: 2px solid $snow;
+
+    &:hover {
+      border-color: $black;
+      color: $black;
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+//モバイル・サイドナビ
+
+.side-nav-mobile {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (max-width: $phablet) {
+    position: fixed;
+    left: 0;
+    top: 42px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 2rem;
+    background: $white;
+    border-bottom: 1px solid $horizontalRule;
+  }
+}
+
+.side-nav-label-check {
+  display: none;
+}
+
+.side-nav-label {
+  padding: 1.2rem 0;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  font-family: $title;
+}
+
+.side-nav-mobile-inner {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  & a {
+    display: block;
+    padding: 1.2rem 0;
+    font-family: $title;
+  }
+}
+
+.side-nav-label-check:checked + .side-nav-label + .side-nav-mobile-inner {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+//サイドナビ・ページ
+
+.side-nav-page {
+  @media screen and (max-width: $phablet) {
+    padding-top: 43px;
+  }
+}
+
+.side-nav-desktop a.active {
+  color: $black;
+  border-color: $black;
+}
+//トップ・ナビ
+
+#top-nav {
+  will-change: transform;
+  transform: translateY(0);
+  transition: $scroll;
+  z-index: 9000;
+  background: $background-color;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+  padding: 2rem 0;
+  background: $background-color;
+  border-bottom: 1px solid $horizontalRule;
+
+  &.headroom--unpinned {
+    transform: translateY(-150%);
+  }
+  @media (max-width: $phablet) {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,203 @@
+.shots-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.shot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  & .card-wrapper {
+    padding: 2rem 0;
+  }
+  //料理時間、評価
+  & .shot-bio-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: var(--small);
+    color: var(--articleText);
+    margin-top: 0.5rem;
+
+    & .rating {
+      align-items: center;
+      display: inline-flex;
+
+      & svg {
+        margin-right: 0.5em;
+        width: auto;
+        height: 1rem;
+
+        * {
+          fill: var(--accent);
+        }
+      }
+    }
+  }
+  //画像
+  .shot-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--rounded);
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 62.5%;
+    }
+
+    & img {
+      object-fit: cover;
+      margin: 0;
+      background: var(--horizontalRule);
+    }
+  }
+  //タイトル、ユーザーアイコン
+  .shot-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h6 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding-right: 1em;
+      line-height: 1;
+    }
+
+    & .user-container {
+      & .user-avatar {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+  //材料
+  .shot-ingredients-wrapper {
+    margin-top: 1rem;
+
+    & .shot-ingredients {
+      font-size: var(--xs);
+      color: var(--grey);
+      @include line-clamp1;
+      margin: 0;
+    }
+  }
+  //情報
+  & .shot-recipes-bio-wrapper {
+    font-size: 1.2rem;
+
+    & .shot-recipes-data {
+      font-size: 1.2rem;
+      display: flex;
+      //中点
+      & span {
+        padding: 0 0.3rem;
+        color: var(--articleText80);
+
+        & svg path {
+          fill: var(--articleText80);
+        }
+      }
+    }
+  }
+}
+
+.user-link:hover .name {
+  text-decoration: underline;
+}
+/*ローディング */
+.shots-loading {
+  padding: 3rem 0 7.5rem;
+  text-align: center;
+  color: var(--grey);
+}
+/*話題のレシピ*/
+.topic-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+
+  & .topic {
+    display: inline-block;
+    height: auto;
+    width: 300px;
+    margin-right: 1.5rem;
+    @media screen and (max-width: $phone) {
+      width: 260px;
+    }
+
+    & h6 {
+      color: var(--black);
+      padding: 0;
+    }
+  }
+
+  & .recipes-bio-wrapper {
+    padding-bottom: 0;
+    margin-top: 1rem;
+  }
+}
+//レート
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+
+  & * {
+    line-height: 1;
+    fill: var(--accent);
+    font-size: var(--small);
+    font-weight: 400;
+  }
+
+  & #rating-data {
+    margin-right: 0.3em;
+  }
+
+  & #reviews-data {
+    color: var(--grey);
+  }
+
+  & svg {
+    margin-right: 0.5em;
+    width: auto;
+    height: 1rem;
+  }
+}
+//スライド
+
+.slide-shot {
+  width: 100%;
+  max-width: inherit;
+}
+
+.slide-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x;
+
+  & .shot {
+    display: inline-block;
+    height: auto;
+    width: 300px;
+    position: relative;
+    margin-right: 2rem;
+    vertical-align: top;
+    scroll-snap-align: center;
+
+    &:first-of-type {
+      margin-left: 5rem;
+      @media(max-width: $phablet) {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

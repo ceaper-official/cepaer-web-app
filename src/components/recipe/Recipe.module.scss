@@ -1,0 +1,25 @@
+@import '@styles/config';
+
+.make__container {
+  grid-gap: $container-gutter $container-gutter;
+  display: grid;
+  counter-reset: number 0;
+  padding: 0 $container-gutter;
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  & .make__card {
+    @include card;
+
+    & .make {
+      &:before {
+        counter-increment: number 1;
+        content: ' STEP ' counter(number);
+        font-weight: 600;
+        color: $title;
+        display: flex;
+      }
+    }
+  }
+}

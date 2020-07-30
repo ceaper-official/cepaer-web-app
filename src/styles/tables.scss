@@ -1,0 +1,73 @@
+/*************************************TABLE************************************/
+
+table{
+    position: relative;
+    line-height: 1.65;
+    color: var(--grey);
+    font-family: var(--paragraph);
+    margin: 0px auto 85px;
+    width: 100%;
+    max-width: 1004px;
+    overflow: hidden;
+    border-collapse: separate;
+    table-layout: fixed;
+    max-width: 680px;
+}
+
+/*DESKTOP*/
+@media screen and (max-width: 1070px){
+    table{
+        margin: 0px auto 65px;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 735px){
+    table{
+        max-width: 486px;
+    }
+}
+
+/*PHABLET*/
+@media screen and (max-width: 540px){
+    table{
+        margin: 0px auto 55px;
+    }
+}
+
+/*************************************TABLE CELL************************************/
+
+td{
+    font-size: 16px;
+    line-height: 2em;
+    vertical-align: top;
+}
+
+
+/*TABLET*/
+@media screen and (max-width: 735px){
+    td{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    th{
+        font-size: 13px;
+    }
+        td{
+            font-size: 13px;
+        }
+}
+
+/*************************************TABLE HEAD************************************/
+
+thead{
+    text-align: left;
+    border-collapse: collapse;
+    position: relative;
+    line-height: 1.756;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: var(--paragraph);
+  }

@@ -1,0 +1,74 @@
+@import '@styles/config';
+
+.dropdown {
+  position: relative;
+  @include flex;
+
+  & .dropdown__button {
+    cursor: pointer;
+    @include inline-flex;
+  }
+
+  & .dropdown__inner {
+    position: absolute;
+    transition: $fade;
+    top: 5rem;
+    right: 0;
+    background: $white;
+    z-index: 9000;
+    box-shadow: $shadow;
+    min-width: 18rem;
+    padding: 1.5rem 0;
+    @include card-dropdown;
+
+    & .dropdown-section-item {
+      border-top: $border;
+      padding-top: 2rem;
+      margin-top: 1rem;
+    }
+
+    & hr {
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+.dropdown__item {
+  line-height: 1;
+  white-space: nowrap;
+  font-size: $font-size-s;
+  display: block;
+  margin: 0;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  color: $black;
+  width: 100%;
+  text-align: left;
+
+  &:hover {
+    background: $snow;
+  }
+}
+
+.dropdown__item__sub {
+  @extend .dropdown__item;
+  font-weight: 400;
+  color: $paragraph;
+}
+
+.dropdown__item__fix {
+  @extend .dropdown__item;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  border-bottom: $border;
+}
+
+.dropdown-nav {
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  border-bottom: 1px solid $horizontalRule;
+  padding-bottom: 1.5rem;
+}

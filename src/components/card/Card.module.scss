@@ -1,0 +1,6 @@
+@import '@styles/config';
+
+.card {
+  @include card;
+  display: inline-block;
+}

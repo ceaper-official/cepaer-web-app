@@ -1,0 +1,380 @@
+@import '@styles/config';
+
+.header {
+  will-change: transform;
+  transform: translateY(0);
+  transition: $scroll;
+  z-index: 9000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 9000;
+  background: $background-color;
+  border-bottom: 1px solid $horizontalRule;
+  padding: 0 $container-gutter;
+  @media (min-width: $phablet) {
+    .header-back-ico {
+      display: none;
+    }
+  }
+  @media (max-width: $phablet) {
+    .logo-link:not(.home) {
+      display: none;
+    }
+
+    .ico-button-plane.home {
+      display: none;
+    }
+  }
+
+  &.headroom--unpinned {
+    transform: translateY(-150%);
+  }
+
+  .headroom-wrapper {
+    height: auto;
+  }
+
+  & .logo-link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 3.5rem;
+  }
+
+  //limited item
+  & .header__desktop__item {
+    @media (max-width: $phablet) {
+      display: none !important;
+    }
+  }
+
+  & .header__mobile__item {
+    @media (min-width: $phablet) {
+      display: none !important;
+    }
+  }
+
+  //container
+  & .header__container {
+    position: relative;
+    z-index: 100;
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop_large;
+    margin: auto;
+    @media (max-width: $phablet) {
+      padding: 1rem 0;
+    }
+  }
+
+  //logo
+  .header__logo {
+    @include inline-flex;
+
+    svg {
+      width: auto;
+      height: 3rem;
+      @media (max-width: $phablet) {
+        height: 2rem;
+      }
+    }
+  }
+  //item
+  & .header__item {
+    cursor: pointer;
+    margin: 0 1.5rem;
+    @include inline-flex;
+    @media (max-width: $phablet) {
+      margin: 0 1rem;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  //icon
+  & .header__icon {
+    @include inline-flex;
+
+    svg {
+      @include icon($icon-size:$icon-size-nav);
+    }
+  }
+}
+@media (max-width: $phone) {
+  #logo-desktop svg {
+    height: 25px;
+    width: auto;
+  }
+}
+
+.header-move {
+  transform: translateY(-100%);
+}
+/*Search*/
+.search-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+
+  & .search-icon {
+    position: absolute;
+    width: 34px;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    left: 0;
+
+    & .search-icon-inner {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & svg {
+    width: 15px;
+
+    & path {
+      fill: $grey;
+    }
+  }
+
+  & ::placeholder {
+    color: $grey;
+    font-weight: 300;
+  }
+}
+
+.search {
+  border: 1px solid $horizontalRule;
+  padding: 0.5rem 0.5rem 0.5rem 34px;
+  border-radius: $rounded;
+  width: 300px;
+
+  &:focus {
+    border-color: $black;
+  }
+}
+/*コンテンツ・デスクトップ*/
+.nav-inner {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+//アイコン
+
+.header-icon {
+  @include inline-flex;
+
+  & svg {
+    width: auto;
+    height: 1.8rem;
+    @media (max-width: $phablet) {
+      height: 1.5rem;
+    }
+  }
+}
+/*アプリ*/
+#app-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 0;
+  border-bottom: 1px solid $horizontalRule;
+  transition: $scroll;
+
+  &.move {
+    transform: translateY(-150%);
+  }
+
+  .app-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; //バック
+
+    .app-header-inner {
+      display: inline-flex;
+
+      & a {
+        line-height: 1;
+      }
+    }
+
+    .app-header-inner {
+      .search::placeholder {
+        font-size: 1.3rem;
+        line-height: 1;
+      }
+    }
+  }
+  @media (min-width: $phablet) {
+    display: none;
+  }
+}
+
+.app-header-icon {
+  margin: 0 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+/*ナビ・アプリ*/
+.header-move {
+  transform: translateY(150%);
+}
+
+#app-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $white;
+  border-top: 1px solid $horizontalRule;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+
+  &.recipe {
+    display: none;
+  }
+  @media (min-width: $phablet) {
+    display: none;
+  }
+  //user
+  #user-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  //guest
+  #guest-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  //contents
+  .app-nav-inner {
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 1;
+
+    &.active * {
+      color: $accent;
+      fill: $accent;
+    }
+
+    & a,
+    h6 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1;
+      padding-top: 0.8em;
+    }
+
+    & svg {
+      width: auto;
+      height: 1.7rem;
+    }
+
+    & .user-container {
+      justify-content: center;
+
+      & .user-avatar {
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+      }
+    }
+  }
+}
+/*アクティブ*/
+.app-nav-active {
+  color: $accent;
+
+  & svg path {
+    fill: $accent;
+  }
+}
+//アプリ・ホーム
+
+#home-header-app {
+  .app-header-wrapper {
+    grid-template-columns: 1fr;
+
+    & svg {
+      height: auto;
+      width: 12px;
+    }
+
+    .search {
+      width: 100%;
+
+      &::placeholder {
+        font-size: 1.3rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+/*Other*/
+@-webkit-keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 1280px) {
+  .back-arrow-ico-container {
+    display: none;
+  }
+}
+
+.mobile-content {
+  @media (min-width: $phablet) {
+    display: none;
+  }
+}
+
+.headroom-wrapper {
+  height: auto !important;
+}
+//レシピ
+
+.recipe-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9000;
+  background: $background-color;
+  border-top: 1px solid $horizontalRule;
+
+  &:not(.recipe) {
+    display: none;
+  }
+}

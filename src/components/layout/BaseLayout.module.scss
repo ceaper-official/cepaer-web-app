@@ -1,0 +1,11 @@
+@import "@styles/config.scss";
+
+.layout {
+  display: block;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: $desktop_large;
+  margin: auto;
+}

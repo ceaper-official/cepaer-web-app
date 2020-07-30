@@ -1,0 +1,120 @@
+@import '@styles/config';
+
+.hero {
+  margin: 0 $container-gutter;
+  padding-top: $container-gutter;
+
+  & .hero__inner {
+    max-width: $phablet;
+  }
+
+  & .hero__back {
+    margin-bottom: $gutter;
+    display: block;
+    @media (max-width: $phablet) {
+      display: none;
+    }
+  }
+}
+
+.hero__recipe {
+  & .container {
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-flow: row-reverse;
+      position: relative;
+    }
+
+    & .text__container {
+      @media (min-width: $desktop) {
+        @include flex;
+        padding-right: $container-gutter;
+        margin: 0 $gutter*5;
+      }
+
+      & .text__inner {
+        margin-bottom: $gutter*1.5;
+
+        & .title {
+          font-size: calc(22px + (35 - 22) * ((100vw - 375px) / (1500 - 375)));
+          margin-bottom: $gutter;
+        }
+      }
+    }
+
+    & .data__container {
+      text-align: center;
+
+      & .data__text {
+        font-size: 1.8rem;
+        font-weight: 600;
+
+      }
+
+      & .data__sub__text {
+        font-size: $font-size-s;
+        color: $grey;
+      }
+    }
+
+    & .img__container {
+      @include img-standard;
+
+      & .icon__container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include flex;
+
+        & .icon {
+          & svg {
+            margin: $gutter $gutter/2;
+            cursor: pointer;
+            @include icon;
+
+            &:last-child {
+              margin-right: $gutter;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//ユーザー・プロフィール
+.hero__profile {
+  @include flex;
+
+  & .hero__profile__container {
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  & .hero__profile__inner {
+
+    @media (min-width: $tablet) {
+      margin-left: $container-gutter;
+    }
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+
+    & .title {
+      margin-top: $gutter;
+    }
+
+    & .text {
+      max-width: $phablet;
+    }
+  }
+
+  .hero__icon__container {
+    & svg {
+      @include icon;
+      margin: $gutter/2 $gutter/2 $gutter;
+    }
+  }
+}

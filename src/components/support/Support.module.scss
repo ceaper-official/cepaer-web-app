@@ -1,0 +1,9 @@
+@import '@styles/config';
+
+.feedback {
+  text-align: center;
+
+  & .feedback__title {
+    margin-bottom: $gutter;
+  }
+}

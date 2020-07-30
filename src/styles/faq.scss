@@ -1,0 +1,208 @@
+//検索ボタン
+
+.faq-search {
+  border-bottom: 1px solid var(--black);
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 1rem;
+  }
+
+  & .search-icon {
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 1rem;
+    }
+
+    & svg {
+      width: 20px;
+      height: auto;
+      @media screen and (min-width: $tablet) {
+        width: 30px;
+      }
+
+      & path {
+        fill: var(--black);
+      }
+    }
+  }
+
+  & .search {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding-left: 40px;
+    font-size: 2rem;
+    font-family: var(--headings);
+    color: var(--black);
+
+    &::placeholder {
+      font-size: 2rem;
+      font-family: var(--headings);
+      font-weight: 600;
+      line-height: 1;
+      padding: 1rem 0;
+      color: var(--black);
+    }
+    @media screen and (min-width: $tablet) {
+      padding-left: 50px;
+      font-size: 3rem;
+
+      &::placeholder {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+//カテゴリ
+
+.faq-cat-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+  //インナー
+  & .faq-cat-inner {
+    border: 1px solid var(--horizontalRule);
+    padding: 2rem;
+    display: flex; //タイトル
+
+    h3 {
+      line-height: 50px;
+    }
+
+    & .faq-cat-inner-l {
+      padding-right: 2rem;
+      //アイコン
+      & svg {
+        height: auto;
+        width: 50px;
+      }
+    }
+
+    & .faq-cat-link-wrapper {
+      display: flow-root;
+
+      & .faq-cat-link {
+        padding: 1rem 2rem 0 0;
+      }
+    }
+  }
+}
+//ページ
+
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-column-gap: 5rem;
+  align-items: flex-start;
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+//アンケート
+
+#vote-wrapper {
+  text-align: center;
+  //ボタン
+  .button-choice-wrapper {
+    display: block;
+    padding-top: 2rem;
+
+    .button {
+      margin: 0 1rem 1rem;
+    }
+  }
+  //回答
+  textarea {
+    height: 100px;
+    padding: 1.4rem;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      color: var(--grey);
+    }
+  }
+  //送信
+  .vote-submit {
+    text-align: right;
+  }
+}
+
+.answer-label {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 4rem;
+  line-height: 25px;
+  margin: 2rem 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    border: 1px solid var(--horizontalRule);
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    border-right: 3px solid var(--black);
+    border-bottom: 3px solid var(--black);
+    top: calc(50% - (((17px / 12) * 5) / 2));
+    display: block;
+    margin-top: calc(((17px / 12) * 5) * -1);
+    width: calc(((17px / 12) * 5));
+    height: 17px;
+    z-index: 1;
+    left: calc((25px / 2) - (((17px / 12) * 5) / 2));
+  }
+
+  &:hover {
+    &:before {
+      border-color: var(--black);
+    }
+  }
+  //テキスト
+  span {
+    font-family: var(--paragraph);
+    color: var(--articleText);
+  }
+}
+
+.answer-label input[type="checkbox"] {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.answer-label input[type="checkbox"] {
+  left: calc(25px * -1);
+  padding: 0;
+}
+
+.answer-label input[type="checkbox"] {
+  display: block;
+  box-shadow: 25px 0 var(--white);
+}
+/** checked forcus */
+.answer-label input[type="checkbox"]:checked {
+  box-shadow: none;
+}
+
+.answer-label input[type="checkbox"]:checked:focus {
+  opacity: 0.1;
+}

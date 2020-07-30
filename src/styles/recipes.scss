@@ -1,0 +1,34 @@
+/*Recipes-bio*/
+.recipes-bio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0 1rem;
+  align-items: center;
+}
+
+.recipes-ico {
+  color: var(--black);
+  display: flex;
+  align-items: center;
+
+  & svg {
+    width: 15px;
+    margin-right: 0.5rem;
+  }
+}
+/*Data*/
+.recipes-data {
+  display: inline-flex;
+  font-size: 1.3rem;
+  font-feature-settings: "palt";
+  letter-spacing: 0.06rem;
+  width: 100%;
+
+  & div {
+    margin: 0 1rem;
+  }
+
+  & .cook {
+    margin-left: 0;
+  }
+}
