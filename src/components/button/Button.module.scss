@@ -6,7 +6,6 @@
 
 .button__accent {
   @include button;
-  padding: 0.8rem 2rem;
   color: $white;
   background: $accent;
   border: 1px solid $accent;
@@ -106,12 +105,6 @@
     border-color: $grey60;
   }
 }
-/*グレーアウト*/
-.button-grey-out {
-  color: $grey;
-  border: 1px solid $grey;
-  pointer-events: none;
-}
 /*アクション*/
 .action-button {
   font-size: 1.3rem;
@@ -163,78 +156,7 @@
     width: 100%;
   }
 }
-/*入力*/
-.input-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
 
-  & .input-prefix {
-    left: 0;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    & svg {
-      width: auto;
-      height: 15px;
-      display: flex;
-      align-items: center;
-      padding: 0 1.5rem;
-
-      & path {
-        fill: $grey;
-      }
-    }
-  }
-
-  & .input-suffix {
-    right: 0;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    line-height: inherit;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 25%;
-      left: 0;
-      width: 1px;
-      height: 50%;
-      background: rgb(223, 225, 234);
-    }
-
-    & a {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      padding: 0 2rem;
-    }
-  }
-
-  & .input-inner {
-    padding-left: 45px;
-  }
-}
-
-.input-inner {
-  padding: 1.5rem 2rem;
-  border: 1px solid $horizontalRule;
-  border-radius: $btn-rounded;
-  font-weight: 600;
-
-  &:hover {}
-
-  &::placeholder {
-    color: $grey;
-    font-weight: 400;
-    font-size: 1.3rem;
-  }
-}
 //選択（２つ）
 
 .button-choice-wrapper {
@@ -286,28 +208,7 @@
 .select-button-bottom {
   margin-bottom: 1.5rem;
 }
-//アクティブ
 
-button.button-active {
-  border: 1px solid $horizontalRule;
-  border-radius: 50%;
-
-  svg {
-    margin: 0.4rem;
-    width: 7px;
-  }
-}
-
-.button-active-number {
-  margin: 0 0.8rem;
-}
-//width100
-
-.button-w100 {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
 //アイコン
 
 .button-wrapper {
@@ -390,21 +291,5 @@ button.button-active {
     @media (min-width: $phablet) {
       width: 2rem;
     }
-  }
-}
-//バックページ
-
-.back-button {
-  font-size: $small;
-  font-weight: 600;
-  line-height: 1;
-  margin-bottom: 3rem;
-  color: $black;
-
-  & svg {
-    transform: rotate(180deg);
-  }
-  @media(max-width: $desktop) {
-    display: none;
   }
 }

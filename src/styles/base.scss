@@ -196,7 +196,9 @@ img.Image__Zoom ~ div {
 }
 
 ::placeholder {
-  font-size: 1.4rem;
+  font-size: $font-size-s;
+  color: $grey;
+
 }
 
 .icon-image {

@@ -19,16 +19,12 @@
   & * {
     fill: $icon-color;
   }
-
-  &:hover {
-    opacity: 0.6;
-  }
 }
 
 //Button
 @mixin button($color:$white,$bg: $accent,$border-color: $accent, $border-width: 1px) {
   @include inline-flex;
-  padding: 0.8rem 2rem;
+  padding: 1.3rem $gutter;
   color: $color;
   background: $bg;
   border: $border-width solid $border-color;

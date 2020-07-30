@@ -1,0 +1,56 @@
+@import '@styles/config';
+
+//input
+.input__container {
+  position: relative;
+
+  & .input__prefix {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    @include flex;
+
+    & svg {
+      @include icon($icon-color:$grey);
+      padding: 0 $gutter;
+    }
+  }
+
+  & .input__suffix {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: inherit;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 1px;
+      height: 50%;
+      background: $horizontalRule;
+    }
+
+    & .input__subtext {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding: 0 2rem;
+      font-size: $font-size-s;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  & .input {
+    padding: 1.5rem $gutter 1.5rem 5.6rem;
+    border: $border;
+    border-radius: $btn-rounded;
+
+  }
+}

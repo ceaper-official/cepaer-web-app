@@ -4,13 +4,23 @@ import Link from "next/link";
 import { db } from "@lib/firebase";
 import { auth, firebase } from "@src/firebase";
 
+import BaseLayout from "@components/layout/BaseLayout";
+import Hero from "@components/hero/Hero";
+import Content from "@components/content/Content";
+import CardForm from "@components/form/CardForm";
+import Input from "@components/form/Input";
+import SectionItem from "@components/form/SectionItem";
+import LinkItem from "@components/form/LinkItem";
+import Button from "@components/button/Button";
+import SocialButton from "@components/button/SocialButton";
+
 import Cross from "@icons/ui/cross.js";
 import Mail from "@icons/ui/mail.js";
 import Password from "@icons/ui/password.js";
 import Google from "@icons/social/google.js";
 import Facebook from "@icons/social/facebook.js";
 
-class Home extends React.Component {
+class SignIn extends React.Component {
   //Email
   constructor(props) {
     // Stateの定義
@@ -106,75 +116,40 @@ class Home extends React.Component {
   //end facebook
   render() {
     return (
-      <div className="popup-row">
-        <div className="popup-wrapper">
-          <div className="popup-inner card">
-            <h1>ログイン</h1>
-            <div className="action-button-wrapper input-wrapper">
-              <span className="input-prefix">
-                <Mail />
-              </span>
-              <input
-                className="input-inner"
-                placeholder="Eメール"
-                onChange={(e) => this.setState({ email: e.target.value })}
-              ></input>
-            </div>
-            <div className="action-button-wrapper input-wrapper">
-              <span className="input-prefix">
-                <Password />
-              </span>
-              <input
-                className="input-inner"
-                placeholder="パスワード"
-                type="password"
-                onChange={(e) => this.setState({ password: e.target.value })}
-              ></input>
-              <span className="input-suffix">
-                <Link href="/forgot-password">
-                  <a className="xs-text support  hover-black">お忘れですか？</a>
-                </Link>
-              </span>
-            </div>
-            <div className="action-button-wrapper">
-              <button
-                onClick={(e) => this.handleEmailSignIn(e)}
-                className="button-black button"
-              >
-                ログイン
-              </button>
-            </div>
-            <span className="popup-subtitle xs-text">または</span>
-            <div className="action-button-wrapper">
-              <button onClick={this.handleSignIn} className="social-button">
-                <span className="button-prefix">
-                  <Google />
-                </span>
-                <span className="social-button-inner">Googleでログイン</span>
-              </button>
-            </div>
-            <div className="action-button-wrapper">
-              <button
-                onClick={this.handleFacebookSignIn}
-                className="social-button"
-              >
-                <span className="button-prefix">
-                  <Facebook />
-                </span>
-                <span className="social-button-inner">Facebookでログイン</span>
-              </button>
-            </div>
-            <div className="hr-text"></div>
-            <div className="make-account-link">
-              <p className="xs-text">アカウントがまだありませんか？</p>
-              <Link href="/signup">
-                <a className="xs-text hover-black accent">作成する</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BaseLayout>
+        <Hero>
+          <CardForm title="ログイン">
+            <Input
+              placeholder="Eメール"
+              icon={<Mail/>}
+              onChange={(e) => this.setState({ email: e.target.value })}
+            />
+            <Input ps
+              placeholder="パスワード"
+              icon={<Password/>}
+              onChange={(e) => this.setState({ password: e.target.value })}
+              sub="お忘れですか？"
+              href="/forgot-password"
+            />
+            <Button onClick={(e) => this.handleEmailSignIn(e)}>
+              ログイン
+            </Button>
+            <SectionItem title="または"/>
+            <SocialButton icon=<Google/> onClick={this.handleSignIn}>
+              Googleでログイン
+            </SocialButton>
+            <SocialButton icon=<Facebook/> onClick={this.handleFacebookSignIn}>
+              Facebookでログイン
+            </SocialButton>
+            <LinkItem
+              title="アカウントがまだありませんか？"
+              text="作成する"
+              href="/signup"
+            />
+          </CardForm>
+      </Hero>
+    </BaseLayout>
     );
   }
 }
-export default Home;
+export default SignIn;

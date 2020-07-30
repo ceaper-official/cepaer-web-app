@@ -1,0 +1,44 @@
+@import '@styles/config';
+
+.social__button {
+  position: relative;
+  overflow: hidden;
+  padding: 1.3rem $gutter;
+  color: $black;
+  border: $border;
+  border-radius: $btn-rounded;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: $fade;
+  display: inline-flex;
+  height: auto;
+
+  &:hover {
+    background: $accent;
+    color: $white;
+  }
+
+  & .social__button__prefix {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: $white;
+    border-right: $border;
+
+    & svg {
+      width: auto;
+      height: 2rem;
+      @include flex;
+      padding: 0 1.5rem;
+    }
+  }
+
+  & .social__button__inner {
+    padding-left: 5rem;
+    width: 100%;
+  }
+}
