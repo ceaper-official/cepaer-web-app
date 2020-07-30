@@ -168,36 +168,17 @@ function GuestHeaderContents() {
   return (
     <div class="nav-inner nav-inner-desktop">
       <div class="nav-controls">
-        <div class="search-wrapper">
-          <span class="search-icon">
-            <span class="search-icon-inner">
-              <Search />
-            </span>
-          </span>
-          <input
-            class="search"
-            type="search"
-            name="q"
-            placeholder="料理、材料、キャンプ道具..."
-          />
+        <div className={`${s.header__item} ${s.header__desktop__item}`}>
+          <Button href="/signin" outline>
+            ログイン
+          </Button>
         </div>
-      </div>
-      <div class="nav-controls">
-        <Link href="/signin">
-          <a className="button-text">ログイン</a>
-        </Link>
-
-        <Link href="/signup">
-          <a
-            className="button icon-button nav-account-button ico"
-            style={{
-              margin: 0,
-            }}
-          >
-            <HumanSolid />
+        <div className={`${s.header__item} ${s.header__desktop__item}`}>
+          <Button href="/signin">
+              <HumanSolid />
             アカウントを作成
-          </a>
-        </Link>
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -45,7 +45,7 @@
   }
 
   & svg {
-    @include icon;
+    @include icon($icon-color: $color);
     margin-right: 0.4em;
   }
 }
