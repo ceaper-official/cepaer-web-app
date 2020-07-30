@@ -12,8 +12,8 @@
     @include flex;
 
     & svg {
-      @include icon($icon-color:$grey);
-      padding: 0 $gutter;
+      @include icon($icon-color:$grey, $icon-size:$icon-size-min);
+      padding: 0 1.5rem;
     }
   }
 
@@ -48,7 +48,7 @@
   }
 
   & .input {
-    padding: 1.5rem $gutter 1.5rem 5.6rem;
+    padding: 1.5rem $gutter 1.5rem 4.2rem;
     border: $border;
     border-radius: $btn-rounded;
 
