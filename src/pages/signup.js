@@ -113,7 +113,7 @@ class SignUp extends React.Component {
               icon={<Mail/>}
               onChange={(e) => this.setState({ email: e.target.value })}
             />
-            <Input
+          <Input ps
               placeholder="パスワード"
               icon={<Password/>}
               onChange={(e) => this.setState({ password: e.target.value })}
