@@ -1,0 +1,42 @@
+@import '@styles/config';
+
+//icon
+.upload__icon {
+  margin: $gutter 0;
+
+  & .upload__icon__inner {
+
+    position: relative;
+    @include flex;
+    @include user-icon-l;
+    border-style: dashed;
+    cursor: pointer;
+    transition: $fade;
+
+    &:hover {
+      border-color: $accent;
+    }
+
+    & .icon {
+      position: relative;
+      z-index: 900;
+
+      & svg {
+        @include icon($icon-size:$user-icon-size);
+      }
+    }
+
+    & .upload__img {
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.upload__user__icon {
+  @extend .upload__icon;
+  border: $border;
+}

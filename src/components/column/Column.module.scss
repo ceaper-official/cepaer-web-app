@@ -13,3 +13,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: $container-gutter $container-gutter;
 }
+
+.button__column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: $gutter;
+}

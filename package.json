@@ -38,6 +38,7 @@
     "react-alert": "^7.0.1",
     "react-alert-template-basic": "^1.0.0",
     "react-ceaper-notice": "0.0.1",
+    "react-div-100vh": "^0.3.8",
     "react-dom": "^16.13.1",
     "react-headroom": "^3.0.0",
     "react-image-crop": "^8.6.4",

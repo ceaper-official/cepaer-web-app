@@ -64,14 +64,15 @@
   margin-top: $gutter;
 
   & .link__item__title {
-    margin: 0 $gutter 0 0;
     font-size: $font-size-s;
+    margin: 0;
   }
 
   & .link__item__text {
     color: $black;
     font-weight: 600;
     font-size: $font-size-s;
+    padding-left: $gutter;
 
     &:hover {
       text-decoration: underline;

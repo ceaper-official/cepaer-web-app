@@ -21,6 +21,35 @@
   }
 }
 
+@mixin user-icon {
+  height: $user-icon-size;
+  width: $user-icon-size;
+  min-width: $user-icon-size;
+  border-radius: 50%;
+  overflow: hidden;
+  border: $border;
+}
+
+@mixin user-icon-s {
+  height: $user-icon-size-min;
+  width: $user-icon-size-min;
+  min-width: $user-icon-size-min;
+  border-radius: 50%;
+  overflow: hidden;
+  border: $border;
+}
+
+@mixin user-icon-l {
+  height: $user-icon-size-max;
+  width: $user-icon-size-max;
+  min-width: $user-icon-size-max;
+  border-radius: 50%;
+  overflow: hidden;
+  border: $border;
+  margin: 0 auto;
+  border-width: 2px;
+}
+
 //Button
 @mixin button($color:$white,$bg: $accent,$border-color: $accent, $border-width: 1px) {
   @include inline-flex;
@@ -30,7 +59,7 @@
   border: $border-width solid $border-color;
   border-radius: $btn-rounded;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: $font-size;
   line-height: 1;
   transition: $fade;
   height: auto;

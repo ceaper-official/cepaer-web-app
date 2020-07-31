@@ -2,19 +2,17 @@ import React, { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import StepWizard from "react-step-wizard";
 
-import { getCurrentUser, storage, db } from "../lib/firebase";
+import { getCurrentUser, storage, db } from "@lib/firebase";
 import withAuth from "@src/helpers/withAuth";
 import generateRandomId from "@src/helpers/generateRandomId";
 import acceptImageFileType from "@src/helpers/acceptImageFileType";
 
-import GSBaseLayout from "../layouts/base-get-started.js";
-import FullScreenModal from "../layouts/full-screen-modal.js";
+import BaseLayout from "@components/layout/BaseLayout";
 
 import Upload from "@icons/ui/upload.js";
 import Human from "@icons/ui/human.js";
 import Add from "@icons/ui/add.js";
 import Arrow from "@icons/ui/arrow.js";
-import Circle from "@icons/ui/gs-circle.js";
 import Mail from "@icons/ui/mail.js";
 import Password from "@icons/ui/password.js";
 
@@ -27,14 +25,14 @@ function GSNav() {
     <div>
       <div className="gs-progress active" id="gs-nav1">
         <span className="gs-progress-mark ico">
-          <Circle />
+
         </span>
         <h5 className="grey">ユーザー名の設定</h5>
       </div>
 
       <div className="gs-progress" id="gs-nav2">
         <span className="gs-progress-mark ico">
-          <Circle />
+
         </span>
         <span className="gs-progress-line" />
         <h5 className="grey">アイコンの設定</h5>
@@ -42,7 +40,7 @@ function GSNav() {
 
       <div className="gs-progress" id="gs-nav3">
         <span className="gs-progress-mark ico">
-          <Circle />
+
         </span>
         <span className="gs-progress-line" />
         <h5 className="grey">Ceaperへようこそ！</h5>
@@ -54,8 +52,7 @@ function GSNav() {
 class GS extends React.Component {
   render() {
     return (
-      <GSBaseLayout>
-        <div id="gs-page">
+      <BaseLayout>
           <div className="gs-wrapper">
             <div className="section gs-inner-nav gs-inner bg-snow">
               <div className="gs-inner-nav-inner">
@@ -81,18 +78,17 @@ class GS extends React.Component {
 
             <div className="gs-dots-nav">
               <span className="ico gs-dot">
-                <Circle />
+
               </span>
               <span className="ico gs-dot">
-                <Circle />
+
               </span>
               <span className="ico gs-dot">
-                <Circle />
+
               </span>
             </div>
           </div>
-        </div>
-      </GSBaseLayout>
+      </BaseLayout>
     );
   }
 }
@@ -192,12 +188,6 @@ function Step2(props) {
 
   return (
     <div>
-      <FullScreenModal
-        {...modalProps}
-        aspect={1}
-        onClose={onCloseModal}
-        onContinue={(blob) => onUpload(blob)}
-      />
       <h1 className="title">アイコンの設定</h1>
       <p>
         お気に入りのユニークなアイコンを設定しましょう！設定しない場合、デフォルトのアイコンが表示されます。

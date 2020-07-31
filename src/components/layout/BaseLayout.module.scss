@@ -9,3 +9,7 @@
   max-width: $desktop_large;
   margin: auto;
 }
+
+.flex__page {
+  @include flex;
+}

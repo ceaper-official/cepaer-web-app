@@ -4,30 +4,19 @@
   @include button;
 }
 
-.button__accent {
-  @include button;
-  color: $white;
-  background: $accent;
-  border: 1px solid $accent;
-  border-radius: $btn-rounded;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1;
-  transition: $fade;
-  height: auto;
-
-  &:hover {
-    background: $accent80;
-    border-color: $accent80;
-  }
-}
-
 .button__outline {
   @include button($color:$black,$bg: $background-color,$border-color: $black);
 
   &:hover {
     background: $horizontalRule;
   }
+}
+
+.button__small {
+  font-size: $font-size-s;
+  padding: 0.7rem 1.5rem;
+  border-color: $horizontalRule;
+  color: $paragraph;
 }
 
 .button-text {
