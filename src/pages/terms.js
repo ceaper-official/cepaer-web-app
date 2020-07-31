@@ -21,7 +21,7 @@ export default () => (
         />
       </SideNav>
       <div>
-        <HeroText title="プライバシーポリシー">
+        <HeroText title="利用規約">
           <p>最終更新日：2020.4.20</p>
         </HeroText>
       </div>

@@ -8,7 +8,7 @@ import MobileNavItem from "@components/nav/MobileNavItem"
 import Home from "@icons/ui/home.js";
 import Like from "@icons/ui/like.js";
 import Collection from "@icons/ui/collection.js";
-import Cook from "@icons/ui/cook.js";
+import Pen from "@icons/ui/pen";
 import HumanAdd from "@icons/ui/human-add.js";
 import Search from "@icons/ui/search.js";
 import Bell from "@icons/ui/bell.js";
@@ -70,7 +70,7 @@ function UserNav() {
           title="通知"
         />
       <MobileNavItem
-        icon={<Cook/>}
+        icon={<Pen/>}
         href="/post"
         title="投稿"
       />

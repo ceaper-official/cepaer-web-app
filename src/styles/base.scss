@@ -19,7 +19,6 @@
 @import "search.scss";
 @import "edit.scss";
 @import "footer.scss";
-@import "button";
 @import "form.scss";
 @import "full-screen-modal.scss";
 @import "geting-started.scss";
@@ -199,12 +198,6 @@ img.Image__Zoom ~ div {
   font-size: $font-size-s;
   color: $grey;
 
-}
-
-.icon-image {
-  path {
-    fill: $black;
-  }
 }
 
 hr {

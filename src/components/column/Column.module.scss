@@ -19,3 +19,15 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: $gutter;
 }
+
+.side__nav__column {
+  max-width: $desktop;
+  margin: auto;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-column-gap: $container-gutter;
+    align-items: flex-start;
+  }
+}

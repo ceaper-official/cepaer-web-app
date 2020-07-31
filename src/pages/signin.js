@@ -55,7 +55,7 @@ class SignIn extends React.Component {
           });
         })
         .then(() => {
-          location.href = "./index";
+          location.href = "/";
         })
         .catch((err) => {
           alert("メールアドレスかパスワードが違います。");

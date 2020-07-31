@@ -1,0 +1,30 @@
+@import '@styles/config';
+
+//side nav
+.side__nav {
+  position: sticky;
+  top: 15rem;
+
+  & .side__nav__item {
+    display: block;
+    font-size: $font-size-s;
+    font-weight: 600;
+    text-align: left;
+    border-left: $border;
+    border-width: 2px;
+    transition: $fade;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    & .side__nav__link {
+      display: block;
+      padding: 1rem 1.5rem;
+
+    }
+  }
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}

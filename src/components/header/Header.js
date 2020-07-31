@@ -174,8 +174,8 @@ function GuestHeaderContents() {
           </Button>
         </div>
         <div className={`${s.header__item} ${s.header__desktop__item}`}>
-          <Button href="/signin">
-              <HumanSolid />
+          <Button href="/signup">
+            <HumanSolid />
             アカウントを作成
           </Button>
         </div>
