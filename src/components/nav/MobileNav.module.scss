@@ -1,0 +1,73 @@
+@import '@styles/config';
+
+.mobile__nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $white;
+  border-top: 1px solid $horizontalRule;
+  z-index: 9000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+
+  &.recipe {
+    display: none;
+  }
+  @media (min-width: $phablet) {
+    display: none;
+  }
+  //user
+  & .user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  //guest
+  & .guest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  //item
+  & .mobile__nav__item {
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 1;
+
+    &.active * {
+      color: $accent;
+      fill: $accent;
+    }
+
+    & .mobile__nav__icon {
+      & svg {
+        @include icon;
+      }
+    }
+
+    & .mobile__nav__title {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1;
+      padding-top: 0.8em;
+    }
+
+    & svg {
+      width: auto;
+      height: 1.7rem;
+    }
+
+    & .user-container {
+      justify-content: center;
+
+      & .user-avatar {
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+      }
+    }
+  }
+}

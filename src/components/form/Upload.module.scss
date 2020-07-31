@@ -9,6 +9,7 @@
     position: relative;
     @include flex;
     @include user-icon-l;
+    margin: 0 auto;
     border-style: dashed;
     cursor: pointer;
     transition: $fade;

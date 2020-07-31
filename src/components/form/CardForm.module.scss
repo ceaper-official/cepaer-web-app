@@ -66,13 +66,13 @@
   & .link__item__title {
     font-size: $font-size-s;
     margin: 0;
+    padding-right: $gutter;
   }
 
   & .link__item__text {
     color: $black;
     font-weight: 600;
     font-size: $font-size-s;
-    padding-left: $gutter;
 
     &:hover {
       text-decoration: underline;
