@@ -59,3 +59,18 @@ strong {
 p {
   margin: 0 auto $gutter;
 }
+
+ul li {
+  margin-bottom: $gutter;
+  margin-left: 2rem;
+
+  &:before {
+    font-family: $title;
+    content: '•';
+    color: $black;
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}

@@ -7,6 +7,7 @@ $desktop_medium: 1280px;
 $desktop_large: 1500px;
 
 $gutter: 2rem;
+$block-gutter: calc(60px + (100 - 60) * ((100vw - 375px) / (1500 - 375)));
 $container-gutter: calc(20px + (50 - 20) * ((100vw - 375px) / (1500 - 375)));
 $block-gutter: calc(60px + (100 - 60) * ((100vw - 375px) / (1500 - 375)));
 
@@ -87,7 +88,6 @@ $show: cubic-bezier(0.63, 0.03, 0.17, 0.95);
 $icon-size-max: 5rem;
 $icon-size: 1.6rem;
 $icon-size-min: 1.2rem;
-$icon-size-tab: 1.2rem;
 
 $icon-size-button: calc(45px + (55 - 45) * ((100vw - 375px) / (1500 - 375)));
 $icon-size-button-big: calc(2.5rem + (45 - 25) * ((100vw - 375px) / (1500 - 375)));

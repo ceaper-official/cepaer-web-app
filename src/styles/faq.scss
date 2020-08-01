@@ -1,7 +1,7 @@
 //検索ボタン
 
 .faq-search {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid $black;
   @media screen and (min-width: $tablet) {
     padding-bottom: 1rem;
   }
@@ -19,7 +19,7 @@
       }
 
       & path {
-        fill: var(--black);
+        fill: $black;
       }
     }
   }
@@ -30,16 +30,14 @@
     border-radius: 0;
     padding-left: 40px;
     font-size: 2rem;
-    font-family: var(--headings);
-    color: var(--black);
+    color: $black;
 
     &::placeholder {
       font-size: 2rem;
-      font-family: var(--headings);
       font-weight: 600;
       line-height: 1;
       padding: 1rem 0;
-      color: var(--black);
+      color: $black;
     }
     @media screen and (min-width: $tablet) {
       padding-left: 50px;
@@ -63,7 +61,7 @@
   }
   //インナー
   & .faq-cat-inner {
-    border: 1px solid var(--horizontalRule);
+    border: 1px solid $horizontalRule;
     padding: 2rem;
     display: flex; //タイトル
 
@@ -120,7 +118,7 @@
 
     &::placeholder {
       font-size: 1.6rem;
-      color: var(--grey);
+      color: $grey;
     }
   }
   //送信
@@ -139,25 +137,25 @@
   margin: 2rem 0;
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     box-sizing: border-box;
     width: 25px;
     height: 25px;
     left: 0;
     top: 0;
-    border: 1px solid var(--horizontalRule);
+    border: 1px solid $horizontalRule;
     border-radius: 50%;
     z-index: 3;
   }
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     box-sizing: border-box;
     transform: rotate(45deg);
-    border-right: 3px solid var(--black);
-    border-bottom: 3px solid var(--black);
+    border-right: 3px solid $black;
+    border-bottom: 3px solid $black;
     top: calc(50% - (((17px / 12) * 5) / 2));
     display: block;
     margin-top: calc(((17px / 12) * 5) * -1);
@@ -169,13 +167,13 @@
 
   &:hover {
     &:before {
-      border-color: var(--black);
+      border-color: $black;
     }
   }
   //テキスト
   span {
-    font-family: var(--paragraph);
-    color: var(--articleText);
+    font-family: $paragraph;
+    color: $articleText;
   }
 }
 
@@ -196,7 +194,7 @@
 
 .answer-label input[type="checkbox"] {
   display: block;
-  box-shadow: 25px 0 var(--white);
+  box-shadow: 25px 0 $white;
 }
 /** checked forcus */
 .answer-label input[type="checkbox"]:checked {
