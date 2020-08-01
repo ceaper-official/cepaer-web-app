@@ -94,7 +94,6 @@ export class Delete extends React.Component {
             <Container>
               <FormItem label="現在のパスワード">
                 <Input ps
-                  placeholder="パスワード"
                   icon={<Password/>}
                 />
               </FormItem>

@@ -11,8 +11,7 @@
     font-size: $font-size-s;
     font-weight: 600;
     text-align: left;
-    border-left: $border;
-    border-width: 2px;
+
     transition: $fade;
 
     &:hover {
@@ -22,7 +21,12 @@
     & .side__nav__link {
       display: block;
       padding: 1rem 1.5rem;
+      border-left: $border;
 
+      &.active {
+        color: $accent;
+        border-color: $accent;
+      }
     }
   }
   @media (max-width: $tablet) {

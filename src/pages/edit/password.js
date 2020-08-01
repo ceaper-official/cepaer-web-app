@@ -90,13 +90,11 @@ export class EditPassword extends React.Component {
             <Container>
               <FormItem label="現在のパスワード">
                 <Input ps
-                  placeholder="パスワード"
                   icon={<Password/>}
                 />
               </FormItem>
               <FormItem label="新しいパスワード">
                 <Input ps
-                  placeholder="パスワード"
                   icon={<Password/>}
                 />
               </FormItem>
