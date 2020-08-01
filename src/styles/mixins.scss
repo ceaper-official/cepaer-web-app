@@ -15,6 +15,7 @@
   width: auto;
   height: $icon-size;
   transition: $fade;
+  margin: 0;
 
   & * {
     fill: $icon-color;
@@ -53,7 +54,7 @@
 //Button
 @mixin button($color:$white,$bg: $accent,$border-color: $accent, $border-width: 1px) {
   @include inline-flex;
-  padding: 1.3rem $gutter;
+  padding: 1rem $gutter;
   color: $color;
   background: $bg;
   border: $border-width solid $border-color;
@@ -86,6 +87,21 @@
 @mixin card-dropdown {
   overflow: hidden;
   border-radius: $rounded;
+}
+
+//input
+@mixin input($padding: $gutter, $height: $gutter*2) {
+  width: 100%;
+  height: $height;
+  border: $border;
+  border-radius: $btn-rounded;
+  transition: $fade;
+  padding: $padding;
+  font-size: $font-size;
+
+  &:focus {
+    border-color: $accent;
+  }
 }
 
 //Text

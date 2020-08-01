@@ -3,19 +3,19 @@ import Link from "next/link";
 
 import s from "./Button.module.scss";
 
-function Button ({ href, onClick, children, outline, small }) {
+function Button ({ href, onClick, children, outline, small, negative }) {
   const isHref = href;
   if (isHref) {
     return (
       <Link href={href}>
-        <a className={` ${outline ? s.button__outline : s.button} ${small ? s.button__small : s.button}`} onClick={onClick}>
+        <a className={` ${outline ? s.button__outline : s.button} ${small ? s.button__small : s.button} ${negative? s.button__negative : s.button}`} onClick={onClick}>
           {children}
         </a>
       </Link>
     );
   }
     return (
-        <button className={` ${outline ? s.button__outline : s.button} ${small ? s.button__small : s.button}`}  onClick={onClick}>
+        <button className={` ${outline ? s.button__outline : s.button} ${small ? s.button__small : s.button} ${negative? s.button__negative : s.button}`}  onClick={onClick}>
           {children}
         </button>
     );

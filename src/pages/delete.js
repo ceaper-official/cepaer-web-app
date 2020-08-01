@@ -1,4 +1,4 @@
-import BaseLayout from "../layouts/base.js";
+import BaseLayout from "@components/layout/BaseLayout";
 import Link from "next/link";
 
 import Message from "@icons/ui/message.js";

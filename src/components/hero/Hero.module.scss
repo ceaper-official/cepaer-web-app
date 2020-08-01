@@ -15,6 +15,25 @@
       display: none;
     }
   }
+
+  & .hero__title {
+    @include inline-flex($justify-content:flex-start);
+  }
+
+  & .hero__title__s {
+    font-size: $font-size-l;
+    line-height: 1;
+  }
+
+  & .hero__title__icon {
+    margin: 0;
+    @include flex;
+    margin-right: 0.4em;
+
+    & svg {
+      @include icon;
+    }
+  }
 }
 
 .hero__recipe {

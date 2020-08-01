@@ -1,5 +1,9 @@
 @import '@styles/config';
 
+//item
+.form__item {
+  margin-bottom: $gutter*2;
+}
 //input
 .input__container {
   position: relative;
@@ -48,9 +52,29 @@
   }
 
   & .input {
-    padding: 1.5rem $gutter 1.5rem 4.2rem;
-    border: $border;
-    border-radius: $btn-rounded;
-
+    @include input;
   }
+
+  & .input__icon {
+    @include input($padding:$gutter $gutter $gutter 4.2rem);
+  }
+}
+
+//label
+.label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+//helper text
+.helper__strong,
+.helper__text {
+  font-size: $font-size-s;
+  color: $grey;
+  margin-top: 1rem;
+}
+
+//textarea
+.textarea {
+  @include input($height: $gutter*6);
 }

@@ -20,6 +20,15 @@
   color: $paragraph;
 }
 
+//negative
+.button__negative {
+  @include button($color:$red,$bg: $background-color,$border-color: $red);
+
+  &:hover {
+    background: $horizontalRule;
+  }
+}
+
 .button-text {
   padding: 0.8rem 2rem;
   color: $black;
@@ -64,24 +73,7 @@
     margin: 0 1rem;
   }
 }
-//negative
 
-.button-red {
-  color: $white;
-  border: 1px solid $red;
-  background: $red;
-
-  & svg {
-    path {
-      fill: $white;
-    }
-  }
-
-  &:hover {
-    border: 1px solid $red;
-    background: $red;
-  }
-}
 //キャンセル
 
 .button-cancel {

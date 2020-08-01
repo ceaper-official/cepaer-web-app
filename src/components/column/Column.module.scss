@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 300px 1fr;
     grid-column-gap: $container-gutter;
     align-items: flex-start;
   }

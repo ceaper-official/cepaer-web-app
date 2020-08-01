@@ -10,21 +10,11 @@
     @include flex;
     @include user-icon-l;
     margin: 0 auto;
-    border-style: dashed;
     cursor: pointer;
     transition: $fade;
 
     &:hover {
       border-color: $accent;
-    }
-
-    & .icon {
-      position: relative;
-      z-index: 900;
-
-      & svg {
-        @include icon($icon-size:$user-icon-size);
-      }
     }
 
     & .upload__img {
@@ -33,6 +23,19 @@
       top: 0;
       left: 0;
       z-index: 1;
+    }
+  }
+
+  & .upload__helper__text {
+    cursor: pointer;
+    font-size: $font-size-s;
+    color: $grey;
+    margin: $gutter 0 0;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+
     }
   }
 }

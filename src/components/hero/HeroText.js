@@ -9,7 +9,7 @@ import Back from "@icons/ui/back.js";
 
 import s from "./Hero.module.scss";
 
-function HeroText ({ title, children, back }) {
+function HeroText ({ title, children, back, small, icon }) {
   const isBack = back;
   if (isBack) {
     return (
@@ -29,7 +29,10 @@ function HeroText ({ title, children, back }) {
     return (
       <div className={s.hero}>
         <Block>
-          <h1 className={s.hero__title}>{title}</h1>
+          <h1 className={`${s.hero__title} ${(small ? s.hero__title__s: '')} `}>
+            {icon ? <span className={s.hero__title__icon}>{icon}</span>:''}
+            {title} {small}
+          </h1>
           <div className={s.hero__inner}>
             {children}
           </div>

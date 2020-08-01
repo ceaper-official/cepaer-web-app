@@ -89,17 +89,19 @@ const UploadIcon = (props) => {
           type="file"
         />
       {/* アップロードされたら、.gs-uploadの中に、画像表示 */}
-        <div class={s.upload__icon__inner}>
-          {profileImageUrl ? (
+        {profileImageUrl ? (
+          <div class={s.upload__icon__inner}>
             <img className={s.upload__img} src={profileImageUrl} alt="profile icon"/>
+            {props.icon}
+          </div>
           ) : (
+            <>
             <div class={s.upload__icon__inner} onClick={onClick}>
-              <span className={s.icon}><Add/></span>
-                <img className={s.upload__img} src="images/mock/user.jpg" alt="profile icon"/>
+              <img className={s.upload__img} src="images/mock/user.jpg" alt="profile icon"/>
             </div>
+            <p className={s.upload__helper__text} onClick={onClick}>アイコンを変更する</p>
+            </>
           )}
-          {props.icon}
-        </div>
       </div>
       );
 };

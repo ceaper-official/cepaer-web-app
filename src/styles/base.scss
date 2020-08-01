@@ -19,7 +19,6 @@
 @import "search.scss";
 @import "edit.scss";
 @import "footer.scss";
-@import "form.scss";
 @import "full-screen-modal.scss";
 @import "geting-started.scss";
 @import "faq.scss";
@@ -106,6 +105,7 @@ textarea {
   appearance: none;
   resize: none;
   background: none;
+  border: none;
 }
 
 :focus {

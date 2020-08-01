@@ -4,6 +4,7 @@
 .side__nav {
   position: sticky;
   top: 15rem;
+  padding: 0 0 0 $container-gutter;
 
   & .side__nav__item {
     display: block;
