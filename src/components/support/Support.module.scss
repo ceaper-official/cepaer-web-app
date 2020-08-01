@@ -1,9 +1,25 @@
 @import '@styles/config';
 
+//feedback
 .feedback {
   text-align: center;
 
   & .feedback__title {
     margin-bottom: $gutter;
+  }
+}
+
+//voete form
+.vote__form {
+  text-align: center;
+  @include card;
+
+  & .title {
+    margin-bottom: $gutter;
+  }
+
+  & .text {
+    font-size: $font-size-s;
+    margin: 0;
   }
 }

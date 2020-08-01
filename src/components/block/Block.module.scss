@@ -1,10 +1,7 @@
 @import '@styles/config';
 
 .block {
-  margin: 10rem auto;
-  @media (max-width: $phablet) {
-    margin: 6rem auto;
-  }
+  margin: $block-gutter auto;
 }
 
 .section {

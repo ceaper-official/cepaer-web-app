@@ -1,8 +1,14 @@
 import React from "react";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import BaseLayout from "../../../layouts/base.js";
-import VoteForm from "../../../layouts/faq/vote-form.js";
+
+import BaseLayout from "@components/layout/BaseLayout";
+import Column from "@components/column/Column";
+import Container from "@components/container/Container";
+import HeroText from "@components/hero/HeroText";
+import VoteForm from "@components/support/VoteForm";
+
+import Nav from "../Nav";
 
 export default function FaqTemplate({ content, data }) {
   // This holds the data between `---` from the .md file
@@ -10,18 +16,17 @@ export default function FaqTemplate({ content, data }) {
 
   return (
     <BaseLayout>
-      <div id="page" className="side-nav-page">
-        <div className="contents">
-          <div className="section faq-wrapper">
-            <div className="faq-inner article">
-              <h1>{frontmatter.title}</h1>
-
-              <ReactMarkdown source={content} />
-              <VoteForm />
-            </div>
-          </div>
+      <Column sidenav>
+        <Nav/>
+        <div>
+          <HeroText small={frontmatter.title}>
+          </HeroText>
+          <Container>
+          <ReactMarkdown source={content} />
+          <VoteForm />
+          </Container>
         </div>
-      </div>
+      </Column>
     </BaseLayout>
   );
 }
@@ -29,7 +34,7 @@ export default function FaqTemplate({ content, data }) {
 FaqTemplate.getInitialProps = async (context) => {
   const { slug } = context.query;
   // Import our .md file using the `slug` from the URL
-  const faq = await import(`../../../faq/account/${slug}.md`);
+  const faq = await import(`@src/article/faq/account/${slug}.md`);
 
   // Parse .md data through `matter`
   const data = matter(faq.default);

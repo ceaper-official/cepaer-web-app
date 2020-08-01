@@ -9,6 +9,10 @@
     @include inline-flex;
   }
 
+  & .hide {
+    display: none;
+  }
+
   & .dropdown__inner {
     position: absolute;
     transition: $fade;

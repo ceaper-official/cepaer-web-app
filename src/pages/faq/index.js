@@ -1,13 +1,12 @@
-import BaseLayout from "../../layouts/base.js";
+import BaseLayout from "@components/layout/BaseLayout";
 import Link from "next/link";
-import Search from "../../assets/icons/ui/search.js";
-import Arrow from "../../assets/icons/ui/arrow.js";
-import Feedback from "../../layouts/feedback.js";
-import NavSearch from "../../layouts/faq/nav-search.js";
+import Search from "@icons/ui/search.js";
+import Arrow from "@icons/ui/arrow.js";
+import Feedback from "@components/support/Feedback";
+
 export default () => (
   <BaseLayout>
     <div id="page">
-      <NavSearch />
 
       <div className="contents">
         <div className="section">

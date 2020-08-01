@@ -20,7 +20,7 @@ render () {
   return (
     <div className={s.dropdown}>
       <div onClick={this.toggle} className={s.dropdown__button}>{this.props.button}</div>
-       <div className={this.state.open ? 'open' : 'hide'}>
+       <div className={this.state.open ? s.open : s.hide}>
         <div className={s.dropdown__inner}>
           {this.props.children}
         </div>

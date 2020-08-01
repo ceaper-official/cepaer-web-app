@@ -57,7 +57,7 @@
   }
 
   & svg {
-    @include icon($icon-size:$icon-size-tab);
+    @include icon($icon-size:$icon-size-min);
     margin-right: 0.5em;
 
     & * {

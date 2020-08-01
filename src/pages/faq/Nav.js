@@ -3,7 +3,7 @@ import React from "react";
 import SideNav from "@components/nav/SideNav";
 import SideNavItem from "@components/nav/SideNavItem";
 
-export class Nav extends React.Component {
+export class EditNav extends React.Component {
   render() {
     return (
       <SideNav>
@@ -32,4 +32,4 @@ export class Nav extends React.Component {
   }
 }
 
-export default Nav;
+export default EditNav;

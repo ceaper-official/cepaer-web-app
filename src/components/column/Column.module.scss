@@ -15,9 +15,8 @@
 }
 
 .button__column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-column-gap: $gutter;
+  @include flex;
 }
 
 .side__nav__column {

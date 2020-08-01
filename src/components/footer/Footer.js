@@ -1,9 +1,13 @@
 import Link from "next/link";
+
+import Container from "@components/container/Container";
+
 import Facebook from "@icons/social/facebook.js";
 import Twitter from "@icons/social/twitter.js";
 import Logo from "@icons/logo.js";
 
 const Footer = () => (
+  <Container>
   <div id="footer">
       <div className="section">
         <div className="footer-container " id="footer-contents">
@@ -89,6 +93,7 @@ const Footer = () => (
         </div>
     </div>
   </div>
+  </Container>
 );
 
 export default Footer;
