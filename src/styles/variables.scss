@@ -67,7 +67,6 @@ $normal: 1.5rem;
 $fade: 0.2s;
 $rounded: 10px;
 $btn-rounded: 4px;
-$scroll: all 0.7s cubic-bezier(0.63, 0.03, 0.17, 0.95);
 $overlay: rgba(35,30,45, .7);
 $shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 $hover-shadow: 0 0 10px rgba(0, 0, 0, .2);
@@ -79,6 +78,10 @@ $d-articleText: #c2bbd2;
 
 //Header
 $header: calc(45px + (75 - 45) * ((100vw - 375px) / (1500 - 375)));
+
+//Animations
+$scroll: all 0.7s cubic-bezier(0.63, 0.03, 0.17, 0.95);
+$show: cubic-bezier(0.63, 0.03, 0.17, 0.95);
 
 //Icons
 $icon-size-max: 5rem;
