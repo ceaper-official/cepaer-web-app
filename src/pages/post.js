@@ -2,13 +2,12 @@ import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import { useDropzone } from "react-dropzone";
 
-import { storage } from "../lib/firebase";
+import { storage } from "@lib/firebase";
 import generateRandomId from "@src/helpers/generateRandomId";
 import acceptImageFileType from "@src/helpers/acceptImageFileType";
 import withAuth from "@src/helpers/withAuth";
 
-import FullScreenModal from "../layouts/full-screen-modal.js";
-import LogoDark from "../assets/logo-dark.js";
+import FullScreenModal from "../../layouts/full-screen-modal.js";
 import Upload from "@icons/ui/upload.js";
 import Add from "@icons/ui/add.js";
 
@@ -91,7 +90,6 @@ const Post = () => {
           <div className="nav-container">
             <Link href="/">
               <a className="logo-link">
-                <LogoDark />
               </a>
             </Link>
           </div>

@@ -5,6 +5,8 @@ import Router from "next/router";
 
 import BaseLayout from "@components/layout/BaseLayout";
 import HeroText from "@components/hero/HeroText";
+import Block from "@components/block/Block";
+import UserPostContainer from "@components/user/UserPostContainer";
 import UserPost from "@components/user/UserPost";
 import IconButton from "@components/button/IconButton";
 
@@ -37,21 +39,18 @@ class Counter extends React.Component {
         <HeroText title="ダイエットに効果的な料理" back>
           <p>30コレクション</p>
         </HeroText>
-          
-          <div className="contents">
-            <div className="section">
-              <div className="shots-wrapper">
-                <UserPost />
-                <UserPost />
-                <UserPost />
-                <UserPost />
-                <UserPost />
-                <UserPost />
-                <UserPost />
-                <UserPost />
-              </div>
-            </div>
-          </div>
+        <Block>
+          <UserPostContainer>
+            <UserPost />
+            <UserPost />
+            <UserPost />
+            <UserPost />
+            <UserPost />
+            <UserPost />
+            <UserPost />
+            <UserPost />
+          </UserPostContainer>
+        </Block>
       </BaseLayout>
     );
   }

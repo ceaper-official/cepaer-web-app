@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
+import Block from "@components/block/Block";
 import Card from "@components/card/Card";
 import Button from "@components/button/Button";
 import Container from "@components/container/Container";
@@ -11,6 +12,7 @@ import s from "./Support.module.scss";
 
 export default function Feedback() {
   return (
+    <Block>
     <div className={s.feedback}>
     <Container>
     <Card>
@@ -27,5 +29,6 @@ export default function Feedback() {
     </Card>
   </Container>
 </div>
+</Block>
   );
 }

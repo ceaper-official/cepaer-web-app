@@ -88,7 +88,6 @@ const UploadIcon = (props) => {
           style={{ display: "none" }}
           type="file"
         />
-      {/* アップロードされたら、.gs-uploadの中に、画像表示 */}
         {profileImageUrl ? (
           <div class={s.upload__icon__inner}>
             <img className={s.upload__img} src={profileImageUrl} alt="profile icon"/>

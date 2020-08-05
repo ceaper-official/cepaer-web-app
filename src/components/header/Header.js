@@ -108,40 +108,6 @@ class UserHeaderContents extends React.Component {
       <div className="nav-inner nav-inner-desktop">
         <div className="nav-controls"></div>
         <div className="nav-controls">
-          <div className={`${s.header__item} ${s.header__desktop__item}`}>
-          <Dropdown button={<span className={s.header__icon}><Bell/></span>}>
-            <DropdownItem fix  name="全ての通知を見る" href="/activity"/>
-              {/* 5件表示 */}
-            <ActivityLike
-              user="ケリー小田"
-              recipe="ゴルゴンゾーラとトマトのカプレーゼ"
-              date="14m"
-            />
-            <ActivityCollection
-              user="ミッシェル"
-              recipe="豚の角煮"
-              date="20h"
-            />
-            <ActivityReview
-              user="坂東英二"
-              recipe="絶品！ゆで卵"
-              date="5d"
-              img="images/mock/food.jpg"
-            >
-              美味しいです。ご飯にも合う味でした！もう一品欲しいときに便利！
-            </ActivityReview>
-            <ActivityLike
-              user="ケリー小田"
-              recipe="ゴルゴンゾーラとトマトのカプレーゼ"
-              date="6d"
-            />
-            <ActivityCollection
-              user="ミッシェル"
-              recipe="豚の角煮"
-              date="1w"
-            />
-          </Dropdown>
-        </div>
 
           <div className={s.header__item}>
           <Dropdown
@@ -149,6 +115,7 @@ class UserHeaderContents extends React.Component {
             <DropdownItem name="プロフィール" href="/user"/>
             <DropdownItem name="コレクション"  href="/collections"/>
             <DropdownItem name="お気に入り"  href="/likes"/>
+            <DropdownItem name="通知"  href="/activity"/>
             <hr/>
             <DropdownItem sub name="アカウントの設定"  href="/edit"/>
             <DropdownItem sub name="ログアウト" onClick={this.handleLogout}/>

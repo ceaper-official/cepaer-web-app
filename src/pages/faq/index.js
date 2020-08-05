@@ -1,13 +1,18 @@
-import BaseLayout from "@components/layout/BaseLayout";
+import React from "react";
 import Link from "next/link";
+
+import BaseLayout from "@components/layout/BaseLayout";
+import Feedback from "@components/support/Feedback";
+import HeroText from "@components/hero/HeroText";
+
 import Search from "@icons/ui/search.js";
 import Arrow from "@icons/ui/arrow.js";
-import Feedback from "@components/support/Feedback";
 
 export default () => (
   <BaseLayout>
+    <HeroText title="よくある質問">
+    </HeroText>
     <div id="page">
-
       <div className="contents">
         <div className="section">
           <div className="faq-cat-wrapper">

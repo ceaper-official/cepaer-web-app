@@ -81,6 +81,15 @@ export class EditSocial extends React.Component {
     }
   };
 
+  state = {
+    user: null,
+  };
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged((user) => {
+      this.setState({ user });
+    });
+  }
+
   render() {
     return (
       <BaseLayout>
@@ -94,7 +103,9 @@ export class EditSocial extends React.Component {
                 <UploadIcon/>
               </FormItem>
               <FormItem label="ユーザー名">
-                <Input/>
+                <Input
+                  value={this.state.user && this.state.user.displayName}
+                />
               </FormItem>
               <FormItem label="自己紹介">
                 <TextArea/>

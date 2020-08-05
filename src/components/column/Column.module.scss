@@ -15,7 +15,7 @@
 }
 
 .button__column {
-  grid-column-gap: $gutter;
+  column-gap: $gutter;
   @include flex;
 }
 
@@ -26,7 +26,6 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-column-gap: $container-gutter;
     align-items: flex-start;
   }
 }

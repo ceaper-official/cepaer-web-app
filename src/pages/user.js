@@ -58,7 +58,7 @@ class UserPage extends React.Component {
     return (
       <BaseLayout>
         <HeroUser
-          name="ケリー"
+          name={this.state.user && this.state.user.displayName}
           icon={this.state.user && this.state.user.photoURL}
           bio="私は、料理が大好きな生粋のキャンパーです。週7で、キャンプに行っています！よく出没する場所は高尾山です。"
           instagram="https://www.instagram.com/"
