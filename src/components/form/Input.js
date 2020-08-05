@@ -15,7 +15,7 @@ const Input = (props, icon) => {
           {props.icon}
         </span>
         <input
-          className={s.input}
+          className={s.input__icon}
           placeholder={props.placeholder}
           value={props.value}
           onChange={props.onChange}
@@ -42,6 +42,20 @@ const Input = (props, icon) => {
           value={props.value}
           onChange={props.onChange}
           type={(isPs ? "password" : "")}
+        />
+      </div>
+    );
+  }
+
+  if (isCheckbox) {
+    return (
+      <div className={s.checkbox}>
+        <input
+          className={s.checkbox__input}
+          placeholder={props.placeholder}
+          value={props.value}
+          onChange={props.onChange}
+          type="checkbox"
         />
       </div>
     );
