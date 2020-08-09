@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
+import { getCurrentUser, storage, db } from "@lib/firebase";
 import { auth, firebase } from "@src/firebase";
 
 import BaseLayout from "@components/layout/BaseLayout";
@@ -32,14 +33,26 @@ class SignUp extends React.Component {
     };
   }
 
-  handleSignUp = (e) => {
+  handleEmailSignUp = (e) => {
     e.preventDefault();
     // stateからemailとpasswordを取得する
     const { email, password } = this.state;
-
+    const firestore = firebase.firestore();
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
+      .then((res) => {
+        return firestore
+          .collection('users')
+          .doc(res.user.uid)
+          .set({
+            created_at: firebase.firestore.FieldValue.serverTimestamp(),
+            name: res.user.displayName,
+            thumgnailMediumImageUrl: res.user.photoURL,
+            originalImageUrl: res.user.photoURL,
+            update_at: firebase.firestore.FieldValue.serverTimestamp(),
+          });
+      })
       .then((user) => {
         // 存在確認済のメールアドレスかどうか(true or false)
         var verified = firebase.auth().currentUser.emailVerified;
@@ -52,9 +65,6 @@ class SignUp extends React.Component {
           var email = firebase.auth().currentUser.email;
           console.log(email);
         }
-        alert(
-          "確認メールを送信しました。メールから承認をするとアカウントが有効になります。"
-        );
         console.log(user);
         this.setState({ email: null, password: null });
       })
@@ -67,11 +77,25 @@ class SignUp extends React.Component {
   };
   //end Email
   //Google
-  handleSignIn = () => {
-    var provider = new firebase.auth.GoogleAuthProvider();
+  handleGoogleSignIn = () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    const firestore = firebase.firestore();
     provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
-    auth
+    firebase
+      .auth()
       .signInWithPopup(provider)
+      .then((res) => {
+        return firestore
+          .collection('users')
+          .doc(res.user.uid)
+          .set({
+            created_at: firebase.firestore.FieldValue.serverTimestamp(),
+            name: res.user.displayName,
+            thumgnailMediumImageUrl: res.user.photoURL,
+            originalImageUrl: res.user.photoURL,
+            update_at: firebase.firestore.FieldValue.serverTimestamp(),
+          });
+      })
       .then(() => {
         location.href = "./index";
       })
@@ -83,14 +107,28 @@ class SignUp extends React.Component {
   //end Google
   //facebook
   handleFacebookSignIn = () => {
-    var provider = new firebase.auth.FacebookAuthProvider();
-    auth
+    const provider = new firebase.auth.FacebookAuthProvider();
+    const firestore = firebase.firestore();
+    firebase
+      .auth()
       .signInWithPopup(provider)
+      .then((res) => {
+        return firestore
+          .collection('users')
+          .doc(res.user.uid)
+          .set({
+            created_at: firebase.firestore.FieldValue.serverTimestamp(),
+            name: res.user.displayName,
+            thumgnailMediumImageUrl: res.user.photoURL,
+            originalImageUrl: res.user.photoURL,
+            update_at: firebase.firestore.FieldValue.serverTimestamp(),
+          });
+      })
       .then((result) => {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-        var token = result.credential.accessToken;
+        const token = result.credential.accessToken;
         // The signed-in user info.
-        var user = result.user;
+        const user = result.user;
         location.href = "./index";
       })
       .catch((error) => {
@@ -118,14 +156,14 @@ class SignUp extends React.Component {
               icon={<Password/>}
               onChange={(e) => this.setState({ password: e.target.value })}
             />
-            <Button onClick={(e) => this.handleSignUp(e)}>
+            <Button onClick={(e) => {this.handleSignUp(e);this.handleEmailSignUp(e)}}>
               アカウントを作成
             </Button>
             <NoteItem>
               アカウントを作成する事で、Ceaperの<Link href="/privacy"><a>利用規約</a></Link>、データに関するポリシー、Cookieポリシーに同意するものとします。
             </NoteItem>
             <SectionItem title="または"/>
-            <SocialButton icon=<Google/> onClick={this.handleSignIn}>
+            <SocialButton icon=<Google/> onClick={this.handleGoogleSignIn}>
               Googleで作成
             </SocialButton>
             <SocialButton icon=<Facebook/> onClick={this.handleFacebookSignIn}>
