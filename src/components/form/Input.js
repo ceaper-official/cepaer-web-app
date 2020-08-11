@@ -7,6 +7,7 @@ const Input = (props, icon) => {
   const isSub = props.sub;
   const isPs = props.ps;
   const isIcon = props.icon;
+  const isCheckbox = props.checkbox;
 
   if (isSub) {
     return (
