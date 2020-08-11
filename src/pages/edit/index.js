@@ -104,7 +104,7 @@ export class EditSocial extends React.Component {
               </FormItem>
               <FormItem label="ユーザー名">
                 <Input
-                  value={this.state.user && this.state.user.displayName}
+                  defaultValue="名前"
                 />
               </FormItem>
               <FormItem label="自己紹介">

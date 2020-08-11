@@ -19,6 +19,7 @@ const Input = (props, icon) => {
           className={s.input__icon}
           placeholder={props.placeholder}
           value={props.value}
+          defaultValue={props.defaultValue}
           onChange={props.onChange}
           type={(isPs ? "password" : "")}
         />
@@ -41,6 +42,7 @@ const Input = (props, icon) => {
           className={s.input__icon}
           placeholder={props.placeholder}
           value={props.value}
+          defaultValue={props.defaultValue}
           onChange={props.onChange}
           type={(isPs ? "password" : "")}
         />
@@ -55,6 +57,7 @@ const Input = (props, icon) => {
           className={s.checkbox__input}
           placeholder={props.placeholder}
           value={props.value}
+          defaultValue={props.defaultValue}
           onChange={props.onChange}
           type="checkbox"
         />
@@ -67,6 +70,7 @@ const Input = (props, icon) => {
       <input
         className={s.input}
         value={props.value}
+        defaultValue={props.defaultValue}
         placeholder={props.placeholder}
         onChange={props.onChange}
         type={(isPs ? "password" : "")}
