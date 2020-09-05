@@ -27,24 +27,34 @@ export class EditSocial extends React.Component {
     super(props);
     this.inputRef = React.createRef();
     this.state = {
+      user: null,
+      name: "",
       profileImageUrl: "",
     };
   }
 
-  async componentDidMount() {
+  componentDidMount() {
+    const db = firebase.firestore();
+    const user = getCurrentUser();
     // TODO: Firestoreからユーザ情報を取得
-    try {
-      const user = getCurrentUser();
-      const userDoc = await db.collection("users").doc(user.uid).get();
-      console.log(userDoc);
-      this.setState({
-        name: userDoc.data.name,
-        about: userDoc.data.about,
-        profileImageUrl: userDoc.data.image,
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    firebase.auth().onAuthStateChanged(
+      async (user) => {
+        if (user) {
+          const doc = await db
+          .collection('users')
+          .doc(user.uid)
+          .get();
+          const data = doc.data();
+          if (data) {
+            this.setState({
+              user,
+              name: data.name,
+              profileImageUrl: data.image,
+            });
+          }
+        }
+      }
+    )
   }
 
   onClickProfileImage = () => {
@@ -74,21 +84,12 @@ export class EditSocial extends React.Component {
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
-      const fileName = `${generateRandomId()}.jpg`;
+      const fileName = `${generateRandomId()}_original.jpg`;
       await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
     } catch (error) {
       console.error(error);
     }
   };
-
-  state = {
-    user: null,
-  };
-  componentDidMount() {
-    firebase.auth().onAuthStateChanged((user) => {
-      this.setState({ user });
-    });
-  }
 
   render() {
     return (
@@ -100,11 +101,12 @@ export class EditSocial extends React.Component {
             </HeroText>
             <Container>
               <FormItem label="アイコン">
-                <UploadIcon/>
+              <UploadIcon/>
               </FormItem>
               <FormItem label="ユーザー名">
                 <Input
-                  defaultValue="名前"
+                  value={this.state.name}
+                  onChange={(e) => this.setState({name: e.target.value})}
                 />
               </FormItem>
               <FormItem label="自己紹介">
