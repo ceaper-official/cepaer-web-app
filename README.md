@@ -78,7 +78,7 @@ export class Firestore extends React.Component {
           this.setState({
             user,
             name: data.name,
-            icon: data.originalImageUrl,
+            icon: data.thumgnailMediumImageUrl,
             bio: data.bio,
           });
         }
