@@ -1,4 +1,4 @@
-@import '@styles/config';
+@import "@styles/config";
 
 .dropdown {
   position: relative;
@@ -7,10 +7,6 @@
   & .dropdown__button {
     cursor: pointer;
     @include inline-flex;
-  }
-
-  & .hide {
-    display: none;
   }
 
   & .dropdown__inner {

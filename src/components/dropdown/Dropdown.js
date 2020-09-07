@@ -2,32 +2,23 @@ import React from "react";
 
 import s from "./Dropdown.module.scss";
 
-class Dropdown extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: false,
-    };
-  }
+export default function Dropdown({ button, children }) {
+  const [open, setOpen] = React.useState(false);
 
-  toggle = () => {
-    this.setState({
-      open: !this.state.open,
-    });
+  const toggle = () => {
+    setOpen((prev) => !prev);
   };
 
-  render() {
-    return (
-      <div className={s.dropdown}>
-        <div onClick={this.toggle} className={s.dropdown__button}>
-          {this.props.button}
-        </div>
-        <div className={this.state.open ? s.open : s.hide}>
-          <div className={s.dropdown__inner}>{this.props.children}</div>
-        </div>
-      </div>
-    );
-  }
-}
+  const handleClickAway = () => {
+    setOpen(false);
+  };
 
-export default Dropdown;
+  return (
+    <div className={s.dropdown} onClickAway={handleClickAway}>
+      <div onClick={toggle} className={s.dropdown__button}>
+        {button}
+      </div>
+      {open ? <div className={s.dropdown__inner}>{children}</div> : null}
+    </div>
+  );
+}
