@@ -21,88 +21,90 @@ const UploadIcon = (props) => {
   const [profileImageUrl, setProfileImageUrl] = useState("");
   const inputRef = useRef(null);
 
-    // モーダルを閉じる
-    const onCloseModal = useCallback(() => {
-      setModalProps({
-        open: false,
-        src: null,
-        fileType: null,
-      });
+  // モーダルを閉じる
+  const onCloseModal = useCallback(() => {
+    setModalProps({
+      open: false,
+      src: null,
+      fileType: null,
     });
+  });
 
-    const onClick = useCallback(() => {
-      if (inputRef.current) {
-        inputRef.current.click();
-      }
-    }, [inputRef]);
+  const onClick = useCallback(() => {
+    if (inputRef.current) {
+      inputRef.current.click();
+    }
+  }, [inputRef]);
 
-    const onChangeImage = useCallback(async (event) => {
-      if (event.target.files === null) {
-        return;
-      }
-      const file = event.target.files.item(0);
-      if (file === null) {
-        return;
-      }
+  const onChangeImage = useCallback(async (event) => {
+    if (event.target.files === null) {
+      return;
+    }
+    const file = event.target.files.item(0);
+    if (file === null) {
+      return;
+    }
 
-      // crop用modalに画像をセット
-      setModalProps({
-        open: true,
-        src: URL.createObjectURL(file),
-        fileType: file.type,
-      });
-    }, []);
-
-    const onUpload = useCallback(async (blob) => {
-      try {
-        // 事前にpreview用の画像URLを表示する
-        setProfileImageUrl(URL.createObjectURL(blob));
-
-        // モーダルを閉じる
-        onCloseModal();
-
-        // Firebase Storageへアップロード
-        const user = getCurrentUser();
-        const ref = storage.ref();
-        const fileName = `${generateRandomId()}.jpg`;
-        const snapshot = await ref
-          .child(`images/profile/${user.uid}/${fileName}`)
-          .put(blob);
-
-        // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
-        const savedImageUrl = await snapshot.ref.getDownloadURL();
-        await db.collection("users").doc(user.id).update({
-          image: savedImageUrl,
-        });
-      } catch (error) {
-        console.error(error);
-      }
+    // crop用modalに画像をセット
+    setModalProps({
+      open: true,
+      src: URL.createObjectURL(file),
+      fileType: file.type,
     });
+  }, []);
 
-    return (
-      <div className={s.upload__icon}>
-        <input
-          ref={inputRef}
-          onChange={onChangeImage}
-          accept={acceptImageFileType}
-          style={{ display: "none" }}
-          type="file"
-        />
-        {profileImageUrl ? (
-          <div class={s.upload__icon__inner}>
-            <img className={s.upload__img} src={profileImageUrl} alt="profile icon"/>
-            {props.icon}
+  const onUpload = useCallback(async (blob) => {
+    try {
+      // 事前にpreview用の画像URLを表示する
+      setProfileImageUrl(URL.createObjectURL(blob));
+
+      // モーダルを閉じる
+      onCloseModal();
+
+      // Firebase Storageへアップロード
+      const user = getCurrentUser();
+      const ref = storage.ref();
+      const fileName = `${generateRandomId()}.jpg`;
+      const snapshot = await ref
+        .child(`images/profile/${user.uid}/${fileName}`)
+        .put(blob);
+
+      // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
+      const savedImageUrl = await snapshot.ref.getDownloadURL();
+      await db.collection("users").doc(user.id).update({
+        image: savedImageUrl,
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  });
+
+  return (
+    <div className={s.upload__icon}>
+      <input
+        ref={inputRef}
+        onChange={onChangeImage}
+        accept={acceptImageFileType}
+        style={{ display: "none" }}
+        type="file"
+      />
+      {profileImageUrl ? (
+        <div class={s.upload__icon__inner}>
+          <img className={s.upload__img} src={props.src} alt="profile icon" />
+          {props.icon}
+        </div>
+      ) : (
+        <>
+          <div class={s.upload__icon__inner} onClick={onClick}>
+            <img className={s.upload__img} src={props.src} alt="profile icon" />
           </div>
-          ) : (
-            <>
-            <div class={s.upload__icon__inner} onClick={onClick}>
-              <img className={s.upload__img} src="images/mock/user.jpg" alt="profile icon"/>
-            </div>
-            <p className={s.upload__helper__text} onClick={onClick}>アイコンを変更する</p>
-            </>
-          )}
-      </div>
-      );
+          <p className={s.upload__helper__text} onClick={onClick}>
+            アイコンを変更する
+          </p>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default UploadIcon;

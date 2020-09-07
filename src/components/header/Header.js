@@ -12,7 +12,7 @@ import Badge from "@components/badge/Badge";
 import MobileNav from "@components/nav/MobileNav";
 import Dropdown from "@components/dropdown/Dropdown";
 import DropdownItem from "@components/dropdown/DropdownItem";
-import UserIcon  from "@components/user/UserIcon";
+import UserIcon from "@components/user/UserIcon";
 import UserRating from "@components/user/UserRating";
 import UserContainer from "@components/user/UserContainer";
 
@@ -53,12 +53,8 @@ class Header extends React.Component {
         <header className={s.header} disableInlineStyles>
           <div className={s.header__container}>
             <HeaderLogo />
-              {this.state.user ? (
-                <UserHeaderContents />
-              ) : (
-                <GuestHeaderContents />
-              )}
-            </div>
+            {this.state.user ? <UserHeaderContents /> : <GuestHeaderContents />}
+          </div>
         </header>
         <MobileNav />
         <Recipe />
@@ -81,8 +77,12 @@ function HeaderLogo() {
         </Link>
       </span>
 
-      <a onClick={() => Router.back()}
-         className={`${s.header__icon} ${s.header__mobile__item} ${router.pathname == "/" ? 'home' : ''}`}>
+      <a
+        onClick={() => Router.back()}
+        className={`${s.header__icon} ${s.header__mobile__item} ${
+          router.pathname == "/" ? "home" : ""
+        }`}
+      >
         <Back />
       </a>
     </>
@@ -90,7 +90,6 @@ function HeaderLogo() {
 }
 
 class UserHeaderContents extends React.Component {
-
   handleLogout = () => {
     firebase.auth().signOut();
   };
@@ -108,22 +107,26 @@ class UserHeaderContents extends React.Component {
       <div className="nav-inner nav-inner-desktop">
         <div className="nav-controls"></div>
         <div className="nav-controls">
-
           <div className={s.header__item}>
-          <Dropdown
-            button={<UserIcon icon={this.state.user && this.state.user.photoURL}/>}>
-            <DropdownItem name="プロフィール" href="/user"/>
-            <DropdownItem name="コレクション"  href="/collections"/>
-            <DropdownItem name="お気に入り"  href="/likes"/>
-            <DropdownItem name="通知"  href="/activity"/>
-            <hr/>
-            <DropdownItem sub name="アカウントの設定"  href="/edit"/>
-            <DropdownItem sub name="ログアウト" onClick={this.handleLogout}/>
-          </Dropdown>
-        </div>
+            <Dropdown
+              button={
+                <UserIcon icon={this.state.user && this.state.user.photoURL} />
+              }
+            >
+              <DropdownItem name="プロフィール" href="/user" />
+              <DropdownItem name="コレクション" href="/collections" />
+              <DropdownItem name="お気に入り" href="/likes" />
+              <DropdownItem name="通知" href="/activity" />
+              <hr />
+              <DropdownItem sub name="アカウントの設定" href="/edit" />
+              <DropdownItem sub name="ログアウト" onClick={this.handleLogout} />
+            </Dropdown>
+          </div>
 
-        <div className={`${s.header__item} ${s.header__desktop__item}`}>
-            <Button outline  href="/post">レシピを投稿</Button>
+          <div className={`${s.header__item} ${s.header__desktop__item}`}>
+            <Button outline href="/post">
+              レシピを投稿
+            </Button>
           </div>
         </div>
       </div>
@@ -189,18 +192,18 @@ class RecipeContents extends React.Component {
     return (
       <>
         <div className="nav-controls">
-        <Link href="/user">
-        <a>
-          <UserContainer title="マイケル">
-            <UserRating rate="4.3" all="100"/>
-          </UserContainer>
-        </a>
-        </Link>
+          <Link href="/user">
+            <a>
+              <UserContainer title="マイケル">
+                <UserRating rate="4.3" all="100" />
+              </UserContainer>
+            </a>
+          </Link>
         </div>
 
         {/* レビュー　アクティブ時 <button>にclass"active"付与 。非アクティブはクラス解除*/}
-        <button  onClick={this.togglePopupReview.bind(this)}>
-          <Button >レビューを書く</Button>
+        <button onClick={this.togglePopupReview.bind(this)}>
+          <Button>レビューを書く</Button>
         </button>
         {this.state.showPopupReview ? (
           <PopupReview closePopup={this.togglePopupReview.bind(this)} />

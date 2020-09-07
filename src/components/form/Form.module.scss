@@ -1,8 +1,8 @@
-@import '@styles/config';
+@import "@styles/config";
 
 //item
 .form__item {
-  margin-bottom: $gutter*2;
+  margin-bottom: $gutter * 2;
 }
 //input
 .input__container {
@@ -16,7 +16,7 @@
     @include flex;
 
     & svg {
-      @include icon($icon-color:$grey, $icon-size:$icon-size-min);
+      @include icon($icon-color: $grey, $icon-size: $icon-size-min);
       padding: 0 1.5rem;
     }
   }
@@ -29,7 +29,7 @@
     line-height: inherit;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 25%;
       left: 0;
@@ -56,7 +56,7 @@
   }
 
   & .input__icon {
-    @include input($padding:$gutter $gutter $gutter 4.2rem);
+    @include input($padding: $gutter $gutter $gutter 4.2rem);
   }
 }
 
@@ -76,5 +76,5 @@
 
 //textarea
 .textarea {
-  @include input($height: $gutter*6);
+  @include input($height: $gutter * 6);
 }

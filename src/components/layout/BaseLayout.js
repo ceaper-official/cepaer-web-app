@@ -8,7 +8,7 @@ import s from './BaseLayout.module.scss';
 const BaseLayout = (props) => (
   <div className={s.layout}>
     <Header />
-    <div className={s.page}>
+    <div className={` ${s.page} ${props.article ? s.article : ''} `}>
       {props.children}
     </div>
     <Footer />

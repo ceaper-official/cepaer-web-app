@@ -28,70 +28,77 @@ function RecipeImg() {
 }
 
 class UserPage extends React.Component {
-  async componentDidMount() {
-    // TODO: Firestoreからユーザ情報を取得
-    try {
-      const user = getCurrentUser();
-      const userDoc = await db.collection("users").doc(user.uid).get();
-      console.log(userDoc);
-      this.setState({
-        name: userDoc.data.name,
-        about: userDoc.data.about,
-        profileImageUrl: userDoc.data.image,
-      });
-    } catch (error) {
-      console.error(error);
-    }
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef();
+    this.state = {
+      user: null,
+      name: "",
+      icon: "",
+      bio: "",
+    };
   }
 
-    state = {
-      user: null,
-    };
-    componentDidMount() {
-      firebase.auth().onAuthStateChanged((user) => {
-        this.setState({ user });
-      });
-    }
+  componentDidMount() {
+    const db = firebase.firestore();
+    const user = getCurrentUser();
+    // TODO: Firestoreからユーザ情報を取得
+    firebase.auth().onAuthStateChanged(async (user) => {
+      if (user) {
+        const doc = await db.collection("users").doc(user.uid).get();
+        const data = doc.data();
+        if (data) {
+          this.setState({
+            user,
+            name: data.name,
+            icon: data.originalImageUrl,
+            bio: data.bio,
+          });
+        }
+      }
+    });
+  }
 
   render() {
     const firestoreDatas = this.props.datas;
     return (
       <BaseLayout>
         <HeroUser
-          name={this.state.user && this.state.user.displayName}
-          icon={this.state.user && this.state.user.photoURL}
-          bio="私は、料理が大好きな生粋のキャンパーです。週7で、キャンプに行っています！よく出没する場所は高尾山です。"
+          name={this.state.name}
+          icon={this.state.icon}
+          bio={this.state.bio}
           instagram="https://www.instagram.com/"
           twitter="http://twitter.com/"
           facebook="http://facebook.com/"
-          />
+        />
 
-          <Block>
-            <Tabs>
-            <div label='投稿したレシピ' icon={<CookSolid/>}>
+        <Block>
+          <Tabs>
+            <div label="投稿したレシピ" icon={<CookSolid />}>
               <UserPostContainer>
-                <UserPost/>
-                <UserPost/>
-                <UserPost/>
-                <UserPost/>
+                <UserPost />
+                <UserPost />
+                <UserPost />
+                <UserPost />
               </UserPostContainer>
             </div>
-            <div label="お気に入り" icon={<LikeSolid/>}>
+            <div label="お気に入り" icon={<LikeSolid />}>
               <UserPostContainer>
-                <UserPost/>
+                <UserPost />
               </UserPostContainer>
             </div>
-            <div label="コレクション" icon={<CollectionSolid/>}>
+            <div label="コレクション" icon={<CollectionSolid />}>
               <UserPostContainer>
                 <UserCollection
-                title="ダイエットに効果的な料理100選"
-                all="45"
-                href="/collections/collection"
-                img=<RecipeImg/>/>
+                  title="ダイエットに効果的な料理100選"
+                  all="45"
+                  href="/collections/collection"
+                  img=<RecipeImg />
+                />
               </UserPostContainer>
             </div>
-            </Tabs>
-          </Block>
+          </Tabs>
+        </Block>
       </BaseLayout>
     );
   }

@@ -13,11 +13,11 @@ export default () => (
       <SideNav>
         <SideNavItem
          title="プライバシーポリシー"
-         href="/privacy"
+         to="/privacy"
         />
         <SideNavItem
          title="利用規約"
-         href="/terms"
+         to="/terms"
         />
       </SideNav>
       <div>

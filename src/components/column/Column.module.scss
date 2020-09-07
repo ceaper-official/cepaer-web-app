@@ -1,10 +1,18 @@
 @import '@styles/config';
 
-.column3 {
+.column2 {
+  display: grid;
+  grid-gap: $container-gutter $container-gutter;
   @media (min-width: $tablet) {
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column3 {
+  display: grid;
+  grid-gap: $container-gutter $container-gutter;
+  @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: $container-gutter $container-gutter;
   }
 }
 

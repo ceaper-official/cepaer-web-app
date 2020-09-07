@@ -15,7 +15,7 @@ export default function FaqTemplate({ content, data }) {
   const frontmatter = data;
 
   return (
-    <BaseLayout>
+    <BaseLayout article>
       <Column sidenav>
         <Nav/>
         <div>

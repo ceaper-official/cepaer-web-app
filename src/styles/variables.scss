@@ -68,9 +68,9 @@ $normal: 1.5rem;
 $fade: 0.2s;
 $rounded: 10px;
 $btn-rounded: 4px;
-$overlay: rgba(35,30,45, .7);
+$overlay: rgba(35, 30, 45, 0.7);
 $shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-$hover-shadow: 0 0 10px rgba(0, 0, 0, .2);
+$hover-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 //Other - Gradations
 $articleText80: rgba(79, 75, 87, 0.8);
 $accent60: rgba(255, 84, 69, 0.6);
@@ -90,10 +90,14 @@ $icon-size: 1.6rem;
 $icon-size-min: 1.2rem;
 
 $icon-size-button: calc(45px + (55 - 45) * ((100vw - 375px) / (1500 - 375)));
-$icon-size-button-big: calc(2.5rem + (45 - 25) * ((100vw - 375px) / (1500 - 375)));
+$icon-size-button-big: calc(
+  2.5rem + (45 - 25) * ((100vw - 375px) / (1500 - 375))
+);
 $icon-size-nav: calc(1.6rem + (20 - 16) * ((100vw - 375px) / (1500 - 375)));
 
-$user-icon-size-max: calc(100px + (150 - 100) * ((100vw - 375px) / (1500 - 375)));
+$user-icon-size-max: calc(
+  100px + (150 - 100) * ((100vw - 375px) / (1500 - 375))
+);
 $user-icon-size: 3.5rem;
 $user-icon-size-min: 2.5rem;
 

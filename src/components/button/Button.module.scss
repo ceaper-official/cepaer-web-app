@@ -275,3 +275,18 @@
     }
   }
 }
+
+//arrow button
+.arrow__button {
+  @include button($color:$black,$bg: $background-color,$border-color: none);
+  padding-left: 0;
+
+  & svg {
+    margin: 0 0 0 0.4em;
+  }
+
+  &:hover {
+    background: none;
+    text-decoration: underline;
+  }
+}

@@ -21,7 +21,6 @@ import Password from "@icons/ui/password.js";
 import Google from "@icons/social/google.js";
 import Facebook from "@icons/social/facebook.js";
 
-
 class SignUp extends React.Component {
   //Email作成
   constructor(props) {
@@ -42,16 +41,13 @@ class SignUp extends React.Component {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then((res) => {
-        return firestore
-          .collection('users')
-          .doc(res.user.uid)
-          .set({
-            created_at: firebase.firestore.FieldValue.serverTimestamp(),
-            name: res.user.displayName,
-            thumgnailMediumImageUrl: res.user.photoURL,
-            originalImageUrl: res.user.photoURL,
-            update_at: firebase.firestore.FieldValue.serverTimestamp(),
-          });
+        return firestore.collection("users").doc(res.user.uid).set({
+          created_at: firebase.firestore.FieldValue.serverTimestamp(),
+          name: res.user.displayName,
+          thumgnailMediumImageUrl: res.user.photoURL,
+          originalImageUrl: res.user.photoURL,
+          update_at: firebase.firestore.FieldValue.serverTimestamp(),
+        });
       })
       .then((user) => {
         // 存在確認済のメールアドレスかどうか(true or false)
@@ -85,16 +81,13 @@ class SignUp extends React.Component {
       .auth()
       .signInWithPopup(provider)
       .then((res) => {
-        return firestore
-          .collection('users')
-          .doc(res.user.uid)
-          .set({
-            created_at: firebase.firestore.FieldValue.serverTimestamp(),
-            name: res.user.displayName,
-            thumgnailMediumImageUrl: res.user.photoURL,
-            originalImageUrl: res.user.photoURL,
-            update_at: firebase.firestore.FieldValue.serverTimestamp(),
-          });
+        return firestore.collection("users").doc(res.user.uid).set({
+          created_at: firebase.firestore.FieldValue.serverTimestamp(),
+          name: res.user.displayName,
+          thumgnailMediumImageUrl: res.user.photoURL,
+          originalImageUrl: res.user.photoURL,
+          update_at: firebase.firestore.FieldValue.serverTimestamp(),
+        });
       })
       .then(() => {
         location.href = "./index";
@@ -113,16 +106,13 @@ class SignUp extends React.Component {
       .auth()
       .signInWithPopup(provider)
       .then((res) => {
-        return firestore
-          .collection('users')
-          .doc(res.user.uid)
-          .set({
-            created_at: firebase.firestore.FieldValue.serverTimestamp(),
-            name: res.user.displayName,
-            thumgnailMediumImageUrl: res.user.photoURL,
-            originalImageUrl: res.user.photoURL,
-            update_at: firebase.firestore.FieldValue.serverTimestamp(),
-          });
+        return firestore.collection("users").doc(res.user.uid).set({
+          created_at: firebase.firestore.FieldValue.serverTimestamp(),
+          name: res.user.displayName,
+          thumgnailMediumImageUrl: res.user.photoURL,
+          originalImageUrl: res.user.photoURL,
+          update_at: firebase.firestore.FieldValue.serverTimestamp(),
+        });
       })
       .then((result) => {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
@@ -148,25 +138,35 @@ class SignUp extends React.Component {
           <CardForm title="アカウントの作成">
             <Input
               placeholder="Eメール"
-              icon={<Mail/>}
+              icon={<Mail />}
               onChange={(e) => this.setState({ email: e.target.value })}
             />
-          <Input ps
+            <Input
+              ps
               placeholder="パスワード"
-              icon={<Password/>}
+              icon={<Password />}
               onChange={(e) => this.setState({ password: e.target.value })}
             />
-            <Button onClick={(e) => {this.handleSignUp(e);this.handleEmailSignUp(e)}}>
+            <Button
+              onClick={(e) => {
+                this.handleSignUp(e);
+                this.handleEmailSignUp(e);
+              }}
+            >
               アカウントを作成
             </Button>
             <NoteItem>
-              アカウントを作成する事で、Ceaperの<Link href="/privacy"><a>利用規約</a></Link>、データに関するポリシー、Cookieポリシーに同意するものとします。
+              アカウントを作成する事で、Ceaperの
+              <Link href="/privacy">
+                <a>利用規約</a>
+              </Link>
+              、データに関するポリシー、Cookieポリシーに同意するものとします。
             </NoteItem>
-            <SectionItem title="または"/>
-            <SocialButton icon=<Google/> onClick={this.handleGoogleSignIn}>
+            <SectionItem title="または" />
+            <SocialButton icon=<Google /> onClick={this.handleGoogleSignIn}>
               Googleで作成
             </SocialButton>
-            <SocialButton icon=<Facebook/> onClick={this.handleFacebookSignIn}>
+            <SocialButton icon=<Facebook /> onClick={this.handleFacebookSignIn}>
               Facebookで作成
             </SocialButton>
             <LinkItem
@@ -175,8 +175,8 @@ class SignUp extends React.Component {
               href="/signin"
             />
           </CardForm>
-      </Hero>
-    </BaseLayout>
+        </Hero>
+      </BaseLayout>
     );
   }
 }

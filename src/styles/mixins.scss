@@ -78,6 +78,7 @@
 //Card
 @mixin card {
   overflow: hidden;
+  width: 100%;
   border-radius: $rounded;
   border: $border;
   padding: $gutter;

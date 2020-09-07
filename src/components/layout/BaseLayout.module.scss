@@ -13,3 +13,10 @@
 .flex__page {
   @include flex;
 }
+
+.article {
+  & p > a {
+    text-decoration: underline;
+    color: $accent;
+  }
+}

@@ -8,24 +8,16 @@ export class EditNav extends React.Component {
     return (
       <SideNav>
         <SideNavItem
-          title="プロフィール"
-          href="/edit"
+          title="Ceaperについて"
+          to="/"
         />
         <SideNavItem
-          title="アカウント情報"
-          href="/edit/account"
+          title="アカウント"
+          to="/faq/account"
         />
         <SideNavItem
-          title="パスワード"
-           href="/edit/password"
-          />
-          <SideNavItem
-           title="ソーシャルメディア"
-            href="/edit/social"
-          />
-          <SideNavItem
-           title="アカウントの削除"
-            href="/edit/delete"
+          title="サポート"
+           to="/faq/account"
           />
         </SideNav>
     );

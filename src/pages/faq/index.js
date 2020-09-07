@@ -2,8 +2,13 @@ import React from "react";
 import Link from "next/link";
 
 import BaseLayout from "@components/layout/BaseLayout";
+import Block from "@components/block/Block";
+import Container from "@components/container/Container";
+import Column from "@components/column/Column";
 import Feedback from "@components/support/Feedback";
 import HeroText from "@components/hero/HeroText";
+import Card from "@components/card/Card";
+import ArrowButton from "@components/button/ArrowButton";
 
 import Search from "@icons/ui/search.js";
 import Arrow from "@icons/ui/arrow.js";
@@ -12,80 +17,23 @@ export default () => (
   <BaseLayout>
     <HeroText title="よくある質問">
     </HeroText>
-    <div id="page">
-      <div className="contents">
-        <div className="section">
-          <div className="faq-cat-wrapper">
-            <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-r">
-                <h3>Ceaperについて</h3>
-                <div className="faq-cat-link-wrapper">
-                  <Link href="/">
-                    <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
-                      Ceaperとは？
-                      <Arrow />
-                    </a>
-                  </Link>
-                  <Link href="/">
-                    <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
-                      使い方
-                      <Arrow />
-                    </a>
-                  </Link>
-                  <Link href="/">
-                    <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
-                      ランキングの基準
-                      <Arrow />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-r">
-                <h3>アカウント</h3>
-                <div className="faq-cat-link-wrapper">
-                  <Link href="/faq/account/0アカウントの作成">
-                    <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
-                      アカウントの作成
-                      <Arrow />
-                    </a>
-                  </Link>
-                  <Link href="/">
-                    <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
-                      アカウントの管理
-                      <Arrow />
-                    </a>
-                  </Link>
-                  <Link href="/">
-                    <a className="hover-line faq-cat-link ico-back xs-text xs-icon">
-                      アカウントの削除
-                      <Arrow />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-r">
-                <h3>サポート</h3>
-                <div className="faq-cat-link-wrapper"></div>
-              </div>
-            </div>
-
-            <div className="faq-cat-inner card">
-              <div className="faq-cat-inner-r">
-                <h3>規約・個人情報の扱い</h3>
-                <div className="faq-cat-link-wrapper"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <Feedback />
-    </div>
+    <Block>
+      <Container>
+        <Column col2>
+          <Card>
+            <h3>Ceaperについて</h3>
+            <ArrowButton text="Ceaperとは" to=""/>
+            <ArrowButton text="使い方" to=""/>
+          </Card>
+          <Card>
+            <h3>アカウント</h3>
+            <ArrowButton text="アカウントの作成" to=""/>
+            <ArrowButton text="アカウントの管理" to=""/>
+            <ArrowButton text="アカウントの削除" to=""/>
+          </Card>
+      </Column>
+      </Container>
+    </Block>
+    <Feedback />
   </BaseLayout>
 );

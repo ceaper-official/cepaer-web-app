@@ -9,23 +9,23 @@ export class Nav extends React.Component {
       <SideNav>
         <SideNavItem
           title="プロフィール"
-          href="/edit"
+          to="/edit"
         />
         <SideNavItem
           title="アカウント情報"
-          href="/edit/account"
+          to="/edit/account"
         />
         <SideNavItem
           title="パスワード"
-           href="/edit/password"
+           to="/edit/password"
           />
           <SideNavItem
            title="ソーシャルメディア"
-            href="/edit/social"
+            to="/edit/social"
           />
           <SideNavItem
            title="アカウントの削除"
-            href="/edit/delete"
+            to="/edit/delete"
           />
         </SideNav>
     );

@@ -49,7 +49,7 @@ npm run deploy
 
 ### Firebase
 
-1. Firestore からデータの呼び出し
+1. Firestore からデータの呼び出し＆表示
 
 ```jsx
 import { getCurrentUser, storage } from "@lib/firebase";

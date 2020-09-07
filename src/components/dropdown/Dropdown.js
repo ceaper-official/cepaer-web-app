@@ -16,18 +16,18 @@ class Dropdown extends React.Component {
     });
   };
 
-render () {
-  return (
-    <div className={s.dropdown}>
-      <div onClick={this.toggle} className={s.dropdown__button}>{this.props.button}</div>
-       <div className={this.state.open ? s.open : s.hide}>
-        <div className={s.dropdown__inner}>
-          {this.props.children}
+  render() {
+    return (
+      <div className={s.dropdown}>
+        <div onClick={this.toggle} className={s.dropdown__button}>
+          {this.props.button}
+        </div>
+        <div className={this.state.open ? s.open : s.hide}>
+          <div className={s.dropdown__inner}>{this.props.children}</div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 }
 
 export default Dropdown;
