@@ -29,7 +29,8 @@ export class EditSocial extends React.Component {
     this.state = {
       user: null,
       name: "",
-      profileImageUrl: "",
+      icon: "",
+      bio: "",
     };
   }
 
@@ -37,24 +38,20 @@ export class EditSocial extends React.Component {
     const db = firebase.firestore();
     const user = getCurrentUser();
     // TODO: Firestoreからユーザ情報を取得
-    firebase.auth().onAuthStateChanged(
-      async (user) => {
-        if (user) {
-          const doc = await db
-          .collection('users')
-          .doc(user.uid)
-          .get();
-          const data = doc.data();
-          if (data) {
-            this.setState({
-              user,
-              name: data.name,
-              profileImageUrl: data.image,
-            });
-          }
+    firebase.auth().onAuthStateChanged(async (user) => {
+      if (user) {
+        const doc = await db.collection("users").doc(user.uid).get();
+        const data = doc.data();
+        if (data) {
+          this.setState({
+            user,
+            name: data.name,
+            icon: data.originalImageUrl,
+            bio: data.bio,
+          });
         }
       }
-    )
+    });
   }
 
   onClickProfileImage = () => {
@@ -95,27 +92,27 @@ export class EditSocial extends React.Component {
     return (
       <BaseLayout>
         <Column sidenav>
-          <EditNav/>
+          <EditNav />
           <div>
-            <HeroText small="プロフィール">
-            </HeroText>
+            <HeroText small="プロフィール"></HeroText>
             <Container>
               <FormItem label="アイコン">
-              <UploadIcon/>
+                <UploadIcon src={this.state.icon} />
               </FormItem>
               <FormItem label="ユーザー名">
                 <Input
                   value={this.state.name}
-                  onChange={(e) => this.setState({name: e.target.value})}
+                  onChange={(e) => this.setState({ name: e.target.value })}
                 />
               </FormItem>
               <FormItem label="自己紹介">
-                <TextArea/>
+                <TextArea
+                  value={this.state.bio}
+                  onChange={(e) => this.setState({ bio: e.target.value })}
+                />
               </FormItem>
               <FormItem>
-                <Button>
-                  設定を保存
-                </Button>
+                <Button>設定を保存</Button>
               </FormItem>
             </Container>
           </div>
