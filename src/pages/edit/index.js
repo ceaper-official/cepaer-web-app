@@ -37,7 +37,6 @@ export class EditSocial extends React.Component {
   componentDidMount() {
     const db = firebase.firestore();
     const user = getCurrentUser();
-    // TODO: Firestoreからユーザ情報を取得
     firebase.auth().onAuthStateChanged(async (user) => {
       if (user) {
         const doc = await db.collection("users").doc(user.uid).get();
@@ -46,7 +45,7 @@ export class EditSocial extends React.Component {
           this.setState({
             user,
             name: data.name,
-            icon: data.originalImageUrl,
+            icon: data.thumgnailMediumImageUrl,
             bio: data.bio,
           });
         }

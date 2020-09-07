@@ -4,6 +4,8 @@ import Link from "next/link";
 import ReactStars from "react-rating-stars-component";
 
 import { auth, firebase } from "@src/firebase";
+import { getCurrentUser, storage, db } from "@lib/firebase";
+
 import Button from "@components/button/Button";
 import ActivityCollection from "@components/activity/ActivityCollection";
 import ActivityLike from "@components/activity/ActivityLike";
@@ -93,13 +95,32 @@ class UserHeaderContents extends React.Component {
   handleLogout = () => {
     firebase.auth().signOut();
   };
-  state = {
-    user: null,
-  };
+
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef();
+    this.state = {
+      user: null,
+      icon: "",
+    };
+  }
 
   componentDidMount() {
-    firebase.auth().onAuthStateChanged((user) => {
-      this.setState({ user });
+    const db = firebase.firestore();
+    const user = getCurrentUser();
+    firebase.auth().onAuthStateChanged(async (user) => {
+      if (user) {
+        const doc = await db.collection("users").doc(user.uid).get();
+        const data = doc.data();
+        if (data) {
+          this.setState({
+            user,
+            name: data.name,
+            icon: data.thumgnailMediumImageUrl,
+            bio: data.bio,
+          });
+        }
+      }
     });
   }
   render() {
@@ -108,11 +129,7 @@ class UserHeaderContents extends React.Component {
         <div className="nav-controls"></div>
         <div className="nav-controls">
           <div className={s.header__item}>
-            <Dropdown
-              button={
-                <UserIcon icon={this.state.user && this.state.user.photoURL} />
-              }
-            >
+            <Dropdown button={<UserIcon icon={this.state.icon} />}>
               <DropdownItem name="プロフィール" href="/user" />
               <DropdownItem name="コレクション" href="/collections" />
               <DropdownItem name="お気に入り" href="/likes" />
