@@ -6,10 +6,10 @@ h5,
 h6 {
   margin: 0 auto;
   font-weight: 700;
-  color: var(--black);
+  color: $title;
   width: 100%;
   max-width: $desktop_large;
-  font-feature-settings: 'palt';
+  font-feature-settings: "palt";
   white-space: normal;
 }
 
@@ -66,7 +66,7 @@ ul li {
 
   &:before {
     font-family: $title;
-    content: '•';
+    content: "•";
     color: $black;
     font-weight: 700;
     display: inline-block;
