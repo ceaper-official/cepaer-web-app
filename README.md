@@ -52,6 +52,7 @@ npm run deploy
 1. Firestore からデータの呼び出し＆表示
 
 ```jsx
+import React from "react";
 import { getCurrentUser, storage } from "@lib/firebase";
 import { firebase } from "@src/firebase";
 
