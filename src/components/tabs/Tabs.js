@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import Tab from './Tab';
+import Tab from "./Tab";
 
 import s from "./Tabs.module.scss";
 
 class Tabs extends Component {
   static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -20,17 +20,13 @@ class Tabs extends Component {
 
   onClickTabItem = (tab) => {
     this.setState({ activeTab: tab });
-  }
+  };
 
   render() {
     const {
       onClickTabItem,
-      props: {
-        children,
-      },
-      state: {
-        activeTab,
-      }
+      props: { children },
+      state: { activeTab },
     } = this;
 
     return (
@@ -51,6 +47,7 @@ class Tabs extends Component {
             );
           })}
         </div>
+        <hr />
         <div className={s.tab_content}>
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
