@@ -53,6 +53,18 @@ export class EditSocial extends React.Component {
     });
   }
 
+  onClickUpdate = (e) => {
+    const { name, bio } = this.setState;
+    const db = firebase.firestore();
+    const user = getCurrentUser();
+      db.collection("users").doc(user.uid).update({
+        name: this.state.name,
+        bio: this.state.bio,
+        update_at: firebase.firestore.FieldValue.serverTimestamp(),
+      })
+  };
+
+
   onClickProfileImage = () => {
     if (this.inputRef.current) {
       this.inputRef.current.click();
@@ -111,7 +123,7 @@ export class EditSocial extends React.Component {
                 />
               </FormItem>
               <FormItem>
-                <Button>設定を保存</Button>
+                <Button onClick={(e) => this.onClickUpdate(e)}>設定を保存</Button>
               </FormItem>
             </Container>
           </div>
