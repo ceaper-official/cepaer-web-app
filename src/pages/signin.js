@@ -33,55 +33,33 @@ class SignIn extends React.Component {
   handleEmailSignIn = (e) => {
     e.preventDefault();
     const { email, password } = this.state;
-    var verified = firebase.auth().currentUser.emailVerified;
-    console.log(verified);
-    if (!verified) {
-      // メアド確認終わってない
-      firebase.auth().createUserWithEmailAndPassword(email, password);
-      console.log;
-      alert("メールアドレス認証が完了していません。");
-    } else {
-      // メアド確認終わってる
-      const firestore = firebase.firestore();
-      auth
-        .signInWithEmailAndPassword(email, password)
-        .then((res) => {
-          return firestore.collection("users").doc(res.user.uid).set({
-            name: res.user.displayName,
-            originalImageUrl: res.user.photoURL,
-            thumgnailMediumImageUrl: res.user.photoURL,
-            created_at: firebase.firestore.FieldValue.serverTimestamp(),
-            update_at: firebase.firestore.FieldValue.serverTimestamp(),
-          });
-        })
-        .then(() => {
-          location.href = "/";
-        })
-        .catch((err) => {
-          alert("メールアドレスかパスワードが違います。");
-          console.log(err);
-        });
-    }
-  };
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(() => {
+      const user = firebase.auth().currentUser;
+        if (!user.emailVerified) {
+          user.sendEmailVerification()
+          .then(() => {
+            const email = user.email;
+            console.log("確認メールを送信しました。", email);
+            alert("メールアドレスが認証されていません。確認メールを送信しました。")
+          })
+          .catch((err) => {
+            console.log("Error occurred: ", err)
+          })
+      } else {
+        location.href = "/"
+        }
+      })
+    };
   //end Email
   //Google
   handleSignIn = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
-    const firestore = firebase.firestore();
     provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
     auth
       .signInWithPopup(provider)
-      .then((res) => {
-        return firestore.collection("users").doc(res.user.uid).set({
-          name: res.user.displayName,
-          originalImageUrl: res.user.photoURL,
-          thumgnailMediumImageUrl: res.user.photoURL,
-          created_at: firebase.firestore.FieldValue.serverTimestamp(),
-          update_at: firebase.firestore.FieldValue.serverTimestamp(),
-        });
-      })
       .then(() => {
-        location.href = "./index";
+        location.href = "/";
       })
       .catch((err) => {
         alert("問題が発生しました。最初からやり直してください。");
@@ -93,20 +71,10 @@ class SignIn extends React.Component {
   //facebook
   handleFacebookSignIn = () => {
     const provider = new firebase.auth.FacebookAuthProvider();
-    const firestore = firebase.firestore();
     auth
       .signInWithPopup(provider)
-      .then((res) => {
-        return firestore.collection("users").doc(res.user.uid).set({
-          name: res.user.displayName,
-          originalImageUrl: res.user.photoURL,
-          thumgnailMediumImageUrl: res.user.photoURL,
-          created_at: firebase.firestore.FieldValue.serverTimestamp(),
-          update_at: firebase.firestore.FieldValue.serverTimestamp(),
-        });
-      })
       .then((success) => {
-        location.href = "./index";
+        location.href = "/";
       })
       .catch((error) => {
         alert("問題が発生しました。最初からやり直してください。");

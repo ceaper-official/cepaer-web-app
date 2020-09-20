@@ -25,7 +25,7 @@ class SignUp extends React.Component {
   //Email作成
   constructor(props) {
     // Stateの定義
-    super(props);
+    super(props)
     this.state = {
       email: "",
       password: "",
@@ -36,12 +36,12 @@ class SignUp extends React.Component {
     e.preventDefault();
     // stateからemailとpasswordを取得する
     const { email, password } = this.state;
-    const firestore = firebase.firestore();
+    const db = firebase.firestore();
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then((res) => {
-        return firestore.collection("users").doc(res.user.uid).set({
+        return db.collection("users").doc(res.user.uid).set({
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           name: res.user.displayName,
           thumgnailMediumImageUrl: res.user.photoURL,
@@ -49,17 +49,17 @@ class SignUp extends React.Component {
           update_at: firebase.firestore.FieldValue.serverTimestamp(),
         });
       })
-      .then((user) => {
+      .then(() => {
         // 存在確認済のメールアドレスかどうか(true or false)
-        var verified = firebase.auth().currentUser.emailVerified;
-        console.log(verified);
+        const user = firebase.auth().currentUser;
+        console.log(user);
         // 未確認のメールアドレスの場合、メールを送信する
-        if (!verified) {
+        if (!user.emailVerified) {
           // メール送信処理
-          firebase.auth().currentUser.sendEmailVerification();
+          user.sendEmailVerification();
 
-          var email = firebase.auth().currentUser.email;
-          console.log(email);
+          const email = user.email;
+          console.log("確認メールを送信しました。", email);
         }
         console.log(user);
         this.setState({ email: null, password: null });
@@ -75,13 +75,13 @@ class SignUp extends React.Component {
   //Google
   handleGoogleSignIn = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
-    const firestore = firebase.firestore();
+    const db = firebase.firestore();
     provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
     firebase
       .auth()
       .signInWithPopup(provider)
       .then((res) => {
-        return firestore.collection("users").doc(res.user.uid).set({
+        return db.collection("users").doc(res.user.uid).set({
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           name: res.user.displayName,
           thumgnailMediumImageUrl: res.user.photoURL,
@@ -90,7 +90,7 @@ class SignUp extends React.Component {
         });
       })
       .then(() => {
-        location.href = "./index";
+        location.href = "/";
       })
       .catch((err) => {
         alert("問題が発生しました。最初からやり直してください。");
@@ -101,12 +101,12 @@ class SignUp extends React.Component {
   //facebook
   handleFacebookSignIn = () => {
     const provider = new firebase.auth.FacebookAuthProvider();
-    const firestore = firebase.firestore();
+    const db = firebase.firestore();
     firebase
       .auth()
       .signInWithPopup(provider)
       .then((res) => {
-        return firestore.collection("users").doc(res.user.uid).set({
+        return db.collection("users").doc(res.user.uid).set({
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           name: res.user.displayName,
           thumgnailMediumImageUrl: res.user.photoURL,
@@ -119,7 +119,7 @@ class SignUp extends React.Component {
         const token = result.credential.accessToken;
         // The signed-in user info.
         const user = result.user;
-        location.href = "./index";
+        location.href = "/";
       })
       .catch((error) => {
         alert("問題が発生しました。最初からやり直してください。");
