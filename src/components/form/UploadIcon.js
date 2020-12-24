@@ -1,8 +1,7 @@
 import React, { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 
-import { getCurrentUser, storage, db } from "@lib/firebase";
-import { auth, firebase } from "@src/firebase";
+import { getCurrentUser, storage, db, auth, firebase } from "@lib/firebase";
 import withAuth from "@src/helpers/withAuth";
 import generateRandomId from "@src/helpers/generateRandomId";
 import acceptImageFileType from "@src/helpers/acceptImageFileType";
@@ -12,23 +11,9 @@ import Add from "@icons/ui/add.js";
 import s from "./Upload.module.scss";
 
 const UploadIcon = (props) => {
-  const [modalProps, setModalProps] = useState({
-    open: false,
-    src: null,
-    fileType: null,
-  });
 
-  const [profileImageUrl, setProfileImageUrl] = useState("");
+  const [thumgnailMediumImageUrl, setProfileImageUrl] = useState("");
   const inputRef = useRef(null);
-
-  // モーダルを閉じる
-  const onCloseModal = useCallback(() => {
-    setModalProps({
-      open: false,
-      src: null,
-      fileType: null,
-    });
-  });
 
   const onClick = useCallback(() => {
     if (inputRef.current) {
@@ -44,40 +29,24 @@ const UploadIcon = (props) => {
     if (file === null) {
       return;
     }
-
-    // crop用modalに画像をセット
-    setModalProps({
-      open: true,
-      src: URL.createObjectURL(file),
-      fileType: file.type,
-    });
-  }, []);
-
-  const onUpload = useCallback(async (blob) => {
     try {
-      // 事前にpreview用の画像URLを表示する
-      setProfileImageUrl(URL.createObjectURL(blob));
-
-      // モーダルを閉じる
-      onCloseModal();
-
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
       const fileName = `${generateRandomId()}.jpg`;
       const snapshot = await ref
         .child(`images/profile/${user.uid}/${fileName}`)
-        .put(blob);
+        .put(file);
 
-      // TODO: アップロード後に取得したprofileImageUrlをDBに保存する
+      // TODO: アップロード後に取得したthumgnailMediumImageUrlをDBに保存する
       const savedImageUrl = await snapshot.ref.getDownloadURL();
-      await db.collection("users").doc(user.id).update({
-        image: savedImageUrl,
+      await db.collection("users").doc(user.uid).update({
+        thumgnailMediumImageUrl: savedImageUrl,
       });
     } catch (error) {
       console.error(error);
     }
-  });
+  }, []);
 
   return (
     <div className={s.upload__icon}>
@@ -88,7 +57,7 @@ const UploadIcon = (props) => {
         style={{ display: "none" }}
         type="file"
       />
-      {profileImageUrl ? (
+      {thumgnailMediumImageUrl ? (
         <div class={s.upload__icon__inner}>
           <img className={s.upload__img} src={props.src} alt="profile icon" />
           {props.icon}

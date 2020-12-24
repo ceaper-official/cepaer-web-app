@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-import { getCurrentUser, storage, db } from "@lib/firebase";
 import withAuth from "@src/helpers/withAuth";
-import { auth, firebase } from "@src/firebase";
+import { auth, firebase, getCurrentUser, storage, db } from "@src/firebase";
 import generateRandomId from "@src/helpers/generateRandomId";
 import acceptImageFileType from "@src/helpers/acceptImageFileType";
 
@@ -25,7 +24,6 @@ import Mail from "@icons/ui/mail.js";
 export class EditSocial extends React.Component {
   constructor(props) {
     super(props);
-    this.inputRef = React.createRef();
     this.state = {
       user: null,
       name: "",
@@ -34,7 +32,7 @@ export class EditSocial extends React.Component {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const db = firebase.firestore();
     const user = getCurrentUser();
     firebase.auth().onAuthStateChanged(async (user) => {
@@ -54,7 +52,7 @@ export class EditSocial extends React.Component {
   }
 
   onClickUpdate = (e) => {
-    const { name, bio } = this.setState;
+    const { name, bio, thumgnailMediumImageUrl } = this.setState;
     const db = firebase.firestore();
     const user = getCurrentUser();
       db.collection("users").doc(user.uid).update({
@@ -65,39 +63,6 @@ export class EditSocial extends React.Component {
   };
 
 
-  onClickProfileImage = () => {
-    if (this.inputRef.current) {
-      this.inputRef.current.click();
-    }
-  };
-
-  onChangeProfileImage = async (event) => {
-    if (event.target.files === null) {
-      return;
-    }
-    const file = event.target.files.item(0);
-    if (file === null) {
-      return;
-    }
-
-    try {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        this.setState({
-          profileImageUrl: reader.result,
-        });
-      };
-
-      // Firebase Storageへアップロード
-      const user = getCurrentUser();
-      const ref = storage.ref();
-      const fileName = `${generateRandomId()}_original.jpg`;
-      await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   render() {
     return (
