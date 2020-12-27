@@ -30,6 +30,12 @@ const UploadIcon = (props) => {
       return;
     }
     try {
+      const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => {
+              setProfileImageUrl(reader.result);
+            };
+
       // Firebase Storageへアップロード
       const user = getCurrentUser();
       const ref = storage.ref();
@@ -59,13 +65,14 @@ const UploadIcon = (props) => {
       />
       {thumgnailMediumImageUrl ? (
         <div class={s.upload__icon__inner}>
-          <img className={s.upload__img} src={props.src} alt="profile icon" />
-          {props.icon}
+          <img className={s.upload__img} src={thumgnailMediumImageUrl} alt="profile icon" />
+          {props.setProfileImageUrl}
         </div>
       ) : (
         <>
           <div class={s.upload__icon__inner} onClick={onClick}>
             <img className={s.upload__img} src={props.src} alt="profile icon" />
+            {props.icon}
           </div>
           <p className={s.upload__helper__text} onClick={onClick}>
             アイコンを変更する
