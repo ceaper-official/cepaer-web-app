@@ -13,8 +13,8 @@ function UserIcon({ small, large, icon, onClick }) {
       }
       onClick={onClick}
     >
-      <img src={icon} alt="user image" />
-    </div>
+      <img src={icon} alt="user image" onError={(e) => e.target.src = "images/default/user.svg"} />
+          </div>
   );
 }
 

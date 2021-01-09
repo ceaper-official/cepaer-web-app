@@ -1,26 +1,12 @@
 import React, { useState, useRef, useCallback } from "react";
-import Link from "next/link";
 
 import { getCurrentUser, storage, db } from "@lib/firebase";
-import { auth, firebase } from "@src/firebase";
-import withAuth from "@src/helpers/withAuth";
 import generateRandomId from "@src/helpers/generateRandomId";
-import acceptImageFileType from "@src/helpers/acceptImageFileType";
 
 import Column from "@components/column/Column";
 import CardForm from "@components/form/CardForm";
-import Input from "@components/form/Input";
-import SectionItem from "@components/form/SectionItem";
-import LinkItem from "@components/form/LinkItem";
 import Button from "@components/button/Button";
 import UploadIcon from "@components/form/UploadIcon";
-
-import Upload from "@icons/ui/upload.js";
-import Human from "@icons/ui/human.js";
-import Add from "@icons/ui/add.js";
-import Arrow from "@icons/ui/arrow.js";
-import Mail from "@icons/ui/mail.js";
-import Password from "@icons/ui/password.js";
 
 
 function Step2(props) {

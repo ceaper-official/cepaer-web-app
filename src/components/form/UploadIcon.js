@@ -54,6 +54,14 @@ const UploadIcon = (props) => {
     }
   }, []);
 
+
+let imgUrl = props.src
+  if (thumgnailMediumImageUrl) {
+    imgUrl = thumgnailMediumImageUrl
+  } else if (thumgnailMediumImageUrl) {
+    imgUrl = props.src
+  }
+
   return (
     <div className={s.upload__icon}>
       <input
@@ -63,22 +71,13 @@ const UploadIcon = (props) => {
         style={{ display: "none" }}
         type="file"
       />
-      {thumgnailMediumImageUrl ? (
-        <div class={s.upload__icon__inner}>
-          <img className={s.upload__img} src={thumgnailMediumImageUrl} alt="profile icon" />
-          {props.setProfileImageUrl}
-        </div>
-      ) : (
-        <>
           <div class={s.upload__icon__inner} onClick={onClick}>
-            <img className={s.upload__img} src={props.src} alt="profile icon" />
+            <img className={s.upload__img} src={imgUrl} alt="profile icon"　onError={(e) => e.target.src = "images/default/user.svg"}　/>
             {props.icon}
           </div>
           <p className={s.upload__helper__text} onClick={onClick}>
             アイコンを変更する
           </p>
-        </>
-      )}
     </div>
   );
 };

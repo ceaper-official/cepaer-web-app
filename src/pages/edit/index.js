@@ -10,7 +10,7 @@ import BaseLayout from "@components/layout/BaseLayout";
 import Column from "@components/column/Column";
 import Container from "@components/container/Container";
 import HeroText from "@components/hero/HeroText";
-import Button from "@components/button/Button";
+import SnackBar from "@components/notifications/SnackBar";
 import Input from "@components/form/Input";
 import TextArea from "@components/form/TextArea";
 import FormItem from "@components/form/FormItem";
@@ -88,7 +88,7 @@ export class EditSocial extends React.Component {
                 />
               </FormItem>
               <FormItem>
-                <Button onClick={(e) => this.onClickUpdate(e)}>設定を保存</Button>
+                <SnackBar onClick={(e) => this.onClickUpdate(e)}>設定を保存</SnackBar>
               </FormItem>
             </Container>
           </div>
