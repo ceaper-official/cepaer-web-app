@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ug0416/ceaper.git"
+    "url": "git+https://github.com/ceaper-official/web.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ug0416/ceaper/issues"
+    "url": "https://github.com/ceaper-official/web/issues"
   },
-  "homepage": "https://github.com/ug0416/ceaper#readme",
+  "homepage": "https://github.com/ceaper-official/web#readme",
   "dependencies": {
     "@zeit/next-mdx": "^1.2.0",
     "classnames": "^2.2.6",
