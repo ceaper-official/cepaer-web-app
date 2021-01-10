@@ -14,16 +14,16 @@ const options = {
   },
 }
 
-function SnackBar ({ onClick }) {
+function SnackBarSave({ onClick }) {
   const [openSnackbar, closeSnackbar] = useSnackbar(options)
-  
-    return (
-      <div onClick={onClick}>
-      <Button className="snack-bar" onClick={() => openSnackbar('設定を保存しました')}>
-      <div className="section">保存する</div>
-    </Button>
-    </div>
-    );
-  }
 
-export default SnackBar;
+  return (
+    <div onClick={onClick}>
+      <Button className="snack-bar" onClick={() => openSnackbar('設定を保存しました')}>
+        <div className="section">保存する</div>
+      </Button>
+    </div>
+  );
+}
+
+export default SnackBarSave;

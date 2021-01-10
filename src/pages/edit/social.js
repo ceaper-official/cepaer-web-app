@@ -1,20 +1,17 @@
 import React from "react";
-import Link from "next/link";
 
-import { getCurrentUser, storage, db } from "@lib/firebase";
 import withAuth from "@src/helpers/withAuth";
-import { auth, firebase } from "@src/firebase";
+import { firebase, getCurrentUser } from "@src/firebase";
 import generateRandomId from "@src/helpers/generateRandomId";
-import acceptImageFileType from "@src/helpers/acceptImageFileType";
 
 import BaseLayout from "@components/layout/BaseLayout";
 import Column from "@components/column/Column";
 import Container from "@components/container/Container";
 import HeroText from "@components/hero/HeroText";
-import Button from "@components/button/Button";
 import Input from "@components/form/Input";
 import FormItem from "@components/form/FormItem";
 import HelperText from "@components/form/HelperText";
+import SnackBarSave from "@src/components/notifications/SnackBarSave";
 import EditNav from "./EditNav";
 
 import At from "@icons/ui/at";
@@ -23,74 +20,56 @@ import At from "@icons/ui/at";
 export class EditSocial extends React.Component {
   constructor(props) {
     super(props);
-    this.inputRef = React.createRef();
     this.state = {
-      profileImageUrl: "",
+      user: null,
+      name: "",
+      icon: "",
+      bio: "",
     };
   }
 
   async componentDidMount() {
-    // TODO: Firestoreからユーザ情報を取得
-    try {
-      const user = getCurrentUser();
-      const userDoc = await db.collection("users").doc(user.uid).get();
-      console.log(userDoc);
-      this.setState({
-        name: userDoc.data.name,
-        about: userDoc.data.about,
-        profileImageUrl: userDoc.data.image,
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    const db = firebase.firestore();
+    const user = getCurrentUser();
+    firebase.auth().onAuthStateChanged(async (user) => {
+      if (user) {
+        const doc = await db.collection("users").doc(user.uid).get();
+        const data = doc.data();
+        if (data) {
+          this.setState({
+            user,
+            name: data.name,
+            icon: data.thumgnailMediumImageUrl,
+            bio: data.bio,
+          });
+        }
+      }
+    });
   }
 
-  onClickProfileImage = () => {
-    if (this.inputRef.current) {
-      this.inputRef.current.click();
-    }
-  };
-
-  onChangeProfileImage = async (event) => {
-    if (event.target.files === null) {
-      return;
-    }
-    const file = event.target.files.item(0);
-    if (file === null) {
-      return;
-    }
-
-    try {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        this.setState({
-          profileImageUrl: reader.result,
-        });
-      };
-
-      // Firebase Storageへアップロード
-      const user = getCurrentUser();
-      const ref = storage.ref();
-      const fileName = `${generateRandomId()}.jpg`;
-      await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
-    } catch (error) {
-      console.error(error);
-    }
+  onClickUpdate = (e) => {
+    const { name, bio, thumgnailMediumImageUrl } = this.setState;
+    const db = firebase.firestore();
+    const user = getCurrentUser();
+    db.collection("users").doc(user.uid).update({
+      name: this.state.name,
+      bio: this.state.bio,
+      update_at: firebase.firestore.FieldValue.serverTimestamp(),
+    })
   };
 
   render() {
     return (
       <BaseLayout>
         <Column sidenav>
-          <EditNav/>
+          <EditNav />
           <div>
             <HeroText small="ソーシャルメディア">
             </HeroText>
             <Container>
               <FormItem label="Instagram">
                 <Input
-                  icon={<At/>}
+                  icon={<At />}
                 />
                 <HelperText strong="ceaper">
                   https://www.instagram.com/
@@ -99,7 +78,7 @@ export class EditSocial extends React.Component {
               <FormItem label="Twitter">
                 <Input
                   value="ceaper"
-                  icon={<At/>}
+                  icon={<At />}
                 />
                 <HelperText strong="ceaper">
                   https://twitter.com/
@@ -108,16 +87,14 @@ export class EditSocial extends React.Component {
               <FormItem label="Facebook">
                 <Input
                   value="ceaper"
-                  icon={<At/>}
+                  icon={<At />}
                 />
                 <HelperText strong="ceaper">
                   https://www.facebook.com/
                 </HelperText>
               </FormItem>
               <FormItem>
-                <Button>
-                  設定を保存
-                </Button>
+                <SnackBarSave onClick={(e) => this.onClickUpdate(e)}>設定を保存</SnackBarSave>
               </FormItem>
             </Container>
           </div>

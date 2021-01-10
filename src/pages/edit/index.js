@@ -1,27 +1,21 @@
 import React from "react";
-import Link from "next/link";
 
 import withAuth from "@src/helpers/withAuth";
-import { auth, firebase, getCurrentUser, storage, db } from "@src/firebase";
-import generateRandomId from "@src/helpers/generateRandomId";
-import acceptImageFileType from "@src/helpers/acceptImageFileType";
+import { firebase, getCurrentUser } from "@src/firebase";
 
 import BaseLayout from "@components/layout/BaseLayout";
 import Column from "@components/column/Column";
 import Container from "@components/container/Container";
 import HeroText from "@components/hero/HeroText";
-import SnackBar from "@components/notifications/SnackBar";
+import SnackBarSave from "@src/components/notifications/SnackBarSave";
 import Input from "@components/form/Input";
 import TextArea from "@components/form/TextArea";
 import FormItem from "@components/form/FormItem";
-import HelperText from "@components/form/HelperText";
 import UploadIcon from "@components/form/UploadIcon";
 import EditNav from "./EditNav";
 
-import Mail from "@icons/ui/mail.js";
-
 /* 入力された文・値は保存 */
-export class EditSocial extends React.Component {
+export class EditProfile extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,14 +49,12 @@ export class EditSocial extends React.Component {
     const { name, bio, thumgnailMediumImageUrl } = this.setState;
     const db = firebase.firestore();
     const user = getCurrentUser();
-      db.collection("users").doc(user.uid).update({
-        name: this.state.name,
-        bio: this.state.bio,
-        update_at: firebase.firestore.FieldValue.serverTimestamp(),
-      })
+    db.collection("users").doc(user.uid).update({
+      name: this.state.name,
+      bio: this.state.bio,
+      update_at: firebase.firestore.FieldValue.serverTimestamp(),
+    })
   };
-
-
 
   render() {
     return (
@@ -88,7 +80,7 @@ export class EditSocial extends React.Component {
                 />
               </FormItem>
               <FormItem>
-                <SnackBar onClick={(e) => this.onClickUpdate(e)}>設定を保存</SnackBar>
+                <SnackBarSave onClick={(e) => this.onClickUpdate(e)}>設定を保存</SnackBarSave>
               </FormItem>
             </Container>
           </div>
@@ -98,4 +90,4 @@ export class EditSocial extends React.Component {
   }
 }
 
-export default withAuth(EditSocial);
+export default withAuth(EditProfile);

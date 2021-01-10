@@ -1,23 +1,17 @@
 import React from "react";
-import Link from "next/link";
 
 import { getCurrentUser, storage, db } from "@lib/firebase";
 import withAuth from "@src/helpers/withAuth";
-import { auth, firebase } from "@src/firebase";
 import generateRandomId from "@src/helpers/generateRandomId";
-import acceptImageFileType from "@src/helpers/acceptImageFileType";
 
 import BaseLayout from "@components/layout/BaseLayout";
 import Column from "@components/column/Column";
 import Container from "@components/container/Container";
 import HeroText from "@components/hero/HeroText";
 import Button from "@components/button/Button";
-import Input from "@components/form/Input";
 import FormItem from "@components/form/FormItem";
-import HelperText from "@components/form/HelperText";
 import EditNav from "./EditNav";
 
-import Password from "@icons/ui/password";
 
 /* 入力された文・値は保存 */
 export class EditPassword extends React.Component {
@@ -83,25 +77,18 @@ export class EditPassword extends React.Component {
     return (
       <BaseLayout>
         <Column sidenav>
-          <EditNav/>
+          <EditNav />
           <div>
             <HeroText small="パスワードの変更">
             </HeroText>
             <Container>
-              <FormItem label="現在のパスワード">
-                <Input ps
-                  icon={<Password/>}
-                />
-              </FormItem>
-              <FormItem label="新しいパスワード">
-                <Input ps
-                  icon={<Password/>}
-                />
+              <FormItem label="">
+                ご登録して頂いたメールアドレス宛に、パスワードのリセット手順を送信いたします。届いたメールの内容に沿って、パスワードの変更手続きを進めてください。
               </FormItem>
               <FormItem>
                 <Button>
-                  設定を保存
-                </Button>
+                  パスワードを再設定
+            </Button>
               </FormItem>
             </Container>
           </div>
