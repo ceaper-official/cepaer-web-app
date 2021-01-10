@@ -1,24 +1,14 @@
-import Link from "next/link";
-
-import { getCurrentUser, storage, db } from "@lib/firebase";
-import { auth, firebase } from "@src/firebase";
+import { getCurrentUser } from "@lib/firebase";
+import { firebase } from "@src/firebase";
 
 import BaseLayout from "@components/layout/BaseLayout";
 import HeroUser from "@components/hero/HeroUser";
-import Content from "@components/content/Content";
 import Block from "@components/block/Block";
-import Button from "@components/button/Button";
 import UserPostContainer from "@components/user/UserPostContainer";
 import UserPost from "@components/user/UserPost";
-import UserIcon from "@components/user/UserIcon";
 import UserCollection from "@components/user/Usercollection";
 import Tabs from "@components/tabs/Tabs";
 
-import Add from "@icons/ui/add.js";
-import SettingSolid from "@icons/ui/setting-solid.js";
-import Instagram from "@icons/social/instagram.js";
-import Facebook from "@icons/social/facebook.js";
-import Twitter from "@icons/social/twitter.js";
 import CookSolid from "@icons/ui/cook-solid.js";
 import LikeSolid from "@icons/ui/like-solid.js";
 import CollectionSolid from "@icons/ui/collection-solid.js";
