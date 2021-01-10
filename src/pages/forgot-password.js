@@ -17,7 +17,7 @@ class ForgotPS extends React.Component {
       <BaseLayout>
         <Hero>
           <CardForm title="パスワードの再設定">
-            パスワードのリセット手順を送信いたしますので、対象アカウントで登録されたEメールをご入力ください。届いたメールの内容に沿って、パスワードの変更手続きを進めてください。
+            ご登録して頂いたメールアドレス宛に、パスワードのリセット手順を送信いたします。届いたメールの内容に沿って、パスワードの変更手続きを進めてください。
             <Button onClick={this.select}>
               パスワードを再設定
             </Button>
