@@ -11,14 +11,8 @@ export default () => (
   <BaseLayout>
     <Column sidenav>
       <SideNav>
-        <SideNavItem
-         title="プライバシーポリシー"
-         to="/privacy"
-        />
-        <SideNavItem
-         title="利用規約"
-         to="/terms"
-        />
+        <SideNavItem title="プライバシーポリシー" to="/privacy" />
+        <SideNavItem title="利用規約" to="/terms" />
       </SideNav>
       <div>
         <HeroText title="プライバシーポリシー">

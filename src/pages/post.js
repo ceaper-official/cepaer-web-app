@@ -89,8 +89,7 @@ const Post = () => {
         <div>
           <div className="nav-container">
             <Link href="/">
-              <a className="logo-link">
-              </a>
+              <a className="logo-link"></a>
             </Link>
           </div>
         </div>

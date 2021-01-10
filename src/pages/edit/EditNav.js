@@ -16,7 +16,7 @@ export class Nav extends React.Component {
           to="/edit/account"
         />
         <SideNavItem
-          title="パスワード"
+          title="パスワードの変更"
            to="/edit/password"
           />
           <SideNavItem

@@ -16,7 +16,6 @@ import ShareSolid from "@icons/ui/share-solid.js";
 import PenSolid from "@icons/ui/pen-solid.js";
 import OtherSolid from "@icons/ui/other-solid.js";
 
-
 function UserImg() {
   return <img src="images/default/user.svg" alt="user image" />;
 }
@@ -39,23 +38,23 @@ class Counter extends React.Component {
           <p>30レシピ</p>
         </HeroText>
 
-          <UserPostContainer>
-            <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
-          </UserPostContainer>
+        <UserPostContainer>
+          <UserPost />
+          <UserPost />
+          <UserPost />
+          <UserPost />
+          <UserPost />
+          <UserPost />
+          <UserPost />
+          <UserPost />
+        </UserPostContainer>
 
-          <style jsx>{`
-            .button-wrapper {
-              display: flex;
-              justify-contents: space-between;
-            }
-          `}</style>
+        <style jsx>{`
+          .button-wrapper {
+            display: flex;
+            justify-contents: space-between;
+          }
+        `}</style>
       </BaseLayout>
     );
   }

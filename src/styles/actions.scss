@@ -7,7 +7,7 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 9;
   }
   //ラッパー・インナー
@@ -98,7 +98,8 @@
     margin: 2rem auto 1rem;
     text-align: left;
 
-    & a {}
+    & a {
+    }
   }
   //線
   & .hr-text {

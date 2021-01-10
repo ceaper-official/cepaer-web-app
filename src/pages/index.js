@@ -53,8 +53,8 @@ class UserHome extends React.Component {
             <h1 className="user-hero-message">キャンプを、より豊かに</h1>
             <div id="hero-search">
               <input type="search" placeholder="料理、材料、キャンプ道具..." />
-                <Search />
-                レシピを探す
+              <Search />
+              レシピを探す
             </div>
             <div className="user-hero-img">
               <HeroImg />
@@ -114,24 +114,22 @@ class UserHome extends React.Component {
           <UserPost />
         </SliderPostContainer>
         <hr />
-         {/* 注目のユーザー・10件表示 */}
-         <Block>
-           <BlockTitle>
-             注目のユーザー
-            </BlockTitle>
-        <SliderPostContainer>
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-          <SliderPickupUser />
-        </SliderPostContainer>
-      </Block>
+        {/* 注目のユーザー・10件表示 */}
+        <Block>
+          <BlockTitle>注目のユーザー</BlockTitle>
+          <SliderPostContainer>
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+            <SliderPickupUser />
+          </SliderPostContainer>
+        </Block>
         <hr /> {/* レシピ・12件ずつ表示 */}
         <UserPostContainer title="最近の投稿">
           <UserPost />
@@ -152,8 +150,7 @@ class UserHome extends React.Component {
             margin: "auto",
             textAlign: "center",
           }}
-        >
-        </div>
+        ></div>
       </div>
     );
   }

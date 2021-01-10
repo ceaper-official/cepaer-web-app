@@ -73,7 +73,8 @@
     }
   }
   @media (min-width: $desktop_large) {
-    & a {}
+    & a {
+    }
     @media (max-width: $tablet) {
       padding-top: 3rem;
     }
@@ -343,7 +344,7 @@
 }
 
 .logo-link[class*="data-ally"]:focus::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -10%;
   top: -30%;

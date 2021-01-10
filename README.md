@@ -2,15 +2,24 @@
 
 ### セットアップ
 
+1. npmのインストール
 ```
 npm install
 ```
-
+2. envファイルの作成
 ```
 cp env.sample .env
 ```
-
-Firebase の設定は Firebase Console 上で確認。
+3. Firebaseのセットアップ
+```
+npm install firebase-functions@latest firebase-admin@latest --save
+npm install -g firebase-tools
+firebase login
+```
+4. Firebase Functions の Deploy
+```
+npm run deploy
+```
 
 ### ローカル起動
 
@@ -22,29 +31,6 @@ npm run dev
 
 ```
 ngrok http 3000
-```
-
-### Firebase Functions の Deploy
-
-セットアップが完了していない場合、以下の手順でセットアップを行う。
-
-```
-npm install firebase-functions@latest firebase-admin@latest --save
-
-npm install -g firebase-tools
-
-```
-
-```
-firebase login
-```
-
-セットアップが完了している方は以下の手順で Deploy を行う
-
-```
-cd functions/
-npm install
-npm run deploy
 ```
 
 ### Firebase

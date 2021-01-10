@@ -1,17 +1,17 @@
 //Flex
-@mixin flex($align-items: center,$justify-content: center) {
+@mixin flex($align-items: center, $justify-content: center) {
   display: flex;
   align-items: $align-items;
   justify-content: $justify-content;
 }
-@mixin inline-flex($align-items: center,$justify-content: center) {
+@mixin inline-flex($align-items: center, $justify-content: center) {
   display: inline-flex;
   align-items: $align-items;
   justify-content: $justify-content;
 }
 
 //Image
-@mixin icon ($icon-size: $icon-size, $icon-color: $black) {
+@mixin icon($icon-size: $icon-size, $icon-color: $black) {
   width: auto;
   height: $icon-size;
   transition: $fade;
@@ -51,7 +51,12 @@
 }
 
 //Button
-@mixin button($color:$white,$bg: $accent,$border-color: $accent, $border-width: 1px) {
+@mixin button(
+  $color: $white,
+  $bg: $accent,
+  $border-color: $accent,
+  $border-width: 1px
+) {
   @include inline-flex;
   padding: 1rem $gutter;
   color: $color;
@@ -90,7 +95,7 @@
 }
 
 //input
-@mixin input($padding: $gutter, $height: $gutter*2) {
+@mixin input($padding: $gutter, $height: $gutter * 2) {
   width: 100%;
   height: $height;
   border: $border;
@@ -140,7 +145,7 @@
   width: 100%;
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 75%;
   }

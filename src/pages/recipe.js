@@ -62,214 +62,213 @@ class Recipe extends React.Component {
           review="100"
         />
 
-
-
         <div className="contents" id="recipe-hero">
-            <div className="section">
-              <div className="recipe-wrapper">
-                <div className="recipe-inner">
-                  <div id="recipe-img">
-                    <FoodImg />
-                    <div className="recipe-actions-wrapper">
-                      {/* シェア */}
-                      <div className="dropdown-wrapper recipe-action-ico">
-                        <button
-                          className=""
-                          id="recipe-share"
-                          onClick={this.toggle}
-                        >
-                          <Share />
-                        </button>
-                        <div
-                          className={
-                            this.state.open
-                              ? "dropdown-contents open card"
-                              : "dropdown-contents hide card"
-                          }
-                        >
-                          <div className="dropdown-list">
-                            <a href="" className="dropdown-item">
-                              リンクをコピー
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* コレクション */}
+          <div className="section">
+            <div className="recipe-wrapper">
+              <div className="recipe-inner">
+                <div id="recipe-img">
+                  <FoodImg />
+                  <div className="recipe-actions-wrapper">
+                    {/* シェア */}
+                    <div className="dropdown-wrapper recipe-action-ico">
                       <button
-                        className="recipe-action-ico "
-                        id="recipe-collection"
-                        onClick={this.togglePopup.bind(this)}
+                        className=""
+                        id="recipe-share"
+                        onClick={this.toggle}
                       >
-                        <Add />
+                        <Share />
                       </button>
-                      {this.state.showPopup ? (
-                        <Popup closePopup={this.togglePopup.bind(this)} />
-                      ) : null}
-
-                      {/* ライク　アクティブ時 <button>にclass"active"付与 。非アクティブはクラス解除*/}
-                      <button className="recipe-action-ico  " id="recipe-like">
-                        <Like />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="recipe-bio-wrapper">
-                  <div className="recipe-bio">
-                    <h1>ゴルゴンゾーラとトマトのカプレーゼ</h1>
-                    <div className="recipe-inner">
-                      <a className="user-link">
-                        <div className="user-container">
-                          <div className="user-avatar user-inner">
-                            <UserImg />
-                          </div>
-                          <div className="user-inner">
-                            <p className="user-text name">ケリー小田</p>
-                          </div>
+                      <div
+                        className={
+                          this.state.open
+                            ? "dropdown-contents open card"
+                            : "dropdown-contents hide card"
+                        }
+                      >
+                        <div className="dropdown-list">
+                          <a href="" className="dropdown-item">
+                            リンクをコピー
+                          </a>
                         </div>
-                      </a>
-                      <span className="margin">・</span>
-                      <div className="rating">
-                        {/*数値計算*/}
-                        <span className="ico">
-                          <StarSolid />
-                        </span>
-                        <h6 id="rating-data">4.3</h6>
-                        <h6 id="SliderReviews-data">(100)</h6>
                       </div>
                     </div>
 
-                    <div id="recipe-hero-data">
+                    {/* コレクション */}
+                    <button
+                      className="recipe-action-ico "
+                      id="recipe-collection"
+                      onClick={this.togglePopup.bind(this)}
+                    >
+                      <Add />
+                    </button>
+                    {this.state.showPopup ? (
+                      <Popup closePopup={this.togglePopup.bind(this)} />
+                    ) : null}
+
+                    {/* ライク　アクティブ時 <button>にclass"active"付与 。非アクティブはクラス解除*/}
+                    <button className="recipe-action-ico  " id="recipe-like">
+                      <Like />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="recipe-bio-wrapper">
+                <div className="recipe-bio">
+                  <h1>ゴルゴンゾーラとトマトのカプレーゼ</h1>
+                  <div className="recipe-inner">
+                    <a className="user-link">
+                      <div className="user-container">
+                        <div className="user-avatar user-inner">
+                          <UserImg />
+                        </div>
+                        <div className="user-inner">
+                          <p className="user-text name">ケリー小田</p>
+                        </div>
+                      </div>
+                    </a>
+                    <span className="margin">・</span>
+                    <div className="rating">
                       {/*数値計算*/}
-                      <div>
-                        <h6 id="time-data">20m</h6>
-                        <span>調理時間</span>
-                      </div>
-                      <div>
-                        <h6 id="time-data">7</h6>
-                        <span>材料数</span>
-                      </div>
-                      <div>
-                        <h6 id="time-data">94</h6>
-                        <span>作られた数</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="contents">
-            <div className="section">
-              <div className="recipe-summary-wrapper">
-                <div className="recipe-bio-inner">
-                  <h6>レシピについて</h6>
-                  <p>
-                    ミニトマト、ゴルゴンゾーラをシンプルに、オリーブオイルと塩で和えました。最後に散らしたバジルが味のアクセントとなっております。見た目もかわいらしく、おもてなし料理としてもぴったりです。冷蔵庫で冷たく冷やしてお召し上がり下さい。
-                  </p>
-
-                  <div className="recipe-bio-inner">
-                    <h6>キャンプ道具</h6>
-                    <div className="camp-wrapper tag-camp">
-                      {/* タグに関連づけたレシピ一覧へリンク */}
-                      <Link href="/">
-                        <a>BBQグリル</a>
-                      </Link>
-                      <Link href="/">
-                        <a>BBQグリル</a>
-                      </Link>
-                      <Link href="/">
-                        <a>BBQグリル</a>
-                      </Link>
-                      <Link href="/">
-                        <a>BBQグリル</a>
-                      </Link>
-                      <Link href="/">
-                        <a>BBQグリル</a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="recipe-bio-inner">
-                  <div className="flex">
-                    <h6>材料</h6>
-                    <h4 className="servings ico xs-text w-auto">
-                      {/* 人数 */}
-                      <span id="servings-data" className="w-auto">
-                        2人分
+                      <span className="ico">
+                        <StarSolid />
                       </span>
-                    </h4>
+                      <h6 id="rating-data">4.3</h6>
+                      <h6 id="SliderReviews-data">(100)</h6>
+                    </div>
                   </div>
-                  <div className="ingredients-wrapper xs-text">
-                    {/* 入力の際、文字数制限：数量（〜5 */}
-                    <span>1個</span>
-                    <span className="ingredient">トマト</span>
-                    <span>100g</span>
-                    <span className="ingredient">ゴルゴンゾーラ</span>
-                    <span>6枚</span>
-                    <span className="ingredient">バジル</span>
-                    <span>大さじ1</span>
-                    <span className="ingredient">オリーブオイル</span>
-                    <span>少々</span>
-                    <span className="ingredient">塩</span>
-                    <span>少々</span>
-                    <span className="ingredient">黒こしょう</span>
+
+                  <div id="recipe-hero-data">
+                    {/*数値計算*/}
+                    <div>
+                      <h6 id="time-data">20m</h6>
+                      <span>調理時間</span>
+                    </div>
+                    <div>
+                      <h6 id="time-data">7</h6>
+                      <span>材料数</span>
+                    </div>
+                    <div>
+                      <h6 id="time-data">94</h6>
+                      <span>作られた数</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <hr />
+        <div className="contents">
+          <div className="section">
+            <div className="recipe-summary-wrapper">
+              <div className="recipe-bio-inner">
+                <h6>レシピについて</h6>
+                <p>
+                  ミニトマト、ゴルゴンゾーラをシンプルに、オリーブオイルと塩で和えました。最後に散らしたバジルが味のアクセントとなっております。見た目もかわいらしく、おもてなし料理としてもぴったりです。冷蔵庫で冷たく冷やしてお召し上がり下さい。
+                </p>
 
-          {/* 作り方 */}
-          <Block>
-            <BlockTitle children="作り方"/>
-            <MakeContainer>
-              <Make>
+                <div className="recipe-bio-inner">
+                  <h6>キャンプ道具</h6>
+                  <div className="camp-wrapper tag-camp">
+                    {/* タグに関連づけたレシピ一覧へリンク */}
+                    <Link href="/">
+                      <a>BBQグリル</a>
+                    </Link>
+                    <Link href="/">
+                      <a>BBQグリル</a>
+                    </Link>
+                    <Link href="/">
+                      <a>BBQグリル</a>
+                    </Link>
+                    <Link href="/">
+                      <a>BBQグリル</a>
+                    </Link>
+                    <Link href="/">
+                      <a>BBQグリル</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="recipe-bio-inner">
+                <div className="flex">
+                  <h6>材料</h6>
+                  <h4 className="servings ico xs-text w-auto">
+                    {/* 人数 */}
+                    <span id="servings-data" className="w-auto">
+                      2人分
+                    </span>
+                  </h4>
+                </div>
+                <div className="ingredients-wrapper xs-text">
+                  {/* 入力の際、文字数制限：数量（〜5 */}
+                  <span>1個</span>
+                  <span className="ingredient">トマト</span>
+                  <span>100g</span>
+                  <span className="ingredient">ゴルゴンゾーラ</span>
+                  <span>6枚</span>
+                  <span className="ingredient">バジル</span>
+                  <span>大さじ1</span>
+                  <span className="ingredient">オリーブオイル</span>
+                  <span>少々</span>
+                  <span className="ingredient">塩</span>
+                  <span>少々</span>
+                  <span className="ingredient">黒こしょう</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        {/* 作り方 */}
+        <Block>
+          <BlockTitle children="作り方" />
+          <MakeContainer>
+            <Make>
               お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。
-              </Make>
-              <Make>
+            </Make>
+            <Make>
               お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。
-              </Make>
-              <Make>
+            </Make>
+            <Make>
               お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。
-              </Make>
-              <Make>
+            </Make>
+            <Make>
               お皿に1、2、バジルを交互に並べます。オリーブオイルをかけ、塩と黒こしょうをふって完成です。
-              </Make>
-            </MakeContainer>
+            </Make>
+          </MakeContainer>
         </Block>
 
-          <hr />
+        <hr />
 
-                {/* レビュー一覧・10件表示 */}
-                <Block>
-                <BlockTitle>
-                <StarSolid/>4.3 （100件）
-                </BlockTitle>
-                <SliderPostContainer>
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                <SliderReview />
-                </SliderPostContainer>
-              </Block>
+        {/* レビュー一覧・10件表示 */}
+        <Block>
+          <BlockTitle>
+            <StarSolid />
+            4.3 （100件）
+          </BlockTitle>
+          <SliderPostContainer>
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+            <SliderReview />
+          </SliderPostContainer>
+        </Block>
 
-          <hr />
+        <hr />
 
-          {/* 関連するレシピ・10件表示 */}
-          <Block>
-          <BlockTitle children="関連するレシピ"/>
+        {/* 関連するレシピ・10件表示 */}
+        <Block>
+          <BlockTitle children="関連するレシピ" />
           <SliderPostContainer>
             <SliderPost />
             <SliderPost />
@@ -284,11 +283,11 @@ class Recipe extends React.Component {
           </SliderPostContainer>
         </Block>
 
-          <style jsx>{`
-            #servings-data {
-              white-space: nowrap;
-            }
-          `}</style>
+        <style jsx>{`
+          #servings-data {
+            white-space: nowrap;
+          }
+        `}</style>
       </BaseLayout>
     );
   }

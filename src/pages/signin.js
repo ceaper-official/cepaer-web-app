@@ -33,24 +33,29 @@ class SignIn extends React.Component {
   handleEmailSignIn = (e) => {
     e.preventDefault();
     const { email, password } = this.state;
-    firebase.auth().signInWithEmailAndPassword(email, password)
-    .then(() => {
-      const user = firebase.auth().currentUser;
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        const user = firebase.auth().currentUser;
         if (!user.emailVerified) {
-          user.sendEmailVerification()
-          .then(() => {
-            const email = user.email;
-            console.log("確認メールを送信しました。", email);
-            alert("メールアドレスが認証されていません。確認メールを送信しました。")
-          })
-          .catch((err) => {
-            console.log("Error occurred: ", err)
-          })
-      } else {
-        location.href = "/"
+          user
+            .sendEmailVerification()
+            .then(() => {
+              const email = user.email;
+              console.log("確認メールを送信しました。", email);
+              alert(
+                "メールアドレスが認証されていません。確認メールを送信しました。"
+              );
+            })
+            .catch((err) => {
+              console.log("Error occurred: ", err);
+            });
+        } else {
+          location.href = "/";
         }
-      })
-    };
+      });
+  };
   //end Email
   //Google
   handleSignIn = () => {
@@ -89,24 +94,23 @@ class SignIn extends React.Component {
           <CardForm title="ログイン">
             <Input
               placeholder="Eメール"
-              icon={<Mail/>}
+              icon={<Mail />}
               onChange={(e) => this.setState({ email: e.target.value })}
             />
-            <Input ps
+            <Input
+              ps
               placeholder="パスワード"
-              icon={<Password/>}
+              icon={<Password />}
               onChange={(e) => this.setState({ password: e.target.value })}
               sub="お忘れですか？"
               href="/forgot-password"
             />
-            <Button onClick={(e) => this.handleEmailSignIn(e)}>
-              ログイン
-            </Button>
-            <SectionItem title="または"/>
-            <SocialButton icon=<Google/> onClick={this.handleSignIn}>
+            <Button onClick={(e) => this.handleEmailSignIn(e)}>ログイン</Button>
+            <SectionItem title="または" />
+            <SocialButton icon=<Google /> onClick={this.handleSignIn}>
               Googleでログイン
             </SocialButton>
-            <SocialButton icon=<Facebook/> onClick={this.handleFacebookSignIn}>
+            <SocialButton icon=<Facebook /> onClick={this.handleFacebookSignIn}>
               Facebookでログイン
             </SocialButton>
             <LinkItem
@@ -115,8 +119,8 @@ class SignIn extends React.Component {
               href="/signup"
             />
           </CardForm>
-      </Hero>
-    </BaseLayout>
+        </Hero>
+      </BaseLayout>
     );
   }
 }

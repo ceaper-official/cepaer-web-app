@@ -25,7 +25,7 @@ class SignUp extends React.Component {
   //Email作成
   constructor(props) {
     // Stateの定義
-    super(props)
+    super(props);
     this.state = {
       email: "",
       password: "",

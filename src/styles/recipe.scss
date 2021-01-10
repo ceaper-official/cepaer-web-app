@@ -1,7 +1,7 @@
 #recipe-hero {
   //画像・アクション
   margin-top: 5rem;
-  @media(max-width: $phablet) {
+  @media (max-width: $phablet) {
     margin-top: 0;
   }
 
@@ -13,7 +13,7 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    @media(max-width: $desktop) {
+    @media (max-width: $desktop) {
       margin-bottom: 3rem;
     }
 
@@ -83,17 +83,17 @@
     & p {
       margin: 0;
     }
-    @media(max-width: $desktop) {
+    @media (max-width: $desktop) {
       display: block;
     }
   }
-  @media(max-width: $desktop) {
+  @media (max-width: $desktop) {
     & h1 {
       font-size: 2.3rem;
     }
   }
   //ヒーロー・データ
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     .recipe-bio-wrapper {
       margin: auto 10rem auto 5rem;
 
@@ -106,7 +106,7 @@
   .back-button {
     position: absolute;
     left: 5rem;
-    @media(max-width: $desktop) {
+    @media (max-width: $desktop) {
       display: none;
     }
   }
@@ -136,7 +136,7 @@
       font-size: 3rem;
       line-height: 1;
       font-weight: 400;
-      @media(max-width: $phablet) {
+      @media (max-width: $phablet) {
         font-size: 2.5rem;
       }
     }
@@ -211,7 +211,7 @@
   border-top: 1px solid var(--horizontalRule);
   margin: 2.5rem 0;
 }
-@media(min-width: $desktop) {
+@media (min-width: $desktop) {
   .recipe-hr-desktop {
     display: none;
   }
@@ -227,7 +227,7 @@
   position: relative;
   font-size: 2rem;
   margin: 3rem 0 2rem;
-  @media(max-width: $tablet) {
+  @media (max-width: $tablet) {
     font-size: 1.7rem;
   }
 
@@ -257,7 +257,7 @@
 //概要
 
 .recipe-summary-wrapper {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5rem;
@@ -273,16 +273,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5rem;
   counter-reset: number 0;
-  @media(max-width: $desktop) {
+  @media (max-width: $desktop) {
     grid-template-columns: 1fr 1fr;
   }
-  @media(max-width: $tablet) {
+  @media (max-width: $tablet) {
     grid-template-columns: 1fr;
   }
 
   & .make-inner p:before {
     counter-increment: number 1;
-    content: " STEP "counter(number);
+    content: " STEP " counter(number);
     font-weight: 600;
     color: var(--black);
     display: flex;
@@ -345,7 +345,8 @@
   padding: 1.7rem;
   border-radius: 50%;
   background: var(--black);
-  box-shadow: transparent 0 0 0 1px, transparent 0 0 0 4px, rgba(0, 0, 0, 0.18) 0 2px 4px;
+  box-shadow: transparent 0 0 0 1px, transparent 0 0 0 4px,
+    rgba(0, 0, 0, 0.18) 0 2px 4px;
 
   & svg {
     width: 25px;
@@ -420,7 +421,7 @@
       & .recipe-menu-bio-inner {
         display: flex;
         align-items: center;
-        @media(max-width: $phablet) {
+        @media (max-width: $phablet) {
           padding-left: 0;
         }
       }
@@ -441,7 +442,7 @@
       }
     }
   }
-  @media(max-width: $phablet) {
+  @media (max-width: $phablet) {
     & .ico-button {
       font-size: 1.3rem;
     }
@@ -451,7 +452,7 @@
     }
   }
 }
-@media(max-width: $desktop) {
+@media (max-width: $desktop) {
   .recipe-hr-l,
   .recipe-menu .recipe-menu-inner.recipe-menu-bio .recipe-menu-user {
     display: none;
@@ -459,7 +460,7 @@
 }
 /*アプリ*/
 .recipe-menu {
-  @media(max-width: $phablet) {
+  @media (max-width: $phablet) {
     top: 0;
     bottom: auto;
     border-top: none;
@@ -470,7 +471,7 @@
     & svg {
       width: 15px;
     }
-    @media(min-width: $phablet) {
+    @media (min-width: $phablet) {
       display: none;
     }
   }
