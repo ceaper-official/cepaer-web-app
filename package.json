@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ./assets/*.js ./lib/*.js ./src ./pages ./layouts/*.js ./layouts/faq/**/*.js ./layouts/nav/**/*.js",

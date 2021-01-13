@@ -2,29 +2,42 @@
 
 ### セットアップ
 
-1. npmのインストール
+1. npm のインストール
+
 ```
 npm install
 ```
-2. envファイルの作成
+
+2. env ファイルの作成
+
 ```
 cp env.sample .env
 ```
-3. Firebaseのセットアップ
+
+3. Firebase のセットアップ
+
 ```
 npm install firebase-functions@latest firebase-admin@latest --save
 npm install -g firebase-tools
 firebase login
 ```
+
 4. Firebase Functions の Deploy
+
 ```
 npm run deploy
 ```
 
-### ローカル起動
+### 開発サーバー起動: ポート番号 3000
 
 ```
 npm run dev
+```
+
+### 開発サーバー起動: IP アドレス
+
+```
+npx next dev -H 〇〇.〇〇.〇〇.〇〇
 ```
 
 ### 外部に公開
