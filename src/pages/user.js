@@ -26,6 +26,9 @@ class UserPage extends React.Component {
       name: "",
       icon: "",
       bio: "",
+      facebook: "",
+      twitter: "",
+      instagram: "",
     };
   }
 
@@ -43,6 +46,9 @@ class UserPage extends React.Component {
             name: data.name,
             icon: data.thumgnailMediumImageUrl,
             bio: data.bio,
+            facebook: data.facebook,
+            twitter: data.twitter,
+            instagram: data.instagram,
           });
         }
       }
@@ -57,9 +63,9 @@ class UserPage extends React.Component {
           name={this.state.name}
           icon={this.state.icon}
           bio={this.state.bio}
-          instagram="https://www.instagram.com/"
-          twitter="http://twitter.com/"
-          facebook="http://facebook.com/"
+          instagram={`https://www.instagram.com/${this.state.instagram}`}
+          twitter={`https://twitter.com/${this.state.twitter}`}
+          facebook={`https://www.facebook.com/${this.state.facebook}`}
         />
 
         <Block>

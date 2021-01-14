@@ -44,8 +44,12 @@ class SignUp extends React.Component {
         return db.collection("users").doc(res.user.uid).set({
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           name: res.user.displayName,
-          thumgnailMediumImageUrl: res.user.photoURL,
-          originalImageUrl: res.user.photoURL,
+          bio: "",
+          instagram: "",
+          facebook: "",
+          twitter: "",
+          thumgnailMediumImageUrl: "",
+          originalImageUrl: "",
           update_at: firebase.firestore.FieldValue.serverTimestamp(),
         });
       })
@@ -84,6 +88,10 @@ class SignUp extends React.Component {
         return db.collection("users").doc(res.user.uid).set({
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           name: res.user.displayName,
+          bio: "",
+          instagram: "",
+          facebook: "",
+          twitter: "",
           thumgnailMediumImageUrl: res.user.photoURL,
           originalImageUrl: res.user.photoURL,
           update_at: firebase.firestore.FieldValue.serverTimestamp(),
@@ -109,6 +117,10 @@ class SignUp extends React.Component {
         return db.collection("users").doc(res.user.uid).set({
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           name: res.user.displayName,
+          bio: "",
+          instagram: "",
+          facebook: "",
+          twitter: "",
           thumgnailMediumImageUrl: res.user.photoURL,
           originalImageUrl: res.user.photoURL,
           update_at: firebase.firestore.FieldValue.serverTimestamp(),
