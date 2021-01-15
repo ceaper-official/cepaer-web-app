@@ -89,7 +89,7 @@ class UserPage extends React.Component {
                   title="ダイエットに効果的な料理100選"
                   all="45"
                   href="/collections/collection"
-                  img=<RecipeImg />
+                  img={<RecipeImg />}
                 />
               </UserPostContainer>
             </div>
