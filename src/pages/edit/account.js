@@ -1,12 +1,14 @@
 import React from "react";
 
+import { auth, firebase } from "@src/firebase";
+import { getCurrentUser, storage, db } from "@lib/firebase";
 import withAuth from "@src/helpers/withAuth";
-import { firebase, getCurrentUser } from "@src/firebase";
 
 import BaseLayout from "@components/layout/BaseLayout";
 import Column from "@components/column/Column";
 import Container from "@components/container/Container";
 import HeroText from "@components/hero/HeroText";
+import HelperText from "@components/form/HelperText";
 import Input from "@components/form/Input";
 import FormItem from "@components/form/FormItem";
 import SnackBarSave from "@src/components/notifications/SnackBarSave";
@@ -19,44 +21,39 @@ export class EditAccount extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null,
-      name: "",
-      icon: "",
-      bio: "",
+      email: "",
     };
   }
 
-  async componentDidMount() {
-    const db = firebase.firestore();
-    const user = getCurrentUser();
-    firebase.auth().onAuthStateChanged(async (user) => {
-      if (user) {
-        const doc = await db.collection("users").doc(user.uid).get();
-        const data = doc.data();
-        if (data) {
-          this.setState({
-            user,
-            name: data.name,
-            icon: data.thumgnailMediumImageUrl,
-            bio: data.bio,
-          });
-        }
-      }
-    });
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ user })
+    })
   }
 
-  onClickUpdate = (e) => {
-    const { name, bio, thumgnailMediumImageUrl } = this.setState;
-    const db = firebase.firestore();
-    const user = getCurrentUser();
-    db.collection("users").doc(user.uid).update({
-      name: this.state.name,
-      bio: this.state.bio,
-      update_at: firebase.firestore.FieldValue.serverTimestamp(),
-    })
+  onClickUpdateEmail = (e) => {
+    e.preventDefault();
+    const newEmail = this.state.email;
+    const user = firebase.auth().currentUser;
+      user.updateEmail(newEmail)
+      .then(() => {
+        user.sendEmailVerification();
+        firebase.auth().signOut();
+        location.href = "/signin";
+      }, error => {
+        console.error();
+      })
   };
 
+  setEmailText = (e) => {
+    const { email } = this.setState;
+    this.setState({ email: e.target.value });
+  }
+
   render() {
+    const {
+      email,
+    } = this.state;
     return (
       <BaseLayout>
         <Column sidenav>
@@ -68,15 +65,23 @@ export class EditAccount extends React.Component {
               <FormItem label="現在のメールアドレス">
                 <Input
                   icon={<Mail />}
+                  value={this.state.user && this.state.user.email}
+                  type="email"
                 />
               </FormItem>
               <FormItem label="新しいメールアドレス">
                 <Input
                   icon={<Mail />}
+                  onChange={(e) => {this.setEmailText(e)}}
+                  value={email}
+                  type="email"
                 />
+                <HelperText>
+                  <p> メールアドレスを変更すると確認メールが送信されます。メール内のURLをクリックすると変更完了です。</p>
+                </HelperText>
               </FormItem>
               <FormItem>
-                <SnackBarSave onClick={(e) => this.onClickUpdate(e)}>設定を保存</SnackBarSave>
+                <SnackBarSave onClick={(e) => this.onClickUpdateEmail(e)}>設定を保存</SnackBarSave>
               </FormItem>
             </Container>
           </div>
