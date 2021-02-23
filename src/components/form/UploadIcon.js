@@ -22,6 +22,19 @@ const UploadIcon = (props) => {
   }, [inputRef]);
 
   const onChangeImage = useCallback(async (event) => {
+    
+    // すでに画像があったら古い画像をStorageから削除
+    const user = getCurrentUser();
+    const ref = storage.ref();
+    const profileRef = ref.child(`/images/profile/${user.uid}/`).listAll()
+    .then((res) => {
+      res.items.forEach((itemRef) => {
+        if (res.items) {
+          storage.refFromURL(`${res.items}`).delete();
+        }
+      });
+    });
+
     if (event.target.files === null) {
       return;
     }
@@ -44,7 +57,7 @@ const UploadIcon = (props) => {
         .child(`images/profile/${user.uid}/${fileName}`)
         .put(file);
 
-      // TODO: アップロード後に取得したthumgnailMediumImageUrlをDBに保存する
+      // アップロード後に取得したthumgnailMediumImageUrlをDBに保存する
       const savedImageUrl = await snapshot.ref.getDownloadURL();
       await db.collection("users").doc(user.uid).update({
         thumgnailMediumImageUrl: savedImageUrl,
@@ -54,13 +67,12 @@ const UploadIcon = (props) => {
     }
   }, []);
 
-
-let imgUrl = props.src
-  if (thumgnailMediumImageUrl) {
-    imgUrl = thumgnailMediumImageUrl
-  } else if (thumgnailMediumImageUrl) {
-    imgUrl = props.src
-  }
+    let imgUrl = props.src
+      if (thumgnailMediumImageUrl) {
+        imgUrl = thumgnailMediumImageUrl
+      } else if (!thumgnailMediumImageUrl) {
+        imgUrl = props.src
+      };
 
   return (
     <div className={s.upload__icon}>
@@ -72,7 +84,7 @@ let imgUrl = props.src
         type="file"
       />
           <div class={s.upload__icon__inner} onClick={onClick}>
-            <img className={s.upload__img} src={imgUrl} alt="profile icon"　onError={(e) => e.target.src = "images/default/user.svg"}　/>
+            <img className={s.upload__img} src={imgUrl} alt="profile icon"　onError={(e) => e.target.src = "https://firebasestorage.googleapis.com/v0/b/ceaper-20200424.appspot.com/o/images%2Fprofile%2Fdefault_icon%2Fuser.svg?alt=media&token=488a434c-66fa-4dab-b691-8e578c122eae"}　/>
             {props.icon}
           </div>
           <p className={s.upload__helper__text} onClick={onClick}>
