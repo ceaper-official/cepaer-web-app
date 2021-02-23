@@ -18,66 +18,63 @@ import HelperText from "@components/form/HelperText";
 import EditNav from "./EditNav";
 
 import Notice from "@icons/ui/notice.js";
+import Mail from "@icons/ui/mail.js";
 import Password from "@icons/ui/password";
 
 /* 入力された文・値は保存 */
 export class Delete extends React.Component {
   constructor(props) {
     super(props);
-    this.inputRef = React.createRef();
     this.state = {
-      profileImageUrl: "",
+      email: "",
+      password: "",
     };
   }
 
   async componentDidMount() {
-    // TODO: Firestoreからユーザ情報を取得
-    try {
-      const user = getCurrentUser();
-      const userDoc = await db.collection("users").doc(user.uid).get();
-      console.log(userDoc);
-      this.setState({
-        name: userDoc.data.name,
-        about: userDoc.data.about,
-        profileImageUrl: userDoc.data.image,
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ user })
+    })
+    const user = getCurrentUser();
+    firebase.auth().onAuthStateChanged(async (user) => {
+      if (user) {
+        const doc = await db.collection("users").doc(user.uid).get();
+      }
+    });
   }
 
-  onClickProfileImage = () => {
-    if (this.inputRef.current) {
-      this.inputRef.current.click();
-    }
-  };
+  onClickDeleteUser = (e) => {
+    e.preventDefault();
+    
+    // Storageの削除
+    const user = getCurrentUser();
+    const ref = storage.ref();
+    const profileRef = ref.child(`/images/profile/${user.uid}/`).listAll()
+    .then((res) => {
+      res.items.forEach((itemRef) => {
+        storage.refFromURL(`${res.items}`).delete();
+      });
+    });
 
-  onChangeProfileImage = async (event) => {
-    if (event.target.files === null) {
-      return;
-    }
-    const file = event.target.files.item(0);
-    if (file === null) {
-      return;
-    }
-
-    try {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        this.setState({
-          profileImageUrl: reader.result,
-        });
-      };
-
-      // Firebase Storageへアップロード
-      const user = getCurrentUser();
-      const ref = storage.ref();
-      const fileName = `${generateRandomId()}.jpg`;
-      await ref.child(`images/profile/${user.uid}/${fileName}`).put(file);
-    } catch (error) {
-      console.error(error);
-    }
+    // Firestoreの削除 
+    db.collection('users').doc(user.uid).delete();
+    const { email, password } = this.state;
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        const user = firebase.auth().currentUser;
+        if(user != null) {
+          user.delete()
+            .then(() => {
+            console.log("success");
+            firebase.auth().signOut();
+            location.href = "/";
+          }, error => {
+            console.error();
+          })
+        }
+      })
   };
 
   render() {
@@ -92,13 +89,23 @@ export class Delete extends React.Component {
               </p>
             </HeroText>
             <Container>
+            <FormItem label="現在のメールアドレス">
+                <Input
+                  icon={<Mail />}
+                  onChange={(e) => this.setState({ email: e.target.value })}
+                  type="email"
+                />
+              </FormItem>
+
               <FormItem label="現在のパスワード">
-                <Input ps
+              <Input ps
+                  placeholder="パスワード"
                   icon={<Password/>}
+                  onChange={(e) => this.setState({ password: e.target.value })}
                 />
               </FormItem>
               <FormItem>
-                <Button negative>
+                <Button negative onClick={(e) => this.onClickDeleteUser(e)}>  
                   <Notice/>
                   アカウントを削除
                 </Button>
