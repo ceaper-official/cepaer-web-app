@@ -13,6 +13,7 @@ const functions = {
   // Write function references
   generatePostThumbnail: "./src/generatePostThumbnail",
   generateProfileThumbnail: "./src/generateProfileThumbnail",
+  postCopy: "./src/postCopy",
 };
 
 loadFunctions = (funcs) => {
