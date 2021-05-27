@@ -80,7 +80,7 @@ function HeaderLogo() {
       </span>
 
       <a
-        onClick={() => Router.back()}
+        onClick={() => router.back()}
         className={`${s.header__icon} ${s.header__mobile__item} ${
           router.pathname == "/" ? "home" : ""
         }`}
